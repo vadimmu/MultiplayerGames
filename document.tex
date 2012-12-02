@@ -101,7 +101,7 @@ There is a number of GPS-enabled games and game authoring tools that are
 available for iOS and Android devices. The ones studied for this paper are :
 ARIS, Tourality, Wherigo, conTAGion, Shadow Cities, SCVNGR, Please
 Stay Calm, Parallel Mafia, Parallel Kingdom, Tripventure, Warfinger, Tidy City,
-Portal Hunt, aMazing, Ingress.
+Portal Hunt, aMazing, Ingress, MobileWar.
 \newline
 
 We will now cover the scope and the most interesting features of each of the
@@ -139,69 +139,30 @@ enummerated games/platforms:
   		\begin{enumerate}
   	  		\item Tourality  	  		 	  		  	  		
   		\end{enumerate}
+  		
+  \item \textbf{Multiplayer Shooter Games}
+  		\begin{enumerate}
+  	  		\item MobileWar	  		  	  		
+  		\end{enumerate}
 \end{enumerate}
 
 
 \section{Real Time Strategy Games}
 
-This project proposal is for GPS-enabled augmented reality games for single
-player or multiplayer competitive free for all and team versus team games where
+This project proposal is for the research and development of GPS-enabled Real
+Time Strategy games. They are to be augmented reality games for single player
+or multiplayer competitive 'free for all' and 'team versus team' games where
 virtual tools are used for enhancing the gameplay. This category of games offers
-opportunities to also enhance the experience for all the previously existing ones.
+opportunities to also enhance the experience for all the previously existing
+ones.
 
 For this project, the proposed games are :
-\begin{enumerate}
-	\item \textbf{Navigation Game}
-	\item \textbf{Mine Detector}	
+\begin{enumerate}	
 	\item \textbf{Territory Takeover}
 	\item \textbf{The War Game}
 \end{enumerate}
 
-
-1. The \textbf{Navigation Game} is inspired by Radio Orienteering and the Hot
-and Cold game played by kids - a branch of orienteering in which the participant uses a radio
-in addition to the classical navigation methods. The radio is used for guidance
-towards beacons placed through the trail. Two variants of the game are
-proposed:
-\begin{enumerate}
-	
-	\item \textbf{The Peer-to-Peer Navigation Game} - After reaching a checkpoint,
-	the team has to designate one member to be the Seeker for a goal (checkpoint,
-	geocache or something else). They vote. Once the vote is over, the entire team
-	is confined to an area defined by a circle or rectangle around the checkpoint
-	where the voting began. Only the Seeker is allowed to leave the confinement
-	area. Also, the Seeker's map will not contain the destination marker. The team
-	will have the destination marker enabled once the Seeker leaves the confinement
-	area and will have to navigate him through text or voice chat. The goal may
-	be as simple as reaching the marker or a quiz or a puzzle which the Seeker may
-	solve with the help of the team. Once the Seeker finds the marker and retrieves
-	the goal, the confinement restriction disappears and the team may proceed. An
-	alternative can be that the Seeker must return to the position of the team in
-	order to disable the confinement restriction. 
-	
-	\item \textbf{The Device-to-Peer Navigation Game} - After reaching a checkpoint
-	in a single or multiplayer game, the player automatically becomes or is voted
-	to be a Seeker and has to navigate by himself towards the goal. His map will
-	not show the goal, but instead a gradient of color showing him how close or far
-	he is from the location of the goal. 
-	
-\end{enumerate}
-2. The \textbf{Mine Detector} is rather a single player game that has
-potential to be extended to multiplayer use. The single player scenario is as
-follows: an opposing player or a game author prepares an area with a number of
-virtual 'mines'. The player who will cross the 'minefield'(the racer) has to get
-from a marker(start marker) to another(end marker) in a race against time. One added
-aspect is the player's virtual 'health': if the racer gets too close to a mine,
-it 'explodes' and reduces his 'health'. If the racer's health reaches zero, he
-loses. The racer will have an area around him that will act as 'mine detector'
-coverage. The mines show up only if they fall inside the 'mine detector' area.
-The player may defuse mines, but the process costs time. The strategy is up to
-the player.\newline
-
-Even if it is not in itself a multiplayer game, the Mine Detector can be added
-as a subgame in multiplayer tour games.\newline
-
-3. The \textbf{Territory Takeover} game is a multiplayer, team versus team
+1. The \textbf{Territory Takeover} game is a multiplayer, team versus team
 competitive game. The players or game author define an area of play, which will
 be divided into multiple divisions. Each division will be marked by a 'flag' (a
 GPS marker). To capture the area division, a team must capture its flag. The
@@ -238,7 +199,7 @@ immobilizes somebody and is immediately immoblized himself, he won't be able to
 use the demobilizer because of the cooldown following the usage of the
 immobilizer.
 
-4. The War Game is inspired by Real Time Strategy Games and Airsoft. Two
+2. The War Game is inspired by Real Time Strategy Games and Airsoft. Two
 teams are formed. An area of play is delimited on the map. Each player can
 choose between a number of characters. For the purpose of this project, four
 characters are proposed: Defender, Marine, Sniper and Heavy Trooper. Each of the
@@ -275,14 +236,10 @@ four characters has special abilities and characteristics :
 	 
 \end{enumerate}
 
-In the first iteration of this game, obstacles will be defined on the map by the
-players or by the author of the game. In a further phase, a feature to treat
-buildings and various object as obstacles automatically will be added.\newline
-
 This game has some advantages and drawbacks, when compared to Airsoft:\newline
 \textbf{Advantages}: It does not require specialized gear and setting, nor does
-it need long amounts of time to be played. It can be enjoyed with a bunch of friends on
-a sunny weekend afternoon.\newline
+it need long amounts of time to be played. It can be enjoyed with a bunch of
+friends on a sunny weekend afternoon.\newline
 \textbf{Drawbacks}: It highly depends on GPS accuracy. This issue may affect
 gameplay. It also does not feel as 'real' as Airsoft.\newline
 
@@ -304,8 +261,9 @@ The games that are to be implemented will actively rely on communication with a
 centralized server. This implies a constant Internet connection on each mobile
 device. 
 \subsection{Server technology}
-The server will be implemented using NodeJS, due to its implementation of the
-Event Loop and therefore it's little consumption of resources and bandwidth. 
+The server will be written using NodeJS, due to its implementation of the Event
+Loop and therefore it's little consumption of resources and bandwidth.
+
 
 \subsection{Communication Protocols}
 During a game, active communication must be performed between the mobile devices
@@ -367,12 +325,32 @@ proposed, and with open source code available. Unfortunately for this project,
 ARIS focuses on educational games much more than on multiplayer
 experience.\newline
 
+During the preparation of this proposal paper no games or documentation have
+been found on GPS-enabled Real Time Strategy games. \newline
+
+The Mine Game has been inspired from the presentation video of
+'Warfinger'\newline
+
 Implementations for GPS-enabled, fast-paced multiplayer games for mobile devices
 have not been found and therefore no documentation on them could be generated
-or obtained. The purpose of this project is to create proofs of concept for the
-GPS-enable games catalogued here as 'Battle Games'.
+or obtained.\newline 
 
+The purpose of this project is to create a common framework for GPS-enabled Real
+Time Strategy games, using implementations of 'Territory Takeover' and 'The War
+Game' as proof of concept. The 'Navigation Game' and 'Mine Detector' are
+considered optional additions  ('Navigation Game', 'Mine Detector', 'Territory
+Takeover' and 'The War Game') as proof of concept
 
+\section{Application of the Games}
+
+The two games are proposed with group teambuilding and recreation in mind. Both
+games require team strategy and cooperation. Territory Takeover allows for both
+team versus team and free for all gameplay, allowing for both small and large
+groups to play. The War Game is to be a fast paced game spanning a time interval
+in the range of a few tens of minutes. Where it lacks the realism of Airsoft or
+the immersion of classical computer Real Time Strategy games, it gains in the
+real-life experience and teamwork, without requiring specialized
+equipment(Airsoft) or highly developed skills(computer Real Time Strategy games).
 
 
 %----------------------------------------------------------------------------------------
