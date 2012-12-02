@@ -1,0 +1,387 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Laboratory Report LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original header:
+%
+% This is a LaTeX version of the sample laboratory report
+% from Virginia Tech's copyrighted 08-09 CHEM 1045/1046 lab manual.
+% Reproduction of this one appendix section for academic purposes
+% should fall under fair use.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+    \usepackage[a4paper,vmargin={30mm,30mm},hmargin={20mm,20mm}]{geometry}
+
+\title{Multiplayer Mobile GPS Games \\ Exposé \\
+Winter Semester 2012}
+% Title
+
+\author{Vadim Costache} % Author name
+
+\begin{document}
+
+\maketitle % Insert the title, author and date
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+   
+\begin{verbatim}
+
+
+
+\end{verbatim}
+     
+\tableofcontents
+
+\newpage
+
+\section{Introduction: Location-Based Augmented Reality Games}
+
+Ever since the first operating system for handheld devices, the spreading of
+smartphones has intensified every year.\newline
+
+The rapid expansion of mobile computing presents new challenges and
+opportunities for both the user and the developer. The ease of use and the
+presence of touchscreens, GPS receivers, gyroscopes, accelerometers and, since
+recently, even barometers gives way to new approaches in developing
+games.\newline
+
+Although it is one of the oldest additions to the smartphone, the GPS-enabled
+smartphone is still not ubiquitous. As of now, each company's flagship
+and most of their mid-level smartphones are GPS-enabled. This makes way to the
+propagation of GPS gaming. Although the concept is old, very few attempts have
+been made in this direction and this branch of game development may be
+considered to still be in one of its early stages of maturity.\newline
+
+This paper is a proposal for extending the genre of mobile real-time multiplayer
+location-based games.
+
+\section{Location-based games}
+Location-based games take advantage of the mobile devices' built-in receivers
+for global positioning. They provide the user's location with an accuracy
+ranging from a few to a couple dozen meters. Because the most mobile
+devices in the world today rely on the Global Positioning System, we can
+use the term GPS-games.\newline
+
+GPS-games came up long before this feature has become ubiquitous in mobile
+phones and tablets. The first widespread GPS-game is Geocaching. It is composed
+of two parts: 
+\begin{enumerate}
+  \item Placing physical caches at various locations that can be considered
+  interesting or worth visiting and publishing their GPS positions (eg. on
+  websites).
+  \item Searching for various caches by using a GPS device. 
+\end{enumerate}
+
+Along with the evolution of smartphones came that of the mobile games. GPS games
+come in a lot of flavors, from GPS-based tours, adventure and investigation
+games to various race games - single and multi player.
+
+
+\section{Types of GPS-enabled games }
+
+There is a number of GPS-enabled games and game authoring tools that are
+available for iOS and Android devices. The ones studied for this paper are :
+ARIS, Tourality, Wherigo, GhostEsc., conTAGion, Shadow Cities, SCVNGR, Please
+Stay Calm, Parallel Mafia, Parallel Kingdom, Tripventure, Warfinger, Tidy City,
+Portal Hunt, aMazing.
+\newline
+
+By their scope, we will classify the games in the following categories:
+
+\begin{enumerate}
+	\item \textbf{Tour Games} - This type of game has been evolved from geocaching
+	games. They are the first GPS games to make it onto smartphones. They are
+	mostly single player. The user follows a set of checkpoints set on a map in
+	order to find a geocache or perform a tour of various interesting sites.
+	Options include information about the sites (text, images, videos), quizzes
+	etc.
+	
+	\item \textbf{Race Games} - This type of game was the first to be
+	researched upon for multiplayer use. The first iterations appeared on the
+	non-ubiquitous PDAs. Recently, a game named 'Tourality' was developed. The
+	games supported are the mobile implementation of outdoor single and multiplayer
+	games such as racing, trail hiking and rogaining. 
+	
+	\item \textbf{Battle Games} - there is only one attempt at this game type:
+	'Warfinger'. The game was not yet released, although there are a website and a
+	video presenting the concept.
+	
+	\item \textbf{Educational and Puzzle/Adventure Games} - There is a wider range
+	of games developed under this category. The best known are Mentira and Dow Day
+	(both authored with the ARIS platform), Inspector Tripton and Mission Mauerfall
+	(both developed by Tripventure) and Mad City Mystery.
+	
+\end{enumerate}
+
+\section{The Battle Games}
+
+The Battle Games are GPS-enabled augmented reality games for single
+player or multiplayer competitive free for all and team versus team games where
+virtual tools are used for enhancing the gameplay. The Battle Games as a
+category of games offers opportunities to also enhance the experience for all
+the previously existing ones.
+
+For this project, the proposed games are :
+\begin{enumerate}
+	\item \textbf{Navigation Game}
+	\item \textbf{Mine Detector}	
+	\item \textbf{Territory Takeover}
+	\item \textbf{The War Game}
+\end{enumerate}
+
+
+1. The \textbf{Navigation Game} is inspired by Radio Orienteering and the Hot
+and Cold game played by kids - a branch of orienteering in which the participant uses a radio
+in addition to the classical navigation methods. The radio is used for guidance
+towards beacons placed through the trail. Two variants of the game are
+proposed:
+\begin{enumerate}
+	
+	\item \textbf{The Peer-to-Peer Navigation Game} - After reaching a checkpoint,
+	the team has to designate one member to be the Seeker for a goal (checkpoint,
+	geocache or something else). They vote. Once the vote is over, the entire team
+	is confined to an area defined by a circle or rectangle around the checkpoint
+	where the voting began. Only the Seeker is allowed to leave the confinement
+	area. Also, the Seeker's map will not contain the destination marker. The team
+	will have the destination marker enabled once the Seeker leaves the confinement
+	area and will have to navigate him through text or voice chat. The goal may
+	be as simple as reaching the marker or a quiz or a puzzle which the Seeker may
+	solve with the help of the team. Once the Seeker finds the marker and retrieves
+	the goal, the confinement restriction disappears and the team may proceed. An
+	alternative can be that the Seeker must return to the position of the team in
+	order to disable the confinement restriction. 
+	
+	\item \textbf{The Device-to-Peer Navigation Game} - After reaching a checkpoint
+	in a single or multiplayer game, the player automatically becomes or is voted
+	to be a Seeker and has to navigate by himself towards the goal. His map will
+	not show the goal, but instead a gradient of color showing him how close or far
+	he is from the location of the goal. 
+	
+\end{enumerate}
+2. The \textbf{Mine Detector} is rather a single player game that has
+potential to be extended to multiplayer use. The single player scenario is as
+follows: an opposing player or a game author prepares an area with a number of
+virtual 'mines'. The player who will cross the 'minefield'(the racer) has to get
+from a marker(start marker) to another(end marker) in a race against time. One added
+aspect is the player's virtual 'health': if the racer gets too close to a mine,
+it 'explodes' and reduces his 'health'. If the racer's health reaches zero, he
+loses. The racer will have an area around him that will act as 'mine detector'
+coverage. The mines show up only if they fall inside the 'mine detector' area.
+The player may defuse mines, but the process costs time. The strategy is up to
+the player.\newline
+
+Even if it is not in itself a multiplayer game, the Mine Detector can be added
+as a subgame in multiplayer tour games.\newline
+
+3. The \textbf{Territory Takeover} game is a multiplayer, team versus team
+competitive game. The players or game author define an area of play, which will
+be divided into multiple divisions. Each division will be marked by a 'flag' (a
+GPS marker). To capture the area division, a team must capture its flag. The
+game ends when all flags have been captured and the winner is the team with most
+captured flags. Each flag may be given a time that a player must spend next to
+it in order to capture it. Once a flag (and implicitly the territory) is
+captured, it remains so until the end of the game. The winner can be decided on
+flag counting or, alternatively, each flag may receive a number of points,
+according to the size of the territory marked by it and the difficulty of the
+terrain. \newline
+
+This game can be enhanced with the use of virtual tools or weapons. For the
+purpose of this project, the following tools/weapons have been considered :
+\begin{enumerate}
+	
+	\item The \textbf{Immobilizer} is an ability that can be used by each player to
+	block an opponent from moving. The 'attacker' 'activates' the ability and a
+	circle around him is drawn to show the range in which he can shoot. If an
+	opponent enters the range area, the 'attacker' will select him on the map and
+	shoot. The 'victim' will receive a notification that he is immobilized. A
+	circle or rectangle will be defined around him and he will not be allowed to
+	move outside of it for a given time, say 30 seconds or 1 minute. If he does, he
+	gets disqualified and kicked out of the game. An alternate solution would be
+	that the team loses points, for the case that this is the scoring methodology
+	implemented.
+	 
+	\item \textbf{Demobilizer} is an ability that an immobilized player can use.
+	For this project, it will only work on the person that uses the ability. The
+	effect is that a person that is immobilized gets the waiting time halved.
+	
+\end{enumerate}
+Both the abilities have a common cooldown timer. That means that if a player
+immobilizes somebody and is immediately immoblized himself, he won't be able to
+use the demobilizer because of the cooldown following the usage of the
+immobilizer.
+
+4. The War Game is inspired by Real Time Strategy Games and Airsoft. Two
+teams are formed. An area of play is delimited on the map. Each player can
+choose between a number of characters. For the purpose of this project, four
+characters are proposed: Defender, Marine, Sniper and Heavy Trooper. Each of the
+four characters has special abilities and characteristics :
+\begin{enumerate}
+	
+	\item The \textbf{Defender} has the ability to generate shields for short
+	periods of time. Members of the team can hide behind those shields for defence.
+	The Defender may also act as a Medic and heal or revive members of the team. He
+	has low health, long ability cooldowns and a sidearm with short range, small
+	damage and fast cooldowns .
+	
+	\item The \textbf{Marine} has a weapon that can shoot a medium range with
+	medium damage and fast cooldowns. He has medium health. 
+	
+	\item The \textbf{Sniper} has two weapons : the sniper rifle that can shoot at
+	distant ranges and deal large damage to single targets and the sidearm, which
+	is the same as the Defender's. His health is low, just like the Defender's. The
+	sniper shot may penetrate the Defender's shield and cause reduced damage to one
+	target.	
+	
+	\item The \textbf{Heavy Trooper} has three weapons : the bazooka, the sidearm
+	and mines. The bazooka is a mid-range weapon with splash damage - it therefore
+	can be fired against compact groups, such as the ones that might be hiding
+	behind a shield. The bazooka cannot deal damage through the shield, but it may
+	be shot next to it, causing damage from the side. The damage to each target
+	varies from moderate to small, depending how far they are from the center of
+	the 'projectile explosion'. The mines can be placed randomly on the map and
+	their 'explosions' will not affect the members of the Heavy Trooper's team.
+	Also they cannot be triggered by the members of his team. The damage dealt will
+	be moderate, with splash damage, just like the bazooka projectile. The bazooka
+	and the mines have long cooldowns, therefore the sidearm is added. The Heavy
+	Trooper has high health.
+	 
+\end{enumerate}
+
+In the first iteration of this game, obstacles will be defined on the map by the
+players or by the author of the game. In a further phase, a feature to treat
+buildings and various object as obstacles automatically will be added.\newline
+
+This game has some advantages and drawbacks, when compared to Airsoft:\newline
+\textbf{Advantages}: It does not require specialized gear and setting, nor does
+it need long amounts of time to be played. It can be enjoyed with a bunch of friends on
+a sunny weekend afternoon.\newline
+\textbf{Drawbacks}: It highly depends on GPS accuracy. This issue may affect
+gameplay. It also does not feel as 'real' as Airsoft.\newline
+
+\section{Application Frontend}
+The following technologies have been considered for developing the frontend for
+the application : Android, XCode and Multiplatoform APIs. The multiplatform APIs
+offer the benefit of easy implementation for multiple platforms and operating
+systems. The most visible disadvantage is the performance of such systems.
+Because the games proposed are fast-paced, they require quick response times
+from both the interface and the communication protocol. Therefore, the choice of
+native app development makes more sense for this situation.\newline
+
+The client frontend will be developed with Android, due to its accessibility and
+versatility and the fact that it's ubiquitous. The development for iOS-based
+devices is left as an option.
+
+\section{Application Backend}
+The games that are to be implemented will actively rely on communication with a
+centralized server. This implies a constant Internet connection on each mobile
+device. 
+\subsection{Server technology}
+The server will be implemented using NodeJS, due to its implementation of the
+Event Loop and therefore it's little consumption of resources and bandwidth. 
+
+\subsection{Communication Protocols}
+During a game, active communication must be performed between the mobile devices
+and the server in order to multicast all player positions and intentions to all
+players. There are two alternatives to this approach :
+
+\begin{enumerate}
+	\item The game is created on the server, in a so-called `Game Room` which all
+the players join. Once the game starts, communication will be
+peer-to-peer.
+	\item The game is created on the server and once the game starts, all players send
+their positions to the server. The server is then responsible to multicasting
+the positions to all the players. 
+\end{enumerate}
+
+In the general idea of communication protocol usage, the list of choices has
+been narrowed down to three:
+
+\begin{enumerate}
+	\item WebRTC - A protocol that is to be part of the HTML 5 standard. It will be
+	based on the RTP(Reliable Transport Protocol), which is the base for VoIP
+	protocols and is itself based on UDP. It promises to be a very fast standard
+	protocol, appropriate for audio and video streaming and massive multiplayer
+	games. It is still in draft format and there are no official implementations
+	for it. Implementing the protocol itself is outside the scope of this project.
+	\item WebSockets - A protocol that is part of the HTML 5 standard. It is a low
+	latency TCP-based protocol that promisses to replace http in several types of
+	web applications.
+	\item RTP - The protocol on which VoIP and WebRTC are based. It is based on UDP
+	and it is designed for real-time streaming of data.
+\end{enumerate}
+
+From these three protocols, the current discussion is between WebSockets and
+RTP. WebRTC is to be left as an option until its official release and
+implementation for both NodeJS and Android.
+
+
+\section{Authoring Tool}
+For the purpose of this project, individual authoring for the types of games
+will be attempted. The second iteration will be an attempt to create a universal
+authoring tool for GPS games, from basic Tour Games, to Educational Games, to
+the more complicated Battle Games. The purpose of this attempt is to allow
+authors to creatively combine all the types of games and subgames mentioned here
+in a variety of custom games. The tool should allow the authors to simply drag
+and drop game elements into the game and add them actions and attributes that
+are specific to the elements in all the games presented.\newline
+
+It is to be emphasized that, because this is not a vital feature to the
+development of the concepts of the Battle Games, the development of a universal
+authoring tool is an optional feature.
+
+\section{Documentation on the Games}
+The lack of documentation on the games themselves and the concepts implemented
+has left trying them out one by one as the only option to understand their
+components and functionality. Additional information was retrieved from
+video descriptions and examples of the games. An exception is made by the ARIS
+platform, which comes with documentation about the design process and the games
+proposed, and with open source code available. Unfortunately for this project,
+ARIS focuses on educational games much more than on multiplayer
+experience.\newline
+
+Implementations for GPS-enabled, fast-paced multiplayer games for mobile devices
+have not been found and therefore no documentation on them could be generated
+or obtained. The purpose of this project is to create proofs of concept for the
+GPS-enable games catalogued here as 'Battle Games'.
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\begin{thebibliography}{9}
+
+\bibitem{Smith:2012qr}
+Smith, J.~M. and Jones, A.~B. (2012).
+\newblock {\em Chemistry}.
+\newblock Publisher, City, 7th edition.
+
+\end{thebibliography}
+
+
+
+
+\end{document}
+
+
+
