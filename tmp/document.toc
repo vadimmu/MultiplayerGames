@@ -1,9 +1,14 @@
-\contentsline {section}{\numberline {1}Introduction: Location-Based Augmented Reality Games}{2}
-\contentsline {section}{\numberline {2}Types of GPS-enabled games }{2}
-\contentsline {section}{\numberline {3}The Battle Games}{2}
-\contentsline {section}{\numberline {4}Application Frontend}{4}
-\contentsline {section}{\numberline {5}Application Backend}{4}
-\contentsline {subsection}{\numberline {5.1}Server technology}{4}
+\contentsline {section}{\numberline {1}Introduction: Real Time Strategy games}{2}
+\contentsline {subsection}{\numberline {1.1}What is Real Time Strategy?}{2}
+\contentsline {subsection}{\numberline {1.2}Real Time Strateg versus Turn Based Strategy}{2}
+\contentsline {section}{\numberline {2}Location-Based Augmented Reality Games}{2}
+\contentsline {subsection}{\numberline {2.1}Location-based games}{3}
+\contentsline {subsection}{\numberline {2.2}Types of GPS-based games }{3}
+\contentsline {section}{\numberline {3}Real Time Strategy Games}{4}
+\contentsline {section}{\numberline {4}Application Frontend}{5}
+\contentsline {section}{\numberline {5}Application Backend}{5}
+\contentsline {subsection}{\numberline {5.1}Server technology}{5}
 \contentsline {subsection}{\numberline {5.2}Communication Protocols}{5}
-\contentsline {section}{\numberline {6}Authoring Tool}{5}
-\contentsline {section}{\numberline {7}Documentation on the Games}{5}
+\contentsline {section}{\numberline {6}Authoring Tool}{6}
+\contentsline {section}{\numberline {7}Documentation on the Games}{6}
+\contentsline {section}{\numberline {8}Application of the Games}{7}

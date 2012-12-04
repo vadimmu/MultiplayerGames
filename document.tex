@@ -52,7 +52,54 @@ Winter Semester 2012}
 
 \newpage
 
-\section{Introduction: Location-Based Augmented Reality Games}
+\section{Introduction: Real Time Strategy games}
+
+The proposal of this project is to bring the world-famous genre of Real Time
+Strategy(RTS) games to GPS-Enabled mobile devices.\newline
+
+\subsection{What is Real Time Strategy?}
+
+RTS games are defined as real-time (continuous time) competitive games, in which
+several players fight against each other, either in a skirmish or team versus
+team. The purpose is to defeat the opponents by taking real-time decisions on
+managing resources and troops. The focus is, therefore, on three key elements:
+\textbf{managing resource gathering}, \textbf{building a base to provide troops}
+and \textbf{battle tactics}.\newline
+
+This project will focus on a subgenre of RTS, Real Time Tactics(RTT) - which,
+instead of managing all three aspects of RTS, focuses on \textbf{battle
+tactics}.\newline
+
+Because it is essentially a simplified approach to RTS, RTT can provide a good
+proof of concept and at the same time simple and enjoyable playability. The
+advantage of having a RTT GPS-enabled game versus RTS is that it greatly reduces
+the play time, requires less skills and has the potential of being less
+stressful than RTS.\newline
+
+\subsection{Real Time Strateg versus Turn Based Strategy}
+
+Turn Based Strategy games(such as chess and board games, for example) allow the
+player to take his time and plan every move. Implicitly, the duration of the
+game is greater. This type of game is not in the scope of this project, yet it
+deserves mentioning, as there are many such games for mobile devices. Some
+notable implementations are Scotland Yard, Catan and Mobile Monopoly.\newline
+
+In particular, there are two implementations for Scotland Yard upon which a
+comparison has been made on whether it is better to port a board game in a
+real-time(continuous-time) or turn-based mobile GPS-based game. These two
+implementations are Mobilis XHunt(turn based) and MisterX Mobile(real-time).
+The comparison has been made on 10 aspects: Fun, Smooth Progression, Dynamic
+Gameplay, Ease of play, Stressless Gameplay, Communication, Strategy, Clear
+Rules, Low Risk, Education. The conclusion was that there was no favorite
+between the two, but it has been concluded that these 10 aspects have different
+weights for the player and that Fun, Smooth Progression and Dynamic Gameplay
+have a higher individual weight to players than the rest.\newline
+
+Based on the knowledge gathered from the above-mentioned comparison, the aim of
+this project will be to maximize the interactivity and dynamics of the RTS game.
+
+
+\section{Location-Based Augmented Reality Games}
 
 Ever since the first operating system for handheld devices, the spreading of
 smartphones has intensified every year.\newline
@@ -73,12 +120,13 @@ considered to still be in one of its early stages of maturity.\newline
 This paper is a proposal for extending the genre of mobile real-time multiplayer
 location-based games.
 
-\section{Location-based games}
+\subsection{Location-based games}
 Location-based games take advantage of the mobile devices' built-in receivers
 for global positioning. They provide the user's location with an accuracy
 ranging from a few to a couple dozen meters. Because the most mobile
-devices in the world today rely on the Global Positioning System, we can
-use the term GPS-games.\newline
+devices in the world today rely on the Global Positioning System(only recently
+support for GLONASS has been added to smartphones), we can use the term
+GPS-games.\newline
 
 GPS-games came up long before this feature has become ubiquitous in mobile
 phones and tablets. The first widespread GPS-game is Geocaching. It is composed
@@ -95,14 +143,26 @@ come in a lot of flavors, from GPS-based tours, adventure and investigation
 games to various race games - single and multi player.
 
 
-\section{Types of GPS-based games }
+\subsection{Types of GPS-based games }
 
 There is a number of GPS-enabled games and game authoring tools that are
 available for iOS and Android devices. The ones studied for this paper are :
 ARIS, Tourality, Wherigo, conTAGion, Shadow Cities, SCVNGR, Please
 Stay Calm, Parallel Mafia, Parallel Kingdom, Tripventure, Warfinger, Tidy City,
-Portal Hunt, aMazing, Ingress, MobileWar.
-\newline
+Portal Hunt, aMazing, Ingress, MobileWar, Mister X Mobile, Mobilis XHunt, Own
+This World.\newline
+
+For better understanding the classification done below, we will first define
+each type of game:
+
+\begin{enumerate}
+  \item \textbf{Adventure/Investigation Games}
+  \item \textbf{Massively Multiplayer Online Games}
+  \item \textbf{Casual Games}
+  \item \textbf{Multiplayer Racing Games}
+  \item \textbf{Multiplayer Shooter Games}
+  
+\end{enumerate}
 
 We will now cover the scope and the most interesting features of each of the
 enummerated games/platforms:
@@ -132,7 +192,8 @@ enummerated games/platforms:
   		\begin{enumerate}
   	  		\item SCVNGR
   	  		\item Warfinger  	  		
-  	  		\item aMazing 	  		  	  		
+  	  		\item aMazing 	
+  	  		\item Own This World	  	  		
   		\end{enumerate}
   		
   \item \textbf{Multiplayer Racing Games}
@@ -143,9 +204,14 @@ enummerated games/platforms:
   \item \textbf{Multiplayer Shooter Games}
   		\begin{enumerate}
   	  		\item MobileWar	  		  	  		
-  		\end{enumerate}
+  		\end{enumerate}  
 \end{enumerate}
 
+A special category is represented by Mister X Mobile and Mobilis XHunt, which
+both bring a board game (Scotland Yard) to the mobile environment. While the
+former adapts the board game to real-time gameplay(placing it closer to the
+'Multiplayer Racing Games', with elements from 'Real Time Strategy Games'), the
+latter clearly falls in the definition of 'Turn Based Strategy' games.
 
 \section{Real Time Strategy Games}
 

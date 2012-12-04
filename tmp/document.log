@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.11.12)  25 NOV 2012 17:20
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  4 DEC 2012 15:29
 entering extended mode
 **document.tex
 (C:\Users\Vadim\workspace\MultiplayerGames\document.tex
@@ -13,9 +13,9 @@ an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese,
 romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
 sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
 senglishmax, welsh, loaded.
-(D:\WORK\MiKTeX\tex\latex\base\article.cls
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(D:\WORK\MiKTeX\tex\latex\base\size10.clo
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -30,22 +30,22 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(D:\WORK\MiKTeX\tex\latex\geometry\geometry.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(D:\WORK\MiKTeX\tex\latex\graphics\keyval.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(D:\WORK\MiKTeX\tex\generic\oberdiek\ifpdf.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(D:\WORK\MiKTeX\tex\generic\oberdiek\ifvtex.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(D:\WORK\MiKTeX\tex\generic\ifxetex\ifxetex.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
@@ -61,7 +61,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 
-(D:\WORK\MiKTeX\tex\latex\geometry\geometry.cfg))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 (C:\Users\Vadim\workspace\MultiplayerGames\document.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
@@ -119,91 +119,127 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 32.
 (C:\Users\Vadim\workspace\MultiplayerGames\document.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 6.
+(Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 6.
+(Font)              <5> on input line 2.
 )
 \tf@toc=\write3
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 59--67
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--73
+Underfull \hbox (badness 10000) in paragraph at lines 62--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--80
+Underfull \hbox (badness 10000) in paragraph at lines 69--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--92
+Underfull \hbox (badness 10000) in paragraph at lines 73--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--130
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 165--176
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--179
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--191
+Underfull \hbox (badness 10000) in paragraph at lines 148--154
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 254--257
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 258--264
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 266--273
+Underfull \hbox (badness 10000) in paragraph at lines 231--242
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 323--331
+Underfull \hbox (badness 10000) in paragraph at lines 305--311
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--345
+Underfull \hbox (badness 10000) in paragraph at lines 313--320
 
  []
 
-[5] (C:\Users\Vadim\workspace\MultiplayerGames\document.aux) ) 
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 371--379
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--393
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--396
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--399
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--403
+
+ []
+
+[6] [7] (C:\Users\Vadim\workspace\MultiplayerGames\document.aux) ) 
 Here is how much of TeX's memory you used:
  768 strings out of 494045
- 10483 string characters out of 3153625
+ 10863 string characters out of 3145969
  69635 words of memory out of 3000000
  4109 multiletter control sequences out of 15000+200000
  8409 words of font info for 30 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 24i,6n,31p,159b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/WORK/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmbx10.pfb><D:/WORK/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><D:/WORK/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D
-:/WORK/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/WORK/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmr17.pfb><D:/WORK/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmti10.pfb>
-Output written on document.pdf (5 pages, 110212 bytes).
+ 24i,6n,31p,159b,234s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on document.pdf (7 pages, 113073 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
+ 50 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
