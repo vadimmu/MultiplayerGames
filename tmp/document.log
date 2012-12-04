@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  4 DEC 2012 15:29
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  4 DEC 2012 17:37
 entering extended mode
 **document.tex
 (C:\Users\Vadim\workspace\MultiplayerGames\document.tex
@@ -182,46 +182,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--154
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 231--242
+Underfull \hbox (badness 10000) in paragraph at lines 251--262
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 305--311
+Underfull \hbox (badness 10000) in paragraph at lines 325--331
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--320
+Underfull \hbox (badness 10000) in paragraph at lines 343--349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--352
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 371--379
+Underfull \hbox (badness 10000) in paragraph at lines 399--407
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--393
+Underfull \hbox (badness 10000) in paragraph at lines 413--421
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--396
+Underfull \hbox (badness 10000) in paragraph at lines 422--424
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 425--427
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--399
+Underfull \hbox (badness 10000) in paragraph at lines 428--431
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 400--403
-
- []
-
-[6] [7] (C:\Users\Vadim\workspace\MultiplayerGames\document.aux) ) 
+[7] (C:\Users\Vadim\workspace\MultiplayerGames\document.aux) ) 
 Here is how much of TeX's memory you used:
  768 strings out of 494045
  10863 string characters out of 3145969
@@ -229,15 +234,15 @@ Here is how much of TeX's memory you used:
  4109 multiletter control sequences out of 15000+200000
  8409 words of font info for 30 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 24i,6n,31p,159b,234s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on document.pdf (7 pages, 113073 bytes).
+ 24i,6n,31p,159b,244s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on document.pdf (7 pages, 115007 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

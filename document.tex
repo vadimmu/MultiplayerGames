@@ -156,17 +156,38 @@ For better understanding the classification done below, we will first define
 each type of game:
 
 \begin{enumerate}
-  \item \textbf{Adventure/Investigation Games}
-  \item \textbf{Massively Multiplayer Online Games}
-  \item \textbf{Casual Games}
-  \item \textbf{Multiplayer Racing Games}
-  \item \textbf{Multiplayer Shooter Games}
+  \item \textbf{Adventure/Investigation Game} - Game in which the player plays
+  the role of a character in a story. The primordial characteristics of this
+  genre is that it is focused on immersion in the story, puzzle solving and
+  investigation, rather than on physical skills. Also, the tendency of this
+  genre is towards single player experience, though occasionally multiplayer is
+  also implemented (eg. the ARIS-based game 'Mentira').
+  
+  \item \textbf{Massively Multiplayer Online Game} - This type of game is
+  designed to support large numbers of players (even in the number of millions
+  in some cases) that play and interact in a persistent virtual world. This type
+  of game allows both cooperative and competitive gameplay and is exclusively
+  based on multiplayer. Subgenres include MMO Role Playing Games and MMO
+  Shooters.
+  
+  \item \textbf{Casual Game} - Analogous to the MMO, the Casual Game is targeted
+  at mass at a mass audience and can incorporate any type of game type. The
+  particularity of this genre is that it aims at having simple rules, simple
+  gameplay and requiring no specialized skills. 
+  
+  \item \textbf{Racing Game} - It's a genre defining a broad range of games. In
+  the case of computer games, it describes mostly motorized vehicle racing. In
+  the mobile context, it mostly describes racing on foot against time or through
+  a number of checkpoints.
+  
+  \item \textbf{Shooter Game} - This one's a subgenre of action games. It
+  focuses on first or third person experience, speed, aiming and reaction time.
+  Usually the weapon is ranged, although close-combat weapons are included in
+  most games.
   
 \end{enumerate}
 
-We will now cover the scope and the most interesting features of each of the
-enummerated games/platforms:
-
+We will now classify the games/platforms based on their characteristics:
 
 \begin{enumerate}
   \item \textbf{Adventure/Investigation Games}
@@ -196,12 +217,12 @@ enummerated games/platforms:
   	  		\item Own This World	  	  		
   		\end{enumerate}
   		
-  \item \textbf{Multiplayer Racing Games}
+  \item \textbf{Racing Games}
   		\begin{enumerate}
   	  		\item Tourality  	  		 	  		  	  		
   		\end{enumerate}
   		
-  \item \textbf{Multiplayer Shooter Games}
+  \item \textbf{Shooter Games}
   		\begin{enumerate}
   	  		\item MobileWar	  		  	  		
   		\end{enumerate}  
@@ -215,12 +236,11 @@ latter clearly falls in the definition of 'Turn Based Strategy' games.
 
 \section{Real Time Strategy Games}
 
-This project proposal is for the research and development of GPS-enabled Real
-Time Strategy games. They are to be augmented reality games for single player
-or multiplayer competitive 'free for all' and 'team versus team' games where
-virtual tools are used for enhancing the gameplay. This category of games offers
-opportunities to also enhance the experience for all the previously existing
-ones.
+This proposal is for the research and development of GPS-enabled Real Time
+Strategy games. They are to be augmented reality games for single player or
+multiplayer competitive 'free for all'/'skirmish' and 'team versus team'
+games. This category of games offers opportunities to also enhance the
+experience for all the previously existing types of GPS-enabled mobile games.
 
 For this project, the proposed games are :
 \begin{enumerate}	
@@ -309,23 +329,31 @@ friends on a sunny weekend afternoon.\newline
 \textbf{Drawbacks}: It highly depends on GPS accuracy. This issue may affect
 gameplay. It also does not feel as 'real' as Airsoft.\newline
 
-\section{Application Frontend}
-The following technologies have been considered for developing the frontend for
-the application : Android, XCode and Multiplatoform APIs. The multiplatform APIs
-offer the benefit of easy implementation for multiple platforms and operating
-systems. The most visible disadvantage is the performance of such systems.
-Because the games proposed are fast-paced, they require quick response times
-from both the interface and the communication protocol. Therefore, the choice of
-native app development makes more sense for this situation.\newline
 
-The client frontend will be developed with Android, due to its accessibility and
-versatility and the fact that it's ubiquitous. The development for iOS-based
-devices is left as an option.
+\section{Requirements}
+
+The two above-mentioned games will use a common framework that will enable
+multiplayer interaction for both 'free for all'/'skirmish' and 'team versus team'
+approaches. They will require a server to centralize player information such as
+GPS data and the virtual 'health' attribute. Because the games proposed are
+fast-paced, they require quick response times from the server, client and and
+the communication protocol between them.
+
+\section{Client}
+The following technologies have been considered for developing the frontend for
+the application : Android, XCode(for Apple iOS) and multiplatoform APIs such as
+PhoneGap/Cordova and Titanium. The multiplatform APIs offer the benefit of
+the 'code once, deploy everywhere' philosophy, at the cost of performance. In
+this case, this approach is disadvantageous. Therefore, the choice of native app
+development makes more sense for this situation.\newline
+
+The client will be developed with Android, due to its accessibility and
+versatility and the fact that it's ubiquitous.\newline
 
 \section{Application Backend}
 The games that are to be implemented will actively rely on communication with a
 centralized server. This implies a constant Internet connection on each mobile
-device. 
+device.
 \subsection{Server technology}
 The server will be written using NodeJS, due to its implementation of the Event
 Loop and therefore it's little consumption of resources and bandwidth.
