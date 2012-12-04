@@ -339,7 +339,7 @@ GPS data and the virtual 'health' attribute. Because the games proposed are
 fast-paced, they require quick response times from the server, client and and
 the communication protocol between them.
 
-\section{Client}
+\subsection{Client}
 The following technologies have been considered for developing the frontend for
 the application : Android, XCode(for Apple iOS) and multiplatoform APIs such as
 PhoneGap/Cordova and Titanium. The multiplatform APIs offer the benefit of
@@ -350,14 +350,17 @@ development makes more sense for this situation.\newline
 The client will be developed with Android, due to its accessibility and
 versatility and the fact that it's ubiquitous.\newline
 
-\section{Application Backend}
+\subsection{Server}
 The games that are to be implemented will actively rely on communication with a
 centralized server. This implies a constant Internet connection on each mobile
-device.
-\subsection{Server technology}
-The server will be written using NodeJS, due to its implementation of the Event
-Loop and therefore it's little consumption of resources and bandwidth.
+device. Also, they require fast, low latency message exchanges. The server
+should be able to handle this for players in the numbers of a few
+dozens.\newline
 
+The server will be written using NodeJS, due to its implementation of
+the Event Loop and therefore it's little consumption of resources and bandwidth.
+As stated on it's website, it is especially created for quick message
+transmission.
 
 \subsection{Communication Protocols}
 During a game, active communication must be performed between the mobile devices
@@ -394,20 +397,31 @@ From these three protocols, the current discussion is between WebSockets and
 RTP. WebRTC is to be left as an option until its official release and
 implementation for both NodeJS and Android.
 
+\subsection{Game Elements}
+
+Both games share a number of common features:
+\begin{enumerate}
+  \item a number of players that are visible on the map
+  \item a number of teams, represented by different colors(in the case of
+  free-for-all play, the number of teams equals the number of players)  
+  \item a number of items that each player can use
+  \item item properties, such as range and cooldown times
+  \item player health
+\end{enumerate} 
+
+The 'War Game' also introduces a number of characters to the game. Each
+character type has a different health value and different tools, with specific
+properties.\newline
+
+The server must provide a 'game lobby', to which the players connect and prepare
+for starting the game. This includes character choice for the 'War Game' and a
+'Ready' button. When all players declare themselves to be 'ready', a countdown
+starts and then the game begins.\newline
 
 \section{Authoring Tool}
-For the purpose of this project, individual authoring for the types of games
-will be attempted. The second iteration will be an attempt to create a universal
-authoring tool for GPS games, from basic Tour Games, to Educational Games, to
-the more complicated Battle Games. The purpose of this attempt is to allow
-authors to creatively combine all the types of games and subgames mentioned here
-in a variety of custom games. The tool should allow the authors to simply drag
-and drop game elements into the game and add them actions and attributes that
-are specific to the elements in all the games presented.\newline
-
-It is to be emphasized that, because this is not a vital feature to the
-development of the concepts of the Battle Games, the development of a universal
-authoring tool is an optional feature.
+As it is not the focus of this project, the Authoring Tool will comprise of the
+most basic elements necessary for setting up the game(such as defining
+obstacles and probably the border of the gameplay area).\newline
 
 \section{Documentation on the Games}
 The lack of documentation on the games themselves and the concepts implemented

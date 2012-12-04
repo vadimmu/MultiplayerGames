@@ -6,10 +6,10 @@
 \contentsline {subsection}{\numberline {2.2}Types of GPS-based games }{3}
 \contentsline {section}{\numberline {3}Real Time Strategy Games}{4}
 \contentsline {section}{\numberline {4}Requirements}{5}
-\contentsline {section}{\numberline {5}Client}{5}
-\contentsline {section}{\numberline {6}Application Backend}{6}
-\contentsline {subsection}{\numberline {6.1}Server technology}{6}
-\contentsline {subsection}{\numberline {6.2}Communication Protocols}{6}
-\contentsline {section}{\numberline {7}Authoring Tool}{6}
-\contentsline {section}{\numberline {8}Documentation on the Games}{6}
-\contentsline {section}{\numberline {9}Application of the Games}{7}
+\contentsline {subsection}{\numberline {4.1}Client}{5}
+\contentsline {subsection}{\numberline {4.2}Server}{6}
+\contentsline {subsection}{\numberline {4.3}Communication Protocols}{6}
+\contentsline {subsection}{\numberline {4.4}Game Elements}{6}
+\contentsline {section}{\numberline {5}Authoring Tool}{7}
+\contentsline {section}{\numberline {6}Documentation on the Games}{7}
+\contentsline {section}{\numberline {7}Application of the Games}{7}
