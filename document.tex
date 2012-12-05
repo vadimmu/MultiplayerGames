@@ -21,7 +21,7 @@
 
     \usepackage[a4paper,vmargin={30mm,30mm},hmargin={20mm,20mm}]{geometry}
 
-\title{Multiplayer Mobile GPS Games \\ Exposé \\
+\title{Location-aware Real Time Strategy Games \\ Expos\'e \\
 Winter Semester 2012}
 % Title
 
@@ -52,10 +52,25 @@ Winter Semester 2012}
 
 \newpage
 
+
 \section{Introduction: Real Time Strategy games}
 
-The proposal of this project is to bring the world-famous genre of Real Time
-Strategy(RTS) games to GPS-Enabled mobile devices.\newline
+Ever since the first operating system for handheld devices, the spreading of
+smartphones has intensifed every year. In 2012, the number of smartphones in
+the world has reached one billion, according to Bloomberg\newline
+
+The rapid expansion of mobile computing presents new challenges and
+opportunities for both the user and the developer. The ease of use and the
+presence of touchscreens, GPS receivers, gyroscopes, accelerometers and, since
+recently, even barometers gives way to new approaches in developing
+games.\newline
+
+In this paper, we will define a number of computer game genres, classify some of
+the most popular location-aware games and game platforms and propoe an
+introduction of a genre that has a long legacy among computer games, but is
+not yet known to the location-aware mobile context. The new genre is that of
+`Real Time Strategy`(RTS) games. We will do that with a subgenre of RTS, called
+Real Time Tactics(RTT).\newline
 
 \subsection{What is Real Time Strategy?}
 
@@ -187,7 +202,7 @@ each type of game:
   
 \end{enumerate}
 
-We will now classify the games/platforms based on their characteristics:
+We will now classify the games/platforms based on the genres they best fall in:
 
 \begin{enumerate}
   \item \textbf{Adventure/Investigation Games}
@@ -368,9 +383,8 @@ and the server in order to multicast all player positions and intentions to all
 players. There are two alternatives to this approach :
 
 \begin{enumerate}
-	\item The game is created on the server, in a so-called `Game Room` which all
-the players join. Once the game starts, communication will be
-peer-to-peer.
+	\item The game is created on the server, in a so-called `Lobby` which all the
+	players join.
 	\item The game is created on the server and once the game starts, all players send
 their positions to the server. The server is then responsible to multicasting
 the positions to all the players. 
@@ -393,9 +407,9 @@ been narrowed down to three:
 	and it is designed for real-time streaming of data.
 \end{enumerate}
 
-From these three protocols, the current discussion is between WebSockets and
-RTP. WebRTC is to be left as an option until its official release and
-implementation for both NodeJS and Android.
+From these three protocols, a choice will be made between WebSockets and RTP.
+WebRTC is to be left as an option until its official release and implementation
+for both NodeJS and Android.
 
 \subsection{Game Elements}
 
@@ -403,7 +417,7 @@ Both games share a number of common features:
 \begin{enumerate}
   \item a number of players that are visible on the map
   \item a number of teams, represented by different colors(in the case of
-  free-for-all play, the number of teams equals the number of players)  
+  free-for-all(skirmish) play, the number of teams equals the number of players)  
   \item a number of items that each player can use
   \item item properties, such as range and cooldown times
   \item player health
@@ -418,10 +432,41 @@ for starting the game. This includes character choice for the 'War Game' and a
 'Ready' button. When all players declare themselves to be 'ready', a countdown
 starts and then the game begins.\newline
 
-\section{Authoring Tool}
-As it is not the focus of this project, the Authoring Tool will comprise of the
-most basic elements necessary for setting up the game(such as defining
-obstacles and probably the border of the gameplay area).\newline
+\section{Implementation}
+
+Implementation will mean developing a server and a client application from
+scratch, covering all the functionality needed for the games to work according
+to the description in section `Real Time Strategy Games`.
+
+\subsection{Schedule}
+This project, consisting of one server and one client application, is to be
+developed in four steps: 
+\begin{enumerate}
+  \item \textbf{Development} - During the first iteration of development, the
+  most basic features of the game are to be implemented: basic server
+  functionality that would allow the game to work, basic client functionality
+  and the 'War Game' without all features.(2 months)
+  \item \textbf{Testing and Evaluation} - During this phase, the game and its
+  functionality will be live-tested for feasibility and quality. New ideas will
+  be sought and documented. Most importantly, player feedback will be
+  gathered.(1 month)
+  \item \textbf{Development} - During the second iteration of development, the
+  'War Game' will be completed and, using its framework, the 'Territory
+  Takeover' game will be implemented. Bugs will be removed and tweaks will be
+  made to the framework and the game concepts to match the player feedback.(2
+  months)
+  \item \textbf{Evaluation and Completion} -  During the second evaluation
+  phase, both games will be tested for playability, player feedback will be
+  gathered and the Dissertation Paper will be completed.(1 month)
+\end{enumerate}
+
+
+\subsection{Authoring Tool}
+As it is not the focus of this project, the Authoring Tool will comprise the
+most basic elements necessary for setting up the game(such as defining obstacles
+and probably the border of the gameplay area). Future work might include
+modifying and/or adding new character attributes, multiple obstacle types and
+probably extending the RTT games to full-fledged RTS.\newline
 
 \section{Documentation on the Games}
 The lack of documentation on the games themselves and the concepts implemented
@@ -429,36 +474,32 @@ has left trying them out one by one as the only option to understand their
 components and functionality. Additional information was retrieved from
 video descriptions and examples of the games. An exception is made by the ARIS
 platform, which comes with documentation about the design process and the games
-proposed, and with open source code available. Unfortunately for this project,
+proposed and with open source code available. Unfortunately for this project,
 ARIS focuses on educational games much more than on multiplayer
 experience.\newline
 
 During the preparation of this proposal paper no games or documentation have
-been found on GPS-enabled Real Time Strategy games. \newline
+been found on GPS-enabled Real Time Strategy games. From the searches performed,
+no location-aware mobile games have been found to fall in the genre of RTS.
+However, one has been found in the genre of `Shooter Games` - MobileWar.\newline 
 
-The Mine Game has been inspired from the presentation video of
-'Warfinger'\newline
-
-Implementations for GPS-enabled, fast-paced multiplayer games for mobile devices
-have not been found and therefore no documentation on them could be generated
-or obtained.\newline 
-
-The purpose of this project is to create a common framework for GPS-enabled Real
-Time Strategy games, using implementations of 'Territory Takeover' and 'The War
-Game' as proof of concept. The 'Navigation Game' and 'Mine Detector' are
-considered optional additions  ('Navigation Game', 'Mine Detector', 'Territory
-Takeover' and 'The War Game') as proof of concept
+The purpose of this project is to create a framework on which the GPS-enabled
+Real Time Strategy games 'Territory Takeover' and 'The War Game' will be
+implemented as proof of concept. This framework is to be extended during future
+work. The names of the games themselves are chosen only by their descriptive
+nature and are prone to change during the steps of development and evaluation.
 
 \section{Application of the Games}
-
 The two games are proposed with group teambuilding and recreation in mind. Both
 games require team strategy and cooperation. Territory Takeover allows for both
 team versus team and free for all gameplay, allowing for both small and large
 groups to play. The War Game is to be a fast paced game spanning a time interval
-in the range of a few tens of minutes. Where it lacks the realism of Airsoft or
-the immersion of classical computer Real Time Strategy games, it gains in the
-real-life experience and teamwork, without requiring specialized
-equipment(Airsoft) or highly developed skills(computer Real Time Strategy games).
+in the range of a few tens of minutes. Although it is a RTS Game and not a
+Shooter Game, the 'War Game' can be seen as a more casual approach to Airsoft.
+Where it lacks the realism of Airsoft or the immersion of classical computer
+Real Time Strategy games, it gains in the intensity of real-life experience and
+teamwork, without requiring specialized equipment(Airsoft) or highly developed
+skills(computer Real Time Strategy games).
 
 
 %----------------------------------------------------------------------------------------

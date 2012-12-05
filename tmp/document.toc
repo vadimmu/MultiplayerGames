@@ -10,6 +10,8 @@
 \contentsline {subsection}{\numberline {4.2}Server}{6}
 \contentsline {subsection}{\numberline {4.3}Communication Protocols}{6}
 \contentsline {subsection}{\numberline {4.4}Game Elements}{6}
-\contentsline {section}{\numberline {5}Authoring Tool}{7}
+\contentsline {section}{\numberline {5}Implementation}{7}
+\contentsline {subsection}{\numberline {5.1}Schedule}{7}
+\contentsline {subsection}{\numberline {5.2}Authoring Tool}{7}
 \contentsline {section}{\numberline {6}Documentation on the Games}{7}
-\contentsline {section}{\numberline {7}Application of the Games}{7}
+\contentsline {section}{\numberline {7}Application of the Games}{8}

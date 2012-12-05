@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  4 DEC 2012 19:20
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  5 DEC 2012 12:26
 entering extended mode
 **document.tex
 (C:\Users\Vadim\workspace\MultiplayerGames\document.tex
@@ -110,7 +110,6 @@ LaTeX Font Info:    ... okay on input line 30.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Missing character: There is no é in font cmr17!
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 32.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -127,139 +126,139 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 57--59
+Underfull \hbox (badness 10000) in paragraph at lines 58--61
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--68
+Underfull \hbox (badness 10000) in paragraph at lines 62--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--72
+Underfull \hbox (badness 10000) in paragraph at lines 68--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--78
+Underfull \hbox (badness 10000) in paragraph at lines 77--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--86
+Underfull \hbox (badness 10000) in paragraph at lines 84--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--97
+Underfull \hbox (badness 10000) in paragraph at lines 88--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--106
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--112
+Underfull \hbox (badness 10000) in paragraph at lines 102--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--119
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--130
+Underfull \hbox (badness 10000) in paragraph at lines 122--127
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 148--154
+Underfull \hbox (badness 10000) in paragraph at lines 128--134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--169
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 251--262
+Underfull \hbox (badness 10000) in paragraph at lines 266--277
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 325--331
+Underfull \hbox (badness 10000) in paragraph at lines 340--346
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--349
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 350--352
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 354--359
+Underfull \hbox (badness 10000) in paragraph at lines 358--364
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 412--415
+Underfull \hbox (badness 10000) in paragraph at lines 365--367
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--420
+Underfull \hbox (badness 10000) in paragraph at lines 369--374
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--425
+Underfull \hbox (badness 10000) in paragraph at lines 426--429
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--434
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 427--435
+Underfull \hbox (badness 10000) in paragraph at lines 465--470
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 436--438
+Underfull \hbox (badness 10000) in paragraph at lines 472--480
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 439--441
+Underfull \hbox (badness 10000) in paragraph at lines 481--485
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 442--445
-
- []
-
-[7] (C:\Users\Vadim\workspace\MultiplayerGames\document.aux) ) 
+[7] [8] (C:\Users\Vadim\workspace\MultiplayerGames\document.aux) ) 
 Here is how much of TeX's memory you used:
- 768 strings out of 494045
- 10863 string characters out of 3145969
- 69635 words of memory out of 3000000
- 4109 multiletter control sequences out of 15000+200000
+ 769 strings out of 494045
+ 10871 string characters out of 3145969
+ 69647 words of memory out of 3000000
+ 4110 multiletter control sequences out of 15000+200000
  8409 words of font info for 30 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 24i,6n,31p,159b,244s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on document.pdf (7 pages, 114432 bytes).
+ 24i,6n,31p,159b,242s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on document.pdf (8 pages, 118375 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
+ 53 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
