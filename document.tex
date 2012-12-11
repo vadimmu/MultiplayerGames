@@ -20,6 +20,8 @@
 \documentclass{article}
 
     \usepackage[a4paper,vmargin={30mm,30mm},hmargin={20mm,20mm}]{geometry}
+		
+
 
 \title{Location-aware Real Time Strategy Games \\ Expos\'e \\
 Winter Semester 2012}
@@ -37,6 +39,8 @@ Winter Semester 2012}
 
 \newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
 \newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+
+
 
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
@@ -56,8 +60,8 @@ Winter Semester 2012}
 \section{Introduction: Real Time Strategy games}
 
 Ever since the first operating system for handheld devices, the spreading of
-smartphones has intensifed every year. In 2012, the number of smartphones in
-the world has reached one billion, according to Bloomberg\newline
+smartphones has intensifed every year.In 2012, the number of smartphones in the world has reached one billion,
+according to Bloomberg\cite{bloomberg} \newline
 
 The rapid expansion of mobile computing presents new challenges and
 opportunities for both the user and the developer. The ease of use and the
@@ -69,8 +73,9 @@ In this paper, we will define a number of computer game genres, classify some of
 the most popular location-aware games and game platforms and propoe an
 introduction of a genre that has a long legacy among computer games, but is
 not yet known to the location-aware mobile context. The new genre is that of
-`Real Time Strategy`(RTS) games. We will do that with a subgenre of RTS, called
-Real Time Tactics(RTT).\newline
+`Real Time Strategy`(RTS)\cite{rts}\cite{rts2}\cite{rts3}\cite{rts4} games. We
+will do that with a subgenre of RTS, called Real Time
+Tactics(RTT)\cite{rtt}\cite{rttvsrts}.\newline
 
 \subsection{What is Real Time Strategy?}
 
@@ -79,36 +84,38 @@ several players fight against each other, either in a skirmish or team versus
 team. The purpose is to defeat the opponents by taking real-time decisions on
 managing resources and troops. The focus is, therefore, on three key elements:
 \textbf{managing resource gathering}, \textbf{building a base to provide troops}
-and \textbf{battle tactics}.\newline
+and \textbf{battle tactics}.\cite{rts}\cite{rts2}\cite{rts3}\cite{rts4}\newline
 
 This project will focus on a subgenre of RTS, Real Time Tactics(RTT) - which,
 instead of managing all three aspects of RTS, focuses on \textbf{battle
 tactics}.\newline
 
-Because it is essentially a simplified approach to RTS, RTT can provide a good
-proof of concept and at the same time simple and enjoyable playability. The
-advantage of having a RTT GPS-enabled game versus RTS is that it greatly reduces
-the play time, requires less skills and has the potential of being less
-stressful than RTS.\newline
+Because it is essentially a simplified approach to RTS\cite{rttvsrts}, RTT can
+provide a good proof of concept and at the same time simple and enjoyable
+playability. The advantage of having a RTT GPS-enabled game versus RTS is that
+it greatly reduces the play time, requires less skills and has the potential of
+being less stressful than RTS.\newline
 
 \subsection{Real Time Strateg versus Turn Based Strategy}
 
-Turn Based Strategy games(such as chess and board games, for example) allow the
-player to take his time and plan every move. Implicitly, the duration of the
-game is greater. This type of game is not in the scope of this project, yet it
-deserves mentioning, as there are many such games for mobile devices. Some
-notable implementations are Scotland Yard, Catan and Mobile Monopoly.\newline
+Turn Based Strategy games\cite{tbs}\cite{rtsvstbs}(such as chess and board
+games, for example) allow the player to take his time and plan every move.
+Implicitly, the duration of the game is greater. This type of game is not in the
+scope of this project, yet it deserves mentioning, as there are many such games
+for mobile devices. Some notable implementations are the ones of Scotland Yard,
+Catan and Monopoly.\newline
 
 In particular, there are two implementations for Scotland Yard upon which a
 comparison has been made on whether it is better to port a board game in a
-real-time(continuous-time) or turn-based mobile GPS-based game. These two
-implementations are Mobilis XHunt(turn based) and MisterX Mobile(real-time).
-The comparison has been made on 10 aspects: Fun, Smooth Progression, Dynamic
-Gameplay, Ease of play, Stressless Gameplay, Communication, Strategy, Clear
-Rules, Low Risk, Education. The conclusion was that there was no favorite
-between the two, but it has been concluded that these 10 aspects have different
-weights for the player and that Fun, Smooth Progression and Dynamic Gameplay
-have a higher individual weight to players than the rest.\newline
+real-time(continuous-time) or turn-based mobile GPS-based game\cite{rttvsrts2}.
+These two implementations are Mobilis XHunt(turn based) and MisterX
+Mobile(real-time). The comparison has been made on 10 aspects: Fun, Smooth
+Progression, Dynamic Gameplay, Ease of play, Stressless Gameplay, Communication,
+Strategy, Clear Rules, Low Risk, Education. The conclusion was that there was no
+favorite between the two, but it has been concluded that these 10 aspects have
+different weights for the player and that Fun, Smooth Progression and Dynamic
+Gameplay have a higher individual weight to players than the
+rest.\cite[p. 5]{rttvsrts2}\newline
 
 Based on the knowledge gathered from the above-mentioned comparison, the aim of
 this project will be to maximize the interactivity and dynamics of the RTS game.
@@ -136,36 +143,42 @@ This paper is a proposal for extending the genre of mobile real-time multiplayer
 location-based games.
 
 \subsection{Location-based games}
-Location-based games take advantage of the mobile devices' built-in receivers
-for global positioning. They provide the user's location with an accuracy
+Location-based games\cite{lbg} take advantage of the mobile devices' built-in
+receivers for global positioning. They provide the user's location with an accuracy
 ranging from a few to a couple dozen meters. Because the most mobile
 devices in the world today rely on the Global Positioning System(only recently
 support for GLONASS has been added to smartphones), we can use the term
 GPS-games.\newline
 
 GPS-games came up long before this feature has become ubiquitous in mobile
-phones and tablets. The first widespread GPS-game is Geocaching. It is composed
-of two parts: 
+phones and tablets. One of the first widespread GPS-games is Geocaching. It is
+composed of two parts: 
 \begin{enumerate}
   \item Placing physical caches at various locations that can be considered
   interesting or worth visiting and publishing their GPS positions (eg. on
   websites).
-  \item Searching for various caches by using a GPS device. 
+  \item Searching for various caches by using a GPS device.
 \end{enumerate}
 
 Along with the evolution of smartphones came that of the mobile games. GPS games
 come in a lot of flavors, from GPS-based tours, adventure and investigation
-games to various race games - single and multi player.
+games to various race games - single and multi player and massively multiplayer
+online games.
 
 
 \subsection{Types of GPS-based games }
 
 There is a number of GPS-enabled games and game authoring tools that are
 available for iOS and Android devices. The ones studied for this paper are :
-ARIS, Tourality, Wherigo, conTAGion, Shadow Cities, SCVNGR, Please
-Stay Calm, Parallel Mafia, Parallel Kingdom, Tripventure, Warfinger, Tidy City,
-Portal Hunt, aMazing, Ingress, MobileWar, Mister X Mobile, Mobilis XHunt, Own
-This World.\newline
+ARIS\cite{aris}, Tourality\cite{tourality}, Wherigo\cite{wherigo},
+conTAGion\cite{contagion}, Shadow Cities\cite{shadowcities},
+SCVNGR\cite{scvngr}, Please Stay Calm\cite{pleasestaycalm}, Parallel Mafia
+\cite{parallelmafia}, Parallel Kingdom\cite{parallelkingdom},
+Tripventure\cite{tripventure}, Warfinger\cite{warfinger}, Totem\cite{totem},
+Portal Hunt\cite{portalhunt}, aMazing\cite{amazing}, Ingress\cite{ingress},
+MobileWar\cite{mobilewar}, Mister X Mobile\cite{misterxmobile}, Mobilis
+XHunt\cite{mobilisxhunt}, Own This World\cite{ownthisworld},
+MapAttack\cite{mapattack}.\newline
 
 For better understanding the classification done below, we will first define
 each type of game:
@@ -176,29 +189,29 @@ each type of game:
   genre is that it is focused on immersion in the story, puzzle solving and
   investigation, rather than on physical skills. Also, the tendency of this
   genre is towards single player experience, though occasionally multiplayer is
-  also implemented (eg. the ARIS-based game 'Mentira').
+  also implemented\cite{adv} (eg. the ARIS-based game 'Mentira').
   
   \item \textbf{Massively Multiplayer Online Game} - This type of game is
   designed to support large numbers of players (even in the number of millions
   in some cases) that play and interact in a persistent virtual world. This type
   of game allows both cooperative and competitive gameplay and is exclusively
-  based on multiplayer. Subgenres include MMO Role Playing Games and MMO
-  Shooters.
+  based on multiplayer.\cite{mmo} Subgenres include MMO Role Playing Games and
+  MMO Shooters.
   
   \item \textbf{Casual Game} - Analogous to the MMO, the Casual Game is targeted
   at mass at a mass audience and can incorporate any type of game type. The
   particularity of this genre is that it aims at having simple rules, simple
-  gameplay and requiring no specialized skills. 
+  gameplay and requiring no specialized skills.\cite{cas} 
   
   \item \textbf{Racing Game} - It's a genre defining a broad range of games. In
   the case of computer games, it describes mostly motorized vehicle racing. In
   the mobile context, it mostly describes racing on foot against time or through
-  a number of checkpoints.
+  a number of checkpoints.\cite{rac}
   
   \item \textbf{Shooter Game} - This one's a subgenre of action games. It
   focuses on first or third person experience, speed, aiming and reaction time.
   Usually the weapon is ranged, although close-combat weapons are included in
-  most games.
+  most games.\cite{sho}
   
 \end{enumerate}
 
@@ -229,9 +242,10 @@ We will now classify the games/platforms based on the genres they best fall in:
   	  		\item SCVNGR
   	  		\item Warfinger  	  		
   	  		\item aMazing 	
-  	  		\item Own This World	  	  		
+  	  		\item Own This World
+  	  		\item MapAttack	  	  		
   		\end{enumerate}
-  		
+  		  		  		
   \item \textbf{Racing Games}
   		\begin{enumerate}
   	  		\item Tourality  	  		 	  		  	  		
@@ -243,11 +257,12 @@ We will now classify the games/platforms based on the genres they best fall in:
   		\end{enumerate}  
 \end{enumerate}
 
-A special category is represented by Mister X Mobile and Mobilis XHunt, which
-both bring a board game (Scotland Yard) to the mobile environment. While the
-former adapts the board game to real-time gameplay(placing it closer to the
-'Multiplayer Racing Games', with elements from 'Real Time Strategy Games'), the
-latter clearly falls in the definition of 'Turn Based Strategy' games.
+A special category is represented by Mister X Mobile\cite{misterxmobile} and Mobilis
+XHunt\cite{mobilisxhunt}, which both bring a board game (Scotland Yard) to the mobile
+environment. While the former adapts the board game to real-time
+gameplay(placing it closer to the 'Multiplayer Racing Games', with elements from
+'Real Time Strategy Games'), the latter falls in the definition of 'Turn Based
+Strategy' games.
 
 \section{Real Time Strategy Games}
 
@@ -337,12 +352,13 @@ four characters has special abilities and characteristics :
 	 
 \end{enumerate}
 
-This game has some advantages and drawbacks, when compared to Airsoft:\newline
+This game has some advantages and drawbacks:\newline
 \textbf{Advantages}: It does not require specialized gear and setting, nor does
 it need long amounts of time to be played. It can be enjoyed with a bunch of
 friends on a sunny weekend afternoon.\newline
 \textbf{Drawbacks}: It highly depends on GPS accuracy. This issue may affect
-gameplay. It also does not feel as 'real' as Airsoft.\newline
+gameplay. It also does not feel as 'real' as real-life games, nor PC
+games.\newline
 
 
 \section{Requirements}
@@ -358,12 +374,13 @@ the communication protocol between them.
 The following technologies have been considered for developing the frontend for
 the application : Android, XCode(for Apple iOS) and multiplatoform APIs such as
 PhoneGap/Cordova and Titanium. The multiplatform APIs offer the benefit of
-the 'code once, deploy everywhere' philosophy, at the cost of performance. In
-this case, this approach is disadvantageous. Therefore, the choice of native app
+the 'code once, deploy everywhere' philosophy, at the cost of
+performance\cite{nativevscrossplatform}\cite{nativevscrossplatform2}. In this
+case, this approach is disadvantageous. Therefore, the choice of native app
 development makes more sense for this situation.\newline
 
 The client will be developed with Android, due to its accessibility and
-versatility and the fact that it's ubiquitous.\newline
+versatility and the fact that it's ubiquitous and open source.\newline
 
 \subsection{Server}
 The games that are to be implemented will actively rely on communication with a
@@ -372,39 +389,47 @@ device. Also, they require fast, low latency message exchanges. The server
 should be able to handle this for players in the numbers of a few
 dozens.\newline
 
-The server will be written using NodeJS, due to its implementation of
-the Event Loop and therefore it's little consumption of resources and bandwidth.
-As stated on it's website, it is especially created for quick message
-transmission.
+The server will be written using NodeJS\cite{nodejs}\cite{nodejs2}. NodeJS is a
+javascript framework based on the Google V8 Engine that is designed for web
+server functionality. Yet, due to the fact that it is a framework and not a
+standalone server, one can take advantage of the 'Event Loop' functionality to
+write various other types of servers. This particular feat is beneficial to the
+purpose of this project. It is also faster than Apache for general purpose, fast
+message exchange scenarios\cite{nodejsvsapache}.
 
 \subsection{Communication Protocols}
 During a game, active communication must be performed between the mobile devices
 and the server in order to multicast all player positions and intentions to all
-players. There are two alternatives to this approach :
+players. There are two aspects to this approach:
 
 \begin{enumerate}
 	\item The game is created on the server, in a so-called `Lobby` which all the
 	players join.
 	\item The game is created on the server and once the game starts, all players send
-their positions to the server. The server is then responsible to multicasting
-the positions to all the players. 
+	their positions to the server. The server is then responsible to multicasting
+	the positions to all the players. 
 \end{enumerate}
 
-In the general idea of communication protocol usage, the list of choices has
-been narrowed down to three:
+This is, of course, a subset of the tasks that must be performed by the server.
+There will be other information that must be exchanged periodically, such as the
+player's health and quantities of various other attributes that will be added
+during development and/or proposed during trying out the game. In the general
+idea of communication protocol usage, the list of choices has been narrowed down
+to three:
 
 \begin{enumerate}
 	\item WebRTC - A protocol that is to be part of the HTML 5 standard. It will be
 	based on the RTP(Reliable Transport Protocol), which is the base for VoIP
 	protocols and is itself based on UDP. It promises to be a very fast standard
 	protocol, appropriate for audio and video streaming and massive multiplayer
-	games. It is still in draft format and there are no official implementations
-	for it. Implementing the protocol itself is outside the scope of this project.
+	games.\cite{webrtc} It is still in draft format and there are no official
+	implementations for it. Implementing the protocol itself is outside the scope
+	of this project.
 	\item WebSockets - A protocol that is part of the HTML 5 standard. It is a low
 	latency TCP-based protocol that promisses to replace http in several types of
-	web applications.
+	web applications.\cite{websockets}
 	\item RTP - The protocol on which VoIP and WebRTC are based. It is based on UDP
-	and it is designed for real-time streaming of data.
+	and it is designed for real-time streaming of data.\cite{rtp}
 \end{enumerate}
 
 From these three protocols, a choice will be made between WebSockets and RTP.
@@ -469,14 +494,19 @@ modifying and/or adding new character attributes, multiple obstacle types and
 probably extending the RTT games to full-fledged RTS.\newline
 
 \section{Documentation on the Games}
-The lack of documentation on the games themselves and the concepts implemented
-has left trying them out one by one as the only option to understand their
-components and functionality. Additional information was retrieved from
-video descriptions and examples of the games. An exception is made by the ARIS
-platform, which comes with documentation about the design process and the games
-proposed and with open source code available. Unfortunately for this project,
-ARIS focuses on educational games much more than on multiplayer
-experience.\newline
+Extensive documentation has been found from research done on education-oriented
+GPS-games.\cite{pbarg1}\cite{pbarg2}\cite{pbarg3}\cite{pbarg4}\cite{pbarg5}\cite{pbarg6},
+describing concepts and approaches in developing platforms and games to this
+end\cite{pbarg3}, porting them to different locations\cite{pbarg4}, comparing
+them and discussing their functionality\cite{pbarg6}\cite{pbarg1}\cite{pbarg2}
+or discussing their effect and usefulness\cite{pbarg1}. Unfortunately for the
+direction of this particular project, this documentation focuses exclusively on
+GPS-enabled Adventure Games.\newline
+
+The lack of documentation for the other games, except their websites has left
+trying them out one by one as the only option to understand their components and
+functionality. Additional information was retrieved from video descriptions,
+examples and reviews of the games.\newline
 
 During the preparation of this proposal paper no games or documentation have
 been found on GPS-enabled Real Time Strategy games. From the searches performed,
@@ -498,25 +528,18 @@ in the range of a few tens of minutes. Although it is a RTS Game and not a
 Shooter Game, the 'War Game' can be seen as a more casual approach to Airsoft.
 Where it lacks the realism of Airsoft or the immersion of classical computer
 Real Time Strategy games, it gains in the intensity of real-life experience and
-teamwork, without requiring specialized equipment(Airsoft) or highly developed
-skills(computer Real Time Strategy games).
+teamwork, without requiring specialized equipment(Airsoft\cite{airsoft}) or
+highly developed skills(computer Real Time Strategy games).
 
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
-\begin{thebibliography}{9}
 
-\bibitem{Smith:2012qr}
-Smith, J.~M. and Jones, A.~B. (2012).
-\newblock {\em Chemistry}.
-\newblock Publisher, City, 7th edition.
-
-\end{thebibliography}
-
-
-
+\section{Bibliography}
+	\bibliographystyle{plain}	
+	\bibliography{bibcontent}
 
 \end{document}
 

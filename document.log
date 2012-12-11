@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  10 DEC 2012 09:47
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  10 DEC 2012 09:48
 entering extended mode
 **document.tex
 (C:\Users\Vadim\workspace\MultiplayerGames\document.tex
@@ -238,8 +238,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 490--495
 
 
 Overfull \hbox (21.98473pt too wide) in paragraph at lines 497--505
-[]\OT1/cmr/m/n/10 Extensive doc-u-men-ta-tion has been found from re-search don
-e on education-oriented GPS-games.[[]][[]][[]][[]][[]][[]],
+\OT1/cmr/m/n/10 Extensive doc-u-men-ta-tion has been found from re-search done 
+on education-oriented GPS-games.[[]][[]][[]][[]][[]][[]],
  []
 
 
@@ -261,436 +261,233 @@ Underfull \hbox (badness 10000) in paragraph at lines 511--515
 ! Undefined control sequence.
 l.5 \newblock \url
                   {http://www.totem-games.org/?q=aMazing}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.9 \newblock \url
                   {http://arisgames.org/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.14   \url
            {http://zgadzaj.com/benchmarking-nodejs-basic-performance-tests-a...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 ! Undefined control sequence.
 l.19   \url
            {http://www.examiner.com/article/the-definition-and-meaning-of-re...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 ! Undefined control sequence.
 l.23 \newblock \url
                    {http://www.2clams.com/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.27 \newblock \url
                    {http://encyclopedia.thefreedictionary.com/adventure+game}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.31 \newblock \url
                    {http://encyclopedia.thefreedictionary.com/airsoft}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.35 \newblock \url
                    {http://encyclopedia.thefreedictionary.com/casual+game}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.39 \newblock \url
                    {http://encyclopedia.thefreedictionary.com/location+based...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 
 Overfull \hbox (74.78763pt too wide) in paragraph at lines 38--40
-[][]\OT1/cmr/m/n/10 Definition - lo-ca-tion based game (location-enabled game).
-  http://encyclopedia.thefreedictionary.com/location+based+game. 
+[]\OT1/cmr/m/n/10 Definition - lo-ca-tion based game (location-enabled game).  
+http://encyclopedia.thefreedictionary.com/location+based+game. 
  []
 
 ! Undefined control sequence.
 l.44   \url
            {http://encyclopedia.thefreedictionary.com/Massively+Multiplayer+...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 
 Overfull \hbox (68.2876pt too wide) in paragraph at lines 42--45
-[][]\OT1/cmr/m/n/10 Definition - mas-sively mul-ti-player on-line game.  http:/
-/encyclopedia.thefreedictionary.com/Massively+Multiplayer+Online. 
+[]\OT1/cmr/m/n/10 Definition - mas-sively mul-ti-player on-line game.  http://e
+ncyclopedia.thefreedictionary.com/Massively+Multiplayer+Online. 
  []
 
 ! Undefined control sequence.
 l.48 \newblock \url
                    {http://encyclopedia.thefreedictionary.com/Racing+game}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.53   \url
            {http://encyclopedia2.thefreedictionary.com/Real-time+strategy+ga...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 
 Underfull \hbox (badness 10000) in paragraph at lines 51--54
-[][]\OT1/cmr/m/n/10 Definition - real time strat-egy game.  http://encyclopedia
-2.thefreedictionary.com/Real-
+[]\OT1/cmr/m/n/10 Definition - real time strat-egy game.  http://encyclopedia2.
+thefreedictionary.com/Real-
  []
 
 [8]
 ! Undefined control sequence.
 l.57 \newblock \url
                    {http://encyclopedia.thefreedictionary.com/Real-time+tact...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 ! Undefined control sequence.
 l.61 \newblock \url
                    {http://encyclopedia.thefreedictionary.com/Shooter+game}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.65 \newblock \url
                    {http://encyclopedia.thefreedictionary.com/Turn+based+str...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 ! Undefined control sequence.
 l.69 \newblock \url
                    {http://www.ingress.com/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.73 \newblock \url
                    {http://mapattack.org/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.77 \newblock \url
                    {http://qeevee.com/projects/misterx}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.81 \newblock \url
                    {http://www.mobilewar.org/index.php/en/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.85 \newblock \url
                    {https://github.com/danielschuster/mobilis/wiki/Mobilis-X...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 ! Undefined control sequence.
 l.90   \url
            {http://awesomegiant.com/blog/native-vs-cross-platform-developmen...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 ! Undefined control sequence.
 l.94 \newblock \url
                    {http://nodejs.org/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 Missing character: There is no ’ in font cmr10!
 ! Undefined control sequence.
 l.99   \url
            {http://www.dacris.com/blog/2011/08/31/node-js-microsofts-web-emp...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 ! Undefined control sequence.
 l.103 \newblock \url
                     {http://www.ownthisworld.com/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.107 \newblock \url
                     {http://www.parallelkingdom.com/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.111 \newblock \url
                     {http://www.parallelmafia.com/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.115 \newblock \url
                     {http://pleasestaycalm.com/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.119 \newblock \url
                     {http://www.totem-games.org/?q=portalhunt}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.124   \url
             {http://mashable.com/2012/02/16/cross-platform-app-design-pros-c...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 ! Undefined control sequence.
 l.129   \url
             {http://www.techopedia.com/definition/1923/real-time-strategy-rts}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 ! Undefined control sequence.
 l.134   \url
             {http://www.spacesector.com/blog/2010/08/real-time-strategy-rts-...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 
 Underfull \hbox (badness 10000) in paragraph at lines 132--135
-[][]\OT1/cmr/m/n/10 Real-time strat-egy (rts) vs turn-based strat-egy (tbs). wh
-o wins?
+[]\OT1/cmr/m/n/10 Real-time strat-egy (rts) vs turn-based strat-egy (tbs). who 
+wins?
  []
 
 ! Undefined control sequence.
 l.138 \newblock \url
                     {http://www.ietf.org/rfc/rfc1889.txt}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.142 \newblock \url
                     {http://vgstrategies.about.com/od/strategyglossary/g/rts...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 ! Undefined control sequence.
 l.146 \newblock \url
                     {http://www.scvngr.com/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.150 \newblock \url
                     {http://www.shadowcities.com/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.154 \newblock \url
                     {http://www.fit.fraunhofer.de/en/fb/cscw/projects/totem....
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 ! Undefined control sequence.
 l.158 \newblock \url
                     {http://www.tourality.com/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.162 \newblock \url
                     {http://www.tripventure.net/tripventure/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.166 \newblock \url
                     {http://www.warfingergps.com/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.170 \newblock \url
                     {http://www.webrtc.org/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.174 \newblock \url
                     {http://www.websocket.org/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 ! Undefined control sequence.
 l.179   \url
             {http://www.examiner.com/article/what-are-real-time-tactics-game...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 
 Underfull \hbox (badness 10000) in paragraph at lines 177--180
-[][]\OT1/cmr/m/n/10 What are real-time tac-tics games? rtt games, def-i-ni-tion
- and mean-ing.
+[]\OT1/cmr/m/n/10 What are real-time tac-tics games? rtt games, def-i-ni-tion a
+nd mean-ing.
  []
 
 ! Undefined control sequence.
 l.183 \newblock \url
                     {http://www.wherigo.com/}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 [9]
 ! Undefined control sequence.
 l.226   \url
             {http://www.bloomberg.com/news/2012-10-17/smartphones-in-use-sur...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 
 Underfull \hbox (badness 5091) in paragraph at lines 222--227
-[][]\OT1/cmr/m/n/10 Jun Yang.  Smart-phones in use sur-pass 1 bil-lion, will do
-u-ble by 2015, Oc-to-ber 2012.
+[]\OT1/cmr/m/n/10 Jun Yang.  Smart-phones in use sur-pass 1 bil-lion, will dou-
+ble by 2015, Oc-to-ber 2012.
  []
 
 
