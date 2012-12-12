@@ -15,4 +15,6 @@
 \contentsline {subsection}{\numberline {5.2}Authoring Tool}{7}
 \contentsline {section}{\numberline {6}Documentation on the Games}{8}
 \contentsline {section}{\numberline {7}Application of the Games}{8}
-\contentsline {section}{\numberline {8}Bibliography}{8}
+\contentsline {section}{\numberline {8}ANNEX A - game and game platform websites}{8}
+\contentsline {section}{\numberline {9}ANNEX B - game genre definitions}{9}
+\contentsline {section}{\numberline {10}Bibliography}{10}

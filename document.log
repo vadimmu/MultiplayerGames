@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  10 DEC 2012 09:48
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  12 DEC 2012 13:10
 entering extended mode
 **document.tex
 (C:\Users\Vadim\workspace\MultiplayerGames\document.tex
@@ -62,7 +62,28 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks15
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-(C:\Users\Vadim\workspace\MultiplayerGames\document.aux)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count90
+)
+(C:\Users\Vadim\workspace\MultiplayerGames\document.aux
+
+! Package natbib Error: Bibliography not compatible with author-year citations.
+
+(natbib)                Press <return> to continue in numerical citation style.
+
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 ...mand\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+? 
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
@@ -136,384 +157,257 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--71
  []
 
 
-Overfull \hbox (15.04474pt too wide) in paragraph at lines 72--79
-\OT1/cmr/m/n/10 Strategy`(RTS)[[]][[]][[]][[]] games. We will do that with a su
-b-genre of RTS, called Real Time Tactics(RTT)[[]][[]]. 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--79
+Underfull \hbox (badness 10000) in paragraph at lines 72--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--88
+Underfull \hbox (badness 10000) in paragraph at lines 81--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--92
+Underfull \hbox (badness 10000) in paragraph at lines 88--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--98
+Underfull \hbox (badness 10000) in paragraph at lines 92--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--107
+Underfull \hbox (badness 10000) in paragraph at lines 100--106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--119
+Underfull \hbox (badness 10000) in paragraph at lines 107--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--128
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--134
+Underfull \hbox (badness 10000) in paragraph at lines 128--133
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 135--141
+Underfull \hbox (badness 10000) in paragraph at lines 134--140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--152
+Underfull \hbox (badness 10000) in paragraph at lines 145--150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--182
+Underfull \hbox (badness 10000) in paragraph at lines 169--175
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 281--292
+Underfull \hbox (badness 10000) in paragraph at lines 273--284
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 355--362
+Underfull \hbox (badness 10000) in paragraph at lines 347--354
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 374--381
+Underfull \hbox (badness 10000) in paragraph at lines 366--374
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--384
+Underfull \hbox (badness 10000) in paragraph at lines 375--377
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--391
+Underfull \hbox (badness 10000) in paragraph at lines 379--384
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 451--454
+Underfull \hbox (badness 10000) in paragraph at lines 444--447
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--459
+Underfull \hbox (badness 10000) in paragraph at lines 448--452
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--495
+Underfull \hbox (badness 10000) in paragraph at lines 483--488
 
  []
 
 
-Overfull \hbox (21.98473pt too wide) in paragraph at lines 497--505
+Overfull \hbox (35.3181pt too wide) in paragraph at lines 490--498
 \OT1/cmr/m/n/10 Extensive doc-u-men-ta-tion has been found from re-search done 
-on education-oriented GPS-games.[[]][[]][[]][[]][[]][[]],
+on education-oriented GPS-games.([])([])([])([])([])([]),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--505
+Underfull \hbox (badness 10000) in paragraph at lines 490--498
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 506--510
+Underfull \hbox (badness 10000) in paragraph at lines 499--503
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--515
+Underfull \hbox (badness 10000) in paragraph at lines 504--508
 
  []
 
-(C:\Users\Vadim\workspace\MultiplayerGames\document.bbl
-! Undefined control sequence.
-l.5 \newblock \url
-                  {http://www.totem-games.org/?q=aMazing}.
-? 
-! Undefined control sequence.
-l.9 \newblock \url
-                  {http://arisgames.org/}.
-? 
-! Undefined control sequence.
-l.14   \url
-           {http://zgadzaj.com/benchmarking-nodejs-basic-performance-tests-a...
 
-? 
-! Undefined control sequence.
-l.19   \url
-           {http://www.examiner.com/article/the-definition-and-meaning-of-re...
+Underfull \hbox (badness 10000) in paragraph at lines 537--538
 
-? 
-! Undefined control sequence.
-l.23 \newblock \url
-                   {http://www.2clams.com/}.
-? 
-! Undefined control sequence.
-l.27 \newblock \url
-                   {http://encyclopedia.thefreedictionary.com/adventure+game}.
-? 
-! Undefined control sequence.
-l.31 \newblock \url
-                   {http://encyclopedia.thefreedictionary.com/airsoft}.
-? 
-! Undefined control sequence.
-l.35 \newblock \url
-                   {http://encyclopedia.thefreedictionary.com/casual+game}.
-? 
-! Undefined control sequence.
-l.39 \newblock \url
-                   {http://encyclopedia.thefreedictionary.com/location+based...
-
-? 
-
-Overfull \hbox (74.78763pt too wide) in paragraph at lines 38--40
-[]\OT1/cmr/m/n/10 Definition - lo-ca-tion based game (location-enabled game).  
-http://encyclopedia.thefreedictionary.com/location+based+game. 
  []
 
-! Undefined control sequence.
-l.44   \url
-           {http://encyclopedia.thefreedictionary.com/Massively+Multiplayer+...
 
-? 
+Underfull \hbox (badness 10000) in paragraph at lines 539--540
 
-Overfull \hbox (68.2876pt too wide) in paragraph at lines 42--45
-[]\OT1/cmr/m/n/10 Definition - mas-sively mul-ti-player on-line game.  http://e
-ncyclopedia.thefreedictionary.com/Massively+Multiplayer+Online. 
  []
 
-! Undefined control sequence.
-l.48 \newblock \url
-                   {http://encyclopedia.thefreedictionary.com/Racing+game}.
-? 
-! Undefined control sequence.
-l.53   \url
-           {http://encyclopedia2.thefreedictionary.com/Real-time+strategy+ga...
 
-? 
+Underfull \hbox (badness 10000) in paragraph at lines 541--542
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--54
-[]\OT1/cmr/m/n/10 Definition - real time strat-egy game.  http://encyclopedia2.
-thefreedictionary.com/Real-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--544
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 545--546
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 547--548
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--550
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 551--552
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 553--554
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--556
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 557--558
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 559--561
+
  []
 
 [8]
-! Undefined control sequence.
-l.57 \newblock \url
-                   {http://encyclopedia.thefreedictionary.com/Real-time+tact...
+Underfull \hbox (badness 10000) in paragraph at lines 562--563
 
-? 
-! Undefined control sequence.
-l.61 \newblock \url
-                   {http://encyclopedia.thefreedictionary.com/Shooter+game}.
-? 
-! Undefined control sequence.
-l.65 \newblock \url
-                   {http://encyclopedia.thefreedictionary.com/Turn+based+str...
-
-? 
-! Undefined control sequence.
-l.69 \newblock \url
-                   {http://www.ingress.com/}.
-? 
-! Undefined control sequence.
-l.73 \newblock \url
-                   {http://mapattack.org/}.
-? 
-! Undefined control sequence.
-l.77 \newblock \url
-                   {http://qeevee.com/projects/misterx}.
-? 
-! Undefined control sequence.
-l.81 \newblock \url
-                   {http://www.mobilewar.org/index.php/en/}.
-? 
-! Undefined control sequence.
-l.85 \newblock \url
-                   {https://github.com/danielschuster/mobilis/wiki/Mobilis-X...
-
-? 
-! Undefined control sequence.
-l.90   \url
-           {http://awesomegiant.com/blog/native-vs-cross-platform-developmen...
-
-? 
-! Undefined control sequence.
-l.94 \newblock \url
-                   {http://nodejs.org/}.
-? 
-Missing character: There is no ’ in font cmr10!
-! Undefined control sequence.
-l.99   \url
-           {http://www.dacris.com/blog/2011/08/31/node-js-microsofts-web-emp...
-
-? 
-! Undefined control sequence.
-l.103 \newblock \url
-                    {http://www.ownthisworld.com/}.
-? 
-! Undefined control sequence.
-l.107 \newblock \url
-                    {http://www.parallelkingdom.com/}.
-? 
-! Undefined control sequence.
-l.111 \newblock \url
-                    {http://www.parallelmafia.com/}.
-? 
-! Undefined control sequence.
-l.115 \newblock \url
-                    {http://pleasestaycalm.com/}.
-? 
-! Undefined control sequence.
-l.119 \newblock \url
-                    {http://www.totem-games.org/?q=portalhunt}.
-? 
-! Undefined control sequence.
-l.124   \url
-            {http://mashable.com/2012/02/16/cross-platform-app-design-pros-c...
-
-? 
-! Undefined control sequence.
-l.129   \url
-            {http://www.techopedia.com/definition/1923/real-time-strategy-rts}.
-
-? 
-! Undefined control sequence.
-l.134   \url
-            {http://www.spacesector.com/blog/2010/08/real-time-strategy-rts-...
-
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 132--135
-[]\OT1/cmr/m/n/10 Real-time strat-egy (rts) vs turn-based strat-egy (tbs). who 
-wins?
  []
 
-! Undefined control sequence.
-l.138 \newblock \url
-                    {http://www.ietf.org/rfc/rfc1889.txt}.
-? 
-! Undefined control sequence.
-l.142 \newblock \url
-                    {http://vgstrategies.about.com/od/strategyglossary/g/rts...
 
-? 
-! Undefined control sequence.
-l.146 \newblock \url
-                    {http://www.scvngr.com/}.
-? 
-! Undefined control sequence.
-l.150 \newblock \url
-                    {http://www.shadowcities.com/}.
-? 
-! Undefined control sequence.
-l.154 \newblock \url
-                    {http://www.fit.fraunhofer.de/en/fb/cscw/projects/totem....
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
 
-? 
-! Undefined control sequence.
-l.158 \newblock \url
-                    {http://www.tourality.com/}.
-? 
-! Undefined control sequence.
-l.162 \newblock \url
-                    {http://www.tripventure.net/tripventure/}.
-? 
-! Undefined control sequence.
-l.166 \newblock \url
-                    {http://www.warfingergps.com/}.
-? 
-! Undefined control sequence.
-l.170 \newblock \url
-                    {http://www.webrtc.org/}.
-? 
-! Undefined control sequence.
-l.174 \newblock \url
-                    {http://www.websocket.org/}.
-? 
-! Undefined control sequence.
-l.179   \url
-            {http://www.examiner.com/article/what-are-real-time-tactics-game...
-
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--180
-[]\OT1/cmr/m/n/10 What are real-time tac-tics games? rtt games, def-i-ni-tion a
-nd mean-ing.
  []
 
-! Undefined control sequence.
-l.183 \newblock \url
-                    {http://www.wherigo.com/}.
-? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 566--567
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 568--569
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 570--571
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--574
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--576
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 577--578
+
+ []
+
+
+Overfull \hbox (22.34038pt too wide) in paragraph at lines 605--607
+[]\OT1/cmr/bx/n/10 Massively Mul-ti-player On-line Game \OT1/cmr/m/n/10 http://
+encyclopedia.thefreedictionary.com/Massively+Multiplayer+Online 
+ []
+
 [9]
-! Undefined control sequence.
-l.226   \url
-            {http://www.bloomberg.com/news/2012-10-17/smartphones-in-use-sur...
-
-? 
-
-Underfull \hbox (badness 5091) in paragraph at lines 222--227
-[]\OT1/cmr/m/n/10 Jun Yang.  Smart-phones in use sur-pass 1 bil-lion, will dou-
-ble by 2015, Oc-to-ber 2012.
+Overfull \hbox (37.41493pt too wide) in paragraph at lines 667--669
+[]\OT1/cmr/bx/n/10 Location Based Game (Location-enabled Game \OT1/cmr/m/n/10 h
+ttp://encyclopedia.thefreedictionary.com/location+based+game 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 222--227
-\OT1/cmr/m/n/10 http://www.bloomberg.com/news/2012-10-17/smartphones-in-use-sur
-pass-1-billion-will-double-by-
- []
-
-) [10] (C:\Users\Vadim\workspace\MultiplayerGames\document.aux) ) 
+(C:\Users\Vadim\workspace\MultiplayerGames\document.bbl
+Missing character: There is no ’ in font cmbx10!
+ [10]
+Missing character: There is no – in font cmbx10!
+) [11]
+(C:\Users\Vadim\workspace\MultiplayerGames\document.aux) ) 
 Here is how much of TeX's memory you used:
- 825 strings out of 494045
- 11489 string characters out of 3145969
- 70839 words of memory out of 3000000
- 4164 multiletter control sequences out of 15000+200000
- 8063 words of font info for 29 fonts, out of 3000000 for 9000
+ 1174 strings out of 494045
+ 16063 string characters out of 3145969
+ 76899 words of memory out of 3000000
+ 4508 multiletter control sequences out of 15000+200000
+ 8409 words of font info for 30 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 24i,6n,31p,159b,232s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on document.pdf (10 pages, 113397 bytes).
+ 24i,6n,31p,159b,263s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on document.pdf (11 pages, 135599 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
+ 62 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

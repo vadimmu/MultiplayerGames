@@ -20,7 +20,7 @@
 \documentclass{article}
 
     \usepackage[a4paper,vmargin={30mm,30mm},hmargin={20mm,20mm}]{geometry}
-		
+	\usepackage{natbib}		
 
 
 \title{Location-aware Real Time Strategy Games \\ Expos\'e \\
@@ -60,8 +60,8 @@ Winter Semester 2012}
 \section{Introduction: Real Time Strategy games}
 
 Ever since the first operating system for handheld devices, the spreading of
-smartphones has intensifed every year.In 2012, the number of smartphones in the world has reached one billion,
-according to Bloomberg\cite{bloomberg} \newline
+smartphones has intensifed every year.In 2012, the number of smartphones in the
+world has reached one billion, according to Bloomberg\cite{bloomberg} \newline
 
 The rapid expansion of mobile computing presents new challenges and
 opportunities for both the user and the developer. The ease of use and the
@@ -73,9 +73,8 @@ In this paper, we will define a number of computer game genres, classify some of
 the most popular location-aware games and game platforms and propoe an
 introduction of a genre that has a long legacy among computer games, but is
 not yet known to the location-aware mobile context. The new genre is that of
-`Real Time Strategy`(RTS)\cite{rts}\cite{rts2}\cite{rts3}\cite{rts4} games. We
-will do that with a subgenre of RTS, called Real Time
-Tactics(RTT)\cite{rtt}\cite{rttvsrts}.\newline
+`Real Time Strategy`(RTS)\cite{rts} games. We will do that with a subgenre of
+RTS, called Real Time Tactics(RTT)\cite{rttvsrts}.\newline
 
 \subsection{What is Real Time Strategy?}
 
@@ -84,7 +83,7 @@ several players fight against each other, either in a skirmish or team versus
 team. The purpose is to defeat the opponents by taking real-time decisions on
 managing resources and troops. The focus is, therefore, on three key elements:
 \textbf{managing resource gathering}, \textbf{building a base to provide troops}
-and \textbf{battle tactics}.\cite{rts}\cite{rts2}\cite{rts3}\cite{rts4}\newline
+and \textbf{battle tactics}.\cite{rts}\newline
 
 This project will focus on a subgenre of RTS, Real Time Tactics(RTT) - which,
 instead of managing all three aspects of RTS, focuses on \textbf{battle
@@ -98,12 +97,12 @@ being less stressful than RTS.\newline
 
 \subsection{Real Time Strateg versus Turn Based Strategy}
 
-Turn Based Strategy games\cite{tbs}\cite{rtsvstbs}(such as chess and board
+Turn Based Strategy games\cite{rtsvstbs}(such as chess and board
 games, for example) allow the player to take his time and plan every move.
 Implicitly, the duration of the game is greater. This type of game is not in the
 scope of this project, yet it deserves mentioning, as there are many such games
-for mobile devices. Some notable implementations are the ones of Scotland Yard,
-Catan and Monopoly.\newline
+for mobile devices. Some notable implementations are the ones of Scotland
+Yard(Ravensburger GMBH), Catan(Catan GMBH) and Monopoly(Hasbro, Inc.).\newline
 
 In particular, there are two implementations for Scotland Yard upon which a
 comparison has been made on whether it is better to port a board game in a
@@ -143,12 +142,11 @@ This paper is a proposal for extending the genre of mobile real-time multiplayer
 location-based games.
 
 \subsection{Location-based games}
-Location-based games\cite{lbg} take advantage of the mobile devices' built-in
-receivers for global positioning. They provide the user's location with an accuracy
-ranging from a few to a couple dozen meters. Because the most mobile
-devices in the world today rely on the Global Positioning System(only recently
-support for GLONASS has been added to smartphones), we can use the term
-GPS-games.\newline
+Location-based games take advantage of the mobile devices' built-in receivers
+for global positioning. They provide the user's location with an accuracy
+ranging from a few to a couple dozen meters. Because the most mobile devices in
+the world today rely on the Global Positioning System(only recently support for
+GLONASS has been added to smartphones), we can use the term GPS-games.\newline
 
 GPS-games came up long before this feature has become ubiquitous in mobile
 phones and tablets. One of the first widespread GPS-games is Geocaching. It is
@@ -170,15 +168,10 @@ online games.
 
 There is a number of GPS-enabled games and game authoring tools that are
 available for iOS and Android devices. The ones studied for this paper are :
-ARIS\cite{aris}, Tourality\cite{tourality}, Wherigo\cite{wherigo},
-conTAGion\cite{contagion}, Shadow Cities\cite{shadowcities},
-SCVNGR\cite{scvngr}, Please Stay Calm\cite{pleasestaycalm}, Parallel Mafia
-\cite{parallelmafia}, Parallel Kingdom\cite{parallelkingdom},
-Tripventure\cite{tripventure}, Warfinger\cite{warfinger}, Totem\cite{totem},
-Portal Hunt\cite{portalhunt}, aMazing\cite{amazing}, Ingress\cite{ingress},
-MobileWar\cite{mobilewar}, Mister X Mobile\cite{misterxmobile}, Mobilis
-XHunt\cite{mobilisxhunt}, Own This World\cite{ownthisworld},
-MapAttack\cite{mapattack}.\newline
+ARIS, Tourality, Wherigo, conTAGion, Shadow Cities, SCVNGR, Please Stay Calm,
+Parallel Mafia, Parallel Kingdom, Tripventure, Warfinger, Totem, Portal Hunt,
+aMazing, Ingress, MobileWar, Mister X Mobile, Mobilis XHunt, Own This World,
+MapAttack.\newline
 
 For better understanding the classification done below, we will first define
 each type of game:
@@ -189,29 +182,29 @@ each type of game:
   genre is that it is focused on immersion in the story, puzzle solving and
   investigation, rather than on physical skills. Also, the tendency of this
   genre is towards single player experience, though occasionally multiplayer is
-  also implemented\cite{adv} (eg. the ARIS-based game 'Mentira').
+  also implemented (eg. the ARIS-based game 'Mentira').
   
   \item \textbf{Massively Multiplayer Online Game} - This type of game is
   designed to support large numbers of players (even in the number of millions
   in some cases) that play and interact in a persistent virtual world. This type
   of game allows both cooperative and competitive gameplay and is exclusively
-  based on multiplayer.\cite{mmo} Subgenres include MMO Role Playing Games and
+  based on multiplayer. Subgenres include MMO Role Playing Games and
   MMO Shooters.
   
   \item \textbf{Casual Game} - Analogous to the MMO, the Casual Game is targeted
   at mass at a mass audience and can incorporate any type of game type. The
   particularity of this genre is that it aims at having simple rules, simple
-  gameplay and requiring no specialized skills.\cite{cas} 
+  gameplay and requiring no specialized skills. 
   
   \item \textbf{Racing Game} - It's a genre defining a broad range of games. In
   the case of computer games, it describes mostly motorized vehicle racing. In
   the mobile context, it mostly describes racing on foot against time or through
-  a number of checkpoints.\cite{rac}
+  a number of checkpoints.
   
   \item \textbf{Shooter Game} - This one's a subgenre of action games. It
   focuses on first or third person experience, speed, aiming and reaction time.
   Usually the weapon is ranged, although close-combat weapons are included in
-  most games.\cite{sho}
+  most games.
   
 \end{enumerate}
 
@@ -257,12 +250,11 @@ We will now classify the games/platforms based on the genres they best fall in:
   		\end{enumerate}  
 \end{enumerate}
 
-A special category is represented by Mister X Mobile\cite{misterxmobile} and Mobilis
-XHunt\cite{mobilisxhunt}, which both bring a board game (Scotland Yard) to the mobile
-environment. While the former adapts the board game to real-time
-gameplay(placing it closer to the 'Multiplayer Racing Games', with elements from
-'Real Time Strategy Games'), the latter falls in the definition of 'Turn Based
-Strategy' games.
+A special category is represented by Mister X Mobile and Mobilis XHunt, which
+both bring a board game (Scotland Yard) to the mobile environment. While the
+former adapts the board game to real-time gameplay(placing it closer to the
+'Multiplayer Racing Games', with elements from 'Real Time Strategy Games'), the
+latter falls in the definition of 'Turn Based Strategy' games.
 
 \section{Real Time Strategy Games}
 
@@ -375,9 +367,10 @@ The following technologies have been considered for developing the frontend for
 the application : Android, XCode(for Apple iOS) and multiplatoform APIs such as
 PhoneGap/Cordova and Titanium. The multiplatform APIs offer the benefit of
 the 'code once, deploy everywhere' philosophy, at the cost of
-performance\cite{nativevscrossplatform}\cite{nativevscrossplatform2}. In this
-case, this approach is disadvantageous. Therefore, the choice of native app
-development makes more sense for this situation.\newline
+performance\cite{nativevscrossplatform}\cite{nativevscrossplatform2}\cite{nativevscrossplatform3}.
+In this case, the approach of using a platform-agnostic framework is
+disadvantageous. Therefore, the choice of native app development makes more
+sense for this situation.\newline
 
 The client will be developed with Android, due to its accessibility and
 versatility and the fact that it's ubiquitous and open source.\newline
@@ -389,11 +382,11 @@ device. Also, they require fast, low latency message exchanges. The server
 should be able to handle this for players in the numbers of a few
 dozens.\newline
 
-The server will be written using NodeJS\cite{nodejs}\cite{nodejs2}. NodeJS is a
-javascript framework based on the Google V8 Engine that is designed for web
-server functionality. Yet, due to the fact that it is a framework and not a
-standalone server, one can take advantage of the 'Event Loop' functionality to
-write various other types of servers. This particular feat is beneficial to the
+The server will be written using NodeJS\cite{nodejs}. NodeJS is a javascript
+framework based on the Google V8 Engine that is designed for web server
+functionality. Yet, due to the fact that it is a framework and not a standalone
+server, one can take advantage of the 'Event Loop' functionality to write
+various other types of servers. This particular feat is beneficial to the
 purpose of this project. It is also faster than Apache for general purpose, fast
 message exchange scenarios\cite{nodejsvsapache}.
 
@@ -511,7 +504,7 @@ examples and reviews of the games.\newline
 During the preparation of this proposal paper no games or documentation have
 been found on GPS-enabled Real Time Strategy games. From the searches performed,
 no location-aware mobile games have been found to fall in the genre of RTS.
-However, one has been found in the genre of `Shooter Games` - MobileWar.\newline 
+However, one has been found in the genre of `Shooter Games` - MobileWar.\newline
 
 The purpose of this project is to create a framework on which the GPS-enabled
 Real Time Strategy games 'Territory Takeover' and 'The War Game' will be
@@ -528,9 +521,159 @@ in the range of a few tens of minutes. Although it is a RTS Game and not a
 Shooter Game, the 'War Game' can be seen as a more casual approach to Airsoft.
 Where it lacks the realism of Airsoft or the immersion of classical computer
 Real Time Strategy games, it gains in the intensity of real-life experience and
-teamwork, without requiring specialized equipment(Airsoft\cite{airsoft}) or
-highly developed skills(computer Real Time Strategy games).
+teamwork, without requiring specialized equipment(Airsoft) or highly developed
+skills(computer Real Time Strategy games).
 
+
+\section{ANNEX A - game and game platform websites}
+
+
+
+\nocite{teamtags}
+\nocite{gps1}
+
+
+
+\textbf{ARIS Games}: http://arisgames.org/ \newline
+
+\textbf{Tourality} - http://www.tourality.com/ \newline
+
+\textbf{Wherigo} - http://www.wherigo.com/ \newline
+
+\textbf{conTAGion} - http://www.2clams.com/ \newline
+
+\textbf{Shadow Cities} - http://www.shadowcities.com/ \newline
+
+\textbf{SCVNGR} - http://www.scvngr.com/ \newline
+
+\textbf{Please Stay Calm} - http://pleasestaycalm.com/ \newline
+
+\textbf{Parallel Mafia} - http://www.parallelmafia.com/ \newline
+
+\textbf{Parallel Kingdom} - http://www.parallelkingdom.com/ \newline
+
+\textbf{Tripventure} - http://www.tripventure.net/tripventure/ \newline
+
+\textbf{Warfinger GPS} - http://www.warfingergps.com/ \newline
+
+\textbf{Totem} - http://www.fit.fraunhofer.de/en/fb/cscw/projects/totem.html
+\newline
+
+\textbf{Portal Hunt} - http://www.totem-games.org/?q=portalhunt \newline
+
+\textbf{aMazing} - http://www.totem-games.org/?q=aMazing \newline
+
+\textbf{Ingress} - http://www.ingress.com/ \newline
+
+\textbf{Mobile War} - http://www.mobilewar.org/index.php/en/ \newline
+
+\textbf{Mister X Mobile} - http://qeevee.com/projects/misterx \newline
+
+\textbf{Mobilis XHunt} - https://github.com/danielschuster/mobilis/wiki/Mobilis-XHunt
+\newline
+
+\textbf{Own This World} - http://www.ownthisworld.com/ \newline
+
+\textbf{MapAttack} - http://mapattack.org/ \newline
+
+
+
+\section{ANNEX B - game genre definitions}
+
+% Definitions - Game Genres %
+
+\textbf{Real Time Strategy Game}		
+http://encyclopedia2.thefreedictionary.com/Real-time+strategy+game
+\begin{quote}
+A type of video game in which players exercise strategy along the way, typically
+to conquer enemies and reach a final destination without being eradicated. For
+example, to win, players decide which routes to take, what needs to be done and
+how to do it.
+\end{quote}
+
+\textbf{Real Time Tactics Game}
+	http://encyclopedia.thefreedictionary.com/Real-time+tactics
+\begin{quote}
+Real-time tactics or RTT is a subgenre of tactical wargames played in real-time
+simulating the considerations and circumstances of operational warfare and
+military tactics. It is differentiated from real-time strategy gameplay by the
+lack of resource micromanagement and base or unit building, as well as the
+greater importance of individual units and a focus on complex battlefield
+tactics.
+\end{quote}
+
+\textbf{Massively Multiplayer Online Game}		
+	http://encyclopedia.thefreedictionary.com/Massively+Multiplayer+Online
+\begin{quote}
+A massively multiplayer online game (also called MMO) is a multiplayer video
+game which is capable of supporting hundreds or thousands of players
+simultaneously. By necessity, they are played on the Internet, and feature at
+least one persistent world.
+\end{quote}
+	
+\textbf{Adventure Game}		
+	http://encyclopedia.thefreedictionary.com/adventure+game
+\begin{quote}
+An adventure game is a computer-based game in which the player assumes the role
+of protagonist in an interactive story driven by exploration and puzzle-solving
+instead of physical challenge.[1] The genre's focus on story allows it to draw
+heavily from other narrative-based media such as literature and film,
+encompassing a wide variety of literary genres. Nearly all adventure games are
+designed for a single player, since this emphasis on story and character makes
+multi-player design difficult.
+\end{quote}
+
+\textbf{Casual Game}		
+	http://encyclopedia.thefreedictionary.com/casual+game
+\begin{quote}
+A casual game is a video game or online game targeted at or used by a mass
+audience of casual gamers. Casual games can have any type of gameplay, and fit
+in any genre. They are typically distinguished by their simple rules and lack of
+commitment required in contrast to more complex hardcore games.[1] They require
+no long-term time commitment or special skills to play[\ldots]
+\end{quote}
+
+\textbf{Racing Game}
+	http://encyclopedia.thefreedictionary.com/Racing+game
+\begin{quote}
+One of the more common uses of the term racing game is to describe a genre of
+computer and video games. Racing games are either in the first or third person
+perspective. They may be based on anything from real-world racing leagues to
+entirely fantastical settings, and feature any type of land, air, or sea
+vehicles. In general, they can be distributed along a spectrum anywhere between
+hardcore simulations, and simpler arcade racing games.
+\end{quote}
+\textbf{Shooter Game}
+	http://encyclopedia.thefreedictionary.com/Shooter+game
+\begin{quote}
+Shooter games are a subgenre of action game, which often test the player's speed
+and reaction time. Because shooters make up the majority of action games, it is
+a fairly wide subgenre. It includes many subgenres that have the commonality of
+focusing "on the actions of the avatar using some sort of weapon. Usually this
+weapon is a gun, or some other long-range weapon".A common resource found in
+many shooter games is ammunition. Most commonly, the purpose of a shooter
+game is to shoot opponents and proceed through missions without dying yourself.
+\end{quote}
+	
+\textbf{Turn Based Strategy Game}
+	http://encyclopedia.thefreedictionary.com/Turn+based+strategy
+\begin{quote}
+A turn-based strategy (TBS) game is a strategy game (usually some type of
+wargame, especially a strategic-level wargame) where players take turns when
+playing. This is distinguished from real time strategy where all players play
+simultaneously.
+\end{quote}
+
+\textbf{Location Based Game (Location-enabled Game}
+	http://encyclopedia.thefreedictionary.com/location+based+game
+\begin{quote}
+A location-based game (or location-enabled game) is one in which the game play
+somehow evolves and progresses via a player's location. Thus, location-based
+games almost always support some kind of localization technology, for example by
+using satellite positioning like GPS. "Urban gaming" or "Street Games" are
+typically multi-player location-based games played out on city streets and built
+up urban environments.
+\end{quote}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
@@ -538,7 +681,7 @@ highly developed skills(computer Real Time Strategy games).
 
 
 \section{Bibliography}
-	\bibliographystyle{plain}	
+	\bibliographystyle{ieeetr}	
 	\bibliography{bibcontent}
 
 \end{document}
