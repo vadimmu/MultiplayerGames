@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  12 DEC 2012 13:08
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  9 JAN 2013 07:39
 entering extended mode
 **document.tex
 (C:\Users\Vadim\workspace\MultiplayerGames\document.tex
@@ -80,7 +80,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.77 ...mand\NAT@force@numbers{}\NAT@force@numbers
+l.75 ...mand\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -238,10 +238,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 379--384
 
  []
 
-
-Package natbib Warning: Citation `nodejs2' on page 6 undefined on input line 38
-5.
-
 [6]
 Underfull \hbox (badness 10000) in paragraph at lines 444--447
 
@@ -277,10 +273,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 499--503
 Underfull \hbox (badness 10000) in paragraph at lines 504--508
 
  []
-
-
-Package natbib Warning: Citation `airsoft' on page 8 undefined on input line 52
-4.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 537--538
@@ -396,31 +388,60 @@ Overfull \hbox (37.41493pt too wide) in paragraph at lines 667--669
 
 (C:\Users\Vadim\workspace\MultiplayerGames\document.bbl
 Missing character: There is no ’ in font cmbx10!
- [10]
+
+! Undefined control sequence.
+l.40   \url
+           {http://www.dacris.com/blog/2011/08/31/node-js-microsofts-web-emp...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 2932) in paragraph at lines 38--42
+[][]\OT1/cmr/m/n/10 D. Soft-ware(dacris.com), ``\OT1/cmr/bx/n/10 Node.js: Mi-cr
+osofts Web Em-pire is Com-ing to an End\OT1/cmr/m/n/10 .''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--42
+\OT1/cmr/m/n/10 http://www.dacris.com/blog/2011/08/31/node-js-microsofts-web-em
+pire-is-coming-to-an-end/, Au-gust
+ []
+
+! Undefined control sequence.
+l.46   \url
+           {http://zgadzaj.com/benchmarking-nodejs-basic-performance-tests-a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[10]
 Missing character: There is no – in font cmbx10!
-)
-
-Package natbib Warning: There were undefined citations.
-
-[11] (C:\Users\Vadim\workspace\MultiplayerGames\document.aux) ) 
+Missing character: There is no ’ in font cmr10!
+) [11] (C:\Users\Vadim\workspace\MultiplayerGames\document.aux) ) 
 Here is how much of TeX's memory you used:
- 1176 strings out of 494045
- 16081 string characters out of 3145969
+ 1177 strings out of 494045
+ 16095 string characters out of 3145969
  76899 words of memory out of 3000000
  4510 multiletter control sequences out of 15000+200000
- 8409 words of font info for 30 fonts, out of 3000000 for 9000
+ 8768 words of font info for 31 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 24i,6n,31p,159b,263s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on document.pdf (11 pages, 135665 bytes).
+ 24i,6n,31p,159b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on document.pdf (11 pages, 154962 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
+ 66 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

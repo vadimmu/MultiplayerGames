@@ -1,6 +1,5 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: document.aux
 The style file: ieeetr.bst
 Database file #1: bibcontent.bib
-Warning--I didn't find a database entry for "nodejs2"
-Warning--I didn't find a database entry for "airsoft"
-(There were 2 warnings)
+Warning--empty year in pbarg4
+(There was 1 warning)
