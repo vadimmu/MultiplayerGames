@@ -24,8 +24,8 @@
 	\usepackage{natbib}		
 
 
-\title{Location-aware Real Time Strategy Games \\ Expos\'e \\
-Winter Semester 2012}
+\title{Location-aware Real Time Strategy Games \\ Master Thesis \\
+Winter Semester 2012 - Summer Semester 2013}
 % Title
 
 \author{Vadim Costache} % Author name
@@ -60,6 +60,10 @@ Winter Semester 2012}
 
 \section{Introduction: Real Time Strategy games}
 
+The purpose of this paper is to describe the development of a new type of
+GPS-enabled mobile game, a Real Time Strategy / Shooter hybrid. The motivation
+for this came up during the search for GPS-enabled multiplayer game concepts.
+
 Ever since the first operating system for handheld devices, the spreading of
 smartphones has intensifed every year.In 2012, the number of smartphones in the
 world has reached one billion, according to Bloomberg\cite{bloomberg} \newline
@@ -71,11 +75,14 @@ recently, even barometers gives way to new approaches in developing
 games.\newline
 
 In this paper, we will define a number of computer game genres, classify some of
-the most popular location-aware games and game platforms and propoe an
-introduction of a genre that has a long legacy among computer games, but is
-not yet known to the location-aware mobile context. The new genre is that of
-`Real Time Strategy`(RTS)\cite{rts} games. We will do that with a subgenre of
-RTS, called Real Time Tactics(RTT)\cite{rttvsrts}.\newline
+the most popular location-aware games and game platforms and present the
+evolution of the concept and development of a game type prototype. This game of
+a genre that has a long legacy among computer games, but is not yet known to the
+location-aware mobile context. The new genre is that of `Real Time
+Strategy`(RTS)\cite{rts} games. We will do that with a subgenre
+of RTS, called Real Time Tactics(RTT)\cite{rttvsrts}. For reasons that will be
+presented throughout this paper, the type of game can be considered an
+RTT / Shooter hybrid. \newline
 
 \subsection{What is Real Time Strategy?}
 
@@ -524,6 +531,128 @@ Where it lacks the realism of Airsoft or the immersion of classical computer
 Real Time Strategy games, it gains in the intensity of real-life experience and
 teamwork, without requiring specialized equipment(Airsoft) or highly developed
 skills(computer Real Time Strategy games).
+
+
+\section{The development of the game}
+
+This section will follow the development of the application. The backend,
+frontend and mechanics of the game will be analyzed and presented in their
+evolution. \newline
+
+The game is composed of three parts : \newline
+\begin{enumerate}
+  \item \textbf{Mobile App Frontend} - A set of menus for setting up the game
+  and a GUI on top of Google Maps for the game itself.
+  \item \textbf{Mobile App Backend} - The core of the app. This includes the
+  modules for communicating with the server, for in-game protocols and
+  mechanics.
+  \item \textbf{Server} - All players will communicate with each other through a
+  central server that can only host one game at a time.  
+\end{enumerate}
+
+
+\subsection{Initial plan}
+
+The original plan was to develop and Android and iOS app, using a development
+framework such as PhoneGap. This would assume Javascript / JQuery programming
+for the UI and application backend. The communication was planned to be
+established through Websockets. Therefore, for optimum performance, NodeJS was
+to be used on the server side. For the location presentation, the Google Maps
+API was to be used.
+
+\subsection{Unified vs. Native Frameworks}
+
+Once an idea of how the game should look like was crystalized, I started looking
+for unified frameworks for cross-platform mobile development. The first choice
+was PhoneGap, which I have used in the Agile Lab in the previous summer and was
+a bit familiar. The other frameworks that I considered were Titanium SDK, Sencha
+and Corona. The discussion on which one is better can be resumed to the
+conclusion that none of them is appropriate for the development of such a game.
+And here are the reasons : 
+\begin{enumerate}
+  \item The game is fast-paced and will require a fast backend as well as a
+  frontend that is as fast as possible. The cross-platform frameworks
+  essentially interface only some of the native functionality and display the
+  app through a webview - requiring Javascript or a Javascript-based framework
+  for creating the interfaces. I have tested some these frameworks on top of
+  Phonegap, during the Agile Lab. The purpose was then to find the fastest
+  solution for static menus and slow-paced UIs. Even then, the outcome has been
+  disappointing. Qooxdoo, ExtJs and JQuery were tried out. Qooxdoo
+  performs faster than the other two, but makes it very slow and tedious to
+  develop a complex UI. Still, it is slow for the purpose and feels nonnative. 
+  After reading a few articles that compare Phonegap, Titanium, Sencha and
+  Corona, I have concluded that with or without various advantages and
+  disadvantages between them, they are all similar in performance - and
+  therefore too slow for the development of this game.
+  
+  \item Being a game prototype, all the details on which features of the phone
+  or of the operating system will be used were unclear. I found it unwise to
+  develop on a platform that only permits a number of features that are common
+  to all platforms.
+  
+  \item Developing native code can prove to be easier, as for example the
+  Android development community is much larger than that of Phonegap developers.
+  The support is both more intensive and extensive for native platforms.
+  
+\end{enumerate}
+
+From this point on, I gave up the unified frameworks and had to decide between
+iOS and Android development. This was an easy choice : Android develpment is
+free, while iOS development requires a paid developer account and XCode runing
+on MacOS exclusively. Therefore, I chose Android. 
+
+
+\subsection{Communication Protocols}
+
+Initially, I have planned to use Websockets for the client-server communication.
+The reasoning behind it has two main arguments : 
+\begin{enumerate}
+  \item Websockets is an HTML5 protocol currently presented in draft by the
+  IETF. This protocol provides reliable two-way communication between a server
+  and a client and manages various complex issues or network features that come
+  above TCP. This future standard is developed to replace HTTP and add
+  functionality for technical aspects that HTTP was not covering. The reason for
+  using Websockets for the client-server communication was that it promises to
+  abstract a lot of protocol management issues, while offering speeds close to
+  plain TCP. Also, for the game to run properly, UDP and its child protocols
+  cannot be used - total reliability is required in the communication. 
+  
+  \item Websockets communication can be implemented in NodeJS, which is a
+  framework well suited for fast-paced message exchanges and which has been
+  proven more scalable than, for example, Apache Tomcat. 
+\end{enumerate}
+
+As I decided to develop the server in NodeJS, the first choice was to use the
+Socket.IO Websocket plugin. For the client side, I chose Autobahn for Android.
+The only alternative for Autobahn was not free. After developing a basic
+Websockets client with Autobahn for Android, I realized that they do not
+communicate. After a lot of searching, I found out that the protocol
+draft version that Socket.IO is using is different than that used in Autobahn,
+and unlike Autobahn, Socket.IO uses an HTTP handshake for establishing the
+connection. The Websocket-Node and ws NodeJS libraries for Websocket
+communication were tried out afterwards. Neither were compatible with Autobahn
+for Android. Then, I have switched to Python and after some technical
+difficulties both in the Autobahn libraries for Android and establishing the
+communication between client and server, I decided to give up Websockets and
+start off with pure TCP. Because writing code in two different languages feels
+slower, I have switched to Java.
+
+\subsection{Maps API}
+
+The first version of the app used Google Maps API V1. I chose it because it has
+more extensive developer support. Unfortunately, the Google Maps API and the
+Android Support Library cannot work together at the same time, because they need
+to subclass different Fragment classes.
+
+\subsubsection{Map Overlays}
+
+
+
+ 
+
+
+
+
 
 
 \section{ANNEX A - game and game platform websites}

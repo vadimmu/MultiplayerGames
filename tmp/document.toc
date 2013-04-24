@@ -1,7 +1,7 @@
 \contentsline {section}{\numberline {1}Introduction: Real Time Strategy games}{2}
 \contentsline {subsection}{\numberline {1.1}What is Real Time Strategy?}{2}
 \contentsline {subsection}{\numberline {1.2}Real Time Strateg versus Turn Based Strategy}{2}
-\contentsline {section}{\numberline {2}Location-Based Augmented Reality Games}{2}
+\contentsline {section}{\numberline {2}Location-Based Augmented Reality Games}{3}
 \contentsline {subsection}{\numberline {2.1}Location-based games}{3}
 \contentsline {subsection}{\numberline {2.2}Types of GPS-based games }{3}
 \contentsline {section}{\numberline {3}Real Time Strategy Games}{4}
@@ -15,6 +15,12 @@
 \contentsline {subsection}{\numberline {5.2}Authoring Tool}{7}
 \contentsline {section}{\numberline {6}Documentation on the Games}{8}
 \contentsline {section}{\numberline {7}Application of the Games}{8}
-\contentsline {section}{\numberline {8}ANNEX A - game and game platform websites}{8}
-\contentsline {section}{\numberline {9}ANNEX B - game genre definitions}{9}
-\contentsline {section}{\numberline {10}Bibliography}{10}
+\contentsline {section}{\numberline {8}The development of the game}{8}
+\contentsline {subsection}{\numberline {8.1}Initial plan}{8}
+\contentsline {subsection}{\numberline {8.2}Unified vs. Native Frameworks}{9}
+\contentsline {subsection}{\numberline {8.3}Communication Protocols}{9}
+\contentsline {subsection}{\numberline {8.4}Maps API}{10}
+\contentsline {subsubsection}{\numberline {8.4.1}Map Overlays}{10}
+\contentsline {section}{\numberline {9}ANNEX A - game and game platform websites}{10}
+\contentsline {section}{\numberline {10}ANNEX B - game genre definitions}{10}
+\contentsline {section}{\numberline {11}Bibliography}{12}
