@@ -22,5 +22,5 @@
 \contentsline {subsection}{\numberline {8.4}Maps API}{10}
 \contentsline {subsubsection}{\numberline {8.4.1}Map Overlays}{10}
 \contentsline {section}{\numberline {9}ANNEX A - game and game platform websites}{10}
-\contentsline {section}{\numberline {10}ANNEX B - game genre definitions}{10}
+\contentsline {section}{\numberline {10}ANNEX B - game genre definitions}{11}
 \contentsline {section}{\numberline {11}Bibliography}{12}

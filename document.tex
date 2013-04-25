@@ -646,6 +646,58 @@ to subclass different Fragment classes.
 
 \subsubsection{Map Overlays}
 
+The Google Maps V1 API supports the use of Overlay objects to draw on top
+ofthe map. Most tutotials found online make use of the so-called
+ItemizedOverlay, which enables easy integration of multiple markers. I have
+attempted to use this, but here are my conclusions :\newline 
+\begin{enumerate}
+  \item The ItemizedOverlay uses features that we may call 'magic' - the
+  programmer is kept at arm's distance from understanding exactly what they do.
+  The ItemizedOverlay object uses an ArrayList for storing the map markers as
+  OverlayItem objects. It also needs a function that gives it the size of the
+  ArrayList. 
+  
+  \item Then, by unknown means, the markers are redrawn onDraw. This has
+  proven very difficult to work with. For starters, there is no control over the
+  draw process. Then, the OverlayItem objects cannot be stored in another data
+  structure, such as a HashMap - which I ended up using.
+  
+  \item Because of its design, the ItemizedOverlay is fast, but useless for the
+  purpose of this app. I chose to replace it with a custom Overlay.   
+\end{enumerate}
+
+As a replacement for the ItemizedOverlay, I have started to work on how to
+create a custom Overlay that would fit my needs. I realized how simple it is to
+modify the onDraw() method and control the display of the markers. This has also
+allowed me to change their Drawables(icons) dynamically, according to my needs.
+I have added functionality to change the Drawable for a selected marker or for
+the marker of a dead character. \newline
+
+A real challenge was to add proper onTap() functionality for the custom Overlay.
+The advantage of the already-given-up ItemizedOverlay was that it handled marker
+touch events. The new, custom overlay had no such thing implemented. What I have
+done was to get the pixel resolution of the screen, along with pixel density
+data from the system and consider a 0.2 inch radius around the center of the
+touch on the screen (this is what I have estimated to be a circle to describe
+the tip of an average human adult finger). That 0.2 inch radius in pixels has
+been translated in a radius, in meters, on the Google Map. All markers inside
+that radius were considered and the closest to the center of the touch was
+chosen. This made choosing a marker out of both crowded and loose situations
+relatively easy and natural. The tutorial for this will be added as an annex to
+the paper.\newline
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
