@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  25 APR 2013 11:12
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  26 APR 2013 18:00
 entering extended mode
 **document.tex
 (C:\Users\Vadim\workspace\MultiplayerGames\document.tex
@@ -80,7 +80,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 ...mand\NAT@force@numbers{}\NAT@force@numbers
+l.100 ...and\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -144,11 +144,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
-)
-\tf@toc=\write3
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}])
+\tf@toc=\write3
+ [2]
 Underfull \hbox (badness 10000) in paragraph at lines 67--70
 
  []
@@ -193,7 +193,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--135
 
  []
 
-[2]
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 136--141
 
  []
@@ -213,17 +213,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--183
 
  []
 
-[3]
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 281--292
 
  []
 
-[4]
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 355--362
 
  []
 
-[5]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 374--382
 
  []
@@ -238,7 +238,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 387--392
 
  []
 
-[6]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 452--455
 
  []
@@ -264,7 +264,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 498--506
 
  []
 
-[7]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 507--511
 
  []
@@ -275,166 +275,247 @@ Underfull \hbox (badness 10000) in paragraph at lines 512--516
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 538--541
+Underfull \hbox (badness 10000) in paragraph at lines 539--542
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 542--543
+Underfull \hbox (badness 10000) in paragraph at lines 543--544
 
  []
 
-[8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 649--653
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 669--675
+[9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 650--654
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 676--688
+Underfull \hbox (badness 10000) in paragraph at lines 670--676
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 719--720
+Underfull \hbox (badness 10000) in paragraph at lines 677--689
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--722
+Underfull \hbox (badness 10000) in paragraph at lines 692--697
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 723--724
+Underfull \hbox (badness 10000) in paragraph at lines 698--706
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--726
+Underfull \hbox (badness 10000) in paragraph at lines 707--711
+
+ []
+
+[11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 798--804
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 727--728
+Underfull \hbox (badness 10000) in paragraph at lines 805--823
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 729--730
+Underfull \hbox (badness 10000) in paragraph at lines 824--832
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 731--732
+Underfull \hbox (badness 10000) in paragraph at lines 833--851
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 733--734
+Underfull \hbox (badness 10000) in paragraph at lines 852--857
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 875--882
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 735--736
+Underfull \hbox (badness 10000) in paragraph at lines 909--914
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 987--988
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--738
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 739--740
+Underfull \hbox (badness 10000) in paragraph at lines 989--990
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--743
+Underfull \hbox (badness 10000) in paragraph at lines 991--992
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 744--745
+Underfull \hbox (badness 10000) in paragraph at lines 993--994
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 746--747
+Underfull \hbox (badness 10000) in paragraph at lines 995--996
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--749
+Underfull \hbox (badness 10000) in paragraph at lines 997--998
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--751
+Underfull \hbox (badness 10000) in paragraph at lines 999--1000
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--753
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1002
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1004
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--756
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1006
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 757--758
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1008
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 759--760
+Underfull \hbox (badness 10000) in paragraph at lines 1009--1011
 
  []
 
 
-Overfull \hbox (22.34038pt too wide) in paragraph at lines 787--789
+Underfull \hbox (badness 10000) in paragraph at lines 1012--1013
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1014--1015
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1017
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1018--1019
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1020--1021
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1022--1024
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1025--1026
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1028
+
+ []
+
+
+Overfull \hbox (22.34038pt too wide) in paragraph at lines 1055--1057
 [][]\OT1/cmr/bx/n/10 Massively Mul-ti-player On-line Game \OT1/cmr/m/n/10 http:
 //encyclopedia.thefreedictionary.com/Massively+Multiplayer+Online 
  []
 
-[11]
-Overfull \hbox (37.41493pt too wide) in paragraph at lines 849--851
+[16]
+Overfull \hbox (37.41493pt too wide) in paragraph at lines 1117--1119
 [][]\OT1/cmr/bx/n/10 Location Based Game (Location-enabled Game \OT1/cmr/m/n/10
  http://encyclopedia.thefreedictionary.com/location+based+game 
  []
 
-(C:\Users\Vadim\workspace\MultiplayerGames\document.bbl
+(C:\Users\Vadim\workspace\MultiplayerGames\document.bbl [17]
 Missing character: There is no ’ in font cmbx10!
- [12]
+
+! Undefined control sequence.
+l.40   \url
+           {http://www.dacris.com/blog/2011/08/31/node-js-microsofts-web-emp...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 2932) in paragraph at lines 38--42
+[][]\OT1/cmr/m/n/10 D. Soft-ware(dacris.com), ``\OT1/cmr/bx/n/10 Node.js: Mi-cr
+osofts Web Em-pire is Com-ing to an End\OT1/cmr/m/n/10 .''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--42
+\OT1/cmr/m/n/10 http://www.dacris.com/blog/2011/08/31/node-js-microsofts-web-em
+pire-is-coming-to-an-end/, Au-gust
+ []
+
+! Undefined control sequence.
+l.46   \url
+           {http://zgadzaj.com/benchmarking-nodejs-basic-performance-tests-a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 Missing character: There is no – in font cmbx10!
-) [13]
-(C:\Users\Vadim\workspace\MultiplayerGames\document.aux) ) 
+Missing character: There is no ’ in font cmr10!
+) [18] (C:\Users\Vadim\workspace\MultiplayerGames\document.aux) ) 
 Here is how much of TeX's memory you used:
- 1173 strings out of 494045
- 16055 string characters out of 3145969
- 76928 words of memory out of 3000000
- 4507 multiletter control sequences out of 15000+200000
- 8409 words of font info for 30 fonts, out of 3000000 for 9000
+ 1176 strings out of 494045
+ 16087 string characters out of 3145969
+ 77928 words of memory out of 3000000
+ 4509 multiletter control sequences out of 15000+200000
+ 8768 words of font info for 31 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 24i,6n,31p,159b,257s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on document.pdf (13 pages, 145621 bytes).
+ 24i,6n,31p,159b,236s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on document.pdf (18 pages, 180430 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
+ 88 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

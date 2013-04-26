@@ -520,7 +520,7 @@ implemented as proof of concept. This framework is to be extended during future
 work. The names of the games themselves are chosen only by their descriptive
 nature and are prone to change during the steps of development and evaluation.
 
-\section{Application of the Games}
+\section{The project : obstacles and changes}
 The two games are proposed with group teambuilding and recreation in mind. Both
 games require team strategy and cooperation. Territory Takeover allows for both
 team versus team and free for all gameplay, allowing for both small and large
@@ -532,6 +532,7 @@ Real Time Strategy games, it gains in the intensity of real-life experience and
 teamwork, without requiring specialized equipment(Airsoft) or highly developed
 skills(computer Real Time Strategy games).
 
+%\\\\\\\\\\\\\\  MASTER THESIS HERE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 \section{The development of the game}
 
@@ -637,7 +638,7 @@ communication between client and server, I decided to give up Websockets and
 start off with pure TCP. Because writing code in two different languages feels
 slower, I have switched to Java.
 
-\subsection{Maps API}
+\subsection{Google Maps API V1}
 
 The first version of the app used Google Maps API V1. I chose it because it has
 more extensive developer support. Unfortunately, the Google Maps API and the
@@ -686,21 +687,288 @@ chosen. This made choosing a marker out of both crowded and loose situations
 relatively easy and natural. The tutorial for this will be added as an annex to
 the paper.\newline
 
+\subsection{Google Maps API V2}
+
+The use of the Google Maps API V1 ended when I realized that it is not
+compatible with the Android backwards compatibility libraries - that enable the
+use of Fragments, for example, in Android versions prior to 3.0. The
+compatibility libraries require the use of a custom FragmentActivity and custom
+Fragment, FragmentManager, FragmentTransaction objects. \newline
+
+The statistics given by Google about the versions of Android in use were
+underrepresenting the situation that I faced when trying to test the app. Only
+one of my friends and acquaintances had Android 4.1. The rest carried mid-range
+phones with Android 2.2 - 2.3. I convinced two friends to let me upgrade their
+OS versions to 4.0, even if they were officially unsupported. This was tedious
+and risky. Other friends did not accept such a thing. This led me to realize
+that it is unfeasible to test the app, when it was supporting Android versions
+starting at 3.0. \newline
+
+With this new information in mind, I started the migration to Google Maps API
+V2, which, instead of requiring a MapActivity as wrapper, is using MapFragment.
+Therefore, I could use both the support library and the Maps V2 API, which is
+included in the Google Play Services libraries.\newline
+
+\subsubsection{Maps API V1 vs. V2}
+
+The migration to V2 is very destructive and at first feels quite unnatural. The
+entire logic is changed. In V1, the map is rendered through a MapView object
+that can be manipulated in a more direct and intuitive manner - lower level
+access is both possible and needed. In contrast, the V2 map is accessed through
+a GoogleMap object, which is no longer subclassing View. Therefore, it cannot be
+manipulated in the same manner. Adding markers is done through the .addMarker()
+method of the GoogleMap object. The same applies to drawing circles. Now lists
+must be kept for all drawn objects, not for future redrawing, but for being able
+to remove or change them. The entire Fragment object, along with a lot of
+helper classes had to be rewritten completely. All methods helping out the
+onTouch event for the custom Overlay were not necessary anymore. Also many
+refresh workarounds were thrown away and in the process, the Activity's
+runOnUIThread() method was discovered. 
+
+\subsection{Android development}
+
+I must also add the fact that learning how to program in Android was done while
+developing. This was often a trial-and-error process, covered with personal
+takes on the tutorials found mostly on StackOverflow.
+
+\section{Organization of the project}
+
+Before there was the project, there was a long search. I initialliy wanted to
+continue what was done one semester before, in a lab on agile software
+development, where 12 people developed a tour app using Phonegap. I wanted to
+add multiplayer functionality to the game, but simply seeing everybody on the
+map was to simple. Ideas arose from discussing this with my coordinator. Among
+them were ideas for including games and side activities. During the next three
+months, I have tried all the mobile games that used a GPS and that I could find
+on iOS. Most of them were also ported to Android. In the meantime, I have found
+out of the existence of Bluestacks, an Android emulator for Windows. A large
+number of games were tried out, but many gave a feeling of involvement and some
+gave the impression that they will require too much commitment from the player.
 
 
 
+In the proposal for the project, I separated the 6 month time in 4 parts : 
+\begin{enumerate}
+  \item First phase of development - 2 months
+  \item First phase of testing - 1 month
+  \item Second phase of development - 2 months
+  \item Second phase of testing -1 month  
+\end{enumerate}
+
+This interval was also supposed to include the writing of this paper, in between
+the lines. This schedule has proven unfeasible - not because of the
+length of the development phases, but because of the very short length of the
+testing phases. Another big part of the development of this app has been played
+by the continuous search for the appropriate technologies and practices for the
+project - including my own organizing:
+\begin{enumerate}
+  \item The exploration phase - Creating a UI test (Android), a server test
+  (NodeJS, then Python, then Java), a client test(Android). There have also
+  been some short UI tests and discussions along the way. This phase took around
+  two-three weeks.
+  \item The initial development phase - Creating a functional app with the Maps
+  API V1 and writing a full-blown server. This was the longest phase - taking
+  around one month and a half.
+  \item The first testing phase - It lasted for half a day. Preparations for it
+  took another few hours (upgrading the OS on two phones from Android 2.3 to
+  4.0).I brought a few friends, installed the app on all their phones and tried
+  it out for 1 hour (in multiple attempts, with some crashes). After playing
+  the game, the friends and I discussed the usability, mechanics and feeling in
+  and out of the game, in a focus group approach. A friend and I took notes,
+  while we all discussed various aspects of the app. Also the menus and a
+  possible logo were discussed. I gathered so much input from them that only
+  their proposals would change the face of the app entirely. Also this is when I
+  realized that I must make the app compatible with Android 2.3 for the least
+  (almost 50\% of Android users have this version on their phones).
+  \item The second development phase - I have worked for another 3 weeks to
+  completely construct a new UI according to the requirements from the testing
+  phase and the switch from Google Maps API V1 to V2. I have added a crash
+  logging and data usage logging system to the app.
+  \item The second testing phase lasted one day. I created a Facebook
+  event and invited 10 people that brought Android phones. Most of them also had
+  3G sim cards. The game was finally field tested and I could get the opinions
+  of the people on the UI, the functionality, the speed of the app.
+  \item The documentation phase is ongoing. This is the paper documenting the
+  development of the app.
+  
+\end{enumerate}
+
+\subsection{Kanban}
+
+For managing the development steps of the app, I have mainly used a simplified
+Kanban board. As is specific to Kanban, I have gradually proposed stories and
+fragmented them into tasks, where necessary. As I worked alone, all team aspects
+of this organizational system have been removed. The fields that have been kept
+are an 'Input Queue', two 'Development' slots, the 'Integration' slots and the
+'Live slots'.\newline
+
+There is a significant physical difference between the board that I used, versus
+the one used in the 'Agile Lab' from the previous semester. The first used a
+whiteboard with slots defined by lines drawn with a marker, on which the stories
+and tasks were held with magnets. Although this has been highly efficient for
+the short duration of the lab, I don't condsider it useful for an endeavor of
+longer duration - stories and tasks and magnets are lost. The markers get
+misplaced and paper is often not found. For the development of the app, the
+Kanban board was made out of an actual wooden board, on which transparent
+plastic envelopes of two different sizes were placed as slots for the stories
+and tasks. Also, under the board, three more slots have been added : one for the
+papers for the stories and tasks, one for the utensils(markers and pens of
+various colors and scissors) and the last one for the finished stories and tasks
+that did were pushed outside the board. This gave better control over
+the location of everything needed and multiple stories could be placed
+in the same slot. For example, the two 'Input Queue' slots have proved
+to be not enough for the influx of ideas, and proposals for modification. Also,
+the 'Live' slots were not used for single stories, but for groups, as will be
+described below. \newline
+
+A personal touch has been added to the Kanban board : the 'Development' slots
+have only been used at the very beginning of the project. What I have noticed is
+that the developer must have a number of stories and tasks at hand, for
+orientation. I have personally lost track of what I was doing when the
+'Development' tasks were at the appropriate locations on the board. As a result,
+I stopped using the two slots on the board and created a separate slot on the
+wall, next to my main monitor. Having all the stories that I was working on has
+proven much more useful and straightforward.\newline
+
+I have noticed that many stories are linked in various ways. I was writing the
+stories and grouping them according to their connectedness in various aspects -
+from similar functionality to work in the same few classes. According to these
+criteria, I have treated stories in groups, mentally separating them. For
+my future work on this project, I propose adding a few more slots on the wall,
+in front of the programmer. In each slot, the programmer can put together
+stories with common traits. Also, I recognized the importance of having the full
+story in front of you, even if you are working on only one task from it. Having
+the big picture at all times is just as important as dealing with the details.
+In the case of work within a team, I would have the story and tasks on the
+Kanban board, with the names of the developers dealing with each task, while
+each developer would have a copy of the story and the tasks from the board
+(with the names of the assignees included) in front of his own workstation.
+Therefore, a link between the people working at different tasks and between
+the tasks themselves would be permanently kept - and synchronization on
+overlapping tasks would be easier. Also due to the fact that I treated
+stories in bulks of related work, they have been added to the 'Live'
+slots based on these same criteria. \newline
+
+As a difference from the Kanban board used in the 'Agile Lab' from the previous
+semester, I propose that all completed stories and tasks have their own slot, in
+a visible place outside the board. This offers a good morale to all the
+developers who see the stack of solved stories thickening. Having a hold
+of all the stories also greatly helps write this paper. \newline
+
+\subsection{Unit Testing}
+
+I considered unit testing for this project, but soon gave it up. This
+application is a conceptual prototype. A lot of trial and error was done during
+development, changes to some piece of functionality occured as often as a few
+times a day. I cannot not acknowledge the usefulness of unit testing in a full
+blown, large scale project. But in this case, it has proven to be a liability. I
+wrote test cases at the beginning, only to find frustration in the fact that the
+specifications for the functionality changed very quickly. Also, because this
+app has been more of a creative than technical endeavor, I had to keep my mind
+more on the ideas than on their implementation. Often, I have started with a
+'quick and dirty' approach, tried out how I felt with the implementation, trying
+to put myself in the shoes of an unknowing player and only after this organized
+and modularized the code.
 
 
+\section{The game concept}
+The app that I developed is temporarily called People With Guns. It is a GPS-
+based RTS / Shooter hybrid concept protoype for Android. It can played by
+several people (The upper limit has not been established yet. Until now, the
+highest number of players in the game is 6.) that choose to join one of two
+opposing teams. The purpose of the game is to use 'weapons' and 'powerups' to
+defeat the opposing team. By 'defeat', I mean to 'virtually kill' all the
+opponents with the available tools. The current 'tools' are as follows :\newline 
+
+The weapons : 
+\begin{enumerate}
+  \item Pistol
+  \item Rifle
+  \item Sniper Rifle
+  \item Knife   
+\end{enumerate}
+
+The 'powerups' :
+\begin{enumerate}
+  \item Invisiblity Cloak
+  \item Shield
+  \item Painkillers / Heal
+\end{enumerate}
+
+Each item used by a player has the following attributes : 
+\begin{enumerate}
+  \item Cooldown - The amount of time that has to pass until the weapon can be
+  used again.
+  \item Duration - The amount of time during which a powerup is in effect 
+  \item Damage - The amount of health points that are subtracted upon a hit (or
+  added, in the case of the Painkillers) from the target's total available
+  health points.
+  \item Range - The maximum distance within which a weapon can be fired.
+\end{enumerate}
+
+Based on these attributes, we can make a differentiation between weapons and
+powerups. Until this point of the game development, weapons have damage and no
+duration. The only powerup that also has damage are the Painkillers - they deal
+negative damage to the target. The other two powerups, Invisibility Cloak and
+Shield, have a greater than zero 'duration' attribute, but no 'damage'.\newline
+
+Some of the attributes of the weapons and powerups will be modified, during a
+phase of balancing. I will therefore describe their conceptual construction : 
+
+The weapons : 
+\begin{enumerate}
+  \item Pistol - Weapon with low damage and medium fire rate. All the character
+  types have it. It is the basic and least effective weapon of them all. The
+  range is reduced.
+  \item Rifle - Weapon with low damage and high fire rate. The damage is higher
+  than that of the pistol and the cooldown takes half as long. The range is
+  reduced the same as that of the Pistol
+  \item Sniper Rifle - High damage weapon with very low fire rate. The range is
+  far greater than that of the Rifle and Pistol.
+  \item Knife - The weapon that deals the highest damage of all. The cooldown is
+  greater than that of the Sniper Rifle and the range is very small. 
+  \item Invisiblity Cloak - Powerup that makes the player disappear from the
+  map for a short while. While the player is invisible, he/she cannot be shot.
+  The effect duration is short, while the cooldown is lengthy.
+  \item Shield - Powerup that reduces the damage taken to half, while it is in
+  effect. The duration of this powerup is short and the cooldown is lenghty.
+  \item Painkillers / Heal - Powerup that functions like a weapon that deals
+  negative damage to the player or his/her friends. It's effective immediately
+  and requires a long cooldown time.
+\end{enumerate}
+
+For more complexity in the game, a number of so-called 'character types' have
+been created, from which players can choose. Thus far, there are four character
+types implemented in the game: Marine, Medic, Sniper, Scout. Each of these has a
+different number of health points and different weapons. Because the actual
+health amount will vary during a phase of character balancing, I will simply
+mention the conceptual construction of the characters :
+\begin{enumerate}
+  \item Marine - Has average health and two weapons: Pistol and Rifle
+\end{enumerate}
 
 
+\section{Developing the app}
+
+\subsection{The exploration phase}
+
+\subsection{The initial development phase}
+
+\subsection{The first testing phase}
+
+\subsection{The second develpment phase}
+
+\subsection{The second testing phase}
+
+\subsection{Documentation and development}
 
 
+\section{The UI design}
 
+\section{The server}
 
+\section{Future work}
 
-
-
- 
 
 
 
@@ -856,6 +1124,15 @@ using satellite positioning like GPS. "Urban gaming" or "Street Games" are
 typically multi-player location-based games played out on city streets and built
 up urban environments.
 \end{quote}
+
+
+
+\section{Annex C - Overlay Tutorial}
+
+
+\section{Annex D - Countdown buttons Tutorial}
+
+
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
