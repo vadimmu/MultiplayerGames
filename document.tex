@@ -944,15 +944,214 @@ different number of health points and different weapons. Because the actual
 health amount will vary during a phase of character balancing, I will simply
 mention the conceptual construction of the characters :
 \begin{enumerate}
-  \item Marine - Has average health and two weapons: Pistol and Rifle
+  \item Marine - Has average health and two weapons: Pistol and Rifle.
+  Represents the basic attack unit.
+  \item Medic - Support unit with Shield and Painkillers/Heal abilities. Has
+  average health. 
+  \item Sniper - Attack/ defense unit. Has a Sniper Rilfe for shooting at large
+  distances. Has low health.
+  \item Scout - Attack unit specialized at sneaking up on the victim. Has the
+  'Invisibility Cloak' ability for disappearing from the map and the 'Knife'
+  weapon for dealing large amounts of damage within a very small range. Has
+  large health.
 \end{enumerate}
 
+Another character has been created for testing purposes. It has been called the
+'All Encompassing' and posesses all the weapons and skills presently existing in
+the game and very large health. This character has inadvertently opened a window
+for two more game types: 
+\begin{enumerate}
+  \item 'David versus Goliath' - This be a game of many players using regular
+  character types versus a much smaller number of 'All Encompassing' characters.
+  \item 'Duel' - During the many small tests made to this app beyond the public
+  ones, a new style of playing this game has emerged: in the absence of a large
+  enough number of players, two can play in the 'Duel' mode : both use the 'All
+  Encompassing' character type and, instead of running around, attempt to win
+  the game by optimizing combinations of weapons and powerups. This game is
+  generally played side by side, for at most a few minutes and has proved to be
+  entertaining for the ones who tried it out.
+\end{enumerate}
 
 \section{Developing the app}
 
+The development of the app has started on the 14th of January 2013. I had an
+idea and no Android programming skills. Everything described from now on is a
+process of creativity and learning, intertwined together. But before the
+development came the idea, which took three months to concoct.\newline
+
 \subsection{The exploration phase}
 
+The project has started as a proposal to add a multiplayer feature to a tour
+app. It was hazy and unstructured. The main point was that the tour app was
+targeting individual users. But then, what happens when a larger group tours
+together? At the current stage of development, the tour app was offering an
+individual experience within the group. So I proposed that the group experiences
+the tour together, somehow. \newline
+
+Simply adding the functionality to see all the others within the group on the
+map was not sufficient - it would just help if someone got lost or went astray.
+Otherwise, I concluded that the user experience would not be improved in any
+significant way. Then came the idea of adding small games, hidden caches or
+quests and so on. The best idea that still had the tour app as a main platform
+was to add detours from the main track as bonuses. On those detours, the people
+would have to solve various riddles and small puzzles to get points and find out
+about hidden historical spots or interesting facs about the places they are
+visiting. \newline
+
+At this point, I contoured the following addon to the main app: the players
+would have a main tour path and, as they passed by certain waypoints, would be
+offered to go through a bonus/extra track within the area that they are
+visiting. If enough of them would agree to do this(by an in-app vote, for
+example), they would be presented with a new set of waypoints. These waypoints
+would belong to a number of categories: normal waypoints, waypoints where they
+would have to split, waypoints where they would have to be together and
+waypoints where the whole group would have to wait within a virtual circle,
+while one delegate(through vote) would find an item or solve a riddle.\newline
+
+I have come up with another scenario, during the research: In the case of the
+group waiting and one member being delegated to solve a riddle or find an item,
+a means of cooperation can be brought up: When the team votes and chooses the
+delegate, he/she gets a black screen(no map) and the rest of the team can see
+the goal on their phones. Through messages or VoIP, they would help the delegate
+navigate to the goal. Then, once the goal has been found or reached, the virtual
+circle would disappear and the whole team would be free to move. If anyone would
+exit the circle at some point, they would receive penalties and eventually get
+disconnected from the game.\newline
+
+Gradually, the ideas for multiplayer features went astray from the tour app,
+towards multiplayer GPS-based games. I have explored the idea of GPS-based
+puzzle / adventure games and encountered ARIS, a platform for creating such
+games. Then I discovered Tourality, and WarFinger GPS, which were the main
+sources of inspiration for my app and a few other games that didn't make it in
+the main concept, but are to be developed within the game as future
+work.\newline
+
+There has been a point when I simply tried out all the GPS-based mobile games
+that I could find, and evaluated them. At this point, I already had in mind the
+goals for this app: It should move the players to an outdoor environment and
+have them walk and run as the main activity, while using the game itself for
+an improved experience. Hide and seek and Tag were considered as a model of
+entertaining game to be played by a group. The games I found and already
+enumerated had, in my opinion, one of two major disadvantages:
+\begin{enumerate}
+  \item Did not engage the users enough: Games such as Parallel Mafia, SCVNGR or
+  Please Stay Calm do not motivate the player to move around much. They also
+  offer a very dim user experience in areas with few or no players.
+  \item Engaged the users too much: Mobile users, even hardcore gamers, do not
+  spend too much time playing on the phone. Rather, they would play on consoles
+  or computers, for better immersion. No matter how good the game is, it is
+  still displayed on a small phone screen(tablets are not considered in this
+  paper). Games such as Ingress and Shadow Cities offer a better and more
+  immersive story, but are still demanding of the player and request the full
+  focus of the phone owner. This I considered to be a major downside, as per my
+  gamer experience, when I get out of my home, I prefer to focus on what happens
+  around me and only rarely have the time and will to play such a demanding game
+  while on the go. 
+  \item Did not motivate the players to move enough - Only Tourality does not
+  possess this downside, as it its various game modes are specifically designed
+  for running.
+  \item Are location-dependent - All adventure / puzzle games such as those
+  developed with ARIS, most MMOs such as Parallel Mafia do require the player to
+  be in certain places in order to progress through the game. This means that
+  the player is put in one of two situations : He/She 1. has to get out of
+  one's way in order to make any progress within the game, or 2. has to travel
+  to remote locations in order to play the game in the first place. This might
+  be interesting for some, but will certainly fail to capture the attention of a
+  worker or student during weekdays.
+\end{enumerate}
+
+The engaging problem can also be linked to a time problem. Games that are too
+engaging also require a lot of time to be played. My personal take on this is
+that the amount of time dedicated to the mobile game should be decided by the
+player and not by the game.
+
+
 \subsection{The initial development phase}
+
+The first development phase was mainly one of searching for the right tools to
+get the job done and testing their functionality.\newline
+
+The initial idea was to use Websockets for communication, a NodeJS-based server
+and, after some evaluation, native Android. The messages exchanged between
+server and clients would be in the JSON format. For this, the choices that I
+found viable have been Jackson and Google GSON and json-smart. After determining
+their speed and ease of use I have chosen Jackson, as besides its speed, it
+offers an easy way of serializing and deserializing JSON directly into a
+hierarchy of HashMaps - a method which I personally prefer for a testing phase.
+Mapping something yet unknown into POJOs would have been a much harder task on
+the long run.\newline
+
+Exploring the use of Websockets has proven unfruitful, as there have been dead
+ends :
+\begin{enumerate}
+  \item The only freely available Websocket library for Android at the time of
+  research was Autobahn. The Websocket libraries available for NodeJS were
+  Socket.IO, Websocket-Node and ws. None of them worked with Autobahn for
+  Android. I eventually found a forum post in which one of the developers of
+  Autobahn stated the reasons for the incompatibility between Socket.IO and
+  Autobahn for Android: First, the protocol implementations were based on
+  different draft versions. Second, Socket.IO used an HTTP handshake for the
+  connection - and that was not supported by Autobahn. The same issue applied to
+  Websocket-Node and ws. A Python implementation of Autobahn has been tried for
+  the server, but after a few unfruitful attempts, I decided on Java. In the
+  case of Java, Autobahn for Android does not work. I have identified one of
+  them: Autobahn subclasses a Handler object that is part of the Android SDK.
+  Because of this and the realization that until Websockets receives its final
+  version, I cannot fully rely on the protocol. And for the purpose of a
+  prototype application where communication should not be overly complicated, I
+  chose TCP.
+  
+  \item Because of the Websocket issue, but also the subjectively perceived slow
+  development pace with NodeJS (Libraries are not documented, autocomplete
+  mostly does not work and there is no javadoc equivalent), I have decided to
+  switch to Java. Python was also attempted in the meantime, but productivity
+  was perceived as low for the same reasons as for NodeJS.  
+\end{enumerate}
+
+At the end of these attempts, the tools that I decided upon were native Android
+clients, Java server and TCP communication in between. What was left to decide
+upon was whether I would use JSON or XML. Based on some research and my need for
+this app, I chose JSON - it is easier to use and it takes less bytes to transmit
+the same data as it would with XML. I was planning to use simple data structures
+for the messages that were to be exchanged between server and clients.\newline
+
+JSON was chosen. But now the question remained: which Java libraries for
+processing JSON would I use? After some quick browsing, three names came on top:
+Jackson, Gson and smart-json. I did some searching for benchmarks and tried out
+Jackson and Gson. I chose Jackson.\newline
+
+Now the tools were readily available and I started developing the app. I split
+the development in three sub-phases : 
+\begin{enumerate}
+  \item A game UI that would add some mock players on the map and provide some
+  usability insight.
+  \item The server
+  \item The whole app, based on the initial UI experience.
+\end{enumerate}
+
+In developing the initial game UI, I added three buttons(one for generating a
+number of markers ('Generate Markers') on the map, one for further use('Check
+Info') and one for shooting ('Shoot')) and a spinner, on top of a MapView. The
+spinner served as a weapon selector. Once a weapon was selected (on launch, the
+first one in the list was automatically pre-selected), its range would be
+drawn on the map. I placed the three buttons in three corners of the screen-
+bottom-left, bottom-right, top-left. I placed the spinner to the right of the
+'Shoot' button. The functionalities added were as followed :
+\begin{enumerate}
+  \item 'Shoot' button - Mock method to display a Toast message stating if the
+  shot was performed or not
+  
+  \item 'Generate Markers' button - Mock method to randomly generate markers on
+  the map (for this game's purposes).
+  
+  \item 'Check Info' button - sporadic functionality to display a Toast message
+  with various info on data structures in the back end.
+\end{enumerate}
+
+
+  
+
+
 
 \subsection{The first testing phase}
 
@@ -1126,11 +1325,19 @@ up urban environments.
 \end{quote}
 
 
+\section{ANNEX C - Websockets vs. TCP speed}
 
-\section{Annex C - Overlay Tutorial}
+\section{ANNEX D - Node.JS vs. Apache - performance and scaling}
 
+\section{ANNEX E - JSON vs. XML}
 
-\section{Annex D - Countdown buttons Tutorial}
+\section{ANNEX F - Jackson vs. Gson vs. smart-json}
+
+\section{ANNEX G - Reviews of the games mentioned in the paper}
+
+\section{ANNEX H - Overlay tutorial}
+
+\section{ANNEX I - Countdown buttons Tutorial}
 
 
 

@@ -2,22 +2,25 @@
 
 \bibitem{bloomberg}
 J.~Yang, ``\textbf{Smartphones in Use Surpass 1 Billion, Will Double by
-  2015},'' October 2012.
+  2015},'' {\em Bloomberg.com}, October 2012.
 
 \bibitem{rts}
-C.~Janssen, ``\textbf{Real-Time Strategy (RTS)}.''
+C.~Janssen, ``\textbf{Real-Time Strategy (RTS)},'' {\em Techopdia.com}, 2010.
 
 \bibitem{rttvsrts}
 J.~Eldridge, ``\textbf{What are Real-time tactics games? RTT games, definition
-  and meaning},'' March 2012.
+  and meaning},'' {\em Examiner.com}, March 2012.
 
 \bibitem{rtsvstbs}
-S.~Johnson, ``\textbf{Analysis: Turn-Based Versus Real-Time},'' November 2009.
+S.~Johnson, ``\textbf{Analysis: Turn-Based Versus Real-Time},'' {\em
+  Gamasutra.com}, November 2009.
 
 \bibitem{rttvsrts2}
 {Pascal Bihler}, {Holger M\"ugge}, {Daniel Schuster}, {Danny Kiefner}, {Robert
   L\"ubke}, and {Thomas Springer}, ``\textbf{Step by Step vs. Catch Me If You
-  Can - On The Benefit of Rounds in Location-based Games},'' 2012.
+  Can - On The Benefit of Rounds in Location-based Games},'' tech. rep.,
+  {Institute of Computer Science III Universit\"at Bonn} and {Computer Networks
+  Group Technische Universit\"at Dresden}, 2012.
 
 \bibitem{nativevscrossplatform}
 C.~Warren, ``\textbf{The Pros and Cons of Cross-Platform App Design},'' {\em
@@ -25,66 +28,81 @@ C.~Warren, ``\textbf{The Pros and Cons of Cross-Platform App Design},'' {\em
 
 \bibitem{nativevscrossplatform2}
 D.~Hoang, ``\textbf{Native vs. Cross-Platform Development: Which is the way to
-  go?},'' April 2012.
+  go?},'' {\em Awesomegiant.com}, April 2012.
 
 \bibitem{nativevscrossplatform3}
 D.~Wehmeier, ``\textbf{HTML5, Cross-Platform Compiled, Or Native: Choose Wisely
-  In App Development},'' October 2012.
+  In App Development},'' {\em Mobiledevdesign.com}, October 2012.
 
 \bibitem{nodejs}
-D.~Software, ``\textbf{Node.js: Microsoft’s Web Empire is Coming to an End},''
+D.~Software(dacris.com), ``\textbf{Node.js: Microsoft’s Web Empire is Coming to
+  an End}.''
+  \url{http://www.dacris.com/blog/2011/08/31/node-js-microsofts-web-empire-is-coming-to-an-end/},
   August 2011.
 
 \bibitem{nodejsvsapache}
 M.~Zgadzaj, ``\textbf{Benchmarking Node.js - basic performance tests against
-  Apache + PHP},'' 2010.
+  Apache + PHP}.''
+  \url{http://zgadzaj.com/benchmarking-nodejs-basic-performance-tests-against-apache-php},
+  2010.
 
 \bibitem{webrtc}
 {Adam Bergkvist}, {Daniel C. Burnett}, {Cullen Jennings}, and {Anant
   Narayanan}, ``\textbf{WebRTC 1.0: Real-time Communication Between
-  Browsers},'' august 2012.
+  Browsers},'' tech. rep., World Wide Web Consortium, august 2012.
 
 \bibitem{websockets}
 {I. Fette} and {A. Melnikov}, ``\textbf{The WebSocket Protocol (RFC 6455)},''
-  December 2011.
+  tech. rep., Internet Engineering Task Force (IETF), December 2011.
 
 \bibitem{rtp}
 {H. Schulzrinne}, {S. Casner}, and {R. Frederick, V. Jacobson}, ``\textbf{Real
-  Time Transport Protocol (RFC 3550)},'' July 2003.
+  Time Transport Protocol (RFC 3550)},'' tech. rep., Network Working Group,
+  July 2003.
 
 \bibitem{pbarg1}
 {Kurt D. Squire}, {Mingfong Jan}, {James Matthews}, {Mark Wagler}, {John
   Martin}, {Ben Devane}, and {Chris Holden}, ``\textbf{Wherever you go, there
-  you are: Place-based Augmented Reality Games for Learning},'' 2006.
+  you are: Place-based Augmented Reality Games for Learning},'' tech. rep.,
+  {University of Wisconsin-Madison} and {Academic ADL Colab, Madison WI}, 2006.
 
 \bibitem{pbarg2}
 {Eugenio J. Marchiori}, {Javier Torrente}, {\'Angel del Blanco}, {Iv\'an
   Mart\'inez-Ortiz}, and {Baltasar Fern\'andez-Manj\'on}, ``\textbf{Extending a
-  Game Authoring Tool for Ubiquitous Education},'' 2010.
+  Game Authoring Tool for Ubiquitous Education},'' tech. rep., Department of
+  Software Engineering and Artificial Intelligence, Complutense University,
+  Madrid, 2010.
 
 \bibitem{pbarg3}
 D.~J. Gagnon, ``\textbf{ARIS - An open source platform for developing mobile
-  learning experiences},'' December 2010.
+  learning experiences},'' tech. rep., The University of Wisconsin - Madison,
+  December 2010.
 
 \bibitem{pbarg4}
 {Chinmay Barve}, {Sanjeet Hajarnis}, {Devika Karnik}, and {Mark O. Riedl},
   ``\textbf{WeQuest: A Mobile Alternate Reality Gaming Platform and Intelligent
-  End-User Authoring Tool}.''
+  End-User Authoring Tool},'' tech. rep., School of Interactive Computing,
+  Georgia Institute of Technology.
 
 \bibitem{pbarg5}
 {Christopher L. Holden} and {Julie M. Sykes}, ``\textbf{Leveraging Mobile Games
-  for Placebased Language Learning},'' May 2010.
+  for Placebased Language Learning},'' tech. rep., University of New Mexico,
+  May 2010.
 
 \bibitem{pbarg6}
 J.~M. Mathews, ``\textbf{Using a studio-based pedagogy to engage students in
-  the design of mobile-based media},'' 2010.
+  the design of mobile-based media},'' tech. rep., University of Wisconsin,
+  2010.
 
 \bibitem{teamtags}
 {Andreas Ritzberger} and {Stephan A. Drab}, ``\textbf{TeamTags: Domination – An
-  AGPS game for mobile phones},'' 2004.
+  AGPS game for mobile phones},'' tech. rep., {Upper Austria University of
+  Applied Sciences - Media Technology and Design} and {Upper Austria University
+  of Applied Sciences Hagenberg - Mobile Computing}, 2004.
 
 \bibitem{gps1}
-{Marko Modsching}, {Ronny Kramer}, and {Klaus ten Hagen}, ``\textbf{Field trial
-  on GPS Accuracy in a medium size city: The influence of builtup},'' 2006.
+3rd WORKSHOP ON POSITIONING, NAVIGATION AND COMMUNICATION (WPNC’06), {\em
+  \textbf{Field trial on GPS Accuracy in a medium size city: The influence of
+  builtup}}, 2006.
 
 \end{thebibliography}
