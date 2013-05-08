@@ -1137,20 +1137,164 @@ first one in the list was automatically pre-selected), its range would be
 drawn on the map. I placed the three buttons in three corners of the screen-
 bottom-left, bottom-right, top-left. I placed the spinner to the right of the
 'Shoot' button. The functionalities added were as followed :
+
 \begin{enumerate}
   \item 'Shoot' button - Mock method to display a Toast message stating if the
-  shot was performed or not
+  shot was performed or not and the selected weapon.
   
   \item 'Generate Markers' button - Mock method to randomly generate markers on
   the map (for this game's purposes).
   
   \item 'Check Info' button - sporadic functionality to display a Toast message
   with various info on data structures in the back end.
+  
+  \item Spinner - selecting weapons to 'shoot'. 
 \end{enumerate}
 
+I initially developed the server in NodeJS, then switched to Python and
+eventually settled with Java.\newline
 
+\subsubsection{The structure of the server}
+ 
+\begin{enumerate}
   
+  \item A 'communication' module for dealing with adding and managing
+  connections and messaging.
+  
+  \item A 'messages' module for managing the incoming and outgoing messages for
+  each connection.
+  
+  \item A 'game' module for handling in-game data, such as keeping track of
+  connected players, teams and game status. 
+  
+\end{enumerate}
 
+\subsubsection{The structure of the 'communication' module}
+
+\begin{enumerate}
+  
+  \item The 'TcpServer' class that starts listening for incoming TCP connections
+  on a given port. 
+	
+  \item A 'ConnectionManager' class that provides static synchronized methods
+  for managing adding and removing connections, MessageSender, MessageReceiver
+  and connection keepalive heartbeats.
+  
+\end{enumerate}
+
+\subsubsection{The structure of the 'messages' module}
+
+\begin{enumerate}
+  
+  \item A 'Messages' class that contains a number of inner classes for
+  categorizing the different types of messages.
+  
+  \item A 'MessageSender' class that deals with sending messages to a single
+  client, but can also access all other instances of this class to multicast
+  and/or broadcast messages to all the other clients, when needed.
+  
+  \item A 'MessageReceiver' class that deals with receiving messages from a
+  single client
+  
+  \item A 'HeartbeatListener' class that listens for heartbeats from the
+  connected clients and keeps the connections alive or closes them.
+  
+\end{enumerate}
+
+\subsubsection{The structure of the 'game' module}
+
+\begin{enumerate}
+  
+  \item A 'Player' class that stores information about the players (eg. name,
+  'profession', health points and position).
+  
+  \item A 'GameManager' class that manages the addition, removal and management
+  of players.
+  
+\end{enumerate}
+
+\subsubsection{How the server works}
+
+Once started, the server listens on a port. When a remote client connects, the
+server adds an InetSocketAddress instance containing the IP address and port of
+the client. Then, a Player object with some default values is initialized and a
+random UUID is generated. The Player object is added in one of the HashMaps for
+the two teams - home team or away team - using the UUID as key. A
+MessageReceiver and a MessageSender are instantiated. The MessageReceiver,
+MessageSender, a Date object containing the moment of the connection and the
+newly generated UUID and added to HashMaps with the InetSocketAddress of the
+client as key. The server sends a configuration json containing the already
+connected players, the available professions and their attributes(title, health,
+weapons, description), the available weapons and their attributes(name, range,
+cooldown, duration, description and usage policy). From now on, whether a player
+remains connected to the server depends on the so-called heartbeats : The client
+will send periodic heartbeat messages to the server. The server will update the
+Date object for the last moment when a heartbeat was received. If a delay beyond
+a threshold comes up, the client is removed from the server.\newline
+
+The server now acts only as a relay - game state is held on the client
+side.\newline
+
+Because TCP does not allow multicasts and broadcasts and UDP was purposely
+avoided, methods for sending multicasts and broadcasts were conceived as
+follows: When a client sends a message that requires multicast/broadcast, the
+server accesses all the MessageSender objects, iterates through all of them and
+sends the given message to all of them. This applies to location updates, shot
+alerts and in-game messages.\newline
+
+Once a number of players (1 or more) have connected to the server, they may send
+'Ready' messages to the server, stating that they are prepared to enter the
+game. The server will check on receipt on each 'Ready' message if all the
+players connected to the server are 'Ready'. If yes, a countdown timer will be
+started: A broadcast with the seconds left until the game starts will be sent to
+all the players. After the countdown, an 'Enter Game' message is broadcast to
+all the clients. Because the server holds the information on the positions of
+all the players, a condition and another message have been added: when the
+distance between the average positions of all the players in each team is at
+least some given distance(eg. 500m) and each team member is at most some other
+given distance(50m) from the average position of his/her team, 'Start Game'
+message is broadcast to all the clients. This will later be used to enable the
+weapons for all the players only when they satisfy these conditions.\newline
+
+There is no direct disconnect message between server and client. Disconnection
+is done exclusively based on the heartbeat interval.\newline
+
+\subsubsection{How the client works}
+
+The client is an Android application that uses one Activity and multiple
+Fragments. 
+
+The client uses seven fragments for the UI: 'Main Menu', 'Info and
+Tutorials', 'Settings', 'Lobby','Lobby Settings', 'Loading' and 'Game':
+
+\begin{enumerate}
+  \item 'Main Menu' : It is the entry point of the the application (it is the
+  fragment loaded by the Activity after it is created). It features four
+  buttons: 'Connect to server', 'Info and Tutorials', 'Settings' and 'Exit'. By
+  pressing 'connect to server', the player attempts to join the game. If the
+  connection is successful, he/she is brought into the 'Lobby'. 'Info and
+  Tutorials' and 'Settings' lead to the homonymous 'screens'.
+  
+  \item 'Info and Tutorials' is a fragment with a number of buttons and a
+  ScrollView for displaying text and images. Here, the user will find
+  instructions for the purpose how use of the app and detailed descriptions of
+  the functionality of the 'Lobby' and 'Game' UIs.
+  
+  \item 'Settings' now only contains two TextViews for changing the default IP
+  address and port of the server to which the client can connect.
+  
+  \item 'Loading' is an intermediary fragment that shows a loading widget for
+  the duration of time during which the connection to the server is established
+  and the client receives the config json from the server. Once this process is
+  done, it automatically switches to the 'Lobbby' fragment.
+  
+  \item 'Lobby'
+  
+  \item 'Lobby Settings'
+  
+  \item 'Game'  
+   
+\end{enumerate}
 
 
 \subsection{The first testing phase}

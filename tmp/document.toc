@@ -31,20 +31,26 @@
 \contentsline {section}{\numberline {11}Developing the app}{15}
 \contentsline {subsection}{\numberline {11.1}The exploration phase}{15}
 \contentsline {subsection}{\numberline {11.2}The initial development phase}{17}
-\contentsline {subsection}{\numberline {11.3}The first testing phase}{18}
-\contentsline {subsection}{\numberline {11.4}The second develpment phase}{18}
-\contentsline {subsection}{\numberline {11.5}The second testing phase}{18}
-\contentsline {subsection}{\numberline {11.6}Documentation and development}{18}
-\contentsline {section}{\numberline {12}The UI design}{18}
-\contentsline {section}{\numberline {13}The server}{18}
-\contentsline {section}{\numberline {14}Future work}{18}
-\contentsline {section}{\numberline {15}ANNEX A - game and game platform websites}{18}
-\contentsline {section}{\numberline {16}ANNEX B - game genre definitions}{19}
-\contentsline {section}{\numberline {17}ANNEX C - Websockets vs. TCP speed}{20}
-\contentsline {section}{\numberline {18}ANNEX D - Node.JS vs. Apache - performance and scaling}{20}
-\contentsline {section}{\numberline {19}ANNEX E - JSON vs. XML}{20}
-\contentsline {section}{\numberline {20}ANNEX F - Jackson vs. Gson vs. smart-json}{20}
-\contentsline {section}{\numberline {21}ANNEX G - Reviews of the games mentioned in the paper}{20}
-\contentsline {section}{\numberline {22}ANNEX H - Overlay tutorial}{20}
-\contentsline {section}{\numberline {23}ANNEX I - Countdown buttons Tutorial}{20}
-\contentsline {section}{\numberline {24}Bibliography}{20}
+\contentsline {subsubsection}{\numberline {11.2.1}The structure of the server}{18}
+\contentsline {subsubsection}{\numberline {11.2.2}The structure of the 'communication' module}{18}
+\contentsline {subsubsection}{\numberline {11.2.3}The structure of the 'messages' module}{18}
+\contentsline {subsubsection}{\numberline {11.2.4}The structure of the 'game' module}{18}
+\contentsline {subsubsection}{\numberline {11.2.5}How the server works}{18}
+\contentsline {subsubsection}{\numberline {11.2.6}How the client works}{19}
+\contentsline {subsection}{\numberline {11.3}The first testing phase}{20}
+\contentsline {subsection}{\numberline {11.4}The second develpment phase}{20}
+\contentsline {subsection}{\numberline {11.5}The second testing phase}{20}
+\contentsline {subsection}{\numberline {11.6}Documentation and development}{20}
+\contentsline {section}{\numberline {12}The UI design}{20}
+\contentsline {section}{\numberline {13}The server}{20}
+\contentsline {section}{\numberline {14}Future work}{20}
+\contentsline {section}{\numberline {15}ANNEX A - game and game platform websites}{20}
+\contentsline {section}{\numberline {16}ANNEX B - game genre definitions}{21}
+\contentsline {section}{\numberline {17}ANNEX C - Websockets vs. TCP speed}{22}
+\contentsline {section}{\numberline {18}ANNEX D - Node.JS vs. Apache - performance and scaling}{22}
+\contentsline {section}{\numberline {19}ANNEX E - JSON vs. XML}{22}
+\contentsline {section}{\numberline {20}ANNEX F - Jackson vs. Gson vs. smart-json}{22}
+\contentsline {section}{\numberline {21}ANNEX G - Reviews of the games mentioned in the paper}{22}
+\contentsline {section}{\numberline {22}ANNEX H - Overlay tutorial}{22}
+\contentsline {section}{\numberline {23}ANNEX I - Countdown buttons Tutorial}{22}
+\contentsline {section}{\numberline {24}Bibliography}{22}

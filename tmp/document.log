@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  6 MAY 2013 21:39
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  8 MAY 2013 11:16
 entering extended mode
 **document.tex
 (C:\Users\Vadim\workspace\MultiplayerGames\document.tex
@@ -80,7 +80,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.105 ...and\NAT@force@numbers{}\NAT@force@numbers
+l.111 ...and\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -400,118 +400,148 @@ Underfull \hbox (badness 10000) in paragraph at lines 1118--1122
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 1186--1187
+Underfull \hbox (badness 10000) in paragraph at lines 1154--1156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1188--1189
+Underfull \hbox (badness 10000) in paragraph at lines 1218--1234
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1190--1191
+Underfull \hbox (badness 10000) in paragraph at lines 1235--1237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1192--1193
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1194--1195
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1196--1197
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1198--1199
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1200--1201
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1202--1203
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1204--1205
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1206--1207
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1208--1210
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1211--1212
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1213--1214
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1215--1216
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1217--1218
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1219--1220
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1221--1223
+Underfull \hbox (badness 10000) in paragraph at lines 1238--1244
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 1224--1225
+Underfull \hbox (badness 10000) in paragraph at lines 1245--1258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1226--1227
+Underfull \hbox (badness 10000) in paragraph at lines 1259--1261
 
  []
 
 
-Overfull \hbox (22.34038pt too wide) in paragraph at lines 1254--1256
+Underfull \hbox (badness 10000) in paragraph at lines 1330--1331
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 1332--1333
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1334--1335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1336--1337
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1338--1339
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1340--1341
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1342--1343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1344--1345
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1346--1347
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1348--1349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1351
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1352--1354
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1355--1356
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1357--1358
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1359--1360
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1361--1362
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1363--1364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1365--1367
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1368--1369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1370--1371
+
+ []
+
+[20]
+Overfull \hbox (22.34038pt too wide) in paragraph at lines 1398--1400
 [][]\OT1/cmr/bx/n/10 Massively Mul-ti-player On-line Game \OT1/cmr/m/n/10 http:
 //encyclopedia.thefreedictionary.com/Massively+Multiplayer+Online 
  []
 
 
-Overfull \hbox (37.41493pt too wide) in paragraph at lines 1316--1318
+Overfull \hbox (37.41493pt too wide) in paragraph at lines 1460--1462
 [][]\OT1/cmr/bx/n/10 Location Based Game (Location-enabled Game \OT1/cmr/m/n/10
  http://encyclopedia.thefreedictionary.com/location+based+game 
  []
 
-[19] (C:\Users\Vadim\workspace\MultiplayerGames\document.bbl
+(C:\Users\Vadim\workspace\MultiplayerGames\document.bbl [21]
 Missing character: There is no ’ in font cmbx10!
 
 ! Undefined control sequence.
@@ -544,10 +574,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[20]
+[22]
 Missing character: There is no – in font cmbx10!
 Missing character: There is no ’ in font cmr10!
-) [21] (C:\Users\Vadim\workspace\MultiplayerGames\document.aux) ) 
+) [23] (C:\Users\Vadim\workspace\MultiplayerGames\document.aux) ) 
 Here is how much of TeX's memory you used:
  1176 strings out of 494045
  16087 string characters out of 3145969
@@ -555,7 +585,7 @@ Here is how much of TeX's memory you used:
  4509 multiletter control sequences out of 15000+200000
  8768 words of font info for 31 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 24i,6n,31p,159b,245s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 24i,6n,31p,159b,261s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files 
@@ -564,9 +594,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files
 6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on document.pdf (21 pages, 192149 bytes).
+Output written on document.pdf (23 pages, 197839 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
+ 104 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
