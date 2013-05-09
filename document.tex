@@ -21,7 +21,8 @@
 \documentclass{article}
 
     \usepackage[a4paper,vmargin={30mm,30mm},hmargin={20mm,20mm}]{geometry}
-	\usepackage{natbib}		
+	\usepackage{natbib}
+	\usepackage{graphicx}
 
 
 \title{Location-aware Real Time Strategy Games \\ Master Thesis \\
@@ -1288,13 +1289,78 @@ Tutorials', 'Settings', 'Lobby','Lobby Settings', 'Loading' and 'Game':
   and the client receives the config json from the server. Once this process is
   done, it automatically switches to the 'Lobbby' fragment.
   
-  \item 'Lobby'
+  \item 'Lobby' is the main game preparation fragment. It shows the lists of
+  players in the two teams(nicknames, professions and 'Ready' status). The
+  fragment features four buttons: 'Back', 'Change Name and Profession',
+  'Change Team' and 'Ready'. If the 'Back' button, the connection to the server
+  is closed and the 'Main Menu' fragment is brought to the front. The 'Change
+  Name and Profession' button brings upon the 'Lobby Settings' fragment. By
+  pressing the 'Ready' button, the player toggles his/her 'Ready' status and
+  sends a message containing this status to the server.
   
-  \item 'Lobby Settings'
+  \item 'Lobby Settings' is the fragment in which the player can change his/her
+  nickname and 'profession'. A textbox for the name, a spinner and a
+  description textbox for the profession and an 'Ok' button are provided. 
   
-  \item 'Game'  
+  \item 'Game' is the most important fragment in this app: it provides the UI
+  for gameplay. Due to changes in the use of the Maps API and tester feedback,
+  it has gone through the most changes. At this point, the game screen looks as
+  follows: for all the 'weapons' and 'powerups', buttons are aligned starting
+  from the bottom left corner of the screen and extending them to the right.
+  From the bottom right corner and going up, on the vertical axis, three
+  buttons and a TextView exist: the 'Previous Target', friend/foe toggle, 'Next
+  Target' buttons and a TextView that shows the distance to the next selected
+  player. If no player is selected, the presented text will be '0(Self)'.
+  Otherwise, just the distance measurement is shown, with no text. In the top
+  right corner, the default 'My Position' button is shown - with its specific
+  icon. In the top left corner of the screen, a TextView with large text shows
+  the remaining 'health points' of the player. Underneath this TextView lays a
+  spinner for sending predefined messages to the team. The full functionality of
+  the UI will be presented below.
    
 \end{enumerate}
+
+The typical app use scenario goes as follows: The player enters the game and
+sees the 'Main Menu'. The app checks if Google Play Services are installed and
+if the GPS is turned on. If either of these conditions is not met, a dialog is
+presented: the player must choose to install Google Play Services and/or turn on
+the GPS or exit the game. Each dialog directs the user to the appropriate Google
+Play or Settings page - where the player only has to either click 'Install' or
+switch the 'Enable GPS' toggle to 'ON'.\newline
+
+Once there are no more requirements to be met in order to play the game, the
+player can click on 'Connect to Server', be briefly presented with the 'Loading'
+fragment and then enters the 'Lobby'. There, if the app was started for the
+first time, he/she can see the default nickname 'Player' and the default
+'profession' - Marine. If the app was previously used, the player will see the
+last nickname and 'profession' used in previous runs. The server distributes the
+players according to team sizes, so the player has an equal chance to see
+oneself in either the 'Home' or 'Away' team. Then, the player can opt to change
+the team by using the 'Change Team' button. Also, the nickname and 'profession'
+can be changed by navigating to the 'Lobby Settings' screen. Once the 'Ok'
+button is pressed in the 'Lobby Settings' screen, the changes are saved in the
+app and sent to the server for broadcasting, and the player is returned
+to the 'Lobby' screen.\newline
+
+At the point where all the players have done setting up, they can send the
+'Ready' signal. When all the players are ready (for testing purposes, one
+player present on the server is enough to start a game), the five second
+countdown is received from the server and the player is now facing the 'Game'
+screen.\newline
+
+In order to understand what can be done at this point, a detailed description of
+the 'Game' UI is necessary: \newline
+ 
+\begin{figure}[ht]
+\includegraphics[height=4in,width=7.12in]{./images/android_screenshots/tutorial_game.png}  
+\caption{\small \sl The in-game UI \label{fig:game_ui}}
+\end{figure}
+
+We can visualize the UI based on the screenshot presented in Figure
+\ref{fig:game_ui}.\newline
+
+
+
 
 
 \subsection{The first testing phase}
