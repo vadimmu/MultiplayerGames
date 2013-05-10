@@ -1357,7 +1357,105 @@ the 'Game' UI is necessary: \newline
 \end{figure}
 
 We can visualize the UI based on the screenshot presented in Figure
-\ref{fig:game_ui}.\newline
+\ref{fig:game_ui}. It presents the groups of UI elements on the screen.
+We shall now present all of them, separated into groups, by position
+(positioning also separates functionality groups, therefore we can also state
+that they are presented by related functionality). All the UI elements on the
+'Game' UI are programmatically generated - and not from an XML file  :
+\begin{enumerate}
+  \item \textbf{The bottom of the screen, starting from the bottom-left corner}:
+  The 'weapon'/'powerup' buttons are generated once the 'Game' fragment is loaded,
+  based on the list of weapons specific to the player's 'profession'. They
+  appear from left to right. If less or equal to three weapons are given, the
+  buttons will be made slightly larger than otherwise - up to a maximum of six
+  (the number of weapons featured in the test 'profession', 'All Encompassing').
+  Each button press shoots the 'weapon' or 'powerup', according to a so-called
+  'policy' provided in the Weapon object. The policies are as follows: 'self',
+  'friends', 'friends and self', 'enemies', 'friends and enemies', 'friends and
+  enemies and self'- stating on which kinds of players one given 'weapon' or
+  'powerup' can be used. A button long press will draw the range of the
+  'weapon'/'powerup' on the map, with the player's position in the center.
+  
+  \item \textbf{The bottom-right corner of the screen}: The player selection
+  buttons and the distance indicator are generated on the vertical axis, starting from the
+  bottom-right corner of the screen - in order, the 'previous target',
+  friends/enemies toggle, 'next target' buttons, and on top a TextView showing
+  the distance to the selected player or '0(Self)' if no player is selected(in
+  translation, the 'self' or 'current player' is selected). The friends/enemies
+  toggle is used for the obvious reason of quickly choosing between one of the
+  two types of players besides the 'self'. The 'next target' button's
+  functionality is to find the next closest player from the selected category.
+  Let's say that the closest player is already selected. Then, on a press of the
+  'next target' button, the second closest player will be selected and so on.
+  The reverse applies to the 'previous target' button - which selects the
+  previous farthest player if a player is selected and the closest one
+  otherwise. The distance indicator serves for the use of an experienced player
+  who knows the weapon's distances by heart and does not want to the lengthy
+  long click operation to get the weapon's distance shown on the map. The
+  players may also be selected by simply tapping their respective markers on the
+  map - but through testing it has been determined that in a more intense and
+  dynamic situation, selection by clicking on the marker can become difficult
+  and inaccurate. Both modes are supported now. One other aspect of player
+  selection is the now-vital click in a random unoccupied area on the map for
+  deselecting all players(and selecting oneself for, say, self-healing or
+  activating powerups on oneself).
+  
+  \item \textbf{The top-right corner of the screen}: The 'my position' button
+  that is provided as an option through the Maps API. Clicking it will cause an
+  animation to scroll through the map until the position of the player is
+  centered.
+  
+  \item \textbf{The top-left corner of the screen}: The health indicator is a
+  TextView that presents in large text the remaining health points of the
+  player. Underneath it lies a spinner with a list of messages that the player
+  can send to his/her team. One can do so by clicking on the UI element
+  representing the spinner, beneath the health indicator. After the first
+  click, the spinner dialog appears and shows the list of messages. The
+  player can send one of the messages in the list by clicking it. The dialog is
+  canceled by clicking outside it.
+  
+  \item \textbf{The area in between the two top corners of the screen}: This is
+  the area where the powerup duration is dynamically shown during its effect.
+  This can be seen when the player casts 'invisibility' or 'shield' on oneself
+  or when a friend casts 'shield' on the player
+  
+  \item \textbf{The area above the weapon buttons}: This is where the
+  notifications appear, in the form of Toasts. By default, a toast has a given
+  lifespan - but each time a new toast needs to be displayed, it first closes
+  the toast currently on display, if it is the case.  
+\end{enumerate}
+
+Although they are not yet discretized, thus far we can distinguish three types
+of game that can be played with the current setup: the \textbf{default
+game}(which requires multiple players, but excludes the 'All Encompassing' game
+type), \textbf{duel}(two players choose the 'All Encompassing' profession -
+receiving the entire arsenal provided by the game - and try to take each other
+out by using various strategies of combining 'weapons' and 'powerups'),
+\textbf{David vs. Goliath}(a small number of players choose the 'All
+Encompassing' profession and play against a significantly larger number of
+players that use all the professions except 'All Encompassing').\newline
+
+Until now, the default game and the duel have been tried out - and they are
+fit for differnent situations: The default game can take up to 20 minutes and is
+played across distances varying from small to very large, depending on the mood
+and disposition for running of the players. The duel is performed usually by two
+players sitting next to each other and takes two-three minutes.\newline
+
+Thus far, no game end condition has been introduced - players who lose all
+health points are notified that the game is over for them through a dialog that
+gives them two options: quit the game or spectate. The second option implies
+that they are marked as 'dead' on the map, cannot be selected and their weapon
+buttons are removed from the screen. Still, they can watch the evolution of the
+game on their mobile devices. When all players of one team are marked as 'dead'
+(they have lost all their 'health points') and at least one player of the other
+team still has more than zero health points, it can be considered a win for the
+other team. The ending condition has not been implemented, because for this
+stage of development of the app it would be just a dialog stating the obvious
+'You have won !' message. A more interesting feature may be added in the future,
+if imagination or user feedback provides it.\newline
+
+
+
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  9 MAY 2013 12:39
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  10 MAY 2013 16:41
 entering extended mode
 **document.tex
 (C:\Users\Vadim\workspace\MultiplayerGames\document.tex
@@ -503,125 +503,135 @@ Overfull \hbox (30.87569pt too wide) in paragraph at lines 1355--1356
 [][][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1359--1361
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1396--1397
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1398--1399
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1400--1401
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1402--1403
-
- []
-
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 1404--1405
+Underfull \hbox (badness 10000) in paragraph at lines 1428--1437
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1406--1407
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1408--1409
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1410--1411
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1412--1413
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1414--1415
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1416--1417
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1418--1420
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1421--1422
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1423--1424
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1425--1426
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1427--1428
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1429--1430
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1431--1433
+Underfull \hbox (badness 10000) in paragraph at lines 1438--1443
 
  []
 
 [21 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/tutor
 ial_game.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1434--1435
+Underfull \hbox (badness 10000) in paragraph at lines 1444--1456
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1436--1437
+Underfull \hbox (badness 10000) in paragraph at lines 1494--1495
 
  []
 
 
-Overfull \hbox (22.34038pt too wide) in paragraph at lines 1464--1466
+Underfull \hbox (badness 10000) in paragraph at lines 1496--1497
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1498--1499
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1500--1501
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1502--1503
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1504--1505
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1506--1507
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1508--1509
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1510--1511
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1512--1513
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1514--1515
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1516--1518
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1519--1520
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 1521--1522
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1523--1524
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1525--1526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1527--1528
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1529--1531
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1532--1533
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1534--1535
+
+ []
+
+
+Overfull \hbox (22.34038pt too wide) in paragraph at lines 1562--1564
 [][]\OT1/cmr/bx/n/10 Massively Mul-ti-player On-line Game \OT1/cmr/m/n/10 http:
 //encyclopedia.thefreedictionary.com/Massively+Multiplayer+Online 
  []
 
-
-Overfull \hbox (37.41493pt too wide) in paragraph at lines 1526--1528
+[23]
+Overfull \hbox (37.41493pt too wide) in paragraph at lines 1624--1626
 [][]\OT1/cmr/bx/n/10 Location Based Game (Location-enabled Game \OT1/cmr/m/n/10
  http://encyclopedia.thefreedictionary.com/location+based+game 
  []
 
-[22] (C:\Users\Vadim\workspace\MultiplayerGames\document.bbl
+(C:\Users\Vadim\workspace\MultiplayerGames\document.bbl [24]
 Missing character: There is no ’ in font cmbx10!
 
 ! Undefined control sequence.
@@ -654,10 +664,9 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[23]
 Missing character: There is no – in font cmbx10!
 Missing character: There is no ’ in font cmr10!
-) [24] (C:\Users\Vadim\workspace\MultiplayerGames\document.aux) ) 
+) [25] (C:\Users\Vadim\workspace\MultiplayerGames\document.aux) ) 
 Here is how much of TeX's memory you used:
  2054 strings out of 494045
  28146 string characters out of 3145969
@@ -665,7 +674,7 @@ Here is how much of TeX's memory you used:
  5356 multiletter control sequences out of 15000+200000
  9419 words of font info for 33 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 27i,6n,31p,566b,245s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,31p,566b,236s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files 
@@ -675,9 +684,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsl9.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on document.pdf (24 pages, 469396 bytes).
+Output written on document.pdf (25 pages, 475070 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
+ 118 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
