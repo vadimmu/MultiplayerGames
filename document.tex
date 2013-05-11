@@ -929,7 +929,7 @@ The weapons :
   \item Knife - The weapon that deals the highest damage of all. The cooldown is
   greater than that of the Sniper Rifle and the range is very small. 
   \item Invisiblity Cloak - Powerup that makes the player disappear from the
-  map for a short while. While the player is invisible, he/she cannot be shot.
+  map for a short while. While the player is invisible, he cannot be shot.
   The effect duration is short, while the cooldown is lengthy.
   \item Shield - Powerup that reduces the damage taken to half, while it is in
   effect. The duration of this powerup is short and the cooldown is lenghty.
@@ -1012,7 +1012,7 @@ while one delegate(through vote) would find an item or solve a riddle.\newline
 I have come up with another scenario, during the research: In the case of the
 group waiting and one member being delegated to solve a riddle or find an item,
 a means of cooperation can be brought up: When the team votes and chooses the
-delegate, he/she gets a black screen(no map) and the rest of the team can see
+delegate, he gets a black screen(no map) and the rest of the team can see
 the goal on their phones. Through messages or VoIP, they would help the delegate
 navigate to the goal. Then, once the goal has been found or reached, the virtual
 circle would disappear and the whole team would be free to move. If anyone would
@@ -1054,7 +1054,7 @@ enumerated had, in my opinion, one of two major disadvantages:
   \item Are location-dependent - All adventure / puzzle games such as those
   developed with ARIS, most MMOs such as Parallel Mafia do require the player to
   be in certain places in order to progress through the game. This means that
-  the player is put in one of two situations : He/She 1. has to get out of
+  the player is put in one of two situations : he 1. has to get out of
   one's way in order to make any progress within the game, or 2. has to travel
   to remote locations in order to play the game in the first place. This might
   be interesting for some, but will certainly fail to capture the attention of a
@@ -1214,24 +1214,24 @@ eventually settled with Java.\newline
   
 \end{enumerate}
 
-\subsubsection{How the server works}
+\subsubsection{The Server}
 
 Once started, the server listens on a port. When a remote client connects, the
-server adds an InetSocketAddress instance containing the IP address and port of
-the client. Then, a Player object with some default values is initialized and a
-random UUID is generated. The Player object is added in one of the HashMaps for
-the two teams - home team or away team - using the UUID as key. A
-MessageReceiver and a MessageSender are instantiated. The MessageReceiver,
-MessageSender, a Date object containing the moment of the connection and the
-newly generated UUID and added to HashMaps with the InetSocketAddress of the
-client as key. The server sends a configuration json containing the already
-connected players, the available professions and their attributes(title, health,
-weapons, description), the available weapons and their attributes(name, range,
-cooldown, duration, description and usage policy). From now on, whether a player
-remains connected to the server depends on the so-called heartbeats : The client
-will send periodic heartbeat messages to the server. The server will update the
-Date object for the last moment when a heartbeat was received. If a delay beyond
-a threshold comes up, the client is removed from the server.\newline
+server adds an InetAddress instance containing the IP address of the client.
+Then, a Player object with some default values is initialized and a random UUID
+is generated. The Player object is added in one of the HashMaps for the two
+teams - home team or away team - using the UUID as key. A MessageReceiver and a
+MessageSender are instantiated. The MessageReceiver, MessageSender, a Date
+object containing the moment of the connection and the newly generated UUID and
+added to HashMaps with the InetAddress of the client as key. The server sends a
+configuration json containing the already connected players, the available
+professions and their attributes(title, health, weapons, description), the
+available weapons and their attributes(name, range, cooldown, duration,
+description and usage policy). From now on, whether a player remains connected
+to the server depends on the so-called heartbeats : The client will send
+periodic heartbeat messages to the server. The server will update the Date
+object for the last moment when a heartbeat was received. If a delay beyond a
+threshold comes up, the client is removed from the server.\newline
 
 The server now acts only as a relay - game state is held on the client
 side.\newline
@@ -1260,7 +1260,143 @@ weapons for all the players only when they satisfy these conditions.\newline
 There is no direct disconnect message between server and client. Disconnection
 is done exclusively based on the heartbeat interval.\newline
 
-\subsubsection{How the client works}
+\subsubsection{The Client}
+
+The client is an Android application that uses one Activity and multiple
+Fragments. It does not use any compatibility libraries(as the Google Maps V1 API
+requires a MapActivity and the support library requires a FragmentActivity for
+fragment use) - therefore, only Android versions equal or higher to
+3.0(Honeycomb) are supported. 
+
+The client uses seven fragments for the UI: 'Main Menu', 'Info and
+Tutorials', 'Settings', 'Lobby','Lobby Settings', 'Loading' and 'Game':
+
+\begin{enumerate}
+  \item 'Main Menu' : It is the entry point of the the application (it is the
+  fragment loaded by the Activity after it is created). It features three
+  buttons: 'Start Game', 'Settings' and 'Exit'. By pressing 'Start Game', the
+  player attempts to join the game. If the connection is successful, he is
+  brought into the 'Lobby'. Pressing 'Settings' leads to the homonymous
+  screen.
+  
+  \item 'Settings' now only contains two TextViews for changing the default IP
+  address and port of the server to which the client can connect.
+  
+  \item 'Loading' is an intermediary fragment that shows a loading widget for
+  the duration of time during which the connection to the server is established
+  and the client receives the config json from the server. Once this process is
+  done, it automatically switches to the 'Lobby' fragment.
+  
+  \item 'Lobby' is the main game preparation fragment. It shows the lists of
+  players in the two teams(nicknames, professions and 'Ready' status). The
+  fragment features four buttons: 'Back', 'Change Info', 'Change Team' and
+  'Ready'. If the 'Back' button, the connection to the server is closed and the
+  'Main Menu' fragment is brought to the front. The 'Change Info' button brings
+  upon the 'Lobby Settings' fragment. By pressing the 'Ready' button, the player
+  toggles his/her 'Ready' status and sends a message containing this status to
+  the server.
+  
+  \item 'Lobby Settings' is the fragment in which the player can change his/her
+  nickname and 'profession'. A textbox for the name, a spinner and a
+  description textbox for the profession and an 'Ok' button are provided. 
+  
+  \item 'Game' is the most important fragment in this app: it provides the UI
+  for gameplay. It features a fullscreen MapView that displays the map and, on
+  top of it, the 'Shoot' button and weapon selection Spinner. Two other buttons
+  are kept on the screen and given various functionalities, according to the
+  testing needs.
+   
+\end{enumerate}
+
+The app usage would go as follows: The player opens the app and is presented the
+'Main Menu' UI. If the GPS is not on, a dialog will appear informing him of
+this and offering two choices: `Turn GPS on` or 'Exit'. If 'Turn GPS on' is
+chosen, the GPS Settings page will be shown and the player can switch it on.
+Once this is done, the player clicks 'Start Game' and, after being shortly shown
+the 'Loading' fragment, is introduced to the 'Lobby' screen. Here, one can see
+that he has been added to one of the teams(Home Team or Away Team) and has been
+given a default nickname('Player') and profession('Marine'). This is where he
+chooses a team by clicking the 'Change Team' button or opts navigate to the
+'Lobby Settings' screen by clicking the 'Change Info' button and change the
+'nickname' or 'profession'. Once the player is ready to play, he will press the
+'Ready' button. If all the players that are connected to the server are marked
+as 'Ready', the server will send a countdown (which is seen on the client side
+through Toasts) followed by a 'Start Game' message - at which point the client
+app will automatically introduce the 'Game' UI. All the players are shown on the
+map by blue(current player), red(enemies) and green(friends) markers. Above each
+marker, one can see the nickname, 'profession' and health points of the player.
+The selection of players is done by clicking the markers. A selected player will
+have his marker drawn in yellow. Selecting a weapon from the provided Spinner
+deselects the currently selected player(if there is any) and draws the weapon's
+range around the position of the current player. For using the currently
+selected 'weapon' or 'powerup' on one of the players, the current player has to
+select the target on the screen and press the 'Shoot' button. If the selection
+attempt does not satisfy the 'selection policies' provided by the Weapon object,
+the map marker will simply not be selected. Otherwise, it will change color to
+yellow. If the target is not within the weapon's range when the 'Shoot' button
+is pressed, a Toast message will appear stating the current distance and that
+the shot was not performed. Otherwise, a Toast message stating the distance and
+damage will be shown and a cooldown countdown will start at the appropriate
+entry of the weapon selection Spinner object. Once a player has lost all health
+points, a dialog appears saying that the game is over for this player and gives
+him the sole option to exit the game in progress and return to the 'Main Menu'
+screen. Once a player exits the game in progress, his marker will disappear on
+the maps of the other players. There are no start and end conditions
+implemented.
+
+\subsection{The first testing phase}
+
+Contrary to the original plans, the first testing phase took only half a day
+with another half day of preparations. Prior tests have been done by the
+author alone, with two phones.\newline
+
+A few friends(three male and two female) of the author were invited to play the
+game. Three of them had Android phones. The other two have used
+the two phones that the author had in posession at the time. Unfortunately, most
+of them had Android 2.2 and 2.3 installed. The preparations meant convincing
+them to volunteer their phones for an OS upgrade. Android 4.0 was
+installed.\newline
+
+The tests have been done mostly indoors, as they revealed various bugs in the
+server and client software that were not detected when using only two phones
+that were physically connected to the development computer via USB
+cables. Because six people had five phones, two of them have played
+alternatively. Because not all players had 3G connections available, the game
+has been played by connecting to the author's WiFi router. The first bug we
+noticed was that occasionally the game would disconnect for no apparent reason.
+Others have been related to GPS devices in one of the phones not retrieving the
+position and crashing the application or concurrency issues improperly treated.
+A few temporary quick fixes got the game on track and we managed to play the
+game, firstly indoors for a few times and then outside, after the author's WiFi
+router has been placed on the outside window sill. This has inadvertently been a
+test of the WiFi coverage of an average old 802.11 b/g router - around 50 - 70
+meters radius in an open space describing a half-circle around the router. The
+author was the first to accidentally run outside the WiFi coverage and get
+disconneted. After the playing was finished, the author(with help from one of
+the friends) took notes while everybody has expressed their criticism of the
+gameplay, UI and game satisfaction. Although the concept itself has been
+positively appreciated, the game UI has received a lot of criticism. Also the
+random disconnection of the game from the server has caused a lot of frustration
+among the test players. A proposal has been made to allow saving the last
+player status and position on the server and allow a timeout until the player
+would not be allowed to reconnect. A debate led to the conclusion that
+enabling such a feature could allow cheating, through the following scenario: A
+player would disconnect from the game, get close to other players, reconnect,
+shoot and repeat the sequence - thus avoiding damage and causing frustration to
+others. \newline
+
+
+
+\subsection{The second develpment phase}
+
+The first testing phase has left a lot of 'todos', notes and guidelines for
+better adapting the UI and game mechanics to the player's needs. The second
+development phase has addressed these needs with a personal touch from the
+author and an influence of the switch to a newer version of Maps API.
+
+\subsubsection{The Server}
+
+\subsubsection{The Client}
 
 The client is an Android application that uses one Activity and multiple
 Fragments. 
@@ -1269,11 +1405,11 @@ The client uses seven fragments for the UI: 'Main Menu', 'Info and
 Tutorials', 'Settings', 'Lobby','Lobby Settings', 'Loading' and 'Game':
 
 \begin{enumerate}
-  \item 'Main Menu' : It is the entry point of the the application (it is the
-  fragment loaded by the Activity after it is created). It features four
-  buttons: 'Connect to server', 'Info and Tutorials', 'Settings' and 'Exit'. By
-  pressing 'connect to server', the player attempts to join the game. If the
-  connection is successful, he/she is brought into the 'Lobby'. 'Info and
+  \item 'Main Menu' : It has been slightly modified: The 'Start Gane' text has
+  been changed into 'Connect to Server' - making its functionality more
+  obvious. A logo has been attempted is the entry point of the the application
+  (it is the fragment loaded by the Activity after it is created). It features four buttons: 'Connect to server', 'Info and Tutorials', 'Settings' and 'Exit'. By pressing 'connect to server', the player attempts to join the game. If the
+  connection is successful, he is brought into the 'Lobby'. 'Info and
   Tutorials' and 'Settings' lead to the homonymous 'screens'.
   
   \item 'Info and Tutorials' is a fragment with a number of buttons and a
@@ -1331,7 +1467,7 @@ switch the 'Enable GPS' toggle to 'ON'.\newline
 Once there are no more requirements to be met in order to play the game, the
 player can click on 'Connect to Server', be briefly presented with the 'Loading'
 fragment and then enters the 'Lobby'. There, if the app was started for the
-first time, he/she can see the default nickname 'Player' and the default
+first time, he can see the default nickname 'Player' and the default
 'profession' - Marine. If the app was previously used, the player will see the
 last nickname and 'profession' used in previous runs. The server distributes the
 players according to team sizes, so the player has an equal chance to see
@@ -1436,7 +1572,7 @@ Encompassing' profession and play against a significantly larger number of
 players that use all the professions except 'All Encompassing').\newline
 
 Until now, the default game and the duel have been tried out - and they are
-fit for differnent situations: The default game can take up to 20 minutes and is
+fit for different situations: The default game can take up to 20 minutes and is
 played across distances varying from small to very large, depending on the mood
 and disposition for running of the players. The duel is performed usually by two
 players sitting next to each other and takes two-three minutes.\newline
@@ -1452,22 +1588,42 @@ team still has more than zero health points, it can be considered a win for the
 other team. The ending condition has not been implemented, because for this
 stage of development of the app it would be just a dialog stating the obvious
 'You have won !' message. A more interesting feature may be added in the future,
-if imagination or user feedback provides it.\newline
+if imagination or user feedback provides it - or the game may be integrated in a
+larger context.\newline
 
+The main functional differences from the first development of the game are:
 
+\begin{enumerate}
+  \item A switch from Google Maps API V1 to V2 has been done. This implied
+  rewriting the whole UI and several methods in the helper libraries.
+  
+  \item Because of the switch mentioned above, the custom Overlay object (along
+  with the custom tap and marker drawing functionalities), the object
+  responsible with position retrieval have been discarded. Position retrieval is
+  done through an option provided by the GoogleMap object provided by the Google
+  Maps V2 API. The whole marker and weapon range drawing are also done through
+  the GoogleMap object - OverlayItem objects have been replaced by Marker
+  objects and GeoPoints have been replaced by LatLng instances.
+  
+  \item The whole UI has been rewritten, having as a result what was described
+  above.  
+  
+\end{enumerate}
 
+Passive disconnection detection functionality has been added in the loop that
+waits for incoming messages. The functionality of some weapons and powerups has
+been modified. The `Radar` has been removed. The 'Invisibility cloak' and
+'Knife' have been added. Powerup duration indicators have been added.\newline
 
-
-
-
-
-\subsection{The first testing phase}
-
-\subsection{The second develpment phase}
 
 \subsection{The second testing phase}
 
+
+
 \subsection{Documentation and development}
+
+The usage of 'he' should be replaced by 'he/she' and has only been used this way
+for the convenience of the author and no other reasons.
 
 
 \section{The UI design}
