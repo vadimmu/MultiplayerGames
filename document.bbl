@@ -35,8 +35,8 @@ D.~Wehmeier, ``\textbf{HTML5, Cross-Platform Compiled, Or Native: Choose Wisely
   In App Development},'' {\em Mobiledevdesign.com}, October 2012.
 
 \bibitem{nodejs}
-D.~Software(dacris.com), ``\textbf{Node.js: Microsoft’s Web Empire is Coming to
-  an End}.''
+D.~Software(dacris.com), ``\textbf{Node.js: Microsoftï¿½s Web Empire is Coming
+  to an End}.''
   \url{http://www.dacris.com/blog/2011/08/31/node-js-microsofts-web-empire-is-coming-to-an-end/},
   August 2011.
 
@@ -54,6 +54,14 @@ M.~Zgadzaj, ``\textbf{Benchmarking Node.js - basic performance tests against
 \bibitem{websockets}
 {I. Fette} and {A. Melnikov}, ``\textbf{The WebSocket Protocol (RFC 6455)},''
   tech. rep., Internet Engineering Task Force (IETF), December 2011.
+
+\bibitem{tcp}
+I.~S. Institute, ``\textbf{Transmission Control Protocol (RFC 793)},'' tech.
+  rep., University of Southern California, September 1981.
+
+\bibitem{udp}
+I.~S. Institute, ``\textbf{User Datagram Protocol (RFC 768)},'' tech. rep.,
+  University of Southern California, September 1980.
 
 \bibitem{rtp}
 {H. Schulzrinne}, {S. Casner}, and {R. Frederick, V. Jacobson}, ``\textbf{Real
@@ -95,14 +103,19 @@ J.~M. Mathews, ``\textbf{Using a studio-based pedagogy to engage students in
   2010.
 
 \bibitem{teamtags}
-{Andreas Ritzberger} and {Stephan A. Drab}, ``\textbf{TeamTags: Domination – An
-  AGPS game for mobile phones},'' tech. rep., {Upper Austria University of
+{Andreas Ritzberger} and {Stephan A. Drab}, ``\textbf{TeamTags: Domination ï¿½
+  An AGPS game for mobile phones},'' tech. rep., {Upper Austria University of
   Applied Sciences - Media Technology and Design} and {Upper Austria University
   of Applied Sciences Hagenberg - Mobile Computing}, 2004.
 
 \bibitem{gps1}
-3rd WORKSHOP ON POSITIONING, NAVIGATION AND COMMUNICATION (WPNC’06), {\em
+3rd WORKSHOP ON POSITIONING, NAVIGATION AND COMMUNICATION (WPNCï¿½06), {\em
   \textbf{Field trial on GPS Accuracy in a medium size city: The influence of
   builtup}}, 2006.
+
+\bibitem{websockets3}
+T.~Oberstein, ``\textbf{WebSockets, UDP, and benchmarks}.''
+  \url{http://stackoverflow.com/questions/13040752/websockets-udp-and-benchmarks},
+  October 2012.
 
 \end{thebibliography}

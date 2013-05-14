@@ -55,6 +55,14 @@ M.~Zgadzaj, ``\textbf{Benchmarking Node.js - basic performance tests against
 {I. Fette} and {A. Melnikov}, ``\textbf{The WebSocket Protocol (RFC 6455)},''
   tech. rep., Internet Engineering Task Force (IETF), December 2011.
 
+\bibitem{tcp}
+I.~S. Institute, ``\textbf{Transmission Control Protocol (RFC 793)},'' tech.
+  rep., University of Southern California, September 1981.
+
+\bibitem{udp}
+I.~S. Institute, ``\textbf{User Datagram Protocol (RFC 768)},'' tech. rep.,
+  University of Southern California, September 1980.
+
 \bibitem{rtp}
 {H. Schulzrinne}, {S. Casner}, and {R. Frederick, V. Jacobson}, ``\textbf{Real
   Time Transport Protocol (RFC 3550)},'' tech. rep., Network Working Group,
