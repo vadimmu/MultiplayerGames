@@ -1876,13 +1876,13 @@ current point of development and can be observed in Figures
 \ref{fig:lobby_settings_1} and \ref{fig:lobby_settings_2}.
 
 \begin{figure}
-\includegraphics[height=4in,width=7.12in]{./images/android_screenshots/first_development/game_first_development9.png}
+\includegraphics[height=4in,width=7.12in]{./images/android_screenshots/first_development/game_first_development_9.png}
 \caption{\small \sl The character editing screen (a.k.a. the lobby settings
 screen) menu\label{fig:lobby_settings_1}}
 \end{figure}
 
 \begin{figure}
-\includegraphics[height=4in,width=7.12in]{./images/android_screenshots/first_development/game_first_development10.png}
+\includegraphics[height=4in,width=7.12in]{./images/android_screenshots/first_development/game_first_development_10.png}
 \caption{\small \sl The character editing screen (a.k.a. the lobby settings
 screen) with the character selection dialog opened
 menu\label{fig:lobby_settings_2}}
@@ -1975,14 +1975,55 @@ been removed. \newline
 
 
 \begin{figure}
-\includegraphics[height=4in,width=7.12in]{./images/android_screenshots/second_development/game_second_development5.png}
+\includegraphics[height=4in,width=7.12in]{./images/android_screenshots/second_development/game_second_development_5.png}
 \caption{\small \sl The game UI \label{fig:game_ui2}}
 \end{figure}
 
 The menu UI has also been modified:
 \begin{enumerate}
-  \item 
+  \item \textbf{The main menu screen}: The welcome message has been removed and
+  place has been left for a potential logo. A logo has been tried, as seen in
+  Figure\ref{fig:logo_white}. Also, a button to navigate to the newly added info
+  and tutorials screen has been added.
+  
+  \item \textbf{The info and tutorials screen}: A new Fragment has been added.
+  It contains four buttons that lead to information and tutorials on what the
+  game is and how to play it. It also features a 'Back' button. The initial plan
+  was to have a WebView as container and load the tutorial articles in HTML
+  format. Then, the author subjectively deemed HTML creation too complicated for
+  the task and the decision has been taken to have a ScrollView as container
+  instead and use a LayoutInflater object to generate the UI from XML files. The
+  results can be seen in Figures \ref{fig:tutorial_fragment1} and
+  \ref{fig:tutorial_fragment2}.
+  
+  \item \textbf{The lobby screen}: DESCRIE AICI CUM AI INCERCAT BACKGROUNDURI SI
+  CUM AI ADAUGAT FUNCTIONALITATE DE CLICK PE NUME SI READY SI ME MARKS.
+  
+  \item \textbf{The lobby settings screen}: DESCRIE AICI CUM AI INCERCAT
+  BACKGROUNDURI SI CUM AI ADAUGAT FUNCTIONALITATE SA TINA MINTE NUME SI PROFESIE
+  SI VEZI DACA MAI E CEVA DE ADAUGAT !
+  
 \end{enumerate}
+
+
+\begin{figure}
+\includegraphics[height=4in,width=7.12in]{./images/android_screenshots/logo_white.png}
+\caption{\small \sl A white game logo \label{fig:logo_white}}
+\end{figure}
+
+\begin{figure}
+\includegraphics[height=4in,width=7.12in]{./images/android_screenshots/tutorial_fragment_1.png}
+\caption{\small \sl Tutorials screen: the About
+page\label{fig:tutorial_fragment1}}
+\end{figure}
+
+\begin{figure}
+\includegraphics[height=4in,width=7.12in]{./images/android_screenshots/tutorial_fragment_2.png}
+\caption{\small \sl Tutorials screen: the Game Guide page
+\label{fig:tutorial_fragment2}}
+\end{figure}
+
+
 
 
 DESCRIBE HERE WHAT HAPPENED AFTER : HOW THE GAME UI HAS !!!NOT!!! BEEN MODIFIED
@@ -2201,12 +2242,12 @@ overhead(in bits per second) of HTTP Polling versus Websockets. We can notice
 that in both cases the scale is linear, but the factor is much smaller for
 Websockets.\newline
 
-\begin{figure}[ht]
+\begin{figure}
 \includegraphics[height=1in,width=7.12in]{./images/websockets/WebSocketFrame.png}  
 \caption{\small \sl The Websocket frame \label{fig:websocket_frame}}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}
 \includegraphics[height=4in,width=7.12in]{./images/websockets/poll-ws-compare.png}  
 \caption{\small \sl Websocket vs. HTTP Polling
 \label{fig:websocket_ws_vs_polling}}
@@ -2375,7 +2416,7 @@ specific JSON structures within:
 The communication and action flow on the server, newly joined client and
 existing clients is presented in Figure\ref{fig:client_server_flow}
 
-\begin{figure}[ht]
+\begin{figure}
 \includegraphics[height=6.72in,width=7.12in]{./images/diagrams/Client-Server.png}
 \caption{\small \sl A new client joining the game
 \label{fig:client_server_flow}}

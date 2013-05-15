@@ -45,17 +45,17 @@
 \contentsline {subsection}{\numberline {7.3}Logging, Testing and Data Usage}{25}
 \contentsline {section}{\numberline {8}The second testing phase}{25}
 \contentsline {section}{\numberline {9}UI Design}{25}
-\contentsline {section}{\numberline {10}Measurements}{27}
-\contentsline {section}{\numberline {11}Future work}{27}
-\contentsline {section}{\numberline {12}Conclusion}{27}
-\contentsline {section}{\numberline {13}ANNEX A - game and game platform websites}{27}
-\contentsline {section}{\numberline {14}ANNEX B - game genre definitions}{29}
-\contentsline {section}{\numberline {15}ANNEX C - Websockets vs. TCP speed}{31}
-\contentsline {section}{\numberline {16}ANNEX D - Node.JS vs. Apache - performance and scaling}{33}
-\contentsline {section}{\numberline {17}ANNEX E - JSON vs. XML}{33}
-\contentsline {section}{\numberline {18}ANNEX F - Jackson vs. Gson vs. smart-json}{33}
-\contentsline {section}{\numberline {19}ANNEX G - Reviews of the games mentioned in the paper}{33}
-\contentsline {section}{\numberline {20}ANNEX H - Message types and structure and the communication between Server and Client}{33}
-\contentsline {section}{\numberline {21}ANNEX I - Overlay tutorial}{35}
-\contentsline {section}{\numberline {22}ANNEX J - Countdown buttons Tutorial}{35}
-\contentsline {section}{\numberline {23}Bibliography}{35}
+\contentsline {section}{\numberline {10}Measurements}{33}
+\contentsline {section}{\numberline {11}Future work}{36}
+\contentsline {section}{\numberline {12}Conclusion}{36}
+\contentsline {section}{\numberline {13}ANNEX A - game and game platform websites}{36}
+\contentsline {section}{\numberline {14}ANNEX B - game genre definitions}{37}
+\contentsline {section}{\numberline {15}ANNEX C - Websockets vs. TCP speed}{38}
+\contentsline {section}{\numberline {16}ANNEX D - Node.JS vs. Apache - performance and scaling}{39}
+\contentsline {section}{\numberline {17}ANNEX E - JSON vs. XML}{39}
+\contentsline {section}{\numberline {18}ANNEX F - Jackson vs. Gson vs. smart-json}{39}
+\contentsline {section}{\numberline {19}ANNEX G - Reviews of the games mentioned in the paper}{39}
+\contentsline {section}{\numberline {20}ANNEX H - Message types and structure and the communication between Server and Client}{39}
+\contentsline {section}{\numberline {21}ANNEX I - Overlay tutorial}{42}
+\contentsline {section}{\numberline {22}ANNEX J - Countdown buttons Tutorial}{42}
+\contentsline {section}{\numberline {23}Bibliography}{42}
