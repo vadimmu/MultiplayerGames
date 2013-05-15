@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  15 MAY 2013 13:01
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  15 MAY 2013 16:06
 entering extended mode
 **document.tex
 (C:\Users\Vadim\workspace\MultiplayerGames\document.tex
@@ -108,7 +108,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.160 ...and\NAT@force@numbers{}\NAT@force@numbers
+l.168 ...and\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -135,15 +135,15 @@ LaTeX Font Info:    ... okay on input line 34.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
-* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(113.81102pt, 617.4248pt, 113.81102pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=483.69687pt
-* \textheight=674.33032pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
-* \topmargin=-23.91173pt
+* \textwidth=426.79135pt
+* \textheight=617.4248pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=4.54103pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -240,7 +240,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--128
 
  []
 
-
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 129--131
 
  []
@@ -250,7 +250,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--137
 
  []
 
-[3]
+
 Underfull \hbox (badness 10000) in paragraph at lines 140--146
 
  []
@@ -275,7 +275,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--179
 
  []
 
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 184--190
 
  []
@@ -285,12 +285,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--215
 
  []
 
-[4] [5]
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 314--325
 
  []
 
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 346--350
 
  []
@@ -300,7 +300,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 351--354
 
  []
 
-[6]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 393--400
 
  []
@@ -330,7 +330,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 436--441
 
  []
 
-[7]
+[8] [9]
 Underfull \hbox (badness 10000) in paragraph at lines 506--509
 
  []
@@ -340,8 +340,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 510--514
 
  []
 
-[8]
-Overfull \hbox (35.3181pt too wide) in paragraph at lines 545--553
+
+Overfull \hbox (92.22362pt too wide) in paragraph at lines 545--553
 []\OT1/cmr/m/n/10 Extensive doc-u-men-ta-tion has been found from re-search don
 e on education-oriented GPS-games.([])([])([])([])([])([]),
  []
@@ -351,7 +351,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 545--553
 
  []
 
-
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 554--558
 
  []
@@ -361,7 +361,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 559--563
 
  []
 
-[9]
+
 Underfull \hbox (badness 10000) in paragraph at lines 604--607
 
  []
@@ -371,7 +371,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 608--609
 
  []
 
-[10]
+[11] [12]
 Underfull \hbox (badness 10000) in paragraph at lines 713--717
 
  []
@@ -386,7 +386,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 739--751
 
  []
 
-[11]
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 754--759
 
  []
@@ -401,7 +401,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 769--773
 
  []
 
-[12]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 860--866
 
  []
@@ -411,12 +411,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 867--885
 
  []
 
-
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 886--894
 
  []
 
-[13]
+
 Underfull \hbox (badness 10000) in paragraph at lines 895--913
 
  []
@@ -426,7 +426,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 914--919
 
  []
 
-
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 938--942
 
  []
@@ -446,7 +446,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 963--972
 
  []
 
-[14]
+
 Underfull \hbox (badness 10000) in paragraph at lines 973--982
 
  []
@@ -456,7 +456,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 983--990
 
  []
 
-
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 1025--1029
 
  []
@@ -466,12 +466,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1031--1038
 
  []
 
-[15]
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 1065--1070
 
  []
 
-[16]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 1135--1137
 
  []
@@ -481,12 +481,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1138--1147
 
  []
 
-
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 1175--1181
 
  []
 
-[17]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1182--1186
 
  []
@@ -496,7 +496,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1218--1220
 
  []
 
-[18]
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 1282--1298
 
  []
@@ -516,12 +516,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1309--1322
 
  []
 
-
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 1323--1325
 
  []
 
-[19] [20]
+
+Overfull \hbox (15.12613pt too wide) in paragraph at lines 1334--1336
+[][]\OT1/cmr/m/n/10 The client uses seven frag-ments for the UI: 'Main Menu', '
+Info and Tu-to-ri-als', 'Set-tings', 'Lobby','Lobby
+ []
+
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 1412--1415
 
  []
@@ -536,24 +542,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 1423--1450
 
  []
 
+[24]
+Overfull \hbox (15.12613pt too wide) in paragraph at lines 1467--1469
+[][]\OT1/cmr/m/n/10 The client uses seven frag-ments for the UI: 'Main Menu', '
+Info and Tu-to-ri-als', 'Set-tings', 'Lobby','Lobby
+ []
 
-LaTeX Warning: Reference `fig:game_logo' on page 21 undefined on input line 147
+
+LaTeX Warning: Reference `fig:game_logo' on page 25 undefined on input line 147
 3.
 
-[21]
 
-LaTeX Warning: Reference `fig:game_background_black' on page 22 undefined on in
+LaTeX Warning: Reference `fig:game_background_black' on page 25 undefined on in
 put line 1493.
 
 
-LaTeX Warning: Reference `fig:game_background_white' on page 22 undefined on in
+LaTeX Warning: Reference `fig:game_background_white' on page 25 undefined on in
 put line 1493.
 
 
-LaTeX Warning: Reference `fig:game_background_lobby_settings' on page 22 undefi
+LaTeX Warning: Reference `fig:game_background_lobby_settings' on page 25 undefi
 ned on input line 1497.
 
-
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 1516--1523
 
  []
@@ -573,19 +584,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 1544--1546
 
  []
 
-<./images/android_screenshots/tutorial_game.png, id=73, 963.6pt x 578.16pt>
+<./images/android_screenshots/tutorial_game.png, id=87, 963.6pt x 578.16pt>
 File: ./images/android_screenshots/tutorial_game.png Graphic file (type png)
 
 <use ./images/android_screenshots/tutorial_game.png>
 Package pdftex.def Info: ./images/android_screenshots/tutorial_game.png used on
  input line 1548.
-(pdftex.def)             Requested size: 514.57256pt x 289.07928pt.
+(pdftex.def)             Requested size: 450.23076pt x 252.94437pt.
 
-Overfull \hbox (30.87569pt too wide) in paragraph at lines 1548--1549
+Overfull \hbox (23.4394pt too wide) in paragraph at lines 1548--1549
 [][][] 
  []
 
-[22] [23 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/
+
+Overfull \hbox (17.60454pt too wide) in paragraph at lines 1559--1571
+[][]\OT1/cmr/bx/n/10 The bot-tom of the screen, start-ing from the bottom-left 
+cor-ner\OT1/cmr/m/n/10 : The 'weapon'/'powerup'
+ []
+
+[26] [27 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/
 tutorial_game.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1621--1630
 
@@ -606,7 +623,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1670--1674
 
  []
 
-
+[28]
 Underfull \hbox (badness 10000) in paragraph at lines 1675--1677
 
  []
@@ -621,7 +638,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1686--1698
 
  []
 
-[24]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1699--1704
 
  []
@@ -636,7 +653,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1718--1723
 
  []
 
-
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 1747--1750
 
  []
@@ -651,7 +668,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1754--1759
 
  []
 
-[25]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1760--1780
 
  []
@@ -662,102 +679,112 @@ Underfull \hbox (badness 10000) in paragraph at lines 1781--1783
  []
 
 
-<./images/android_screenshots/ui_prototype/UI_prototype_1.png, id=91, 1284.8pt 
-x 770.88pt>
+<./images/android_screenshots/ui_prototype/UI_prototype_1.png, id=103, 1284.8pt
+ x 770.88pt>
 File: ./images/android_screenshots/ui_prototype/UI_prototype_1.png Graphic file
  (type png)
- <use ./images/android_screenshots/ui_prototype/UI_prototype_1.png>
+
+<use ./images/android_screenshots/ui_prototype/UI_prototype_1.png>
 Package pdftex.def Info: ./images/android_screenshots/ui_prototype/UI_prototype
 _1.png used on input line 1786.
-(pdftex.def)             Requested size: 514.57745pt x 289.07928pt.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (30.88058pt too wide) in paragraph at lines 1786--1787
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1786--1787
 [][][] 
  []
 
 
-<./images/android_screenshots/ui_prototype/UI_prototype_2.png, id=92, 1284.8pt 
-x 770.88pt>
+<./images/android_screenshots/ui_prototype/UI_prototype_2.png, id=104, 1284.8pt
+ x 770.88pt>
 File: ./images/android_screenshots/ui_prototype/UI_prototype_2.png Graphic file
  (type png)
- <use ./images/android_screenshots/ui_prototype/UI_prototype_2.png>
+
+<use ./images/android_screenshots/ui_prototype/UI_prototype_2.png>
 Package pdftex.def Info: ./images/android_screenshots/ui_prototype/UI_prototype
 _2.png used on input line 1791.
-(pdftex.def)             Requested size: 514.57745pt x 289.07928pt.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (30.88058pt too wide) in paragraph at lines 1791--1792
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1791--1792
 [][][] 
  []
 
 
-<./images/android_screenshots/ui_prototype/UI_prototype_3.png, id=93, 1284.8pt 
-x 770.88pt>
+<./images/android_screenshots/ui_prototype/UI_prototype_3.png, id=105, 1284.8pt
+ x 770.88pt>
 File: ./images/android_screenshots/ui_prototype/UI_prototype_3.png Graphic file
  (type png)
- <use ./images/android_screenshots/ui_prototype/UI_prototype_3.png>
+
+<use ./images/android_screenshots/ui_prototype/UI_prototype_3.png>
 Package pdftex.def Info: ./images/android_screenshots/ui_prototype/UI_prototype
 _3.png used on input line 1796.
-(pdftex.def)             Requested size: 514.57745pt x 289.07928pt.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (30.88058pt too wide) in paragraph at lines 1796--1797
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1796--1797
 [][][] 
  []
 
 
-<./images/android_screenshots/ui_prototype/UI_prototype_4.png, id=94, 1284.8pt 
-x 770.88pt>
+<./images/android_screenshots/ui_prototype/UI_prototype_4.png, id=106, 1284.8pt
+ x 770.88pt>
 File: ./images/android_screenshots/ui_prototype/UI_prototype_4.png Graphic file
  (type png)
- <use ./images/android_screenshots/ui_prototype/UI_prototype_4.png>
+
+<use ./images/android_screenshots/ui_prototype/UI_prototype_4.png>
 Package pdftex.def Info: ./images/android_screenshots/ui_prototype/UI_prototype
 _4.png used on input line 1801.
-(pdftex.def)             Requested size: 514.57745pt x 289.07928pt.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (30.88058pt too wide) in paragraph at lines 1801--1802
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1801--1802
 [][][] 
  []
 
 
-<./images/android_screenshots/ui_prototype/UI_prototype_5.png, id=95, 1284.8pt 
-x 770.88pt>
+<./images/android_screenshots/ui_prototype/UI_prototype_5.png, id=107, 1284.8pt
+ x 770.88pt>
 File: ./images/android_screenshots/ui_prototype/UI_prototype_5.png Graphic file
  (type png)
- <use ./images/android_screenshots/ui_prototype/UI_prototype_5.png>
+
+<use ./images/android_screenshots/ui_prototype/UI_prototype_5.png>
 Package pdftex.def Info: ./images/android_screenshots/ui_prototype/UI_prototype
 _5.png used on input line 1806.
-(pdftex.def)             Requested size: 514.57745pt x 289.07928pt.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (30.88058pt too wide) in paragraph at lines 1806--1807
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1806--1807
 [][][] 
  []
 
-
-<./images/android_screenshots/menu_prototype/MENU_prototype_1.png, id=96, 1284.
-8pt x 770.88pt>
+[30] [31 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/
+ui_prototype/UI_prototype_1.png> <C:/Users/Vadim/workspace/MultiplayerGames/ima
+ges/android_screenshots/ui_prototype/UI_prototype_2.png>] [32 <C:/Users/Vadim/w
+orkspace/MultiplayerGames/images/android_screenshots/ui_prototype/UI_prototype_
+3.png> <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/ui
+_prototype/UI_prototype_4.png>]
+<./images/android_screenshots/menu_prototype/MENU_prototype_1.png, id=118, 1284
+.8pt x 770.88pt>
 File: ./images/android_screenshots/menu_prototype/MENU_prototype_1.png Graphic 
 file (type png)
 
 <use ./images/android_screenshots/menu_prototype/MENU_prototype_1.png>
 Package pdftex.def Info: ./images/android_screenshots/menu_prototype/MENU_proto
 type_1.png used on input line 1825.
-(pdftex.def)             Requested size: 514.57745pt x 289.07928pt.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (30.88058pt too wide) in paragraph at lines 1825--1826
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1825--1826
 [][][] 
  []
 
 
-<./images/android_screenshots/menu_prototype/MENU_prototype_2.png, id=97, 1284.
-8pt x 770.88pt>
+<./images/android_screenshots/menu_prototype/MENU_prototype_2.png, id=119, 1284
+.8pt x 770.88pt>
 File: ./images/android_screenshots/menu_prototype/MENU_prototype_2.png Graphic 
 file (type png)
 
 <use ./images/android_screenshots/menu_prototype/MENU_prototype_2.png>
 Package pdftex.def Info: ./images/android_screenshots/menu_prototype/MENU_proto
 type_2.png used on input line 1830.
-(pdftex.def)             Requested size: 514.57745pt x 289.07928pt.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (30.88058pt too wide) in paragraph at lines 1830--1831
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1830--1831
 [][][] 
  []
 
@@ -766,31 +793,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 1834--1836
 
  []
 
-[26 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/ui_pr
-ototype/UI_prototype_1.png>] [27 <C:/Users/Vadim/workspace/MultiplayerGames/ima
-ges/android_screenshots/ui_prototype/UI_prototype_2.png> <C:/Users/Vadim/worksp
-ace/MultiplayerGames/images/android_screenshots/ui_prototype/UI_prototype_3.png
->] [28 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/ui
-_prototype/UI_prototype_4.png> <C:/Users/Vadim/workspace/MultiplayerGames/image
-s/android_screenshots/ui_prototype/UI_prototype_5.png>] [29 <C:/Users/Vadim/wor
-kspace/MultiplayerGames/images/android_screenshots/menu_prototype/MENU_prototyp
-e_1.png> <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/
-menu_prototype/MENU_prototype_2.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1837--1845
 
  []
 
 
-<./images/android_screenshots/tutorial_main_settings.png, id=110, 289.08pt x 17
+<./images/android_screenshots/tutorial_main_settings.png, id=120, 289.08pt x 17
 3.89969pt>
 File: ./images/android_screenshots/tutorial_main_settings.png Graphic file (typ
 e png)
  <use ./images/android_screenshots/tutorial_main_settings.png>
 Package pdftex.def Info: ./images/android_screenshots/tutorial_main_settings.pn
 g used on input line 1847.
-(pdftex.def)             Requested size: 514.59164pt x 289.11917pt.
+(pdftex.def)             Requested size: 450.26604pt x 252.95738pt.
 
-Overfull \hbox (30.89478pt too wide) in paragraph at lines 1847--1849
+Overfull \hbox (23.47469pt too wide) in paragraph at lines 1847--1849
 [][][] 
  []
 
@@ -800,378 +818,488 @@ Underfull \hbox (badness 10000) in paragraph at lines 1852--1862
  []
 
 
-<./images/android_screenshots/tutorial_loading.png, id=111, 1284.8pt x 770.88pt
+<./images/android_screenshots/tutorial_loading.png, id=121, 1284.8pt x 770.88pt
 >
 File: ./images/android_screenshots/tutorial_loading.png Graphic file (type png)
 
  <use ./images/android_screenshots/tutorial_loading.png>
 Package pdftex.def Info: ./images/android_screenshots/tutorial_loading.png used
  on input line 1864.
-(pdftex.def)             Requested size: 514.57745pt x 289.07928pt.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (30.88058pt too wide) in paragraph at lines 1864--1866
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1864--1865
 [][][] 
  []
 
-
+[33 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/ui_pr
+ototype/UI_prototype_5.png>] [34 <C:/Users/Vadim/workspace/MultiplayerGames/ima
+ges/android_screenshots/menu_prototype/MENU_prototype_1.png> <C:/Users/Vadim/wo
+rkspace/MultiplayerGames/images/android_screenshots/menu_prototype/MENU_prototy
+pe_2.png>] [35 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screen
+shots/tutorial_main_settings.png> <C:/Users/Vadim/workspace/MultiplayerGames/im
+ages/android_screenshots/tutorial_loading.png>]
 <./images/android_screenshots/first_development/game_first_development_9.png, i
-d=112, 1284.8pt x 770.88pt>
+d=132, 1284.8pt x 770.88pt>
 File: ./images/android_screenshots/first_development/game_first_development_9.p
 ng Graphic file (type png)
 
 <use ./images/android_screenshots/first_development/game_first_development_9.pn
 g>
 Package pdftex.def Info: ./images/android_screenshots/first_development/game_fi
-rst_development_9.png used on input line 1879.
-(pdftex.def)             Requested size: 514.57745pt x 289.07928pt.
+rst_development_9.png used on input line 1878.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (30.88058pt too wide) in paragraph at lines 1879--1881
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1878--1880
 [][][] 
  []
 
 
 <./images/android_screenshots/first_development/game_first_development_10.png, 
-id=113, 1284.8pt x 770.88pt>
+id=133, 1284.8pt x 770.88pt>
 File: ./images/android_screenshots/first_development/game_first_development_10.
 png Graphic file (type png)
 
 <use ./images/android_screenshots/first_development/game_first_development_10.p
 ng>
 Package pdftex.def Info: ./images/android_screenshots/first_development/game_fi
-rst_development_10.png used on input line 1885.
-(pdftex.def)             Requested size: 514.57745pt x 289.07928pt.
+rst_development_10.png used on input line 1884.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (30.88058pt too wide) in paragraph at lines 1885--1888
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1884--1887
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1891--1900
-
- []
-
-[30 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/tutor
-ial_main_settings.png>] [31 <C:/Users/Vadim/workspace/MultiplayerGames/images/a
-ndroid_screenshots/tutorial_loading.png> <C:/Users/Vadim/workspace/MultiplayerG
-ames/images/android_screenshots/first_development/game_first_development_9.png>
-]
-Underfull \hbox (badness 10000) in paragraph at lines 1903--1908
+Underfull \hbox (badness 10000) in paragraph at lines 1890--1899
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1909--1913
+Underfull \hbox (badness 10000) in paragraph at lines 1902--1907
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1925--1935
+Underfull \hbox (badness 10000) in paragraph at lines 1908--1912
 
  []
 
-[32 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/first
+[36 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/first
+_development/game_first_development_9.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1924--1934
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1939--1941
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1942--1949
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1950--1974
+
+ []
+
+[37 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/first
 _development/game_first_development_10.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1940--1942
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1943--1950
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1951--1975
-
- []
-
-
 <./images/android_screenshots/second_development/game_second_development_5.png,
- id=125, 1284.8pt x 770.88pt>
+ id=141, 1284.8pt x 770.88pt>
 File: ./images/android_screenshots/second_development/game_second_development_5
 .png Graphic file (type png)
 
 <use ./images/android_screenshots/second_development/game_second_development_5.
 png>
 Package pdftex.def Info: ./images/android_screenshots/second_development/game_s
-econd_development_5.png used on input line 1978.
-(pdftex.def)             Requested size: 514.57745pt x 289.07928pt.
+econd_development_5.png used on input line 1977.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (30.88058pt too wide) in paragraph at lines 1978--1979
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1977--1978
 [][][] 
  []
 
-<./images/android_screenshots/logo_white.png, id=126, 1284.8pt x 770.88pt>
+<./images/android_screenshots/logo_white.png, id=142, 1284.8pt x 770.88pt>
 File: ./images/android_screenshots/logo_white.png Graphic file (type png)
 
 <use ./images/android_screenshots/logo_white.png>
 Package pdftex.def Info: ./images/android_screenshots/logo_white.png used on in
-put line 2010.
-(pdftex.def)             Requested size: 514.57745pt x 289.07928pt.
+put line 1989.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (30.88058pt too wide) in paragraph at lines 2010--2011
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1989--1990
 [][][] 
  []
 
-
-<./images/android_screenshots/tutorial_fragment_1.png, id=127, 1284.8pt x 770.8
+[38 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/secon
+d_development/game_second_development_5.png>]
+<./images/android_screenshots/tutorial_fragment_1.png, id=146, 1284.8pt x 770.8
 8pt>
 File: ./images/android_screenshots/tutorial_fragment_1.png Graphic file (type p
 ng)
  <use ./images/android_screenshots/tutorial_fragment_1.png>
 Package pdftex.def Info: ./images/android_screenshots/tutorial_fragment_1.png u
-sed on input line 2015.
-(pdftex.def)             Requested size: 514.57745pt x 289.07928pt.
+sed on input line 2004.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (30.88058pt too wide) in paragraph at lines 2015--2017
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 2004--2006
 [][][] 
  []
 
 
-<./images/android_screenshots/tutorial_fragment_2.png, id=128, 1284.8pt x 770.8
+<./images/android_screenshots/tutorial_fragment_2.png, id=147, 1284.8pt x 770.8
 8pt>
 File: ./images/android_screenshots/tutorial_fragment_2.png Graphic file (type p
 ng)
  <use ./images/android_screenshots/tutorial_fragment_2.png>
 Package pdftex.def Info: ./images/android_screenshots/tutorial_fragment_2.png u
-sed on input line 2021.
-(pdftex.def)             Requested size: 514.57745pt x 289.07928pt.
+sed on input line 2010.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (30.88058pt too wide) in paragraph at lines 2021--2023
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 2010--2012
 [][][] 
  []
 
-[33] [34 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/
-second_development/game_second_development_5.png> <C:/Users/Vadim/workspace/Mul
-tiplayerGames/images/android_screenshots/logo_white.png>] [35 <C:/Users/Vadim/w
-orkspace/MultiplayerGames/images/android_screenshots/tutorial_fragment_1.png> <
-C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/tutorial_f
-ragment_2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2059--2072
+
+<./images/android_screenshots/second_development/game_second_development_3.png,
+ id=148, 1284.8pt x 770.88pt>
+File: ./images/android_screenshots/second_development/game_second_development_3
+.png Graphic file (type png)
+
+<use ./images/android_screenshots/second_development/game_second_development_3.
+png>
+Package pdftex.def Info: ./images/android_screenshots/second_development/game_s
+econd_development_3.png used on input line 2024.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
+
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 2024--2026
+[][][] 
+ []
+
+
+<./images/android_screenshots/lobby_background_white.png, id=149, 1284.8pt x 77
+0.88pt>
+File: ./images/android_screenshots/lobby_background_white.png Graphic file (typ
+e png)
+ <use ./images/android_screenshots/lobby_background_white.png>
+Package pdftex.def Info: ./images/android_screenshots/lobby_background_white.pn
+g used on input line 2030.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
+
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 2030--2032
+[][][] 
+ []
+
+
+<./images/android_screenshots/second_development/game_second_development_8.png,
+ id=150, 1284.8pt x 770.88pt>
+File: ./images/android_screenshots/second_development/game_second_development_8
+.png Graphic file (type png)
+
+<use ./images/android_screenshots/second_development/game_second_development_8.
+png>
+Package pdftex.def Info: ./images/android_screenshots/second_development/game_s
+econd_development_8.png used on input line 2043.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
+
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 2043--2045
+[][][] 
+ []
+
+
+<./images/android_screenshots/lobby_settings_background_white.png, id=151, 1284
+.8pt x 770.88pt>
+File: ./images/android_screenshots/lobby_settings_background_white.png Graphic 
+file (type png)
+
+<use ./images/android_screenshots/lobby_settings_background_white.png>
+Package pdftex.def Info: ./images/android_screenshots/lobby_settings_background
+_white.png used on input line 2049.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
+
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 2049--2051
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2056--2069
+
+ []
+
+[39 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/logo_
+white.png>] [40 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_scree
+nshots/tutorial_fragment_1.png> <C:/Users/Vadim/workspace/MultiplayerGames/imag
+es/android_screenshots/tutorial_fragment_2.png>] [41 <C:/Users/Vadim/workspace/
+MultiplayerGames/images/android_screenshots/second_development/game_second_deve
+lopment_3.png> <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screen
+shots/lobby_background_white.png>] [42 <C:/Users/Vadim/workspace/MultiplayerGam
+es/images/android_screenshots/second_development/game_second_development_8.png>
+ <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/lobby_se
+ttings_background_white.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2070--2072
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2082--2083
+Underfull \hbox (badness 10000) in paragraph at lines 2073--2076
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2084--2085
+Underfull \hbox (badness 10000) in paragraph at lines 2077--2081
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2086--2087
+Underfull \hbox (badness 10000) in paragraph at lines 2082--2088
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2088--2089
+Underfull \hbox (badness 10000) in paragraph at lines 2089--2092
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2090--2091
+Underfull \hbox (badness 10000) in paragraph at lines 2093--2107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2092--2093
+Underfull \hbox (badness 10000) in paragraph at lines 2125--2138
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 2148--2149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2094--2095
+Underfull \hbox (badness 10000) in paragraph at lines 2150--2151
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2096--2097
+Underfull \hbox (badness 10000) in paragraph at lines 2152--2153
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2098--2099
+Underfull \hbox (badness 10000) in paragraph at lines 2154--2155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2100--2101
+Underfull \hbox (badness 10000) in paragraph at lines 2156--2157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2102--2103
+Underfull \hbox (badness 10000) in paragraph at lines 2158--2159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2104--2106
+Underfull \hbox (badness 10000) in paragraph at lines 2160--2161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2107--2108
+Underfull \hbox (badness 10000) in paragraph at lines 2162--2163
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2109--2110
+Underfull \hbox (badness 10000) in paragraph at lines 2164--2165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2111--2112
+Underfull \hbox (badness 10000) in paragraph at lines 2166--2167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2113--2114
+Underfull \hbox (badness 10000) in paragraph at lines 2168--2169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2115--2116
+Underfull \hbox (badness 10000) in paragraph at lines 2170--2172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2117--2119
+Underfull \hbox (badness 10000) in paragraph at lines 2173--2174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2120--2121
-
- []
-
-[36]
-Underfull \hbox (badness 10000) in paragraph at lines 2122--2123
+Underfull \hbox (badness 10000) in paragraph at lines 2175--2176
 
  []
 
 
-Overfull \hbox (22.34038pt too wide) in paragraph at lines 2150--2152
+Underfull \hbox (badness 10000) in paragraph at lines 2177--2178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2179--2180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2181--2182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2183--2185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2186--2187
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2188--2189
+
+ []
+
+
+Overfull \hbox (13.50723pt too wide) in paragraph at lines 2196--2198
+[]\OT1/cmr/bx/n/10 Real Time Strat-egy Game \OT1/cmr/m/n/10 http://encyclopedia
+2.thefreedictionary.com/Real-time+strategy+game 
+ []
+
+[44]
+Overfull \hbox (79.2459pt too wide) in paragraph at lines 2216--2218
 [][]\OT1/cmr/bx/n/10 Massively Mul-ti-player On-line Game \OT1/cmr/m/n/10 http:
 //encyclopedia.thefreedictionary.com/Massively+Multiplayer+Online 
  []
 
-
-Overfull \hbox (37.41493pt too wide) in paragraph at lines 2212--2214
+[45]
+Overfull \hbox (94.32045pt too wide) in paragraph at lines 2278--2280
 [][]\OT1/cmr/bx/n/10 Location Based Game (Location-enabled Game \OT1/cmr/m/n/10
  http://encyclopedia.thefreedictionary.com/location+based+game 
  []
 
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 2226--2233
+
+Underfull \hbox (badness 10000) in paragraph at lines 2292--2299
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2234--2238
+Underfull \hbox (badness 10000) in paragraph at lines 2300--2304
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2239--2244
+Underfull \hbox (badness 10000) in paragraph at lines 2305--2310
 
  []
 
-<./images/websockets/WebSocketFrame.png, id=145, 722.7pt x 111.2958pt>
+<./images/websockets/WebSocketFrame.png, id=174, 722.7pt x 111.2958pt>
 File: ./images/websockets/WebSocketFrame.png Graphic file (type png)
 
 <use ./images/websockets/WebSocketFrame.png>
 Package pdftex.def Info: ./images/websockets/WebSocketFrame.png used on input l
-ine 2246.
+ine 2312.
 (pdftex.def)             Requested size: 514.56519pt x 72.27347pt.
 
-Overfull \hbox (30.86832pt too wide) in paragraph at lines 2246--2247
+Overfull \hbox (87.77383pt too wide) in paragraph at lines 2312--2313
 [][][] 
  []
 
-<./images/websockets/poll-ws-compare.png, id=146, 378.66469pt x 271.0125pt>
+<./images/websockets/poll-ws-compare.png, id=175, 378.66469pt x 271.0125pt>
 File: ./images/websockets/poll-ws-compare.png Graphic file (type png)
 
 <use ./images/websockets/poll-ws-compare.png>
 Package pdftex.def Info: ./images/websockets/poll-ws-compare.png used on input 
-line 2251.
-(pdftex.def)             Requested size: 514.61314pt x 289.0914pt.
+line 2317.
+(pdftex.def)             Requested size: 450.24678pt x 252.95291pt.
 
-Overfull \hbox (30.91628pt too wide) in paragraph at lines 2251--2253
+Overfull \hbox (23.45543pt too wide) in paragraph at lines 2317--2319
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2256--2259
+Underfull \hbox (badness 10000) in paragraph at lines 2322--2325
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2261--2267
+Underfull \hbox (badness 10000) in paragraph at lines 2327--2333
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2268--2272
+Underfull \hbox (badness 10000) in paragraph at lines 2334--2338
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2282--2284
-
- []
-
-[38 <C:/Users/Vadim/workspace/MultiplayerGames/images/websockets/WebSocketFrame
+[46 <C:/Users/Vadim/workspace/MultiplayerGames/images/websockets/WebSocketFrame
 .png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2285--2290
+Underfull \hbox (badness 10000) in paragraph at lines 2348--2350
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 2303
+
+Underfull \hbox (badness 10000) in paragraph at lines 2351--2356
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 2369
 .
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2303.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2369.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2303--2307
+Underfull \hbox (badness 10000) in paragraph at lines 2369--2373
 
  []
 
-[39 <C:/Users/Vadim/workspace/MultiplayerGames/images/websockets/poll-ws-compar
+[47 <C:/Users/Vadim/workspace/MultiplayerGames/images/websockets/poll-ws-compar
 e.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2308--2316
+Underfull \hbox (badness 10000) in paragraph at lines 2374--2382
 
  []
 
-
-Overfull \hbox (6.69185pt too wide) in paragraph at lines 2340--2343
-[][]\OT1/cmr/m/n/10 SHOOT : \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 player: playerU-U
-ID, tar-get: tar-ge-tU-UID, weapon: weapon-Name, dam-age: dam-ageAmount,
- []
-
-<./images/diagrams/Client-Server.png, id=156, 723.70375pt x 766.865pt>
+[48] <./images/diagrams/Client-Server.png, id=188, 723.70375pt x 766.865pt>
 File: ./images/diagrams/Client-Server.png Graphic file (type png)
 
 <use ./images/diagrams/Client-Server.png>
 Package pdftex.def Info: ./images/diagrams/Client-Server.png used on input line
- 2420.
+ 2486.
 (pdftex.def)             Requested size: 514.56209pt x 485.66672pt.
 
-Overfull \hbox (30.86522pt too wide) in paragraph at lines 2420--2422
+Overfull \hbox (87.77074pt too wide) in paragraph at lines 2486--2488
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2427--2431
+Underfull \hbox (badness 10000) in paragraph at lines 2493--2497
 
  []
 
-[40] [41 <C:/Users/Vadim/workspace/MultiplayerGames/images/diagrams/Client-Serv
-er.png>] (C:\Users\Vadim\workspace\MultiplayerGames\document.bbl
+(C:\Users\Vadim\workspace\MultiplayerGames\document.bbl
+Underfull \hbox (badness 1466) in paragraph at lines 4--6
+[][]\OT1/cmr/m/n/10 J. Yang, ``\OT1/cmr/bx/n/10 Smartphones in Use Sur-pass 1 B
+il-lion, Will Dou-ble by 2015\OT1/cmr/m/n/10 ,''
+ []
+
+[49] [50 <C:/Users/Vadim/workspace/MultiplayerGames/images/diagrams/Client-Serv
+er.png>]
 Missing character: There is no ï in font cmbx10!
 Missing character: There is no ¿ in font cmbx10!
 Missing character: There is no ½ in font cmbx10!
@@ -1186,15 +1314,9 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 2932) in paragraph at lines 38--42
-[][]\OT1/cmr/m/n/10 D. Soft-ware(dacris.com), ``\OT1/cmr/bx/n/10 Node.js: Mi-cr
-osofts Web Em-pire is Com-ing to an End\OT1/cmr/m/n/10 .''
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 38--42
 \OT1/cmr/m/n/10 http://www.dacris.com/blog/2011/08/31/node-js-microsofts-web-em
-pire-is-coming-to-an-end/, Au-gust
+pire-is-coming-to-an-
  []
 
 ! Undefined control sequence.
@@ -1206,13 +1328,18 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[42]
+[51]
 Missing character: There is no ï in font cmbx10!
 Missing character: There is no ¿ in font cmbx10!
 Missing character: There is no ½ in font cmbx10!
 Missing character: There is no ï in font cmr10!
 Missing character: There is no ¿ in font cmr10!
 Missing character: There is no ½ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--115
+[][]\OT1/cmr/m/n/10 3rd WORK-SHOP ON PO-SI-TION-ING, NAV-I-GA-TION AND COM-MU-N
+I-CA-TION
+ []
 
 ! Undefined control sequence.
 l.118   \url
@@ -1224,25 +1351,30 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (44.92921pt too wide) in paragraph at lines 117--120
+Underfull \hbox (badness 10000) in paragraph at lines 117--120
 [][]\OT1/cmr/m/n/10 T. Ober-stein, ``\OT1/cmr/bx/n/10 WebSockets, UDP, and benc
-h-marks\OT1/cmr/m/n/10 .'' http://stackoverflow.com/questions/13040752/websocke
-ts-
+h-marks\OT1/cmr/m/n/10 .''
  []
 
-) [43] (C:\Users\Vadim\workspace\MultiplayerGames\document.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--120
+\OT1/cmr/m/n/10 http://stackoverflow.com/questions/13040752/websockets-udp-and-
+benchmarks, Oc-to-ber
+ []
+
+) [52] (C:\Users\Vadim\workspace\MultiplayerGames\document.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2207 strings out of 494045
- 34145 string characters out of 3145969
- 91322 words of memory out of 3000000
- 5482 multiletter control sequences out of 15000+200000
+ 2235 strings out of 494045
+ 35594 string characters out of 3145969
+ 93350 words of memory out of 3000000
+ 5506 multiletter control sequences out of 15000+200000
  9419 words of font info for 33 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 27i,6n,31p,663b,269s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,31p,663b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C
@@ -1253,9 +1385,9 @@ m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl9.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files 
 (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on document.pdf (43 pages, 3794690 bytes).
+Output written on document.pdf (52 pages, 5090719 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
+ 239 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 
