@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  15 MAY 2013 16:06
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  15 MAY 2013 20:47
 entering extended mode
 **document.tex
 (C:\Users\Vadim\workspace\MultiplayerGames\document.tex
@@ -1074,92 +1074,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 2125--2138
  []
 
 [43]
-Underfull \hbox (badness 10000) in paragraph at lines 2148--2149
+Overfull \hbox (33.78442pt too wide) in paragraph at lines 2157--2160
+[]\OT1/cmr/bx/n/10 ARIS Games\OT1/cmr/m/n/10 : http://arisgames.org/ ARIS Games
+ is a frame-work for de-vel-op-ing Ad-ven-ture/Investigation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2157--2160
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2150--2151
+Underfull \hbox (badness 10000) in paragraph at lines 2161--2169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2152--2153
+Underfull \hbox (badness 10000) in paragraph at lines 2170--2171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2154--2155
+Underfull \hbox (badness 10000) in paragraph at lines 2172--2173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2156--2157
+Underfull \hbox (badness 10000) in paragraph at lines 2174--2175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2158--2159
+Underfull \hbox (badness 10000) in paragraph at lines 2176--2177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2160--2161
+Underfull \hbox (badness 10000) in paragraph at lines 2178--2179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2162--2163
+Underfull \hbox (badness 10000) in paragraph at lines 2180--2181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2164--2165
+Underfull \hbox (badness 10000) in paragraph at lines 2182--2183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2166--2167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2168--2169
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2170--2172
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2173--2174
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2175--2176
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2177--2178
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2179--2180
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2181--2182
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2183--2185
+Underfull \hbox (badness 10000) in paragraph at lines 2184--2185
 
  []
 
@@ -1169,40 +1135,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 2186--2187
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2188--2189
+Underfull \hbox (badness 10000) in paragraph at lines 2188--2190
 
  []
 
 
-Overfull \hbox (13.50723pt too wide) in paragraph at lines 2196--2198
+Underfull \hbox (badness 10000) in paragraph at lines 2191--2192
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2193--2194
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2195--2196
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 2197--2198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2199--2200
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2201--2203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2204--2205
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2206--2207
+
+ []
+
+
+Overfull \hbox (13.50723pt too wide) in paragraph at lines 2214--2216
 []\OT1/cmr/bx/n/10 Real Time Strat-egy Game \OT1/cmr/m/n/10 http://encyclopedia
 2.thefreedictionary.com/Real-time+strategy+game 
  []
 
-[44]
-Overfull \hbox (79.2459pt too wide) in paragraph at lines 2216--2218
+
+Overfull \hbox (79.2459pt too wide) in paragraph at lines 2234--2236
 [][]\OT1/cmr/bx/n/10 Massively Mul-ti-player On-line Game \OT1/cmr/m/n/10 http:
 //encyclopedia.thefreedictionary.com/Massively+Multiplayer+Online 
  []
 
 [45]
-Overfull \hbox (94.32045pt too wide) in paragraph at lines 2278--2280
+Overfull \hbox (94.32045pt too wide) in paragraph at lines 2296--2298
 [][]\OT1/cmr/bx/n/10 Location Based Game (Location-enabled Game \OT1/cmr/m/n/10
  http://encyclopedia.thefreedictionary.com/location+based+game 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2292--2299
+Underfull \hbox (badness 10000) in paragraph at lines 2310--2317
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2300--2304
+Underfull \hbox (badness 10000) in paragraph at lines 2318--2322
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2305--2310
+Underfull \hbox (badness 10000) in paragraph at lines 2323--2328
 
  []
 
@@ -1211,10 +1217,10 @@ File: ./images/websockets/WebSocketFrame.png Graphic file (type png)
 
 <use ./images/websockets/WebSocketFrame.png>
 Package pdftex.def Info: ./images/websockets/WebSocketFrame.png used on input l
-ine 2312.
+ine 2330.
 (pdftex.def)             Requested size: 514.56519pt x 72.27347pt.
 
-Overfull \hbox (87.77383pt too wide) in paragraph at lines 2312--2313
+Overfull \hbox (87.77383pt too wide) in paragraph at lines 2330--2331
 [][][] 
  []
 
@@ -1223,55 +1229,55 @@ File: ./images/websockets/poll-ws-compare.png Graphic file (type png)
 
 <use ./images/websockets/poll-ws-compare.png>
 Package pdftex.def Info: ./images/websockets/poll-ws-compare.png used on input 
-line 2317.
+line 2335.
 (pdftex.def)             Requested size: 450.24678pt x 252.95291pt.
 
-Overfull \hbox (23.45543pt too wide) in paragraph at lines 2317--2319
+Overfull \hbox (23.45543pt too wide) in paragraph at lines 2335--2337
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2322--2325
+Underfull \hbox (badness 10000) in paragraph at lines 2340--2343
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2327--2333
+Underfull \hbox (badness 10000) in paragraph at lines 2345--2351
+
+ []
+
+[46] [47 <C:/Users/Vadim/workspace/MultiplayerGames/images/websockets/WebSocket
+Frame.png> <C:/Users/Vadim/workspace/MultiplayerGames/images/websockets/poll-ws
+-compare.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2352--2356
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2334--2338
-
- []
-
-[46 <C:/Users/Vadim/workspace/MultiplayerGames/images/websockets/WebSocketFrame
-.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2348--2350
+Underfull \hbox (badness 10000) in paragraph at lines 2366--2368
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2351--2356
+Underfull \hbox (badness 10000) in paragraph at lines 2369--2374
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 2369
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 2387
 .
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2369.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2387.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2369--2373
+Underfull \hbox (badness 10000) in paragraph at lines 2387--2391
 
  []
 
-[47 <C:/Users/Vadim/workspace/MultiplayerGames/images/websockets/poll-ws-compar
-e.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2374--2382
+
+Underfull \hbox (badness 10000) in paragraph at lines 2392--2400
 
  []
 
@@ -1280,26 +1286,37 @@ File: ./images/diagrams/Client-Server.png Graphic file (type png)
 
 <use ./images/diagrams/Client-Server.png>
 Package pdftex.def Info: ./images/diagrams/Client-Server.png used on input line
- 2486.
+ 2504.
 (pdftex.def)             Requested size: 514.56209pt x 485.66672pt.
 
-Overfull \hbox (87.77074pt too wide) in paragraph at lines 2486--2488
+Overfull \hbox (87.77074pt too wide) in paragraph at lines 2504--2506
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2493--2497
+Underfull \hbox (badness 10000) in paragraph at lines 2511--2516
 
  []
 
-(C:\Users\Vadim\workspace\MultiplayerGames\document.bbl
+[49] [50 <C:/Users/Vadim/workspace/MultiplayerGames/images/diagrams/Client-Serv
+er.png>] [51]
+Underfull \hbox (badness 10000) in paragraph at lines 2569--2572
+
+ []
+
+
+Overfull \hbox (7.70511pt too wide) in paragraph at lines 2690--2690
+ [][]\OT1/cmtt/m/n/10 public class WeaponReportingTask extends AsyncTask<Weapon
+, Integer, Integer> {[] 
+ []
+
+[52] [53] (C:\Users\Vadim\workspace\MultiplayerGames\document.bbl
 Underfull \hbox (badness 1466) in paragraph at lines 4--6
 [][]\OT1/cmr/m/n/10 J. Yang, ``\OT1/cmr/bx/n/10 Smartphones in Use Sur-pass 1 B
 il-lion, Will Dou-ble by 2015\OT1/cmr/m/n/10 ,''
  []
 
-[49] [50 <C:/Users/Vadim/workspace/MultiplayerGames/images/diagrams/Client-Serv
-er.png>]
+[54]
 Missing character: There is no ï in font cmbx10!
 Missing character: There is no ¿ in font cmbx10!
 Missing character: There is no ½ in font cmbx10!
@@ -1328,7 +1345,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[51]
+[55]
 Missing character: There is no ï in font cmbx10!
 Missing character: There is no ¿ in font cmbx10!
 Missing character: There is no ½ in font cmbx10!
@@ -1362,7 +1379,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--120
 benchmarks, Oc-to-ber
  []
 
-) [52] (C:\Users\Vadim\workspace\MultiplayerGames\document.aux)
+) [56] (C:\Users\Vadim\workspace\MultiplayerGames\document.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1374,7 +1391,7 @@ Here is how much of TeX's memory you used:
  5506 multiletter control sequences out of 15000+200000
  9419 words of font info for 33 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 27i,6n,31p,663b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,31p,663b,313s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C
@@ -1384,10 +1401,11 @@ gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl9.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on document.pdf (52 pages, 5090719 bytes).
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on document.pdf (56 pages, 5115948 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
+ 256 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

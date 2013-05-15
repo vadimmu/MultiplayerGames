@@ -56,6 +56,6 @@
 \contentsline {section}{\numberline {18}ANNEX F - Jackson vs. Gson vs. smart-json}{48}
 \contentsline {section}{\numberline {19}ANNEX G - Reviews of the games mentioned in the paper}{48}
 \contentsline {section}{\numberline {20}ANNEX H - Message types and structure and the communication between Server and Client}{48}
-\contentsline {section}{\numberline {21}ANNEX I - Overlay tutorial}{49}
-\contentsline {section}{\numberline {22}ANNEX J - Countdown buttons Tutorial}{49}
-\contentsline {section}{\numberline {23}Bibliography}{49}
+\contentsline {section}{\numberline {21}ANNEX I - Overlay tutorial}{51}
+\contentsline {section}{\numberline {22}ANNEX J - Countdown buttons Tutorial}{52}
+\contentsline {section}{\numberline {23}Bibliography}{54}

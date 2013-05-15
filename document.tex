@@ -2136,6 +2136,15 @@ experience and came with its hardships and teachings. Although the entire paper
 is expressed scientifically, I have tried to write it in a manner as personal as
 possible.\newline
 
+The development of the game \"People with Guns\" and the conclusions drawn at
+points of choice between technologies have relied heavily on forums, forums,
+forums and Wikipedia, in this order. Although not scientifically acceptable,
+with a bit of subjective filtering of the available content, they have proven
+thousands of times more useful than scientific papers - which, in the case of
+developing a new concept, simply didn't have much in common with the aim of this
+project(Otherwise somebody would have developed this already).
+
+
 \section{ANNEX A - game and game platform websites}
 
 
@@ -2145,9 +2154,18 @@ possible.\newline
 
 
 
-\textbf{ARIS Games}: http://arisgames.org/ \newline
+\textbf{ARIS Games}: http://arisgames.org/
+ARIS Games is a framework for developing Adventure/Investigation games. Most
+applications of these games have been within the education area.\newline
 
-\textbf{Tourality} - http://www.tourality.com/ \newline
+\textbf{Tourality} - http://www.tourality.com/
+Tourality is a mobile application that allows people to play a number of racing
+games. Among them are single lap or multiple lap races, capture the flag races
+where players have to run towards a given marker on the map. The first one to
+reach the marker gets one point - and another marker is randomly generated
+elsewhere. This last race game has represented an important source of
+inspiration in the construction of the idea for the game developed on this
+project.\newline
 
 \textbf{Wherigo} - http://www.wherigo.com/ \newline
 
@@ -2492,14 +2510,204 @@ existing clients is presented in Figure\ref{fig:client_server_flow}
 
 This tutorial is for use with Google Maps V1 API. Recently, the Maps V1 API has
 been deprecated and replaced with V2. Still, some who still have acquired keys
-before the change can still use them until they expire. Therefore, this tutorial
-will be added for historical rather than current practical reasons: \newline
+before the change can still use them until they expire. Otherwise, it
+may be useful in other similar scenarios, where onTap functionality
+has to be custom made.\newline
+\begin{verbatim}
 
-
-
+private UUID getClosestPlayerUUIDWithinTapRadius(GeoPoint geoPoint,
+												 Double newTouchRadius){
+		
+		double touchRadius = 0.2; //expressed in inches
+		
+		if(newTouchRadius != null) touchRadius = newTouchRadius;		 
+				
+		double maximumAcceptedDistance = 
+								calculateMaximumAcceptedDistance(touchRadius);
+		
+		Point touchScreenPoint = 
+					MapUtils.convertGeoPointToScreenPoint(geoPoint, mapView);
+		
+		//get the closest point UUID and the closest distance
+		UUID closestPointUUID = null;
+		double closestPointDistance = Double.MAX_VALUE;
+			
+		
+		Iterator iter = drawnPoints.entrySet().iterator();
+		while(iter.hasNext()){			
+			Entry<UUID, Point> entry = (Entry<UUID, Point>) iter.next();
+			
+			UUID uuid = entry.getKey();
+			Point point = entry.getValue();
+			
+			double distance = 
+					MapUtils.getDistanceBetweenPoints(point, touchScreenPoint);
+			
+			if(distance < closestPointDistance){
+				closestPointDistance = distance;
+				closestPointUUID = uuid;		
+			}
+		}
+		
+		if(touchRadius == Double.MAX_VALUE) 
+			return closestPointUUID;
+		
+		else if(closestPointDistance <= maximumAcceptedDistance){
+			return closestPointUUID;
+		}
+		
+		
+		return null;
+		
+	}
+	
+\end{verbatim}
 
 
 \section{ANNEX J - Countdown buttons Tutorial}
+
+This tutorial is for adding dynamic countdowns for the elements in a Spinner
+object. In the particular case of this application, the countdown is activated
+based when the 'Shoot' button is pressed.\newline
+\begin{enumerate}
+  \item \textbf{Somewhere in the code, a ThreadPoolExecutor has to be created}:
+  
+\begin{verbatim}
+
+private static final BlockingQueue<Runnable> workQueue = 
+										new LinkedBlockingQueue<Runnable>(10);
+ThreadPoolExecutor executor = 
+				new ThreadPoolExecutor(3, 10, 3, TimeUnit.SECONDS, workQueue);
+\end{verbatim}
+	
+  \item \textbf{Then, we define the class that implements Runnable. We will call
+  it WeaponReportingTask}:
+
+\begin{verbatim}
+public class WeaponReportingTask extends AsyncTask<Weapon, Integer, Integer> {	
+  		
+	private boolean hasFinished = true;
+	
+	ArrayList<String> weaponsArray = null;
+	ArrayAdapter<String> dataAdapter = null;
+	int selectedIndex = 0;
+	String initialWeaponName = "";	
+	
+	public WeaponReportingTask(
+						ArrayList<String> newWeaponsArray, 
+						ArrayAdapter<String> newDataAdapter,
+						int newSelectedIndex
+						){		
+		super();
+		
+		hasFinished = true;
+		
+		weaponsArray = newWeaponsArray;
+		dataAdapter = newDataAdapter;
+		selectedIndex = newSelectedIndex;
+		
+		initialWeaponName = weaponsArray.get(selectedIndex);
+	}
+	
+	
+
+	@Override
+ 	protected Integer doInBackground(Weapon... params) {
+	
+		hasFinished = false;
+		
+		Weapon weapon = params[0];
+ 		if(weapon.getLastUsed() == null) 
+ 			return 0;
+ 		
+ 		int secondsElapsed = 
+ 					(int) MapUtils.getTimeDelta(weapon.getLastUsed(), true);
+ 		
+ 		while(secondsElapsed <= weapon.cooldown){
+ 			
+ 			publishProgress(weapon.cooldown - secondsElapsed);
+ 			
+ 			try {
+				Thread.sleep(200);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+ 			
+ 			secondsElapsed = 
+ 					(int) MapUtils.getTimeDelta(weapon.getLastUsed(), true);
+ 		}
+ 		
+ 		return 1;
+ 	}
+     
+    
+    protected synchronized void onProgressUpdate(Integer... progress) {
+    	
+    	if(progress != null)
+    		weaponsArray.set(
+    			selectedIndex, 
+    			initialWeaponName+" ("+progress[0].toString()+" )"
+    			);
+    	
+    	else 
+    		weaponsArray.set(
+    			selectedIndex, 
+    			initialWeaponName
+    			);
+    	
+    	dataAdapter.notifyDataSetChanged();
+    }
+
+    
+    @Override
+    protected void onPostExecute(Integer result) {
+    	weaponsArray.set(selectedIndex, initialWeaponName);
+    	dataAdapter.notifyDataSetChanged();    	
+    	super.onPostExecute(result);
+    	
+    	hasFinished = true;
+    	
+    }
+    
+    @Override
+    protected void onCancelled() {
+    	weaponsArray.set(selectedIndex, initialWeaponName);
+    	dataAdapter.notifyDataSetChanged();
+    	super.onCancelled();
+    	
+    	hasFinished = true;
+    }
+
+
+
+	public boolean hasFinished() {
+		return hasFinished;
+	}
+    
+}
+
+\end{verbatim}
+
+  \item \textbf{And then, on 'Shoot', we launch it}:
+
+\begin{verbatim}
+WeaponReportingTask cooldownTimer = 
+					new WeaponReportingTask(
+							weapons,
+							(ArrayAdapter<String>)weaponSpinner.getAdapter(),
+							currentWeaponIndex
+							);
+cooldownTimer.executeOnExecutor(
+		executor,
+		currentWeapon //this object is used in the WeaponReportingTask only  
+					  //for the cooldown time specific to the Weapon object.
+		);
+\end{verbatim}
+
+
+\end{enumerate}
+
 
 
 
