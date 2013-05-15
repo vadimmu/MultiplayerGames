@@ -1782,30 +1782,31 @@ The following prototype would describe the basic functionality of the menus up
 until the point of entering the game.\newline
 
 
-\begin{figure}[ht]
+\begin{figure}
 \includegraphics[height=4in,width=7.12in]{./images/android_screenshots/ui_prototype/UI_prototype_1.png}  
 \caption{\small \sl game screen prototype \label{fig:UIPrototype1}}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}
 \includegraphics[height=4in,width=7.12in]{./images/android_screenshots/ui_prototype/UI_prototype_2.png}  
 \caption{\small \sl game screen prototype \label{fig:UIPrototype2}}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}
 \includegraphics[height=4in,width=7.12in]{./images/android_screenshots/ui_prototype/UI_prototype_3.png}  
 \caption{\small \sl game screen prototype \label{fig:UIPrototype3}}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}
 \includegraphics[height=4in,width=7.12in]{./images/android_screenshots/ui_prototype/UI_prototype_4.png}  
 \caption{\small \sl game screen prototype \label{fig:UIPrototype4}}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}
 \includegraphics[height=4in,width=7.12in]{./images/android_screenshots/ui_prototype/UI_prototype_5.png}  
 \caption{\small \sl game screen prototype \label{fig:UIPrototype5}}
 \end{figure}
+
 
 The game screen prototype has been followed by the menu UI prototype. For
 starters, this one hasn't been made with easy user interaction in mind, but
@@ -1820,15 +1821,181 @@ screen - that of the character settings, marked by the presence of the button
 labeled 'Change my Info'. The result can be seen in Figures
 \ref{fig:menuPrototype1} and \ref{fig:menuPrototype2}.
 
-\begin{figure}[ht]
+\begin{figure}
 \includegraphics[height=4in,width=7.12in]{./images/android_screenshots/menu_prototype/MENU_prototype_1.png}  
 \caption{\small \sl main menu screen prototype \label{fig:menuPrototype1}}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}
 \includegraphics[height=4in,width=7.12in]{./images/android_screenshots/menu_prototype/MENU_prototype_2.png}  
 \caption{\small \sl lobby screen prototype \label{fig:menuPrototype2}}
 \end{figure}
+
+The two prototypes have been put together in one project that has served as the
+foundation of the application to come.\newline
+
+Very soon the necessity for a settings screen right out of the main menu came up
+(The server was initially run locally, on the author's laptop. Out of all the
+reasons to create a settings fragment, the first one has been that the internet
+connection in the student dorm is done via VPN and thus the IP address was
+changing with reconnection) and a button labeled 'Settings' was added to the
+main menu. The settings fragment came right after with just an 'OK' button and
+two textboxes for the IP and port inputs(as can be seen in Figure
+\ref{fig:main_menu_settings}).\newline
+
+\begin{figure}
+\includegraphics[height=4in,width=7.12in]{./images/android_screenshots/tutorial_main_settings.png}  
+\caption{\small \sl The settings screen, out of the main
+menu\label{fig:main_menu_settings}}
+\end{figure}
+
+At the beginning of the development, as functionality to connect to the server
+has just been implemented, there was no loading screen. Instead, the application
+UI would just freeze for a few thousand milliseconds. That has been considered
+unacceptable. The first idea was to add a loading widget on top the main menu
+screen - but that, based on the intuition of the author, was quite unpleasant to
+the eye. The loading screen had to be something separate, to mark the transition
+to entering the game. A loading screen was added, with a simple loading widget
+looping infinitely and a piece of 'Loading' text at the bottom of the
+screen(Figure \ref{fig:loading}). This screen has remained visually untouched
+until the last version of the application.\newline
+
+\begin{figure}
+\includegraphics[height=4in,width=7.12in]{./images/android_screenshots/tutorial_loading.png}
+\caption{\small \sl The loading screen
+menu\label{fig:loading}}
+\end{figure}
+
+Once the game client became capable of successfully connecting to the server and
+setting up everything for the lobby screen, the necessity for the lobby settings
+screen came up - and therefore the lobby settings fragment has been created -
+with a spinner for choosing between characters, a textbox for the nickname, a
+multiline textbox for loading the description of each character or 'profession'
+and an 'OK' button. This screen has also remained largely unchanged until the
+current point of development and can be observed in Figures
+\ref{fig:lobby_settings_1} and \ref{fig:lobby_settings_2}.
+
+\begin{figure}
+\includegraphics[height=4in,width=7.12in]{./images/android_screenshots/first_development/game_first_development9.png}
+\caption{\small \sl The character editing screen (a.k.a. the lobby settings
+screen) menu\label{fig:lobby_settings_1}}
+\end{figure}
+
+\begin{figure}
+\includegraphics[height=4in,width=7.12in]{./images/android_screenshots/first_development/game_first_development10.png}
+\caption{\small \sl The character editing screen (a.k.a. the lobby settings
+screen) with the character selection dialog opened
+menu\label{fig:lobby_settings_2}}
+\end{figure}
+
+Until the end of the first testing session done with a group of people, the UI
+has remained largely untouched. The two unused buttons on the game screen have
+been kept for getting the players' feedback on how pleasant the position of
+those buttons is for the reach of their fingers. The goal for the game UI has
+been to become similar to a game controller, but with the game screen in the
+middle. And the screen had to be layed out in a way in which the user would not
+feel cramped when playing the game. The only addition to the UI has been
+the 'Settings' button in the main menu, together with the settings
+screen.\newline
+
+The first people to test the game have criticized the following aspects:
+\begin{enumerate}
+  \item \textbf{The game UI}: The need to reselect the target every time the
+  weapon is switched has proven frustrating. The entire process of selecting the
+  weapon and only then firing it has been regarded as too slow: the players
+  wanted to be able to shoot the entire arsenal immediately, if
+  possible.\newline
+  
+  Another issue has been that the 'Shoot' button was disproportionally small
+  compared to the weapon selection spinner, in the testing phase. After showing
+  the players the original test UI, they still deemed the 'Shoot' button too
+  small.\newline
+  
+  The lack of control over what is happening has been criticized: The player
+  health was only displayed above the head of the player, along with the name
+  and 'profession'. It made it hard for players to notice changes. Notifications
+  on who 'shot' who were not yet implemented. The player's health was not
+  displayed anywhere. Messages could not be sent to the team. The first proposal
+  has been to enable writing and sending messages, SMS-style. After some
+  discussions, the conclusion came that predefined messages are much more
+  useful(like, say the ones used in the video game \"CounterStrike\"), while
+  'custom' messages can be communicated verbally, keeping the players more
+  focused on the dynamics, rather than on the technicalities of the game.
+  
+  \item \textbf{The menu UI}: The lobby UI has been criticized - but not for
+  it's layout, but for the comprehensibility - there was no mark for the
+  player's 'Ready' status, the 'Change my Info' label on the button that leads
+  to the 'profession' and nickname editing screen wasn't comprehensible. The
+  nickname and 'profession' were not remembered from one game session to the
+  other or from one app launch to the other. This frustrated the users - and
+  they simply refused entering their nicknames all the time. The game ended up
+  with no one knowing who's who, because they had the same nickname - the
+  default 'Player'. One tester complained that he wanted to click his own name
+  in the team lists and get to the settings screen.\newline
+  
+  A general complaint has been expressed towards the fact that there are no
+  tutorials on how to play the game.
+\end{enumerate}
+
+The first testing phase, though short, has left a lot of guidelines on what to
+do from that point on.\newline
+
+The second development session has come with the mindset to completely change
+the UI. And not only that was done: the whole underlying framework has been
+changed. A switch to the Google Maps V2 API has been made. A lot of
+functionality has been thrown away - such as the Overlay that served for drawing
+the players and for laying out the controls. A lot of new controls had to be
+added. A lot of underlying technicalities have been changed(such as the custom
+screen tap functionality and objects used for positioning).\newline
+
+Because of the switch to the new Maps API, the MapView object which served as
+the container for all controls has disappeared. It has been replaced by a
+GoogleMap object which is not intrinsically a View and cannot be treated thusly.
+Some improvisation was required to artificially create a container. This has
+been done by programmatically creating a RelativeLayout and adding the View that
+contained the map as a child. Then, the apparent choices have been to either add
+all the controls programmatically - which is very tedious - or embed a Fragment
+within another Fragment - which is downright wrong. All the controls have been
+generated and added programmatically. And the result has been previously
+described in the paper - having as a result the UI presented in Figure
+\ref{fig:game_ui2}: The UI has been properly partitioned in four functional
+areas that, although they provide much more control and functionality, don't
+cloister the map. The health of the current player is visible, a button has been
+added to center the image on the current position of the player, individual
+buttons are generated for the list of weapons provided for a 'profession', a
+group of buttons is added for help in target selection. Target selection by
+tapping on the screen has been preserved, but now is enhanced through the 'Next
+Target' and 'Previous Target' buttons. The latest addition - the Spinner object
+serving message sending was taking up too much space and hindered the view of
+the map. A good solution has been to make it semi-transparent - thus, making it
+non-intrusive, yet present. The ranges of the weapons are now drawn in green on
+demand, by long pressing the weapon buttons. The blue circle around the player's
+position is the default indication of the GPS accuracy. Thus far, it has not
+been removed. \newline
+
+
+\begin{figure}
+\includegraphics[height=4in,width=7.12in]{./images/android_screenshots/second_development/game_second_development5.png}
+\caption{\small \sl The game UI \label{fig:game_ui2}}
+\end{figure}
+
+The menu UI has also been modified:
+\begin{enumerate}
+  \item 
+\end{enumerate}
+
+
+DESCRIBE HERE WHAT HAPPENED AFTER : HOW THE GAME UI HAS !!!NOT!!! BEEN MODIFIED
+IN ANY WAY UNTIL THE TESTING SESSION, HOW THE TESTING SESSION AFFECTED THE UI
+AND HOW THE PEOPLE REQUESTED TUTORIALS AND THE TUTORIALS FRAGMENT WAS CREATED
+AND HOW AND ON WHAT CRITERIA THE NEW UI WAS MADE !!!!!
+
+
+
+
+
+
+
 
 
 \section{Measurements}
@@ -2027,10 +2194,6 @@ A thorough search for benchmarks for the latency of Websockets versus raw TCP
 has returned no result. Instead, several have been found of comparisons between
 Websockets and HTTP, Comet and Ajax. Interesting information is found on the
 Websocket.org website and reproduced here: \newline
-
-
-
-
 
 Figure \ref{fig:websocket_frame} shows the size overhead of a Websocket frame
 over raw TCP is 2bytes. Figure \ref{fig:websocket_ws_vs_polling} shows the
