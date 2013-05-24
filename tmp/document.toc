@@ -1,61 +1,75 @@
-\contentsline {section}{\numberline {1}Motivation}{3}
-\contentsline {section}{\numberline {2}Developing the Idea}{3}
-\contentsline {subsection}{\numberline {2.1}Introduction: Real Time Strategy games}{3}
-\contentsline {subsubsection}{\numberline {2.1.1}What is Real Time Strategy?}{4}
-\contentsline {subsubsection}{\numberline {2.1.2}Real Time Strateg versus Turn Based Strategy}{4}
-\contentsline {subsection}{\numberline {2.2}Location-Based Augmented Reality Games}{4}
-\contentsline {subsubsection}{\numberline {2.2.1}Location-based games}{5}
-\contentsline {subsubsection}{\numberline {2.2.2}Types of GPS-based games }{5}
-\contentsline {subsection}{\numberline {2.3}Real Time Strategy Games}{7}
-\contentsline {subsection}{\numberline {2.4}Requirements}{8}
-\contentsline {subsubsection}{\numberline {2.4.1}Client}{8}
-\contentsline {subsubsection}{\numberline {2.4.2}Server}{9}
-\contentsline {subsubsection}{\numberline {2.4.3}Communication Protocols}{9}
-\contentsline {subsubsection}{\numberline {2.4.4}Game Elements}{10}
-\contentsline {subsection}{\numberline {2.5}Implementation}{10}
-\contentsline {subsubsection}{\numberline {2.5.1}Schedule}{10}
-\contentsline {subsection}{\numberline {2.6}Documentation on the Games}{11}
-\contentsline {subsection}{\numberline {2.7}The project : obstacles and changes}{11}
-\contentsline {section}{\numberline {3}Preparations for development}{11}
-\contentsline {subsection}{\numberline {3.1}Initial plan}{12}
-\contentsline {subsection}{\numberline {3.2}Unified vs. Native Frameworks}{12}
-\contentsline {subsection}{\numberline {3.3}Communication Protocols}{12}
-\contentsline {subsection}{\numberline {3.4}Google Maps API V1}{13}
-\contentsline {subsubsection}{\numberline {3.4.1}Map Overlays}{13}
-\contentsline {subsection}{\numberline {3.5}Google Maps API V2}{14}
-\contentsline {subsubsection}{\numberline {3.5.1}Maps API V1 vs. V2}{14}
-\contentsline {subsection}{\numberline {3.6}Android development}{14}
-\contentsline {subsection}{\numberline {3.7}Organization of the project}{14}
-\contentsline {subsubsection}{\numberline {3.7.1}Kanban}{15}
-\contentsline {subsubsection}{\numberline {3.7.2}Unit Testing}{16}
-\contentsline {section}{\numberline {4}The exploration phase}{17}
-\contentsline {subsection}{\numberline {4.1}Creating the game concept}{17}
-\contentsline {subsection}{\numberline {4.2}The game concept}{18}
-\contentsline {section}{\numberline {5}The first development phase}{20}
-\contentsline {subsection}{\numberline {5.1}The structure of the server}{21}
-\contentsline {subsection}{\numberline {5.2}The structure of the 'communication' module}{22}
-\contentsline {subsection}{\numberline {5.3}The structure of the 'messages' module}{22}
-\contentsline {subsubsection}{\numberline {5.3.1}The structure of the 'game' module}{22}
-\contentsline {subsection}{\numberline {5.4}The Server}{22}
-\contentsline {subsection}{\numberline {5.5}The Client}{23}
-\contentsline {section}{\numberline {6}The first testing phase}{24}
-\contentsline {section}{\numberline {7}The second develpment phase}{25}
-\contentsline {subsection}{\numberline {7.1}The Server}{25}
-\contentsline {subsection}{\numberline {7.2}The Client}{25}
-\contentsline {subsection}{\numberline {7.3}Logging, Testing and Data Usage}{29}
-\contentsline {section}{\numberline {8}The second testing phase}{29}
-\contentsline {section}{\numberline {9}UI Design}{30}
-\contentsline {section}{\numberline {10}Measurements}{43}
-\contentsline {section}{\numberline {11}Future work}{43}
-\contentsline {section}{\numberline {12}Conclusion}{43}
-\contentsline {section}{\numberline {13}ANNEX A - game and game platform websites}{44}
-\contentsline {section}{\numberline {14}ANNEX B - game genre definitions}{45}
-\contentsline {section}{\numberline {15}ANNEX C - Websockets vs. TCP speed}{46}
-\contentsline {section}{\numberline {16}ANNEX D - Node.JS vs. Apache - performance and scaling}{48}
-\contentsline {section}{\numberline {17}ANNEX E - JSON vs. XML}{48}
-\contentsline {section}{\numberline {18}ANNEX F - Jackson vs. Gson vs. smart-json}{48}
-\contentsline {section}{\numberline {19}ANNEX G - Reviews of the games mentioned in the paper}{48}
-\contentsline {section}{\numberline {20}ANNEX H - Message types and structure and the communication between Server and Client}{48}
-\contentsline {section}{\numberline {21}ANNEX I - Overlay tutorial}{51}
-\contentsline {section}{\numberline {22}ANNEX J - Countdown buttons Tutorial}{52}
-\contentsline {section}{\numberline {23}Bibliography}{54}
+\contentsline {section}{\numberline {1}Motivation}{4}{section.1}
+\contentsline {section}{\numberline {2}Related work}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Introduction: Real Time Strategy games}{5}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}What is Real Time Strategy?}{5}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Real Time Strateg versus Turn Based Strategy}{5}{subsubsection.2.1.2}
+\contentsline {subsection}{\numberline {2.2}Location-Based Augmented Reality Games}{5}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Location-based games}{6}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Types of GPS-based games}{6}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Physical games}{8}{subsubsection.2.2.3}
+\contentsline {subsection}{\numberline {2.3}Intermediary game concepts}{8}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Final game concepts}{9}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Requirements}{10}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Client}{10}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}Server}{11}{subsubsection.2.5.2}
+\contentsline {subsubsection}{\numberline {2.5.3}Communication Protocols}{11}{subsubsection.2.5.3}
+\contentsline {subsubsection}{\numberline {2.5.4}Game Elements}{12}{subsubsection.2.5.4}
+\contentsline {subsection}{\numberline {2.6}Implementation}{12}{subsection.2.6}
+\contentsline {subsubsection}{\numberline {2.6.1}Schedule}{12}{subsubsection.2.6.1}
+\contentsline {subsection}{\numberline {2.7}Documentation on the Games}{13}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}The project : obstacles and changes}{13}{subsection.2.8}
+\contentsline {section}{\numberline {3}The game concept}{13}{section.3}
+\contentsline {subsection}{\numberline {3.1}Purpose}{13}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Gameplay}{15}{subsection.3.2}
+\contentsline {section}{\numberline {4}Architecture}{15}{section.4}
+\contentsline {subsection}{\numberline {4.1}Server}{15}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Client}{15}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Communication}{15}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}UI}{18}{subsection.4.4}
+\contentsline {section}{\numberline {5}Organization}{18}{section.5}
+\contentsline {section}{\numberline {6}Implementation: Back End}{18}{section.6}
+\contentsline {section}{\numberline {7}Implementation: Front End}{18}{section.7}
+\contentsline {section}{\numberline {8}Evaluation}{18}{section.8}
+\contentsline {section}{\numberline {9}Developing the Idea}{18}{section.9}
+\contentsline {section}{\numberline {10}Preparations for development}{18}{section.10}
+\contentsline {subsection}{\numberline {10.1}Initial plan}{18}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Unified vs. Native Frameworks}{18}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}Communication Protocols}{19}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}Google Maps API V1}{19}{subsection.10.4}
+\contentsline {subsubsection}{\numberline {10.4.1}Map Overlays}{20}{subsubsection.10.4.1}
+\contentsline {subsection}{\numberline {10.5}Google Maps API V2}{20}{subsection.10.5}
+\contentsline {subsubsection}{\numberline {10.5.1}Maps API V1 vs. V2}{21}{subsubsection.10.5.1}
+\contentsline {subsection}{\numberline {10.6}Android development}{21}{subsection.10.6}
+\contentsline {subsection}{\numberline {10.7}Organization of the project}{21}{subsection.10.7}
+\contentsline {subsubsection}{\numberline {10.7.1}Kanban}{22}{subsubsection.10.7.1}
+\contentsline {subsubsection}{\numberline {10.7.2}Unit Testing}{23}{subsubsection.10.7.2}
+\contentsline {section}{\numberline {11}The exploration phase}{23}{section.11}
+\contentsline {subsection}{\numberline {11.1}Creating the game concept}{23}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}The game concept}{25}{subsection.11.2}
+\contentsline {section}{\numberline {12}The first development phase}{27}{section.12}
+\contentsline {subsection}{\numberline {12.1}The structure of the server}{28}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}The structure of the 'communication' module}{28}{subsection.12.2}
+\contentsline {subsection}{\numberline {12.3}The structure of the 'messages' module}{28}{subsection.12.3}
+\contentsline {subsubsection}{\numberline {12.3.1}The structure of the 'game' module}{29}{subsubsection.12.3.1}
+\contentsline {subsection}{\numberline {12.4}The Server}{29}{subsection.12.4}
+\contentsline {subsection}{\numberline {12.5}The Client}{30}{subsection.12.5}
+\contentsline {section}{\numberline {13}The first testing phase}{31}{section.13}
+\contentsline {section}{\numberline {14}The second develpment phase}{32}{section.14}
+\contentsline {subsection}{\numberline {14.1}The Server}{32}{subsection.14.1}
+\contentsline {subsection}{\numberline {14.2}The Client}{32}{subsection.14.2}
+\contentsline {subsection}{\numberline {14.3}Logging, Testing and Data Usage}{36}{subsection.14.3}
+\contentsline {section}{\numberline {15}The second testing phase}{36}{section.15}
+\contentsline {section}{\numberline {16}UI Design}{37}{section.16}
+\contentsline {section}{\numberline {17}Measurements}{50}{section.17}
+\contentsline {section}{\numberline {18}Future work}{50}{section.18}
+\contentsline {section}{\numberline {19}Conclusion}{50}{section.19}
+\contentsline {section}{\numberline {20}ANNEX A - Game and game platform websites}{51}{section.20}
+\contentsline {section}{\numberline {21}ANNEX B - Game genre definitions}{53}{section.21}
+\contentsline {section}{\numberline {22}ANNEX C - Websockets vs. TCP speed}{54}{section.22}
+\contentsline {section}{\numberline {23}ANNEX D - Node.JS vs. Apache - performance and scaling}{56}{section.23}
+\contentsline {section}{\numberline {24}ANNEX E - JSON vs. XML}{56}{section.24}
+\contentsline {section}{\numberline {25}ANNEX F - Jackson vs. Gson vs. smart-json}{56}{section.25}
+\contentsline {section}{\numberline {26}ANNEX G - Reviews of the games mentioned in the paper}{59}{section.26}
+\contentsline {section}{\numberline {27}ANNEX H - Overlay tutorial}{59}{section.27}
+\contentsline {section}{\numberline {28}ANNEX J - Countdown buttons Tutorial}{60}{section.28}
+\contentsline {section}{\numberline {29}Bibliography}{62}{section.29}

@@ -61,6 +61,16 @@ Winter Semester 2012 - Summer Semester 2013}
 
 \section{Motivation}
 
+Ever since the first operating system for handheld devices, the spreading of
+smartphones has intensifed every year. In 2012, the number of smartphones in the
+world has reached one billion, according to Bloomberg\cite{bloomberg} \newline
+
+The rapid expansion of mobile computing presents new challenges and
+opportunities for both the user and the developer. The ease of use and the
+presence of touchscreens, GPS receivers, gyroscopes, accelerometers and, since
+recently, even barometers gives way to new approaches in developing
+games.\newline
+
 This paper describes the research for and development of \"People with Guns\", a
 Real Time Tactics / Shooter hybrid game. It has all started from the idea of
 adding multiplayer functionality to a tour application and ended up as a team
@@ -94,48 +104,24 @@ future work.\newline
 
 \section{Related work}
 
-\section{The game concept}
+In this chapter, we will follow the games and concepts that have lead to the
+assembly of the idea for the game developed on this project. We will define a
+number of computer game genres, classify some of the most popular location-aware
+games, game platforms and non-digital games that aided the concept and present
+the evolution of the idea for this game prototype. The game concept brought up
+here is part of a genre that has a long legacy among computer games, but is not
+yet known to the location-aware mobile context. The genre is that of `Real
+Time Strategy`(RTS)\cite{rts} games. Some other elements come from the genre of
+'Shooter' games\cite{shooter}. We will do that with a subgenre of RTS, called
+Real Time Tactics(RTT)\cite{rttvsrts}. For reasons that will be presented
+throughout this paper, the type of game can be considered an RTT / Shooter
+hybrid. \newline
 
-\section{Architecture}
-
-\subsection{Technical aspects}
-
-\subsection{UI}
-
-\section{Organization}
-
-\section{Implementation: Back End}
-
-\section{Implementation: Front End}
-
-\section{Evaluation}
-
-
-
-
-\section{Developing the Idea}
 
 \subsection{Introduction: Real Time Strategy games}
 
-Ever since the first operating system for handheld devices, the spreading of
-smartphones has intensifed every year. In 2012, the number of smartphones in the
-world has reached one billion, according to Bloomberg\cite{bloomberg} \newline
-
-The rapid expansion of mobile computing presents new challenges and
-opportunities for both the user and the developer. The ease of use and the
-presence of touchscreens, GPS receivers, gyroscopes, accelerometers and, since
-recently, even barometers gives way to new approaches in developing
-games.\newline
-
-In this chapter, we will define a number of computer game genres, classify some
-of the most popular location-aware games and game platforms and present the
-evolution of the concept and development of a game type prototype. This game of
-a genre that has a long legacy among computer games, but is not yet known to the
-location-aware mobile context. The new genre is that of `Real Time
-Strategy`(RTS)\cite{rts} games. We will do that with a subgenre
-of RTS, called Real Time Tactics(RTT)\cite{rttvsrts}. For reasons that will be
-presented throughout this paper, the type of game can be considered an
-RTT / Shooter hybrid. \newline
+We will first make the introduction of Real Time Strategy and its subgenre, Turn
+Based Strategy
 
 \subsubsection{What is Real Time Strategy?}
 
@@ -224,7 +210,7 @@ games to various race games - single and multi player and massively multiplayer
 online games.
 
 
-\subsubsection{Types of GPS-based games }
+\subsubsection{Types of GPS-based games}
 
 There is a number of GPS-based games and game authoring tools that are
 available for iOS and Android devices. The ones studied for this paper are :
@@ -316,7 +302,78 @@ former adapts the board game to real-time gameplay(placing it closer to the
 'Multiplayer Racing Games', with elements from 'Real Time Strategy Games'), the
 latter falls in the definition of 'Turn Based Strategy' games.
 
-\subsection{Real Time Strategy Games}
+\subsubsection{Physical games}
+
+A number of games have played a significant role in the construction of the
+ideas that led to the eventual assembly of the one that was decided for
+implementation. These games originate in the years before the digital age or the
+widespread of computers and GPS-enabled mobile devices. Some of these games have
+already been implemented in mobile games: tag and racing games and geocaching.
+We will mention all of them and briefly describe them and where they came in
+conceptually:
+\begin{enumerate}
+  \item \textbf{Orienteering} is a sport in which a map and a compass are used
+  to navigate through checkpoints, across unfamiliar terrain. Checkpoints
+  colored in white and orange are placed at various features along the way. This
+  sport has started as a training discipline for the military and later on
+  expanded as a civilian sport.
+  
+  \item \textbf{Radio Orienteering} is worth mentioning separately, as it was in
+  itself an important source of inspiration for the games proposed along the
+  way. It features a radio for direction finding, besides the map and compass. 
+  
+  \item \textbf{Rogaine} is a cross-country navigation sport. As a difference
+  from orienteering, where a path must be followed, in rogaining a larger number
+  of checkpoints is given and there is no time limit. A team of two to five
+  people has to navigate through the map and visit as many of these checkpoints
+  as possible, in a given time interval(most often, 24 hours). This type of game
+  has two branches: metrogaine(rogain through a city) and cyclogaine(rogain on
+  bicycles).
+  
+  \item \textbf{'Tag' and 'Hot and Cold'} are classical children's games. Tag is
+  a game in which one person is considered 'tagged'. That person passes the tag
+  on by touching somebody else. The game is open ended. 'Hot and Cold' is a game
+  in which one player has to find an item hidden by the others. During one's
+  search for the item, the others help him by saying 'hot' when he is close and
+  'cold' when he is getting away from the item. In a variation of the game the
+  players can use degrees of hot and cold to further help the searcher find the
+  item quicker.
+    
+\end{enumerate}
+
+All these games will be found in the intermediary and final ideas for games or
+game features that have come through the phase that we can call the
+'Exploration Phase'.
+
+
+\subsection{Intermediary game concepts}
+
+The whole project started with the intent of adding multiplayer functionality
+and features to a tour application. A tour application is essentially for use by
+a single person. The first feature that comes to mind when multiplayer is
+considered is having the positions of all the other persons using the
+application - so that one cannot go astray from the group without finding his
+way back to the group. Then, a search was done for features that could add
+dynamics to the multiuser approach. So came the idea of adding group quizzes and
+small games. This meant that the team had to split and find various clues on
+sidetracks of the main tour and solve short puzzles related to the landmarks
+along the way. Then, this turned into more complicated concepts - such as adding
+navigation: One of the members of the group would navigate to a goal in the same
+manner of the 'Hot and Cold' game - either with the help of members of the group
+of that of the mobile device.\newline
+
+At some point, though, it has been determined that even if these small added
+features to the game would be entertaining, they are not fit as research
+subjects - they are already there to be implemented. Focus has moved to rather
+full-on games that would implement something not thought of thus far. The idea
+of augmenting the reality of sports such as orienteering and rogaining was
+worked on and the result is one of the games, the 'Territory Takeover'. Radio
+orienteering and racing have been combined in the 'Mine Game'. Features from
+sports and video games have been added to what was proposed as 'The War Game'.
+They will all be described below, along with some rough technical requirements
+that have been considered.
+
+\subsection{Final game concepts}
 
 This paper focuses on the research and development of GPS-enabled Real
 Time Tactics games. They are to be augmented reality games for single player or
@@ -416,7 +473,9 @@ a single player game that can be played by many for score ranking. It may be
 adapted in various ways directly into the 'War Game'. The purpose of the game is
 that the player uses his phone as a mine detector and defuser and navigates
 through a virtual mine field, racing against time to get from a start point to
-an end point.\newline
+an end point. A variant of this game could be of a team helping a
+designated player navigate through the mine field without touching any
+mines.\newline
 
 Some intuitive advantages and drawbacks have been delineated for the game in
 proposal:\newline
@@ -588,23 +647,317 @@ are chosen only by their descriptive nature and are prone to change during the
 steps of development and evaluation.
 
 \subsection{The project : obstacles and changes}
-The two games are proposed with group teambuilding and recreation in mind. Both
-games require team strategy and cooperation. Territory Takeover allows for both
-team versus team and free for all gameplay, allowing for both small and large
-groups to play. The War Game is to be a fast paced game spanning a time interval
-in the range of a few tens of minutes. Although it is a RTS Game and not a
-Shooter Game, the 'War Game' can be seen as a more casual approach to Airsoft.
+The games are proposed with group teambuilding and recreation in mind. They
+require team strategy and cooperation. Territory Takeover allows for both team
+versus team and free for all gameplay, allowing for both small and large groups
+to play. The War Game is to be a fast paced game spanning a time interval in the
+range of a few tens of minutes. Although it is a RTS Game and not a Shooter
+Game, the 'War Game' can be seen as a more casual approach to Airsoft.
 Where it lacks the realism of Airsoft or the immersion of classical computer
 Real Time Strategy games, it gains in the intensity of real-life experience and
 teamwork, without requiring specialized equipment(Airsoft) or highly developed
 skills(computer Real Time Strategy games).
 
 
+\section{The game concept}
+
+The game that has been chosen for this project is the one defined as 'The War
+Game'. It promisses to be the game to offer the most panoptic multiplayer
+experience, both as a serious and casual game.\newline
+
+\subsection{Purpose}
+
+The purpose of this project is to create a Real Time Tactics game with Shooter
+elements that is fast paced and can be appealing to all ages and sexes. It is to
+provide casual gameplay that can also be taken to more serious levels, according
+to the skill of the players themselves. The main goal is to develop the game and
+provide appealing functionality and dynamics. The second goal is to test whether
+a broad spectrum of population may enjoy this game and if not, if it can be
+modified and/or adapted to fit the needs of the ones left out.\newline
+
+The 'War Game', which has later been named 'People With Guns', is a GPS-based
+game in which two teams fight a last-man-standing battle. Each person gets to
+choose between a number of character types in the game. How fast one moves in
+the game equals how fast one runs in real life.\newline
+
+The player can choose between four types of characters : Medic, Sniper, Scout,
+Marine - each with their own specific weapons and health, fitting different
+roles within the game.\newline
+
+The rules of the game are simple: two times fight a virtual battle. One team's
+purpose is to defeat the opposite team with the means given: each player's legs
+for running and the virtual weapons and powerups for fighting. The interface
+with the so-called 'weapons' and 'powerups' is layed out in the form of buttons
+that are shown on the bottom of the screen. Each weapon or powerup has the
+following attributes: range, cooldown, duration, damage. \newline
+
+By default weapons have instant effect(therefore no duration) and powerups have
+no damage(but they have a duration) - the only exception is the 'Heal' ability.
+Both weapons and cooldowns have a range - an area of effect for their use. If a
+target falls within that area, the weapon or powerup of choice can be used.
+After the activation of a weapon or powerup, it will be availavbe for use after
+a time given by its 'cooldown' attribute. In the case of powerups('Invisibility'
+and 'Shield'), their time span during which they are in effect after activation
+will be given by the 'duration' attribute. \newline
+
+The players are to perform complex communication between each other verbally,
+thus maintaining social contact as long as they are in each other's proximity.
+For the case of players that are too far away from the rest of their team, a
+number of preset messages are provided for quickly exchanging information
+between them(such as asking for help, cover or for healing) without distracting
+them from the gameplay.\newline
+
+The purpose of this game is to add to the experience of a group of people,
+without taking too much focus upon itself. Social bonding and team building are
+the goal to be achieved through strategy, tactics and a fun, light game to bring
+it all together.\newline
+
+Being something new, this game will require a few usage guidelines : \newline
+\begin{enumerate}
+  \item First of all, in order to get in the game, the player must connect to
+  the server. Because this version of the game was created for testing purposes
+  only, the server can only host one game. Once there is somebody playing,
+  nobody else can join the game. A few seconds after everyone has left the game
+  (gone back to the Main Menu), the server will reset itself and accept clients
+  once more.
+  
+  \item Second, once the player has connected to the server, he will be
+  presented with the Game Lobby. This is where he joins a team, sets his
+  nickname and chooses his character type.
+
+  \item Third, after the player has finished setting up, he can mark himself as
+  'Ready' to play the game. If all the players are Ready, the server will send a
+  five second countdown and send the signal to enter the game - at which point,
+  all connected clients will switch to the game screen and the players can
+  start playing.
+  
+  \item Once in the game, the player's weapons will be enabled only when the
+  teams satisfy the starting condition - for now, that means that the average
+  positions of all the members of the two teams must be at least 150m apart and
+  the members of each team must be at most 20m away from the center position of
+  their team.
+ 
+\end{enumerate}
 
 
 
 
 
+
+
+
+
+
+
+
+
+The controls are separated in six areas :\newline
+
+
+1. The bottom area : the Weapons
+: For each weapon there is a separate button. Each button serves three purposes
+: If you click it, it shoots. If you click it for a longer time, it draws the
+range of the weapon on the map. Once you have used a weapon, the button is
+temporarily disabled and shows the weapon cooldown countdown. \newline
+
+2. The
+down-right corner : The target selection buttons : You can select your targets
+(both friends and enemies) by clicking on their markers on the map. As an
+alternative, three buttons are there to help you : the Friends/Enemies toggle
+button, with which you choose whether to select between the next/previous
+friends or enemies. Above and below the toggle button are the 'Next Target' and
+'Prev Target'(Previous Target) buttons. By pressing the 'Next' button, you
+select the next closest player (If there is one selected, the next closest one
+will be chosen. If nobody is selected, the closest one will be chosen.). The
+'Prev Target' button gets you the opposite : the previous farthest friend or foe
+is selected, according to the same logic as with 'Next Target'. Above the three
+buttons, you can find a text view which shows the distance to the selected
+target. !!! If you want to select yourself (for applying powerups), then you
+must have no friend or foe selected. For this, you have to tap on a random,
+unoccupied area on the map !!! 
+
+3. The top-left corner : The health and messages
+buttons : Your health is shown in large font. Below it, you can find the message
+selection dropdown menu. This has been arranged so that you don't waste a lot of
+time typing, but instead send critical preset messages to your team.
+
+4. The top-right corner : The current position button : If you click it, the map
+moves to have your position in the center.
+
+5. The top-center area : The powerup duration views : If you enable a powerup or
+somebody uses a powerup on you (for now, this applies only to 'Shield'), you
+will see it's remaining duration of the effect as a countdown on the top of the
+screen.
+
+6. The area above the weapon buttons : The information area : Whenever you
+shoot, are shot, send or receive a message a 'Toast' will appear with info.
+        
+        
+        
+
+    
+
+
+
+
+
+
+
+
+
+
+The 'War Game' is 
+
+
+\subsection{Gameplay}
+
+
+\section{Architecture}
+
+\subsection{Server}
+
+\subsection{Client}
+
+\subsection{Communication}
+
+All messages have the following JSON structure: \{messageType: messageNumber,
+data: \{\}\}. We are now interested in the data structure. The messageType is a
+number that both client and server recognize(as the Messages class is
+common).\newline
+
+The Server is active in the message exchange only for the basic administration
+purposes: Once a player connects, he receives a configuration json containing
+the available 'weapons', 'professions' (with all their attributes) and the list
+of already-connected players. It also broadcasts a message telling the existing
+players that a new one has connected. When a player disconnects or is
+disconnected from the server, a message telling the others that he is
+disconnected is sent automatically by the server. Otherwise, the server acts as
+a relay.\newline
+
+The Messages class contains a number of inner classes, for proper
+classification. We will present the structure, the message types and their
+specific JSON structures within:
+
+\begin{enumerate}
+  \item \textbf{InGame.ToServer}  
+  \begin{enumerate}
+    \item CHANGE\_POSITION :
+    \{latitude: newLatitude, longitude: newLongitude\}
+    
+    \item SHOOT :
+    \{target: targetUUID, weapon: weaponName, (optional)timestamp: timeStamp\}
+        
+    \item MESSAGE\_TEAM :
+    \{message : messageString\}
+      
+  \end{enumerate}  
+  
+  \item \textbf{InGame.FromServer}  
+  \begin{enumerate}
+    \item CHANGE\_POSITION :
+    \{player: playerUUID, latitude: newLatitude, longitude: newLongitude\}
+    
+    \item SHOOT :
+    \{player: playerUUID, target: targetUUID, weapon: weaponName, damage:    
+    damageAmount, (optional)timestamp: timeStamp\}
+    
+    \item MESSAGE\_TEAM :
+    \{player: playerUUID, message: newMessage\}
+    
+    \item GAME\_START :
+    \{\} 
+        
+  \end{enumerate}  
+  
+  \item \textbf{Lobby.ToServer}
+  
+  \begin{enumerate}
+    
+    \item MESSAGE\_ALL :
+    \{message: messageString\}
+    
+	\item CHANGE\_NAME :
+	\{name: newName\}
+			
+	\item CHANGE\_TEAM :
+	\{\}		
+	
+	\item CHANGE\_PROFESSION :
+	\{profession: newProfession\}
+	
+	\item CHOOSE\_WEAPONS :
+	this will be made available in further versions where there will be more
+	weapons from which to choose
+	
+	\item READY :
+	\{ready : true/false\}    
+     
+  \end{enumerate}
+  
+  
+  \item \textbf{Lobby.FromServer}
+  
+  \begin{enumerate}
+    	\item ENTER\_GAME :
+    	\{\}
+		
+		\item MESSAGE\_ALL :
+		\{player: playerUUID, message: messageString\}
+		
+		\item CHANGE\_NAME :
+		\{player: playerUUID, nickname: newName\}
+		
+		\item CHANGE\_TEAM :
+		\{player: playerUUID, team: newTeam\}
+				
+		\item CHANGE\_PROFESSION :
+		\{player: playerUUID, profession: newProfession\}
+		
+		\item READY :
+		\{player: playerUUID\}
+										
+		\item PLAYER\_JOINED :
+		\{player: playerUUID, name: playerName\}
+		
+		\item PLAYER\_LEFT :
+		\{player: playerUUID\}
+			
+		\item CONFIGURATION :
+		A huge JSON thing that the Server composes based on a Config file and sends it
+		to the client. 
+		
+		\item COUNTDOWN :
+		\{secondsLeft: numberOfSecondsLeft\}
+		
+  \end{enumerate}  
+  
+\end{enumerate}
+
+The communication and action flow on the server, newly joined client and
+existing clients is presented in Figure\ref{fig:client_server_flow}
+
+\begin{figure}
+\includegraphics[height=5.88in,width=6.23in]{./images/diagrams/Client-Server.png}
+\caption{\small \sl A new client joining the game
+\label{fig:client_server_flow}}
+\end{figure}
+
+
+
+\subsection{UI}
+
+\section{Organization}
+
+\section{Implementation: Back End}
+
+\section{Implementation: Front End}
+
+\section{Evaluation}
+
+
+
+
+\section{Developing the Idea}
 
 
 
@@ -2165,7 +2518,7 @@ developing a new concept, simply didn't have much in common with the aim of this
 project(Otherwise somebody would have developed this already).
 
 
-\section{ANNEX A - game and game platform websites}
+\section{ANNEX A - Game and game platform websites}
 
 
 
@@ -2301,7 +2654,7 @@ Unfortunately, the website is currently down. It can be otherwise found on GitHu
 \url{https://github.com/geoloqi/MapAttack}\newline
 
 
-\section{ANNEX B - game genre definitions}
+\section{ANNEX B - Game genre definitions}
 
 % Definitions - Game Genres %
 
@@ -2570,136 +2923,9 @@ JACKSON_STREAM   B 27.4 ========                       100%
 
 \section{ANNEX G - Reviews of the games mentioned in the paper}
 
-\section{ANNEX H - Sports and games that influenced the creation of this app}
 
 
-
-\section{ANNEX H - Message types and structure and the communication between
-Server and Client}
-
-All messages have the following JSON structure: \{messageType: messageNumber,
-data: \{\}\}. We are now interested in the data structure. The messageType is a
-number that both client and server recognize(as the Messages class is
-common).\newline
-
-The Server is active in the message exchange only for the basic administration
-purposes: Once a player connects, he receives a configuration json containing
-the available 'weapons', 'professions' (with all their attributes) and the list
-of already-connected players. It also broadcasts a message telling the existing
-players that a new one has connected. When a player disconnects or is
-disconnected from the server, a message telling the others that he is
-disconnected is sent automatically by the server. Otherwise, the server acts as
-a relay.\newline
-
-The Messages class contains a number of inner classes, for proper
-classification. We will present the structure, the message types and their
-specific JSON structures within:
-
-\begin{enumerate}
-  \item \textbf{InGame.ToServer}  
-  \begin{enumerate}
-    \item CHANGE\_POSITION :
-    \{latitude: newLatitude, longitude: newLongitude\}
-    
-    \item SHOOT :
-    \{target: targetUUID, weapon: weaponName, (optional)timestamp: timeStamp\}
-        
-    \item MESSAGE\_TEAM :
-    \{message : messageString\}
-      
-  \end{enumerate}  
-  
-  \item \textbf{InGame.FromServer}  
-  \begin{enumerate}
-    \item CHANGE\_POSITION :
-    \{player: playerUUID, latitude: newLatitude, longitude: newLongitude\}
-    
-    \item SHOOT :
-    \{player: playerUUID, target: targetUUID, weapon: weaponName, damage:    
-    damageAmount, (optional)timestamp: timeStamp\}
-    
-    \item MESSAGE\_TEAM :
-    \{player: playerUUID, message: newMessage\}
-    
-    \item GAME\_START :
-    \{\} 
-        
-  \end{enumerate}  
-  
-  \item \textbf{Lobby.ToServer}
-  
-  \begin{enumerate}
-    
-    \item MESSAGE\_ALL :
-    \{message: messageString\}
-    
-	\item CHANGE\_NAME :
-	\{name: newName\}
-			
-	\item CHANGE\_TEAM :
-	\{\}		
-	
-	\item CHANGE\_PROFESSION :
-	\{profession: newProfession\}
-	
-	\item CHOOSE\_WEAPONS :
-	this will be made available in further versions where there will be more
-	weapons from which to choose
-	
-	\item READY :
-	\{ready : true/false\}    
-     
-  \end{enumerate}
-  
-  
-  \item \textbf{Lobby.FromServer}
-  
-  \begin{enumerate}
-    	\item ENTER\_GAME :
-    	\{\}
-		
-		\item MESSAGE\_ALL :
-		\{player: playerUUID, message: messageString\}
-		
-		\item CHANGE\_NAME :
-		\{player: playerUUID, nickname: newName\}
-		
-		\item CHANGE\_TEAM :
-		\{player: playerUUID, team: newTeam\}
-				
-		\item CHANGE\_PROFESSION :
-		\{player: playerUUID, profession: newProfession\}
-		
-		\item READY :
-		\{player: playerUUID\}
-										
-		\item PLAYER\_JOINED :
-		\{player: playerUUID, name: playerName\}
-		
-		\item PLAYER\_LEFT :
-		\{player: playerUUID\}
-			
-		\item CONFIGURATION :
-		A huge JSON thing that the Server composes based on a Config file and sends it
-		to the client. 
-		
-		\item COUNTDOWN :
-		\{secondsLeft: numberOfSecondsLeft\}
-		
-  \end{enumerate}  
-  
-\end{enumerate}
-
-The communication and action flow on the server, newly joined client and
-existing clients is presented in Figure\ref{fig:client_server_flow}
-
-\begin{figure}
-\includegraphics[height=5.88in,width=6.23in]{./images/diagrams/Client-Server.png}
-\caption{\small \sl A new client joining the game
-\label{fig:client_server_flow}}
-\end{figure}
-
-\section{ANNEX I - Overlay tutorial}
+\section{ANNEX H - Overlay tutorial}
 
 This tutorial is for use with Google Maps V1 API. Recently, the Maps V1 API has
 been deprecated and replaced with V2. Still, some who still have acquired keys
