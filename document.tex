@@ -23,7 +23,7 @@
     \usepackage[a4paper,vmargin={40mm,40mm},hmargin={30mm,30mm}]{geometry}
 	\usepackage{natbib}
 	\usepackage{graphicx}
-
+	\usepackage{hyperref}
 
 \title{Location-aware Real Time Strategy Games \\ Master Thesis \\
 Winter Semester 2012 - Summer Semester 2013}
@@ -91,6 +91,26 @@ hybrid.\newline
 
 The third chapter will cover design and gameplay aspects, measurements and
 future work.\newline
+
+\section{Related work}
+
+\section{The game concept}
+
+\section{Architecture}
+
+\subsection{Technical aspects}
+
+\subsection{UI}
+
+\section{Organization}
+
+\section{Implementation: Back End}
+
+\section{Implementation: Front End}
+
+\section{Evaluation}
+
+
 
 
 \section{Developing the Idea}
@@ -1556,7 +1576,7 @@ We shall now present all of them, separated into groups, by position
 that they are presented by related functionality). All the UI elements on the
 'Game' UI are programmatically generated - and not from an XML file  :
 \begin{enumerate}
-  \item \textbf{The bottom of the screen, starting from the bottom-left corner}:
+  \item\textbf{The bottom of the screen, starting from the bottom-left corner}:
   The 'weapon'/'powerup' buttons are generated once the 'Game' fragment is loaded,
   based on the list of weapons specific to the player's 'profession'. They
   appear from left to right. If less or equal to three weapons are given, the
@@ -1569,7 +1589,7 @@ that they are presented by related functionality). All the UI elements on the
   'powerup' can be used. A button long press will draw the range of the
   'weapon'/'powerup' on the map, with the player's position in the center.
   
-  \item \textbf{The bottom-right corner of the screen}: The player selection
+  \item\textbf{The bottom-right corner of the screen}: The player selection
   buttons and the distance indicator are generated on the vertical axis, starting from the
   bottom-right corner of the screen - in order, the 'previous target',
   friends/enemies toggle, 'next target' buttons, and on top a TextView showing
@@ -1593,12 +1613,12 @@ that they are presented by related functionality). All the UI elements on the
   deselecting all players(and selecting oneself for, say, self-healing or
   activating powerups on oneself).
   
-  \item \textbf{The top-right corner of the screen}: The 'my position' button
+  \item\textbf{The top-right corner of the screen}: The 'my position' button
   that is provided as an option through the Maps API. Clicking it will cause an
   animation to scroll through the map until the position of the player is
   centered.
   
-  \item \textbf{The top-left corner of the screen}: The health indicator is a
+  \item\textbf{The top-left corner of the screen}: The health indicator is a
   TextView that presents in large text the remaining health points of the
   player. Underneath it lies a spinner with a list of messages that the player
   can send to his/her team. One can do so by clicking on the UI element
@@ -1607,12 +1627,12 @@ that they are presented by related functionality). All the UI elements on the
   player can send one of the messages in the list by clicking it. The dialog is
   canceled by clicking outside it.
   
-  \item \textbf{The area in between the two top corners of the screen}: This is
+  \item\textbf{The area in between the two top corners of the screen}: This is
   the area where the powerup duration is dynamically shown during its effect.
   This can be seen when the player casts 'invisibility' or 'shield' on oneself
   or when a friend casts 'shield' on the player
   
-  \item \textbf{The area above the weapon buttons}: This is where the
+  \item\textbf{The area above the weapon buttons}: This is where the
   notifications appear, in the form of Toasts. By default, a toast has a given
   lifespan - but each time a new toast needs to be displayed, it first closes
   the toast currently on display, if it is the case.  
@@ -2154,11 +2174,13 @@ project(Otherwise somebody would have developed this already).
 
 
 
-\textbf{ARIS Games}: http://arisgames.org/
+\textbf{ARIS Games}: http://arisgames.org/\newline
+
 ARIS Games is a framework for developing Adventure/Investigation games. Most
 applications of these games have been within the education area.\newline
 
-\textbf{Tourality} - http://www.tourality.com/
+\textbf{Tourality} - http://www.tourality.com/\newline
+
 Tourality is a mobile application that allows people to play a number of racing
 games. Among them are single lap or multiple lap races, capture the flag races
 where players have to run towards a given marker on the map. The first one to
@@ -2167,44 +2189,116 @@ elsewhere. This last race game has represented an important source of
 inspiration in the construction of the idea for the game developed on this
 project.\newline
 
-\textbf{Wherigo} - http://www.wherigo.com/ \newline
+\textbf{Wherigo} - http://www.wherigo.com/\newline
 
-\textbf{conTAGion} - http://www.2clams.com/ \newline
+Just like ARIS, Wherigo is a toolset for creating Adventure/Investigation games.
+\newline
 
-\textbf{Shadow Cities} - http://www.shadowcities.com/ \newline
+\textbf{conTAGion} - http://www.2clams.com/\newline
 
-\textbf{SCVNGR} - http://www.scvngr.com/ \newline
+Contagion is a GPS-based zombie apocalypse Massively Multiplayer Online game in
+which the players are either in the role of zombies or humans, evading or
+attacking each other. The game can also be played in single player mode. A game
+has been attempted, but due to a difficult and buggy interface, it was
+not considered worthwhile.\newline
+
+\textbf{Shadow Cities} - http://www.shadowcities.com/\newline
+ 
+Shadow cities is an MMMORPG(Massively Multiplayer Online Role Playing Game) in
+which the player is put in the role of a mage. The mechanics of the game tend to
+be similar to those of classical MMORPGs, but they now involve the map and the
+GPS. The player has to travel around physically in order to reach various areas
+where levelling may be done.\newline
+
+\textbf{SCVNGR} - http://www.scvngr.com/\newline
+
+SCVNGR is a social game that uses Google Places for checking in, creating or
+accepting various challenges already left by others at given places.\newline
 
 \textbf{Please Stay Calm} - http://pleasestaycalm.com/ \newline
 
+Please Stay Calm is a single player GPS-based zombie apocalypse RPG game in
+which the player has to scavenge or fight zombies in various areas from the
+map.\newline
+
+
 \textbf{Parallel Mafia} - http://www.parallelmafia.com/ \newline
+
+Parallel Mafia is a GPS-based MMORPG in which the player builds up his own
+mafia, cooperates with or fights others for territory. To this end, various tools
+are present in the game. The ultimate goal is capturing as much territory as
+possible.\newline
 
 \textbf{Parallel Kingdom} - http://www.parallelkingdom.com/ \newline
 
+Paralle Kingdom is a conceptually identical game to Parallel Mafia - only that
+it is set in the middle ages.\newline
+
 \textbf{Tripventure} - http://www.tripventure.net/tripventure/ \newline
+Tripventure is a platform on which several augmented reality adventure games are
+created. The special thing about these games is that they don't only use the
+GPS, but also the phone's camera - at given GPS positions, virtual characters
+must be sought and interacted with by looking at the phone screen and finding
+them with the camera.\newline
+
 
 \textbf{Warfinger GPS} - http://www.warfingergps.com/ \newline
+Warfinger GPS is a casual game in which two teams fight within a given area,
+over an indefinite amounte of time. The interaction is rather turn based than
+real-time. This has been the biggest influence in the construction of the idea
+for this project - some of the virtual objects and some of the weapons presented
+in the game trailer have been redesigned for this project's game
+proposals.\newline
 
 \textbf{Totem} - http://www.fit.fraunhofer.de/en/fb/cscw/projects/totem.html
 \newline
+Totem is a versatile platform for mobile game authoring. Several games have been
+created using this platform. Among them are Tidy City, Portal Hunt and aMazing -
+which later conceptually appeared in Ingress.\newline
 
 \textbf{Portal Hunt} - http://www.totem-games.org/?q=portalhunt \newline
 
 \textbf{aMazing} - http://www.totem-games.org/?q=aMazing \newline
 
 \textbf{Ingress} - http://www.ingress.com/ \newline
+Ingress is the much advertised MMORPG from Google. An invitation is required to
+play the game - therefore more information than what was presented in the
+trailer is not in the posession of the author of this paper:\newline
+\url{http://www.youtube.com/watch?feature=player_embedded&v=92rYjlxqypM}\newline
 
 \textbf{Mobile War} - http://www.mobilewar.org/index.php/en/ \newline
+Mobile War is a GPS-based shooting game - the players use their phones to aim
+and 'shoot' each other in a classical Shooter game manner. This game has
+represented an important source of inspiration for this project.
+Unfortunately, it could not be played due to server errors.\newline
 
 \textbf{Mister X Mobile} - http://qeevee.com/projects/misterx \newline
+Mister X Mobile is one of the two mobile implementations for Ravensburger's
+Scotland Yard game. This one takes a real-time approach. The game mechanics and
+the use of various tools for catching 'Mr. X' have been an inspiration for the
+games proposed\newline
 
 \textbf{Mobilis XHunt} - https://github.com/danielschuster/mobilis/wiki/Mobilis-XHunt
 \newline
+Mobilis XHunt is the second implementation of Ravensburger's Scotland Yard game.
+This one takes a turn-based approach. This game has not directly influenced this
+project, the analysis\cite{rttvsrts2} of real-time versus turn-based approaches in
+GPS-based mobile games that compares Mister X Mobile and Mobilis XHunt has.\newline
 
 \textbf{Own This World} - http://www.ownthisworld.com/ \newline
+Own This World is a game in which the world map is split into a grid of
+'territories'. People physically present in one of these 'territories' can fight
+for conquest. For this end, they use resources to create virtual troops and
+fight each other. The more territory is available to the player, the more
+resources he will receive - and therefore the easier he will conquer further
+territories. This game has been the biggest source of inspiration for the
+proposal of the 'Territory Takeover' game that is to be added to this project as
+future work.\newline
 
 \textbf{MapAttack} - http://mapattack.org/ \newline
-
+MapAttack is another territory capture game based on the Geoloqi platform.
+Unfortunately, the website is currently down. It can be otherwise found on GitHub:
+\url{https://github.com/geoloqi/MapAttack}\newline
 
 
 \section{ANNEX B - game genre definitions}
@@ -2379,7 +2473,106 @@ a proprietary implementation on top of TCP. \newline
 
 \section{ANNEX F - Jackson vs. Gson vs. smart-json}
 
+When a choice had to be made for the JSON parsing library for this project, two
+libraries came to mind: Jackson and GSON.\newline
+
+Jackson is a project started in 2008 by Tatu Saloranta and Paul Brown. It has
+gained popularity for it's features and fast serialization and deserialization
+times.\newline
+
+GSON is a project started in 2008 by Google. It has always been in direct
+competition both for features and speed with Jackson.\newline
+
+Some searches have been made for benchmarks for the two libraries. A few
+blogs\cite{jacksonvsgson} \cite{jacksonvsgson2} \cite{jacksonvsgson4} and the
+wiki entries for a few benchmarking tools\cite{jacksonvsgson3} \cite{jacksonvsgson5}
+have been used as guidelines. The author has also tried out and weighted his
+subjective opinion on the use of both libraries for simple serializing and
+deserializing of JSON messages. The conclusions are as follows:
+\begin{enumerate}
+  \item \textbf{Features} - Although for the specific needs of this project,
+  advanced features were not necessary, this criteria has been considered. A
+  six part article on the blog programmerbruce.blogspot.de compares the features
+  of GSON and Jackson and deems Jackson the better library.
+  
+  \item \textbf{Speed} - A test done in 2009 by Tatu Saloranta on his blog
+  \url{http://www.cowtowncoder.com/blog/archives/2009/09/entry_326.html}, one of
+  the two who started the Jackson project, deemed it much faster than GSON, as
+  seen in Figure\ref{fig:jacksonvsgson1}. 'Tps' is \begin{quote}number of
+  documents read, written, or read-modify-written per second\end{quote}
+   
+  \begin{figure}
+  \includegraphics[height=3.5in,width=6.23in]{./images/benchmarks/testcase0.jpg}
+  \caption{\small \sl Jackson vs Google-gson vs BerliOS
+  (\textbf{\url{http://www.cowtowncoder.com/perf/json-bind-2009-09-23/testcase0.jpg}})}
+  \label{fig:jacksonvsgson1}
+  \end{figure}
+  
+  Another test has been done and published in a wiki entry of json-benchmark,
+  in 2011. Android's Dalvik's ParseBenchmark.java has been used to benchmark
+  the libraries. The results yielded have been:\newline
+  \begin{verbatim}
+                          TWEETS                              
+           api run   ms linear runtime                    % 
+ANDROID_STREAM   B 28.8 =================              207% 
+JACKSON_STREAM   B 13.9 ========                       100% 
+   GSON_STREAM   B 33.1 ===================            238% 
+      ORG_JSON   B 36.2 =====================          260% 
+     JSON_MINI   B 50.0 ============================== 360% 
+
+                         READER_SHORT                        
+           api run    ms linear runtime                    % 
+ANDROID_STREAM   B  6.78 ================               177% 
+JACKSON_STREAM   B  3.82 =========                      100% 
+   GSON_STREAM   B  7.07 ================               185% 
+      ORG_JSON   B  7.61 ==================             199% 
+     JSON_MINI   B 12.49 ============================== 327% 
+
+                        READER_LONG                         
+           api run   ms linear runtime                    % 
+ANDROID_STREAM   B 69.6 =====================          254% 
+JACKSON_STREAM   B 27.4 ========                       100% 
+   GSON_STREAM   B 68.1 =====================          248% 
+      ORG_JSON   B 68.9 =====================          251% 
+     JSON_MINI   B 95.0 ============================== 347% 
+  \end{verbatim}  -
+  \textbf{\url{https://code.google.com/p/json-benchmark/wiki/AndroidBenchmarks}}\newline
+   
+  A third test done in 2012 has been found on \url{blog.novoj.net}, where a
+  multitude of libraries including Jackson 2.0.4 and GSON 2.1 were tested. This
+  test also deems Jackson as faster at serializing/deserializing, as seen in
+  Figure\ref{fig:jacksonvsgson2}.\newline
+  
+  \begin{figure}
+  \includegraphics[height=4in,width=6.23in]{./images/benchmarks/oimg.png}
+  \caption{\small \sl Jackson vs GSON in a comparison over multiple libraries
+  (\textbf{\url{http://blog.novoj.net/2012/02/05/json-java-parsers-generators-microbenchmark/}})}
+  \label{fig:jacksonvsgson2}
+  \end{figure}
+  
+  A fourth test over several features of multiple JSON libraries, found in a
+  wiki entry of jvm-serializers that has been last updated in 2013, also deems
+  Jackson the fastest.
+  
+  \item \textbf{Personal choice} Both Jackson and GSON have been tried out
+  before choosing one. Jackson has been preferred for it's ease of use and the fact
+  that it offers the ObjectMapper, which gives straightforward functionality to
+  'peel' layers from the JSON into Java HashMaps. GSON only allows the use of
+  POJOs. For a project where changes have occurred often, like the one
+  documented in this paper, Jackson was preferred.
+  
+  
+\end{enumerate}
+
+
+
+
+
 \section{ANNEX G - Reviews of the games mentioned in the paper}
+
+\section{ANNEX H - Sports and games that influenced the creation of this app}
+
+
 
 \section{ANNEX H - Message types and structure and the communication between
 Server and Client}
@@ -2501,7 +2694,7 @@ The communication and action flow on the server, newly joined client and
 existing clients is presented in Figure\ref{fig:client_server_flow}
 
 \begin{figure}
-\includegraphics[height=6.72in,width=7.12in]{./images/diagrams/Client-Server.png}
+\includegraphics[height=5.88in,width=6.23in]{./images/diagrams/Client-Server.png}
 \caption{\small \sl A new client joining the game
 \label{fig:client_server_flow}}
 \end{figure}

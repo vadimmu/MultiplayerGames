@@ -118,4 +118,26 @@ T.~Oberstein, ``\textbf{WebSockets, UDP, and benchmarks}.''
   \url{http://stackoverflow.com/questions/13040752/websockets-udp-and-benchmarks},
   October 2012.
 
+\bibitem{jacksonvsgson}
+T.~Saloranta, ``\textbf{JSON data binding performance: Jackson vs Google-gson
+  vs BerliOS JSON Tools}.''
+  \url{http://www.cowtowncoder.com/blog/archives/2009/09/entry_326.html},
+  September 2009.
+
+\bibitem{jacksonvsgson2}
+B.~Coleman, ``\textbf{Gson v Jackson}.''
+  \url{http://programmerbruce.blogspot.de/2011/07/gson-v-jackson-part-6.html},
+  July 2011.
+
+\bibitem{jacksonvsgson4}
+O.~Fura, ``\textbf{Json Java parsers / generators microbenchmark}.''
+  \url{http://blog.novoj.net/2012/02/05/json-java-parsers-generators-microbenchmark/},
+  March 2012.
+
+\bibitem{jacksonvsgson3}
+J.~Wilson, ``\textbf{Benchmarking JSON parsers on Android},'' May 2011.
+
+\bibitem{jacksonvsgson5}
+``\textbf{jvm-serializers benchmark results page},'' January 2013.
+
 \end{thebibliography}
