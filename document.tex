@@ -1179,7 +1179,7 @@ continuous search for the appropriate technologies and practices for the project
   
 \end{enumerate}
 
-\subsubsection{Kanban}
+\subsection{Kanban}
 
 For managing the development steps of the app, a simplified Kanban board was
 mainly used. As is specific to Kanban, stories have been gradually proposed and
@@ -1252,7 +1252,7 @@ a visible place outside the board, has proven beneficial. It provides good
 morale to the developer who sees the stack of solved stories thickening.
 Having a hold of all the stories also greatly helped write this paper. \newline
 
-\subsubsection{Unit Testing}
+\subsection{Unit Testing}
 
 Unit testing has been considered for this project, but was soon given up. This
 application is a conceptual prototype. A lot of trial and error was done during
@@ -1265,44 +1265,7 @@ very quickly. A lot of refactoring and hand testing each new piece of
 functionality has kept the application mostly bug-free throughout the
 development.
 
-\section{Implementation Timeline: Back End}
-
-
-
-
-\section{Implementation Timeline: Front End}
-
-\section{Evaluation}
-
-
-
-
-\section{Developing the Idea}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\section{Preparations for development}
-
-This section will follow the development of the application. The back end and
-mechanics of the game will be analyzed and presented in their evolution, briefly
-describing aspects of the front end. \newline
-
-The evolution of the server and the client will be presented chronologically.
-
-
-
-\subsection{Initial plan}
+\subsection{Choosing the technologies}
 
 The original plan was to develop and Android and iOS app, using a development
 framework such as PhoneGap. This would assume Javascript / JQuery programming
@@ -1311,35 +1274,35 @@ established through Websockets. Therefore, for optimum performance, NodeJS was
 to be used on the server side. For the location presentation, the Google Maps
 API was to be used.
 
-\subsection{Unified vs. Native Frameworks}
+\subsubsection{Unified vs. Native Frameworks}
 
 Once an idea of how the game should look like was crystalized, a search was
 made for unified frameworks for cross-platform mobile development. The first
 choice was PhoneGap, which has been previously used by the author. The other
-frameworks that I considered were Titanium SDK, Sencha and Corona. The
-discussion on which one is better can be resumed to the conclusion that none of
-them is appropriate for the development of such a game.
+frameworks considered have been Titanium SDK, Sencha and Corona. The discussion
+on which one is better can be resumed to the conclusion that none of them is
+appropriate for the development of such a game.\newline
+
 And here are the reasons : 
 \begin{enumerate}
   \item The game is fast-paced and will require a fast backend as well as a
   frontend that is as fast as possible. The cross-platform frameworks
   essentially interface only some of the native functionality and display the
   app through a webview - requiring Javascript or a Javascript-based framework
-  for creating the interfaces. These frameworks have been tested by the author
-  during an agile software development lab at the University of Bonn. The
-  purpose defined at the lab was to find the fastest solution for static menus
-  and slow-paced UIs. Even then, the outcome has been disappointing. Qooxdoo,
-  ExtJs and JQuery were tried out. Qooxdoo performs faster than the other two,
-  but makes it very slow and tedious to develop a complex UI. Still, it is slow
-  for the purpose and feels nonnative. After reading a few articles that
-  compare Phonegap, Titanium, Sencha and Corona, it has been concluded that with
-  or without various advantages and disadvantages between them, they are all
-  similar in performance - and therefore too slow for the development of this
-  game.  
+  for creating the interfaces. These frameworks have been previously tested by
+  the author. The outcome has been disappointing. Qooxdoo, ExtJs and JQuery were
+  tried out. Qooxdoo performs faster than the other two, but makes it very slow
+  and tedious to develop a complex UI and almost impossible to add extra
+  functionality. Still, it is slow for the purpose and feels nonnative. After
+  reading a few articles that compare Phonegap, Titanium, Sencha and Corona, it
+  has been concluded that with or without various advantages and disadvantages
+  between them, they are all similar in performance - and therefore too slow for
+  the development of this game.
   
-  \item Developing native code can prove to be easier, as for example the
-  Android development community is much larger than that of Phonegap developers.
-  The support is both more intensive and extensive for native platforms.
+  \item Developing native code can prove to be easier, as the Android
+  development community is much larger than that of Phonegap developers, for
+  example. The support is both more intensive and extensive for native
+  platforms. 
   
 \end{enumerate}
 
@@ -1349,7 +1312,7 @@ develpment is free, while iOS development requires a paid developer account and
 XCode runing on MacOS exclusively. Android was chosen.
 
 
-\subsection{Communication Protocols}
+\subsubsection{Communication Protocols}
 
 Initially, it was planned to use Websockets for the client-server communication.
 The reasoning behind it has two main arguments : 
@@ -1383,13 +1346,14 @@ attempt to use Autobahn for Android in a Java project has failed. It was then
 decided to give up Websockets and start off with pure TCP. Because writing code
 in two different languages might be slower, the server has been written in Java.
 
-\subsection{Google Maps API V1}
+\subsubsection{Google Maps API V1}
 
-The first version of the app used Google Maps API V1. It has been chosen due to
-it's subjectively perceived more extensive developer support.  Unfortunately,
-the Google Maps API and the Android Support Library cannot work together at the
-same time, because they need to subclass different Fragment classes. Therefore,
-this enforced the initial development to be dune without the support library and
+The first version of the app used Google Maps API V1. It has been chosen
+because it had the most community support and the author had absolutely no
+experience with Android development and the Google Maps API.  Unfortunately, the
+Google Maps API and the Android Support Library cannot work together at the same
+time, because they need to subclass different Fragment classes. Therefore, this
+enforced the initial development to be done without the support library and
 therefore the application has initially supported only Android versions equal or
 higher than 3.0.
 
@@ -1397,20 +1361,21 @@ higher than 3.0.
 
 The Google Maps V1 API supports the use of Overlay objects to draw on top
 of the map. Most tutotials found online make use of the so-called
-ItemizedOverlay, which enables easy integration of multiple markers. Using this
-Overlay subclass was attempted, but given up. Here are the conclusions: \newline
+ItemizedOverlay, which enables easy integration of multiple location markers.
+Using this Overlay subclass was attempted, but given up. Here are the
+conclusions: \newline
 \begin{enumerate}
-  \item The ItemizedOverlay uses features that we may call 'magic' - the
-  programmer is kept at arm's distance from understanding exactly what they do.
-  The ItemizedOverlay object uses an ArrayList for storing the map markers as
+  \item The ItemizedOverlay uses features that we may call 'magic'. The
+  ItemizedOverlay object uses an ArrayList for storing the map markers as
   OverlayItem objects. It also needs a function that gives it the size of the
-  ArrayList. 
+  ArrayList and redraws them automatically. This was bad on both the
+  organizational aspect of the development and that of performance. Not all
+  markers have to be redrawn at the same time.
   
-  \item Then, by unknown means, the markers are redrawn onDraw. This has
-  proven very difficult to work with. For starters, there is no control over the
-  draw process. Then, the OverlayItem objects cannot be stored in another data
-  structure, such as a HashMap - which is used in keeping track of the players
-  in the game.
+  \item The fact that the markers are redrawn automatically has proven difficult
+  to work with. For starters, there is no control over the draw process. Then,
+  the OverlayItem objects cannot be stored in another data structure, such as a
+  HashMap - which is used in keeping track of the players in the game.
   
   \item Because of its design, the ItemizedOverlay is fast, but useless for the
   purpose of this app. It was chosen to replace it with a custom Overlay.   
@@ -1418,43 +1383,32 @@ Overlay subclass was attempted, but given up. Here are the conclusions: \newline
 
 As a replacement for the ItemizedOverlay, work on how to create a custom Overlay
 that would fit the needs of the application was started. This has also permitted
-the change of the marker icons dynamically, according to the needs of the game
+the dynamic change of the marker icons, according to the needs of the game
 mechanics and UI. Functionality was added for this particular feature. \newline
 
 A real challenge was to add proper onTap() functionality for the custom Overlay.
-The advantage of the already-given-up ItemizedOverlay was that it handled marker
-touch events. The new, custom overlay had no such thing implemented. What I have
-done was to get the pixel resolution of the screen, along with pixel density
-data from the system and consider a 0.2 inch radius around the center of the
-touch on the screen (this is what I have estimated to be a circle to describe
-the tip of an average human adult finger). That 0.2 inch radius in pixels has
-been translated in a radius, in meters, on the Google Map. All markers inside
-that radius were considered and the closest to the center of the touch was
-chosen. This made choosing a marker out of both crowded and loose situations
-relatively easy and natural. The tutorial for this will be added as an annex to
-the paper.\newline
+The advantage of the already-given-up ItemizedOverlay was that it handled
+position marker touch events. The new, custom overlay had no such thing
+implemented. What was done was to get the pixel resolution of the screen, along
+with pixel density data from the system and consider a 0.2 inch radius around
+the center of the touch on the screen (this is what has been estimated to be
+a circle to describe the tip of an average human adult finger). That 0.2 inch
+radius in pixels has been translated in a radius, in meters, on the Google Map.
+All markers inside that radius were considered and the closest to the center of
+the touch was chosen. This made choosing a marker out of both crowded and loose
+situations relatively easy and natural. The tutorial for this will be added as
+an annex to the paper.\newline
 
-\subsection{Google Maps API V2}
+\subsubsection{Google Maps API V2}
 
-The use of the Google Maps API V1 ended when I realized that it is not
-compatible with the Android backwards compatibility libraries - that enable the
-use of Fragments, for example, in Android versions prior to 3.0. The
+The use of the Google Maps API V1 ended when the absolute need to make the
+application compatible with Android version 2.3, the most widespread version -
+encompassing almost 50\% of the devices in use at the point of change. The
 compatibility libraries require the use of a custom FragmentActivity and custom
-Fragment, FragmentManager, FragmentTransaction objects. \newline
-
-The statistics given by Google about the versions of Android in use were
-underrepresenting the situation that I faced when trying to test the app. Only
-one of my friends and acquaintances had Android 4.1. The rest carried mid-range
-phones with Android 2.2 - 2.3. I convinced two friends to let me upgrade their
-OS versions to 4.0, even if they were officially unsupported. This was tedious
-and risky. Other friends did not accept such a thing. This led me to realize
-that it is unfeasible to test the app, when it was supporting Android versions
-starting at 3.0. \newline
-
-With this new information in mind, I started the migration to Google Maps API
-V2, which, instead of requiring a MapActivity as wrapper, is using MapFragment.
-Therefore, I could use both the support library and the Maps V2 API, which is
-included in the Google Play Services libraries.\newline
+Fragment, FragmentManager, FragmentTransaction objects. The Google Maps V1 API
+requires a MapActivity to work. This comes into conflict with the
+FragmentActivity. In a fortunate turn of events, the change has been done when a
+total revamp of the game UI was also required.
 
 \subsubsection{Maps API V1 vs. V2}
 
@@ -1469,19 +1423,24 @@ must be kept for all drawn objects, not for future redrawing, but for being able
 to remove or change them. The entire Fragment object, along with a lot of
 helper classes had to be rewritten completely. All methods helping out the
 onTouch event for the custom Overlay were not necessary anymore. Also many
-refresh workarounds were thrown away and in the process, the Activity's
-runOnUIThread() method was discovered. 
+refresh workarounds were thrown away and in the process.
 
-\subsection{Android development}
+\subsubsection{Android development}
 
-I must also add the fact that learning how to program in Android was done while
-developing. This was often a trial-and-error process, covered with personal
-takes on the tutorials found mostly on StackOverflow.
-
+It must also be mentioned that learning how to program in Android was done while
+developing. This was often a trial-and-error process, covered with the
+author's personal takes on the tutorials found mostly on forums and blogs.
 
 
+\section{Back End: Implementation timeline}
 
-\section{The exploration phase}
+This section will follow the development of the application. The back end and
+mechanics of the game will be analyzed and presented in their evolution,
+also briefly describing aspects of the front end. \newline
+
+The evolution of the server and the client will be presented chronologically.
+
+\subsection{The exploration phase}
 
 The development of the app has started on the 14th of January 2013. I had an
 idea and no Android programming skills. Everything described from now on is a
@@ -1489,7 +1448,7 @@ process of creativity and learning, intertwined together. But before the
 development came the idea, which took three months to concoct.\newline
 
 
-\subsection{Creating the game concept}
+\subsubsection{Creating the game concept}
 
 The project has started as a proposal to add a multiplayer feature to a tour
 app. It was hazy and unstructured. The main point was that the tour app was
@@ -1575,7 +1534,7 @@ engaging also require a lot of time to be played. My personal take on this is
 that the amount of time dedicated to the mobile game should be decided by the
 player and not by the game. \newline
 
-\subsection{The game concept}
+\subsubsection{The game concept}
 The app that I developed is temporarily called People With Guns. It is a GPS-
 based RTS / Shooter hybrid concept protoype for Android. It can played by
 several people (The upper limit has not been established yet. Until now, the
@@ -1678,7 +1637,7 @@ for two more game types:
 
 
 
-\section{The first development phase}
+\subsection{The first development phase}
 
 The first development phase was mainly one of searching for the right tools to
 get the job done and testing their functionality.\newline
@@ -1766,7 +1725,7 @@ bottom-left, bottom-right, top-left. I placed the spinner to the right of the
 I initially developed the server in NodeJS, then switched to Python and
 eventually settled with Java.\newline
 
-\subsection{The structure of the server}
+\subsubsection{The structure of the server}
  
 \begin{enumerate}
   
@@ -1781,7 +1740,7 @@ eventually settled with Java.\newline
   
 \end{enumerate}
 
-\subsection{The structure of the 'communication' module}
+The structure of the 'communication' module:
 
 \begin{enumerate}
   
@@ -1794,7 +1753,7 @@ eventually settled with Java.\newline
   
 \end{enumerate}
 
-\subsection{The structure of the 'messages' module}
+The structure of the 'messages' module:
 
 \begin{enumerate}
   
@@ -1813,7 +1772,7 @@ eventually settled with Java.\newline
   
 \end{enumerate}
 
-\subsubsection{The structure of the 'game' module}
+The structure of the 'game' module:
 
 \begin{enumerate}
   
@@ -1825,7 +1784,7 @@ eventually settled with Java.\newline
   
 \end{enumerate}
 
-\subsection{The Server}
+\subsubsection{The Server}
 
 Once started, the server listens on a port. When a remote client connects, the
 server adds an InetAddress instance containing the IP address of the client.
@@ -1871,7 +1830,7 @@ weapons for all the players only when they satisfy these conditions.\newline
 There is no direct disconnect message between server and client. Disconnection
 is done exclusively based on the heartbeat interval.\newline
 
-\subsection{The Client}
+\subsubsection{The Client}
 
 The client is an Android application that uses one Activity and multiple
 Fragments. It does not use any compatibility libraries(as the Google Maps V1 API
@@ -1955,7 +1914,7 @@ screen. Once a player exits the game in progress, his marker will disappear on
 the maps of the other players. There are no start and end conditions
 implemented.
 
-\section{The first testing phase}
+\subsection{The first testing phase}
 
 Contrary to the original plans, the first testing phase took only half a day
 with another half day of preparations. Prior tests have been done by the
@@ -1998,14 +1957,14 @@ others. \newline
 
 
 
-\section{The second develpment phase}
+\subsection{The second develpment phase}
 
 The first testing phase has left a lot of 'todos', notes and guidelines for
 better adapting the UI and game mechanics to the player's needs. The second
 development phase has addressed these needs with a personal touch from the
 author and an influence of the switch to a newer version of Maps API.
 
-\subsection{The Server}
+\subsubsection{The Server}
 
 The only change done on the server in the second development phase, beyond bug
 solving, has been the switch from InetAddress to InetSocketAddress as key in the
@@ -2014,7 +1973,7 @@ router with NAT were not possible. InetAddress only holds the remote IP of the
 connection. The InetSocketAddress now holds both the IP and port of the
 connection.
 
-\subsection{The Client}
+\subsubsection{The Client}
 
 The client is an Android application that uses one Activity and multiple
 Fragments. 
@@ -2237,7 +2196,7 @@ V2 have been added. Various bugs that caused crashes have been corrected. The
 starting condition has been reintegrated in the game - it disabled the weapon
 buttons until the 'Start Game' message would be received.\newline
 
-\subsection{Logging, Testing and Data Usage}
+\subsubsection{Logging, Testing and Data Usage}
 After the first testing phase, the need to log app crashes has come up - as
 sometimes it can prove quite difficult to recreate the crash conditions while
 solo testing. A logging system based on Logcat capture has been added. Uncaught
@@ -2268,7 +2227,7 @@ usage of, say, social network or mail applications adds to the count - but as a
 general idea (and not very precise numbers) is needed, it has been considered a
 decent solution.
 
-\section{The second testing phase}
+\subsection{The second testing phase}
 
 As the first testing phase, the second one has taken much less time than
 initially planned - only one day was necessary. A larger number of friends of
@@ -2297,7 +2256,7 @@ reward system. Another feature that has proven to be more of a liability in this
 situation was the starting condition. In the first few games(played indoors),
 the players 
 
-\section{UI Design Timeline}
+\section{User Interface: Design timeline}
 
 The design of the UI has been done progressively, based on intuition, one-man
 tests, occasional random feedback from friends of the author and feedback from
@@ -2661,12 +2620,8 @@ the 'weapon'/'powerup' buttons: they should be separated into two groups:
 'weapons' and 'powerups'.\newline
 
 
-\section{Measurements}
 
-
-The usage of 'he' should be replaced by 'he/she' and has only been used this way
-for the convenience of the author and no other reasons.
-
+\section{Evaluation and Measurements}
 
 
 
@@ -2698,6 +2653,9 @@ with a bit of subjective filtering of the available content, they have proven
 thousands of times more useful than scientific papers - which, in the case of
 developing a new concept, simply didn't have much in common with the aim of this
 project(Otherwise somebody would have developed this already).
+
+The usage of 'he' should be replaced by 'she/he' or 'he/she' and has only been
+used this way for the convenience of the author and no other reasons.
 
 
 \section{ANNEX A - Game and game platform websites}
