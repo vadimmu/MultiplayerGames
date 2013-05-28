@@ -808,11 +808,90 @@ giving the options to either quit the game or spectate.\newline
 
 In this chapter we will present the technical aspects of the game: how the
 server and the client are structured, what makes them tick and how they
-communicate.\newline
+communicate. We will first analyze the inner workings of the server, then those
+of the client and thereafter present the communication in between.\newline
 
 \subsection{Server}
 
+
+The server exists for relaying the information in between clients. It does not
+store state, nor does it validate anything - with one exception: it verifies the
+game start condition and only sends the signal to start the game when it
+is.\newline
+
+Its main role is to manage connections and resend messages - this means
+receiving updates from a single client and then unicasting, multicasting or
+broadcasting them. All this is done via TCP.\newline
+
+\subsubsection{Managing connections}
+
+For each incoming connection, the server first checks if the game is in
+progress (because it is a prototype, the server only hosts one game). If it is,
+the new connection is rejected. Otherwise, it is accepted. The server holds a
+HashMap of InetSocketAddress instances holding the IP addresses and ports of the
+remote ends of the connections it manages as keys and the unique UUIDs it has
+generated for them as values. If an existing IP:port pair is found, that player
+is removed and substituted for the new one. In both cases, the new player is
+'created': He receives a new unique UUID and is added to the dictionary of
+connections. Then, he receives a MessageReceiver and a MessageSender instance,
+both added to separate HashMaps with his InetSocketAddress as key. Then, an
+<InetSocketAddress, Date> pair is added to a HashMap that remembers the
+heartbeats.\newline
+
+Now that the management of this particular connection is up and running, the
+MessageReceiver is listening for incoming messages. The messages themselves will
+be discussed in further detail below. For now, we can make a differentiation
+between heartbeat messages and all the rest. For the case of the heartbeat
+messages, on receipt the Date value is updated in the heartbeats HashMap. The
+rest of the messages are processed and, according to their type, are sent to
+one, many or all the MessageSenders, thus unicasting and mimicking multicasts
+and broadcasts. TCP is connection oriented and thus does not allow multicasts
+and broadcasts. This issue has been solved by using the list of MessageSenders
+and sending to multiple clients through their individual connections.\newline
+
+The heartbeats are periodically checked by a HeartbeatListener, which is a
+separate Thread running a continuous loop of periodic checks (200ms in our
+case) over all the connections' heartbeats. If the interval from the last update
+to the time of the check is larger than a previously established timeout
+interval (in our case, it is a fixed 5000ms), the connection will be closed. By
+closing the connection, we mean closing the inputs and outputs of the
+communication socket, removing all communication objects and connection
+record and ultimately the heartbeat records.\newline
+
+The connection lifecycle is depicted in Figure \ref{fig:connectionLifecycle}.
+
+\begin{figure}
+\includegraphics[height=3.5in,width=6.23in]{./images/diagrams/connection_lifecycle.png}  
+\caption{\small \sl Connection lifecycle \label{fig:connectionLifecycle}}
+\end{figure}
+
+\subsubsection{Relaying messages}
+
+The server serves as a relay, in order to lower the bandwidth and
+resource consumption on the mobile clients. The messages exchanged are in
+JSON format and have the following base structure: \{messageType: messageNumber,
+data: \{\}\}. All clients that are connected to the server send messages
+according to the stages they are in. We can discretize three stages: connection,
+lobby and game. The server does not make this differentiation - it just relays
+what comes, according to the specifics of the messages. To this end, the
+MessageReceiver checks which type the message is and if it is the case, extracts
+the data into a String and sends it to the MessageSender. The MessageSender will
+then reconstruct the message and add further fields to the JSON structure, such
+as the UUID of the sender. Then, according to the type of message, it will be
+sent as unicast, multicast or broadcast. The unicast is sent via the designated
+MessageSender. Multicasts and broadcasts are sent as unicasts through many or
+all the MessageSenders available. Multicasts are, for now, useful just for
+in-game messages - teams communicate within.\newline
+
+An exception from this flow is made by heartbeat messages. On receipt, the
+MessageReceiver takes the date of receipt and updates the entry in the
+heartbeats HashMap. The heartbeats HashMap is checked by the HeartbeatListener,
+which closes the connection if the last received heartbeat update is older than
+a given timeout interval.\newline
+
 \subsection{Client}
+
+
 
 \subsection{Communication}
 
