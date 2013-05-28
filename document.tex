@@ -891,6 +891,70 @@ a given timeout interval.\newline
 
 \subsection{Client}
 
+The client is the mobile application. It now works with Android versions from
+2.3 up. It is structured in six modules, as seen in Figure \ref{fig:clientModules}:
+
+\begin{figure}
+\includegraphics[height=3.5in,width=6.23in]{./images/diagrams/client_modules.png}  
+\caption{\small \sl Client modules \label{fig:clientModules}}
+\end{figure}
+
+\begin{enumerate}
+  \item \textbf{Connection} is responsible with starting and managing the
+  connections. Implicitly, it interferes with the Communication module, starting
+  and closing the Receiver and Sender objects.
+  
+  \item \textbf{Communication} is responsible with receiving and interpreting
+  messages and sending them. It contains a list of messages that are to be
+  treated, organized by context and source (lobby and game, then from and to
+  server).
+  
+  \item \textbf{User Interfaces} are the 'screens' that the player sees in the
+  app. They are structured by purpose and interlinked. Some interaction among
+  Fragments is done through functions in FragmentUtils.
+  
+  \item \textbf{Utils} are the helper classes that provide generic methods.
+  One class is provided for each purpose: FragmentUtils, GameUtils, AdminUtils.
+  
+  \item \textbf{Data} is composed of static classes holding information about
+  the players in the game, their status, available professions and weapons. Also
+  safe access to the data is provided through methods present in these classes.
+  
+  \item \textbf{Logging} contains just the Logger class, which is responsible
+  for logging crashes and data usage.
+\end{enumerate}
+
+The client keeps track of state and performs checks and validation such as
+in-game shooting, distance checks, enabling powerups, running cooldowns
+etc.\newline
+
+The UI of the client app is split into the 7 fragments presented under 'User
+Interfaces' in Figure \ref{fig:clientModules}. When the app is run, the first
+screen is the main menu. A check will be made if the prerequisits for
+playing the game are met(having Google Play Services installed and the
+GPS turned on). If either one is not met, a dialog will help the player
+quickly get the Google Play Services or turn on the GPS. Buttons in the main
+menu provide navigation to the main menu settings, tutorials or lobby(provided
+there is an Internet connection). The tutorials provide some insight on what the
+game is and how it is played. The settings screen is a temporary solution for
+manually giving the IP address and port of the server to which the client is to
+connect. The 'Connect to server' button triggers a connection attempt. The
+LoadingFragment will be briefly presented, while the connection is established
+and some communication is done in the background. Once this is done, the
+LoadingFragment is replaced by the LobbyFragment. Here, the player can choose
+between teams and edit his character details via the LobbySettings screen. Once
+this is also done, the player will signal the fact that he is ready via the
+'Ready' button available on the screen. If all players are ready, the server
+will send a countdown, followed by a message signalling game entry. This is when
+the LobbyFragment is replaced by the GameFragment. The whole game UI is
+available at this time, with the exception of the weapon buttons. At this point,
+the server will make a check on whether the teams are far enough from each
+other. When the teams get far enough from each other, the server will send the
+signal to start the game. This is when the game buttons are enabled and the
+skirmish begins. The two teams will attempt to eliminate each other through the
+use of 'weapons', 'powerups' and strategy.\newline
+
+The UI and technical aspects of the client will be discussed below.\newline
 
 
 \subsection{Communication}
@@ -1035,15 +1099,178 @@ existing clients is presented in Figure\ref{fig:client_server_flow}
 \label{fig:client_server_flow}}
 \end{figure}
 
-
-
-\subsection{UI}
-
 \section{Organization}
 
-\section{Implementation: Back End}
+The project was preceded by the search for a subject. This search has been
+related to the initial plan of adding multiplayer functionality to an existing
+tour app, GeoQuest. As the search lengthened, the focus diverged from the
+tour app, towards GPS-enabled multiplayer games. The first ideas were for
+including including small games and side activities into the tour app.
+During three months, several GPS-enabled mobile games have been tried out.
+Ideas from before 2007(the first iPhone) have also been scouted, along with
+existing games on both Google Play and Apple's App Store. Besides that, sports
+such as orienteering have been used as inspiration.\newline
 
-\section{Implementation: Front End}
+The games that were found either required too much or too little involvement
+from the players, required no actual movement or demanded the player to go to various
+locations alone just to progress in the game. The point of this project has
+become making a game that would entertain a number of people that would play
+together, without the need of specific skills, know-how or prolonged
+involvement. It would be played within at most 30 minutes.\newline
+
+From all the previous ideas, the 'War Game', 'Mine Game' and 'Territory
+Takeover' games were proposed. From all three, the 'War Game' was chosen for
+development, while the other two have been kept for future work. On the 14th of
+January, at the end of the three month exploration phase, the work has
+started.\newline
+
+In the proposal for the project, the 6 month time has been separated in four
+parts :
+\begin{enumerate}
+  \item First phase of development - 2 months
+  \item First phase of testing - 1 month
+  \item Second phase of development - 2 months
+  \item Second phase of testing -1 month  
+\end{enumerate}
+
+This interval was also supposed to include the writing of this paper, in between
+the lines. This schedule has proven unfeasible - not because of the length of
+the development phases, but because of the very short length of the testing
+phases. Another big part of the development of this app has been played by the
+continuous search for the appropriate technologies and practices for the project
+- including organizing:
+\begin{enumerate}
+  \item The exploration phase - Creating a UI test (Android), a server test
+  (in NodeJS, then Python, then Java), a client test(Android). There have also
+  been some short UI tests and discussions along the way. This phase took around
+  two-three weeks.
+  
+  \item The initial development phase - Creating a functional app with the Maps
+  API V1 and writing a full-blown server. This was the longest phase - taking
+  around one month and a half. No compatibility libraries were used, and
+  therefore the app required Android versions of 3.0 or higher.
+  
+  \item The first testing phase - It lasted for half a day. Preparations for it
+  took another few hours (upgrading the OS on two phones from Android 2.3 to
+  4.0). A few friends of the author volunteered their Android devices.
+  The application has been installed on all their phones and tried out for one
+  hour (in multiple attempts, with some crashes). After playing the game, a
+  focus group - style discussion was set up, the subjects being the usability,
+  mechanics and feeling in and out of the game. Notes were taken, while
+  everybody was discussing various aspects of the app. Also the menus and a
+  possible logo were discussed. Even though the time has been short, enough
+  input was gathered to change the appearance and workings of the application
+  almost completely. Also this is when the decision has been taken to make the
+  app compatible with Android 2.3 for the least (almost 50\% of Android users
+  had this version on their phones at the time).
+  
+  \item The second development phase - Another three weeks were required to
+  completely construct a new UI according to the requirements from the testing
+  phase and the switch from Google Maps API V1 to V2. Crash logging and data
+  usage logging have been added to the app.
+  
+  \item The second testing phase lasted one day. This time, the number of the
+  people who participated has doubled - ten people. Most of them also had 3G sim
+  cards. The game was finally field tested. Another focus group - style
+  discussion has been set up and the opinions and suggestions were noted down.
+  
+  \item The documentation phase is ongoing. This is the paper documenting the
+  development of the app.
+  
+\end{enumerate}
+
+\subsubsection{Kanban}
+
+For managing the development steps of the app, a simplified Kanban board was
+mainly used. As is specific to Kanban, stories have been gradually proposed and
+fragmented them tasks, where necessary. As the work for this project has been
+solo, all team aspects of this organizational system have been removed. The
+fields that have been kept are an 'Input Queue' of three slots, two
+'Development' slots, two 'Integration' slots and three 'Live slots'.\newline
+
+This board has been custom made for this project, unlike the typical Kanban
+board - a whiteboard with slots defined by lines drawn with a marker, on which
+the stories and tasks were held with magnets. The custom approach to make the
+board, even though more time consuming, has proven more efficient for the
+long term of the development of this application. When a whiteboard is used,
+stories and tasks and magnets are lost - losing stories is something this
+project cannot afford. The markers get misplaced and paper is often not found.
+For the development of the app, the Kanban board was made out of an actual
+wooden board, on which transparent plastic envelopes of two different sizes were
+placed as slots for the stories and tasks. Also, under the board, three more
+slots have been added : one for the papers for the stories and tasks, one for
+the utensils(markers and pens of various colors and scissors) and the last one
+for the finished stories and tasks that did were pushed outside the board. This
+gave better control over the location of everything needed and multiple stories
+could be placed in the same slot. For example, the two 'Input Queue' slots have
+proved to be not enough for the influx of ideas and proposals for modification.
+Also, the 'Live' slots were not used for single stories, but for groups, as will
+be described below. The Kanban board can be seen in Figure \ref{fig:kanbanBoard}.Its
+extension is presented in Figure \ref{fig:kanbanBoardExtension}.\newline
+
+\begin{figure}
+\includegraphics[height=3.5in,width=6.23in]{./images/kanban/kanban_board.jpg}  
+\caption{\small \sl Kanban board \label{fig:kanbanBoard}}
+\end{figure}
+
+\begin{figure}
+\includegraphics[height=3.5in,width=6.23in]{./images/kanban/kanban_board_extension.jpg}  
+\caption{\small \sl Kanban board extension\label{fig:kanbanBoardExtension}}
+\end{figure}
+
+
+The Kanban board has been modified in one further aspect: As the 'Development'
+slots have only been used at the very beginning of the project, they have been
+brought closer to the programmer. The developer must have a number of stories
+and tasks at hand, for orientation - it is easy to lose track of what must be
+done, when delving into the unknown. As a result, the two slots on the board
+have ceased to be used and a separate slot on the wall, next to the development
+machine has been created. Having all the stories at hand has proven much more
+useful and straightforward.\newline
+
+Another observation is that many stories are linked in various ways.
+During this project, stories have been grouped according to their connectedness
+in various aspects - from similar functionality to work in the same few classes.
+According to these criteria, stories have been treated in groups. For future
+work on this project, we propose adding a few more slots on the wall, in front
+of the programmer. In each slot, the programmer can put together stories with
+common traits. Also, the importance of having the full story in front of the
+developer has been noticed - even if one is working on only one task from it.
+Having the big picture at all times is just as important as dealing with the
+details. Therefore, for the case of work within a team, we bring the following
+proposal: have the story and tasks on the Kanban board, with the names of the
+developers dealing with each task, while each developer would have a copy of the
+story and the tasks from the board (with the names of the assignees included) in
+front of his own workstation. Therefore, a link between the people working at
+different tasks and between the tasks themselves would be permanently kept - and
+synchronization on overlapping tasks would be easier. Also due to the fact that
+stories have been treated in bulks of related work, they have been added to the
+'Live' slots based on these same criteria. \newline
+
+Besides all, having all completed stories and tasks have their own slot, in
+a visible place outside the board, has proven beneficial. It provides good
+morale to the developer who sees the stack of solved stories thickening.
+Having a hold of all the stories also greatly helped write this paper. \newline
+
+\subsubsection{Unit Testing}
+
+Unit testing has been considered for this project, but was soon given up. This
+application is a conceptual prototype. A lot of trial and error was done during
+development, changes to some pieces of functionality occured as often as a few
+times a day. It is hard not to acknowledge the usefulness of unit testing in a
+full blown, large scale project. But in this case, it has proven to be a
+liability. At the beginning, writing unit tests has been attempted, only to be
+abandoned in frustration -  the specifications for the functionality changed
+very quickly. A lot of refactoring and hand testing each new piece of
+functionality has kept the application mostly bug-free throughout the
+development.
+
+\section{Implementation Timeline: Back End}
+
+
+
+
+\section{Implementation Timeline: Front End}
 
 \section{Evaluation}
 
@@ -1067,20 +1294,12 @@ existing clients is presented in Figure\ref{fig:client_server_flow}
 
 \section{Preparations for development}
 
-This section will follow the development of the application. The backend,
-frontend and mechanics of the game will be analyzed and presented in their
-evolution. \newline
+This section will follow the development of the application. The back end and
+mechanics of the game will be analyzed and presented in their evolution, briefly
+describing aspects of the front end. \newline
 
-The game is composed of three parts : \newline
-\begin{enumerate}
-  \item \textbf{Mobile App Frontend} - A set of menus for setting up the game
-  and a GUI on top of Google Maps for the game itself.
-  \item \textbf{Mobile App Backend} - The core of the app. This includes the
-  modules for communicating with the server, for in-game protocols and
-  mechanics.
-  \item \textbf{Server} - All players will communicate with each other through a
-  central server that can only host one game at a time.  
-\end{enumerate}
+The evolution of the server and the client will be presented chronologically.
+
 
 
 \subsection{Initial plan}
@@ -1259,144 +1478,7 @@ I must also add the fact that learning how to program in Android was done while
 developing. This was often a trial-and-error process, covered with personal
 takes on the tutorials found mostly on StackOverflow.
 
-\subsection{Organization of the project}
 
-Before there was the project, there was a long search. I initialliy wanted to
-continue what was done one semester before, in a lab on agile software
-development, where 12 people developed a tour app using Phonegap. I wanted to
-add multiplayer functionality to the game, but simply seeing everybody on the
-map was to simple. Ideas arose from discussing this with my coordinator. Among
-them were ideas for including games and side activities. During the next three
-months, I have tried all the mobile games that used a GPS and that I could find
-on iOS. Most of them were also ported to Android. In the meantime, I have found
-out of the existence of Bluestacks, an Android emulator for Windows. A large
-number of games were tried out, but many gave a feeling of involvement and some
-gave the impression that they will require too much commitment from the player.
-
-
-
-In the proposal for the project, I separated the 6 month time in 4 parts : 
-\begin{enumerate}
-  \item First phase of development - 2 months
-  \item First phase of testing - 1 month
-  \item Second phase of development - 2 months
-  \item Second phase of testing -1 month  
-\end{enumerate}
-
-This interval was also supposed to include the writing of this paper, in between
-the lines. This schedule has proven unfeasible - not because of the
-length of the development phases, but because of the very short length of the
-testing phases. Another big part of the development of this app has been played
-by the continuous search for the appropriate technologies and practices for the
-project - including my own organizing:
-\begin{enumerate}
-  \item The exploration phase - Creating a UI test (Android), a server test
-  (NodeJS, then Python, then Java), a client test(Android). There have also
-  been some short UI tests and discussions along the way. This phase took around
-  two-three weeks.
-  \item The initial development phase - Creating a functional app with the Maps
-  API V1 and writing a full-blown server. This was the longest phase - taking
-  around one month and a half.
-  \item The first testing phase - It lasted for half a day. Preparations for it
-  took another few hours (upgrading the OS on two phones from Android 2.3 to
-  4.0).I brought a few friends, installed the app on all their phones and tried
-  it out for 1 hour (in multiple attempts, with some crashes). After playing
-  the game, the friends and I discussed the usability, mechanics and feeling in
-  and out of the game, in a focus group approach. A friend and I took notes,
-  while we all discussed various aspects of the app. Also the menus and a
-  possible logo were discussed. I gathered so much input from them that only
-  their proposals would change the face of the app entirely. Also this is when I
-  realized that I must make the app compatible with Android 2.3 for the least
-  (almost 50\% of Android users have this version on their phones).
-  \item The second development phase - I have worked for another 3 weeks to
-  completely construct a new UI according to the requirements from the testing
-  phase and the switch from Google Maps API V1 to V2. I have added a crash
-  logging and data usage logging system to the app.
-  \item The second testing phase lasted one day. I created a Facebook
-  event and invited 10 people that brought Android phones. Most of them also had
-  3G sim cards. The game was finally field tested and I could get the opinions
-  of the people on the UI, the functionality, the speed of the app.
-  \item The documentation phase is ongoing. This is the paper documenting the
-  development of the app.
-  
-\end{enumerate}
-
-\subsubsection{Kanban}
-
-For managing the development steps of the app, I have mainly used a simplified
-Kanban board. As is specific to Kanban, I have gradually proposed stories and
-fragmented them into tasks, where necessary. As I worked alone, all team aspects
-of this organizational system have been removed. The fields that have been kept
-are an 'Input Queue', two 'Development' slots, the 'Integration' slots and the
-'Live slots'.\newline
-
-There is a significant physical difference between the board that I used, versus
-the one used in the 'Agile Lab' from the previous semester. The first used a
-whiteboard with slots defined by lines drawn with a marker, on which the stories
-and tasks were held with magnets. Although this has been highly efficient for
-the short duration of the lab, I don't condsider it useful for an endeavor of
-longer duration - stories and tasks and magnets are lost. The markers get
-misplaced and paper is often not found. For the development of the app, the
-Kanban board was made out of an actual wooden board, on which transparent
-plastic envelopes of two different sizes were placed as slots for the stories
-and tasks. Also, under the board, three more slots have been added : one for the
-papers for the stories and tasks, one for the utensils(markers and pens of
-various colors and scissors) and the last one for the finished stories and tasks
-that did were pushed outside the board. This gave better control over
-the location of everything needed and multiple stories could be placed
-in the same slot. For example, the two 'Input Queue' slots have proved
-to be not enough for the influx of ideas, and proposals for modification. Also,
-the 'Live' slots were not used for single stories, but for groups, as will be
-described below. \newline
-
-A personal touch has been added to the Kanban board : the 'Development' slots
-have only been used at the very beginning of the project. What I have noticed is
-that the developer must have a number of stories and tasks at hand, for
-orientation. I have personally lost track of what I was doing when the
-'Development' tasks were at the appropriate locations on the board. As a result,
-I stopped using the two slots on the board and created a separate slot on the
-wall, next to my main monitor. Having all the stories that I was working on has
-proven much more useful and straightforward.\newline
-
-I have noticed that many stories are linked in various ways. I was writing the
-stories and grouping them according to their connectedness in various aspects -
-from similar functionality to work in the same few classes. According to these
-criteria, I have treated stories in groups, mentally separating them. For
-my future work on this project, I propose adding a few more slots on the wall,
-in front of the programmer. In each slot, the programmer can put together
-stories with common traits. Also, I recognized the importance of having the full
-story in front of you, even if you are working on only one task from it. Having
-the big picture at all times is just as important as dealing with the details.
-In the case of work within a team, I would have the story and tasks on the
-Kanban board, with the names of the developers dealing with each task, while
-each developer would have a copy of the story and the tasks from the board
-(with the names of the assignees included) in front of his own workstation.
-Therefore, a link between the people working at different tasks and between
-the tasks themselves would be permanently kept - and synchronization on
-overlapping tasks would be easier. Also due to the fact that I treated
-stories in bulks of related work, they have been added to the 'Live'
-slots based on these same criteria. \newline
-
-As a difference from the Kanban board used in the 'Agile Lab' from the previous
-semester, I propose that all completed stories and tasks have their own slot, in
-a visible place outside the board. This offers a good morale to all the
-developers who see the stack of solved stories thickening. Having a hold
-of all the stories also greatly helps write this paper. \newline
-
-\subsubsection{Unit Testing}
-
-I considered unit testing for this project, but soon gave it up. This
-application is a conceptual prototype. A lot of trial and error was done during
-development, changes to some piece of functionality occured as often as a few
-times a day. I cannot not acknowledge the usefulness of unit testing in a full
-blown, large scale project. But in this case, it has proven to be a liability. I
-wrote test cases at the beginning, only to find frustration in the fact that the
-specifications for the functionality changed very quickly. Also, because this
-app has been more of a creative than technical endeavor, I had to keep my mind
-more on the ideas than on their implementation. Often, I have started with a
-'quick and dirty' approach, tried out how I felt with the implementation, trying
-to put myself in the shoes of an unknowing player and only after this organized
-and modularized the code.
 
 
 \section{The exploration phase}
@@ -1925,6 +2007,13 @@ author and an influence of the switch to a newer version of Maps API.
 
 \subsection{The Server}
 
+The only change done on the server in the second development phase, beyond bug
+solving, has been the switch from InetAddress to InetSocketAddress as key in the
+server's management HashMaps. That's because multiple connections from behind a
+router with NAT were not possible. InetAddress only holds the remote IP of the
+connection. The InetSocketAddress now holds both the IP and port of the
+connection.
+
 \subsection{The Client}
 
 The client is an Android application that uses one Activity and multiple
@@ -2208,7 +2297,7 @@ reward system. Another feature that has proven to be more of a liability in this
 situation was the starting condition. In the first few games(played indoors),
 the players 
 
-\section{UI Design}
+\section{UI Design Timeline}
 
 The design of the UI has been done progressively, based on intuition, one-man
 tests, occasional random feedback from friends of the author and feedback from

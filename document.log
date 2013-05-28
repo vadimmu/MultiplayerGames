@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  24 MAY 2013 09:50
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  28 MAY 2013 19:45
 entering extended mode
 **document.tex
 (C:\Users\Vadim\workspace\MultiplayerGames\document.tex
@@ -214,7 +214,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.208 ...and\NAT@force@numbers{}\NAT@force@numbers
+l.222 ...and\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -309,600 +309,791 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 (C:\Users\Vadim\workspace\MultiplayerGames\document.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 5.
+(Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 5.
+(Font)              <5> on input line 3.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2])
 \tf@toc=\write4
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 64--70
+Underfull \hbox (badness 10000) in paragraph at lines 64--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--76
+Underfull \hbox (badness 10000) in paragraph at lines 68--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--82
+Underfull \hbox (badness 10000) in paragraph at lines 74--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--87
+Underfull \hbox (badness 10000) in paragraph at lines 81--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--91
+Underfull \hbox (badness 10000) in paragraph at lines 87--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--94
+Underfull \hbox (badness 10000) in paragraph at lines 93--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--123
+Underfull \hbox (badness 10000) in paragraph at lines 98--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--119
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 124--129
+Underfull \hbox (badness 10000) in paragraph at lines 128--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--139
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--148
+Underfull \hbox (badness 10000) in paragraph at lines 138--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--151
+Underfull \hbox (badness 10000) in paragraph at lines 146--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--185
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 152--157
+Underfull \hbox (badness 10000) in paragraph at lines 190--196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--166
+Underfull \hbox (badness 10000) in paragraph at lines 215--221
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--179
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--194
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--199
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--210
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 229--235
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 334--345
+[6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 351--364
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 366--370
+Underfull \hbox (badness 10000) in paragraph at lines 391--402
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--374
+Underfull \hbox (badness 10000) in paragraph at lines 423--427
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--431
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 413--420
+Underfull \hbox (badness 10000) in paragraph at lines 470--479
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--423
+Underfull \hbox (badness 10000) in paragraph at lines 480--482
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 424--430
+Underfull \hbox (badness 10000) in paragraph at lines 483--489
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--450
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 451--454
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 456--461
+Underfull \hbox (badness 10000) in paragraph at lines 501--509
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 526--529
+Underfull \hbox (badness 10000) in paragraph at lines 510--513
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 515--520
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 530--534
+Underfull \hbox (badness 10000) in paragraph at lines 585--588
 
  []
 
 
-Overfull \hbox (92.22362pt too wide) in paragraph at lines 565--573
+Underfull \hbox (badness 10000) in paragraph at lines 589--593
+
+ []
+
+
+Overfull \hbox (92.22362pt too wide) in paragraph at lines 624--632
 []\OT1/cmr/m/n/10 Extensive doc-u-men-ta-tion has been found from re-search don
 e on education-oriented GPS-games.([])([])([])([])([])([]),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--573
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 574--578
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 579--583
+Underfull \hbox (badness 10000) in paragraph at lines 624--632
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 624--627
+Underfull \hbox (badness 10000) in paragraph at lines 633--637
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 628--629
-
- []
-
-[13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 733--737
+Underfull \hbox (badness 10000) in paragraph at lines 638--642
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--758
+Underfull \hbox (badness 10000) in paragraph at lines 664--667
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 759--771
+Underfull \hbox (badness 10000) in paragraph at lines 670--677
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 774--779
+Underfull \hbox (badness 10000) in paragraph at lines 678--682
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 683--686
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 780--788
+Underfull \hbox (badness 10000) in paragraph at lines 687--701
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 702--708
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 709--713
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 794--800
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 801--805
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 809--813
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--821
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 789--793
+Underfull \hbox (badness 10000) in paragraph at lines 822--825
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 828--840
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 841--851
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 852--860
+
+ []
+
+<./images/diagrams/connection_lifecycle.png, id=570, 469.755pt x 847.165pt>
+File: ./images/diagrams/connection_lifecycle.png Graphic file (type png)
+
+<use ./images/diagrams/connection_lifecycle.png>
+Package pdftex.def Info: ./images/diagrams/connection_lifecycle.png used on inp
+ut line 864.
+(pdftex.def)             Requested size: 450.24289pt x 252.93634pt.
+
+Overfull \hbox (23.45154pt too wide) in paragraph at lines 864--865
+[][][] 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 872.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 872.
+
+Underfull \hbox (badness 10000) in paragraph at lines 870--885
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 880--886
+Underfull \hbox (badness 10000) in paragraph at lines 886--891
+
+ []
+
+<./images/diagrams/client_modules.png, id=579, 727.71875pt x 476.78125pt>
+File: ./images/diagrams/client_modules.png Graphic file (type png)
+
+<use ./images/diagrams/client_modules.png>
+Package pdftex.def Info: ./images/diagrams/client_modules.png used on input lin
+e 898.
+(pdftex.def)             Requested size: 450.25932pt x 252.94748pt.
+
+Overfull \hbox (23.46797pt too wide) in paragraph at lines 898--899
+[][][] 
+ []
+
+[17 <C:/Users/Vadim/workspace/MultiplayerGames/images/diagrams/connection_lifec
+ycle.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 927--930
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 887--905
+Underfull \hbox (badness 10000) in paragraph at lines 931--956
 
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 906--914
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 915--933
+[18 <C:/Users/Vadim/workspace/MultiplayerGames/images/diagrams/client_modules.p
+ng>]
+Underfull \hbox (badness 10000) in paragraph at lines 957--958
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 934--939
+Underfull \hbox (badness 10000) in paragraph at lines 962--966
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 958--962
-
- []
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 966--972
+Underfull \hbox (badness 10000) in paragraph at lines 967--972
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 973--982
+Underfull \hbox (badness 10000) in paragraph at lines 973--979
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 983--992
+Underfull \hbox (badness 10000) in paragraph at lines 980--984
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 993--1002
+Underfull \hbox (badness 10000) in paragraph at lines 985--993
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1010
-
- []
-
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 1045--1049
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1051--1058
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1085--1090
-
- []
-
-[20] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 1155--1157
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1158--1167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1195--1201
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1202--1206
-
- []
-
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1240
-
- []
-
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 1302--1318
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1319--1321
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1322--1328
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1329--1342
-
- []
-
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 1343--1345
-
- []
-
-
-Overfull \hbox (15.12613pt too wide) in paragraph at lines 1354--1356
-[][]\OT1/cmr/m/n/10 The client uses seven frag-ments for the UI: 'Main Menu', '
-Info and Tu-to-ri-als', 'Set-tings', 'Lobby','Lobby
- []
-
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 1432--1435
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1436--1442
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1443--1470
-
- []
-
-[26]
-Overfull \hbox (15.12613pt too wide) in paragraph at lines 1487--1489
-[][]\OT1/cmr/m/n/10 The client uses seven frag-ments for the UI: 'Main Menu', '
-Info and Tu-to-ri-als', 'Set-tings', 'Lobby','Lobby
- []
-
-
-LaTeX Warning: Reference `fig:game_logo' on page 27 undefined on input line 149
-3.
-
-
-LaTeX Warning: Reference `fig:game_background_black' on page 27 undefined on in
-put line 1513.
-
-
-LaTeX Warning: Reference `fig:game_background_white' on page 27 undefined on in
-put line 1513.
-
-
-LaTeX Warning: Reference `fig:game_background_lobby_settings' on page 27 undefi
-ned on input line 1517.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1536--1543
-
- []
-
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 1544--1557
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1558--1563
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1564--1566
-
- []
-
-<./images/android_screenshots/tutorial_game.png, id=666, 963.6pt x 578.16pt>
-File: ./images/android_screenshots/tutorial_game.png Graphic file (type png)
-
-<use ./images/android_screenshots/tutorial_game.png>
-Package pdftex.def Info: ./images/android_screenshots/tutorial_game.png used on
- input line 1568.
-(pdftex.def)             Requested size: 450.23076pt x 252.94437pt.
-
-Overfull \hbox (23.4394pt too wide) in paragraph at lines 1568--1569
+[19] <./images/diagrams/Client-Server.png, id=613, 723.70375pt x 766.865pt>
+File: ./images/diagrams/Client-Server.png Graphic file (type png)
+
+<use ./images/diagrams/Client-Server.png>
+Package pdftex.def Info: ./images/diagrams/Client-Server.png used on input line
+ 1097.
+(pdftex.def)             Requested size: 450.24872pt x 424.94814pt.
+
+Overfull \hbox (23.45737pt too wide) in paragraph at lines 1097--1099
 [][][] 
  []
 
 
-Overfull \hbox (17.60454pt too wide) in paragraph at lines 1579--1591
-[][]\OT1/cmr/bx/n/10 The bot-tom of the screen, start-ing from the bottom-left 
-cor-ner\OT1/cmr/m/n/10 : The 'weapon'/'powerup'
- []
-
-[28] [29 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/
-tutorial_game.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1641--1650
+Underfull \hbox (badness 10000) in paragraph at lines 1104--1113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1651--1656
+Underfull \hbox (badness 10000) in paragraph at lines 1114--1120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1657--1670
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1126
+
+ []
+
+[20] [21 <C:/Users/Vadim/workspace/MultiplayerGames/images/diagrams/Client-Serv
+er.png>]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1182.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1190
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 1191--1210
+
+ []
+
+<./images/kanban/kanban_board.jpg, id=659, 3276.24pt x 2457.18pt>
+File: ./images/kanban/kanban_board.jpg Graphic file (type jpg)
+
+<use ./images/kanban/kanban_board.jpg>
+Package pdftex.def Info: ./images/kanban/kanban_board.jpg used on input line 12
+12.
+(pdftex.def)             Requested size: 450.22194pt x 252.93114pt.
+
+Overfull \hbox (23.43059pt too wide) in paragraph at lines 1212--1213
+[][][] 
+ []
+
+<./images/kanban/kanban_board_extension.jpg, id=660, 3276.24pt x 2457.18pt>
+File: ./images/kanban/kanban_board_extension.jpg Graphic file (type jpg)
+
+<use ./images/kanban/kanban_board_extension.jpg>
+Package pdftex.def Info: ./images/kanban/kanban_board_extension.jpg used on inp
+ut line 1217.
+(pdftex.def)             Requested size: 450.22194pt x 252.93114pt.
+
+Overfull \hbox (23.43059pt too wide) in paragraph at lines 1217--1218
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1222--1230
+
+ []
+
+[23 <C:/Users/Vadim/workspace/MultiplayerGames/images/kanban/kanban_board.jpg>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1231--1249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1690--1694
+Underfull \hbox (badness 10000) in paragraph at lines 1250--1254
+
+ []
+
+[24 <C:/Users/Vadim/workspace/MultiplayerGames/images/kanban/kanban_board_exten
+sion.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 1297--1300
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 1398--1402
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 1419--1423
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1695--1697
+Underfull \hbox (badness 10000) in paragraph at lines 1424--1436
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1698--1704
+Underfull \hbox (badness 10000) in paragraph at lines 1439--1444
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1445--1453
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1454--1458
+
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 1486--1490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1494--1500
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1501--1510
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1511--1520
+
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 1521--1530
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1531--1538
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1573--1577
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1579--1586
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 1613--1618
 
  []
 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 1706--1718
+Underfull \hbox (badness 10000) in paragraph at lines 1683--1685
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1719--1724
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1725--1727
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1738--1743
+Underfull \hbox (badness 10000) in paragraph at lines 1686--1695
 
  []
 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 1767--1770
+Underfull \hbox (badness 10000) in paragraph at lines 1723--1729
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1771--1773
+Underfull \hbox (badness 10000) in paragraph at lines 1730--1734
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 1766--1768
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1774--1779
+Underfull \hbox (badness 10000) in paragraph at lines 1830--1846
+
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 1847--1849
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1780--1800
+Underfull \hbox (badness 10000) in paragraph at lines 1850--1856
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1801--1803
+Underfull \hbox (badness 10000) in paragraph at lines 1857--1870
 
  []
 
 
-<./images/android_screenshots/ui_prototype/UI_prototype_1.png, id=703, 1284.8pt
+Underfull \hbox (badness 10000) in paragraph at lines 1871--1873
+
+ []
+
+
+Overfull \hbox (15.12613pt too wide) in paragraph at lines 1882--1884
+[][]\OT1/cmr/m/n/10 The client uses seven frag-ments for the UI: 'Main Menu', '
+Info and Tu-to-ri-als', 'Set-tings', 'Lobby','Lobby
+ []
+
+[34] [35]
+Underfull \hbox (badness 10000) in paragraph at lines 1960--1963
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1964--1970
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1971--1998
+
+ []
+
+[36]
+Overfull \hbox (15.12613pt too wide) in paragraph at lines 2022--2024
+[][]\OT1/cmr/m/n/10 The client uses seven frag-ments for the UI: 'Main Menu', '
+Info and Tu-to-ri-als', 'Set-tings', 'Lobby','Lobby
+ []
+
+
+LaTeX Warning: Reference `fig:game_logo' on page 37 undefined on input line 202
+8.
+
+
+LaTeX Warning: Reference `fig:game_background_black' on page 37 undefined on in
+put line 2048.
+
+
+LaTeX Warning: Reference `fig:game_background_white' on page 37 undefined on in
+put line 2048.
+
+
+LaTeX Warning: Reference `fig:game_background_lobby_settings' on page 37 undefi
+ned on input line 2052.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2071--2078
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2079--2092
+
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 2093--2098
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2099--2101
+
+ []
+
+<./images/android_screenshots/tutorial_game.png, id=795, 963.6pt x 578.16pt>
+File: ./images/android_screenshots/tutorial_game.png Graphic file (type png)
+
+<use ./images/android_screenshots/tutorial_game.png>
+Package pdftex.def Info: ./images/android_screenshots/tutorial_game.png used on
+ input line 2103.
+(pdftex.def)             Requested size: 450.23076pt x 252.94437pt.
+
+Overfull \hbox (23.4394pt too wide) in paragraph at lines 2103--2104
+[][][] 
+ []
+
+
+Overfull \hbox (17.60454pt too wide) in paragraph at lines 2114--2126
+[][]\OT1/cmr/bx/n/10 The bot-tom of the screen, start-ing from the bottom-left 
+cor-ner\OT1/cmr/m/n/10 : The 'weapon'/'powerup'
+ []
+
+[38 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/tutor
+ial_game.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2176--2185
+
+ []
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 2186--2191
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2192--2205
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2225--2229
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2230--2232
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2233--2239
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2241--2253
+
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 2254--2259
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2260--2262
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2273--2278
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2302--2305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2306--2308
+
+ []
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 2309--2314
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2315--2335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2336--2338
+
+ []
+
+
+<./images/android_screenshots/ui_prototype/UI_prototype_1.png, id=829, 1284.8pt
  x 770.88pt>
 File: ./images/android_screenshots/ui_prototype/UI_prototype_1.png Graphic file
  (type png)
 
 <use ./images/android_screenshots/ui_prototype/UI_prototype_1.png>
 Package pdftex.def Info: ./images/android_screenshots/ui_prototype/UI_prototype
-_1.png used on input line 1806.
+_1.png used on input line 2341.
 (pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (23.44432pt too wide) in paragraph at lines 1806--1807
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 2341--2342
 [][][] 
  []
 
 
-<./images/android_screenshots/ui_prototype/UI_prototype_2.png, id=704, 1284.8pt
+<./images/android_screenshots/ui_prototype/UI_prototype_2.png, id=830, 1284.8pt
  x 770.88pt>
 File: ./images/android_screenshots/ui_prototype/UI_prototype_2.png Graphic file
  (type png)
 
 <use ./images/android_screenshots/ui_prototype/UI_prototype_2.png>
 Package pdftex.def Info: ./images/android_screenshots/ui_prototype/UI_prototype
-_2.png used on input line 1811.
+_2.png used on input line 2346.
 (pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (23.44432pt too wide) in paragraph at lines 1811--1812
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 2346--2347
 [][][] 
  []
 
 
-<./images/android_screenshots/ui_prototype/UI_prototype_3.png, id=705, 1284.8pt
+<./images/android_screenshots/ui_prototype/UI_prototype_3.png, id=831, 1284.8pt
  x 770.88pt>
 File: ./images/android_screenshots/ui_prototype/UI_prototype_3.png Graphic file
  (type png)
 
 <use ./images/android_screenshots/ui_prototype/UI_prototype_3.png>
 Package pdftex.def Info: ./images/android_screenshots/ui_prototype/UI_prototype
-_3.png used on input line 1816.
+_3.png used on input line 2351.
 (pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (23.44432pt too wide) in paragraph at lines 1816--1817
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 2351--2352
 [][][] 
  []
 
 
-<./images/android_screenshots/ui_prototype/UI_prototype_4.png, id=706, 1284.8pt
+<./images/android_screenshots/ui_prototype/UI_prototype_4.png, id=832, 1284.8pt
  x 770.88pt>
 File: ./images/android_screenshots/ui_prototype/UI_prototype_4.png Graphic file
  (type png)
 
 <use ./images/android_screenshots/ui_prototype/UI_prototype_4.png>
 Package pdftex.def Info: ./images/android_screenshots/ui_prototype/UI_prototype
-_4.png used on input line 1821.
+_4.png used on input line 2356.
 (pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (23.44432pt too wide) in paragraph at lines 1821--1822
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 2356--2357
 [][][] 
  []
 
 
-<./images/android_screenshots/ui_prototype/UI_prototype_5.png, id=707, 1284.8pt
+<./images/android_screenshots/ui_prototype/UI_prototype_5.png, id=833, 1284.8pt
  x 770.88pt>
 File: ./images/android_screenshots/ui_prototype/UI_prototype_5.png Graphic file
  (type png)
 
 <use ./images/android_screenshots/ui_prototype/UI_prototype_5.png>
 Package pdftex.def Info: ./images/android_screenshots/ui_prototype/UI_prototype
-_5.png used on input line 1826.
+_5.png used on input line 2361.
 (pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (23.44432pt too wide) in paragraph at lines 1826--1827
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 2361--2362
 [][][] 
  []
 
-
-<./images/android_screenshots/menu_prototype/MENU_prototype_1.png, id=710, 1284
-.8pt x 770.88pt>
-File: ./images/android_screenshots/menu_prototype/MENU_prototype_1.png Graphic 
-file (type png)
-
-<use ./images/android_screenshots/menu_prototype/MENU_prototype_1.png>
-Package pdftex.def Info: ./images/android_screenshots/menu_prototype/MENU_proto
-type_1.png used on input line 1845.
-(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
-
-Overfull \hbox (23.44432pt too wide) in paragraph at lines 1845--1846
-[][][] 
- []
-
-
-<./images/android_screenshots/menu_prototype/MENU_prototype_2.png, id=711, 1284
-.8pt x 770.88pt>
-File: ./images/android_screenshots/menu_prototype/MENU_prototype_2.png Graphic 
-file (type png)
-
-<use ./images/android_screenshots/menu_prototype/MENU_prototype_2.png>
-Package pdftex.def Info: ./images/android_screenshots/menu_prototype/MENU_proto
-type_2.png used on input line 1850.
-(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
-
-Overfull \hbox
+[42 <C:
