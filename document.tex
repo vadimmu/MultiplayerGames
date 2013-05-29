@@ -2627,7 +2627,62 @@ the 'weapon'/'powerup' buttons: they should be separated into two groups:
 
 \section{Future work}
 
-- switch to Websockets(message exchange) and WebRTC(player position exchange)
+
+This project has served as a proof of concept, a demonstration for the
+playability of a GPS-based Real Time Tactics game with some Shooter elements. As
+it has proven enjoyable and easy to play for everybody who tried it.\newline
+
+During the development and testing of this application, requests and ideas have
+come up for future versions of the game. They will be presented in
+order:\newline
+\begin{enumerate}
+  \item Icons will replace the names of all weapons and the professions of the
+  players. A logo will be added and the menus will have suitable backgrounds.
+  The current backgrounds are to be replaced.
+  
+  \item An MMO game will be developed, having this game and its variants as
+  subgames. The concept is as follows: An application will be linked to a social
+  network, such as Facebook. Players will be able to log in to the application
+  with their Facebook accounts. They will set up who can see them on the map and
+  who they want to see themselves: only themselves, friends, friends of friends.
+  They will be able to interact with each other directly through the app and
+  invite each other to play games, such as the one developed here. Details such
+  as creating custom avatars will be provided through the application or a
+  website. A scoring system will be added and competitions will be held through
+  the app - they will be advertised through Facebook events. Joining the event
+  will ensure participation in the competition. Facebook statuses might be
+  published by the app, if the player wants so: entering, winning or losing a
+  game, retrieving items, various accomplishments can be subject of publishing
+  as status.
+  
+  \item Another aspect to the game will be adding an incentive for travel and
+  discovery. Each player will be able to get temporary or permanent items by
+  exploring the sorroundings of his neighborhood or travelling to remote
+  destinations. 
+  
+  \item A further step in the development of the game would be to add RPG
+  elements to it: Mechanics will be modified to add elements of realism to the
+  game. Shotguns will be most effective in close range, rifles at longer range.
+  Damage will be calculated based on range versus ideal range. 'Missing' a shot
+  will become a factor in the game. Skills to use some weapons more effectively
+  or to receive less damage will be subject of improvement. Health will also be
+  subject of improvement. Two play modes will be added: casual and professional.
+  In casual mode, character level will be irrelevant - thus allowing people to
+  play, regardless of their daily implication in the game. In professional mode,
+  players will be able to take the game to a further level and become
+  competitive. 
+  
+  \item Quests will be ultimately added to various locations, if it is deemed
+  reasonable. This is still subject to debate, as the quests will be localized
+  and the game experience will then vary greatly from country to country.  
+  
+\end{enumerate}
+
+Other various technical modifications will be made to the game: In the first
+improvement iteration, Websockets will be implemented as communication protocol.
+Also, a server that would host a larger number of games is vital (now the
+server can only host one game).
+
 
 
 \section{Conclusion}
@@ -2962,7 +3017,12 @@ a proprietary implementation on top of TCP. \newline
 
 \section{ANNEX D - Node.JS vs. Apache - performance and scaling}
 
+% ADD HERE STUFF
+
+
 \section{ANNEX E - JSON vs. XML}
+
+% ADD HERE STUFF
 
 \section{ANNEX F - Jackson vs. Gson vs. smart-json}
 
@@ -3056,13 +3116,6 @@ JACKSON_STREAM   B 27.4 ========                       100%
   
   
 \end{enumerate}
-
-
-
-
-
-\section{ANNEX G - Reviews of the games mentioned in the paper}
-
 
 
 \section{ANNEX H - Overlay tutorial}
