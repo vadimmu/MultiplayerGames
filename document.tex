@@ -861,7 +861,7 @@ record and ultimately the heartbeat records.\newline
 The connection lifecycle is depicted in Figure \ref{fig:connectionLifecycle}.
 
 \begin{figure}
-\includegraphics[height=3.5in,width=6.23in]{./images/diagrams/connection_lifecycle.png}  
+\includegraphics[height=9.00in,width=5.00in]{./images/diagrams/connection_lifecycle.png}  
 \caption{\small \sl Connection lifecycle \label{fig:connectionLifecycle}}
 \end{figure}
 
@@ -889,13 +889,14 @@ heartbeats HashMap. The heartbeats HashMap is checked by the HeartbeatListener,
 which closes the connection if the last received heartbeat update is older than
 a given timeout interval.\newline
 
+
 \subsection{Client}
 
 The client is the mobile application. It now works with Android versions from
 2.3 up. It is structured in six modules, as seen in Figure \ref{fig:clientModules}:
 
 \begin{figure}
-\includegraphics[height=3.5in,width=6.23in]{./images/diagrams/client_modules.png}  
+\includegraphics[height=4.08in,width=6.23in]{./images/diagrams/client_modules.png}  
 \caption{\small \sl Client modules \label{fig:clientModules}}
 \end{figure}
 
@@ -1094,7 +1095,7 @@ The communication and action flow on the server, newly joined client and
 existing clients is presented in Figure\ref{fig:client_server_flow}
 
 \begin{figure}
-\includegraphics[height=5.88in,width=6.23in]{./images/diagrams/Client-Server.png}
+\includegraphics[height=7.665in,width=6.23in]{./images/diagrams/Client-Server.png}
 \caption{\small \sl A new client joining the game
 \label{fig:client_server_flow}}
 \end{figure}
@@ -3014,17 +3015,7 @@ further development of this application. It would be basically eliminating
 potential huge amounts of planning and development overhead induced by starting
 a proprietary implementation on top of TCP. \newline
 
-
-\section{ANNEX D - Node.JS vs. Apache - performance and scaling}
-
-% ADD HERE STUFF
-
-
-\section{ANNEX E - JSON vs. XML}
-
-% ADD HERE STUFF
-
-\section{ANNEX F - Jackson vs. Gson vs. smart-json}
+\section{ANNEX F - Jackson vs. Gson}
 
 When a choice had to be made for the JSON parsing library for this project, two
 libraries came to mind: Jackson and GSON.\newline
