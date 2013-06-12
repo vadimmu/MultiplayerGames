@@ -1,0 +1,144 @@
+\section{ANNEX F - Countdown buttons Tutorial}
+
+This tutorial is for adding dynamic countdowns for the elements in a Spinner
+object. In the particular case of this application, the countdown is activated
+based when the 'Shoot' button is pressed.\newline
+\begin{enumerate}
+  \item \textbf{Somewhere in the code, a ThreadPoolExecutor has to be created}:
+  
+\begin{verbatim}
+
+private static final BlockingQueue<Runnable> workQueue = 
+										new LinkedBlockingQueue<Runnable>(10);
+ThreadPoolExecutor executor = 
+				new ThreadPoolExecutor(3, 10, 3, TimeUnit.SECONDS, workQueue);
+\end{verbatim}
+	
+  \item \textbf{Then, we define the class that implements Runnable. We will call
+  it WeaponReportingTask}:
+
+\begin{verbatim}
+public class WeaponReportingTask extends AsyncTask<Weapon, Integer, Integer> {	
+  		
+	private boolean hasFinished = true;
+	
+	ArrayList<String> weaponsArray = null;
+	ArrayAdapter<String> dataAdapter = null;
+	int selectedIndex = 0;
+	String initialWeaponName = "";	
+	
+	public WeaponReportingTask(
+						ArrayList<String> newWeaponsArray, 
+						ArrayAdapter<String> newDataAdapter,
+						int newSelectedIndex
+						){		
+		super();
+		
+		hasFinished = true;
+		
+		weaponsArray = newWeaponsArray;
+		dataAdapter = newDataAdapter;
+		selectedIndex = newSelectedIndex;
+		
+		initialWeaponName = weaponsArray.get(selectedIndex);
+	}
+	
+	
+
+	@Override
+ 	protected Integer doInBackground(Weapon... params) {
+	
+		hasFinished = false;
+		
+		Weapon weapon = params[0];
+ 		if(weapon.getLastUsed() == null) 
+ 			return 0;
+ 		
+ 		int secondsElapsed = 
+ 					(int) MapUtils.getTimeDelta(weapon.getLastUsed(), true);
+ 		
+ 		while(secondsElapsed <= weapon.cooldown){
+ 			
+ 			publishProgress(weapon.cooldown - secondsElapsed);
+ 			
+ 			try {
+				Thread.sleep(200);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+ 			
+ 			secondsElapsed = 
+ 					(int) MapUtils.getTimeDelta(weapon.getLastUsed(), true);
+ 		}
+ 		
+ 		return 1;
+ 	}
+     
+    
+    protected synchronized void onProgressUpdate(Integer... progress) {
+    	
+    	if(progress != null)
+    		weaponsArray.set(
+    			selectedIndex, 
+    			initialWeaponName+" ("+progress[0].toString()+" )"
+    			);
+    	
+    	else 
+    		weaponsArray.set(
+    			selectedIndex, 
+    			initialWeaponName
+    			);
+    	
+    	dataAdapter.notifyDataSetChanged();
+    }
+
+    
+    @Override
+    protected void onPostExecute(Integer result) {
+    	weaponsArray.set(selectedIndex, initialWeaponName);
+    	dataAdapter.notifyDataSetChanged();    	
+    	super.onPostExecute(result);
+    	
+    	hasFinished = true;
+    	
+    }
+    
+    @Override
+    protected void onCancelled() {
+    	weaponsArray.set(selectedIndex, initialWeaponName);
+    	dataAdapter.notifyDataSetChanged();
+    	super.onCancelled();
+    	
+    	hasFinished = true;
+    }
+
+
+
+	public boolean hasFinished() {
+		return hasFinished;
+	}
+    
+}
+
+\end{verbatim}
+
+  \item \textbf{And then, on 'Shoot', we launch it}:
+
+\begin{verbatim}
+WeaponReportingTask cooldownTimer = 
+					new WeaponReportingTask(
+							weapons,
+							(ArrayAdapter<String>)weaponSpinner.getAdapter(),
+							currentWeaponIndex
+							);
+cooldownTimer.executeOnExecutor(
+		executor,
+		currentWeapon //this object is used in the WeaponReportingTask only  
+					  //for the cooldown time specific to the Weapon object.
+		);
+\end{verbatim}
+
+
+\end{enumerate}
+

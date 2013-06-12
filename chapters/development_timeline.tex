@@ -1,0 +1,1181 @@
+\section{Development timeline}
+
+This section will follow the development of the application. The back end and
+mechanics of the game will be analyzed and presented in their evolution,
+also briefly describing aspects of the front end. \newline
+
+The evolution of the server and the client will be presented chronologically.
+
+\subsection{The exploration phase}
+
+The development of the app has started on the 14th of January 2013. Everything
+described from now on is a process of creativity and learning, intertwined
+together. But before the development came the idea, which took three months to
+concoct.\newline
+
+
+\subsubsection{Creating the game concept}
+
+The project has started as a proposal to add a multiplayer feature to a tour
+app. It was hazy and unstructured. The main point was that the tour app was
+targeting individual users. But then, what happens when a larger group tours
+together? At the current stage of development, the tour app was offering an
+individual experience within the group. So the proposal of this paper's author
+was that the group experiences the tour together, somehow. \newline
+
+Simply adding the functionality to see all the others within the group on the
+map was not sufficient - it would just help if someone got lost or went astray.
+Otherwise, it was concluded that the user experience would not be improved in
+any significant way. Then came the idea of adding small games, hidden caches or
+quests and so on. The best idea that still had the tour app as a main platform
+was to add detours from the main track as bonuses. On those detours, the people
+would have to solve various riddles and small puzzles to get points and find out
+about hidden historical spots or interesting facs about the places they are
+visiting. \newline
+
+At this point, contoured the following addon to the main app was contoured: the
+players would have a main tour path and, as they passed by certain waypoints,
+would be offered to go through a bonus/extra track within the area that they are
+visiting. If enough of them would agree to do this(by an in-app vote, for
+example), they would be presented with a new set of waypoints. These waypoints
+would belong to a number of categories: normal waypoints, waypoints where they
+would have to split, waypoints where they would have to be together and
+waypoints where the whole group would have to wait within a virtual circle,
+while one delegate(through vote) would find an item or solve a riddle.\newline
+
+Another scenario has been proposed, during the research: In the case of the
+group waiting and one member being delegated to solve a riddle or find an item,
+a means of cooperation can be brought up: When the team votes and chooses the
+delegate, his screen turns black(no map) and the rest of the team can see
+the goal on their phones. Through messages or VoIP, they would help the delegate
+navigate to the goal. Then, once the goal has been found or reached, the virtual
+circle would disappear and the whole team would be free to move. If anyone would
+exit the circle at some point, they would receive penalties and eventually get
+disconnected from the game.\newline
+
+Gradually, the ideas for multiplayer features went astray from the tour app,
+towards multiplayer GPS-based games. The author has explored the idea of
+GPS-based puzzle / adventure games and encountered ARIS, a platform for creating
+such games. Then Tourality was discovered, and WarFinger GPS, which have been
+the main sources of inspiration for the 'War Game' and a few other games that
+didn't make it in the main concept, but are to be developed within the game as
+future work.\newline
+
+There has been a point when all the GPS-based mobile games that could be
+found were simply tried out and evaluated. At this point, the goals for this
+app were already in mind: It should move the players to an outdoor environment
+and have them walk and run as the main activity, while using the game itself for
+an improved experience. Hide and seek and Tag were considered as a model of
+entertaining game to be played by a group. The games found and already
+enumerated had,by the subjective opinion of the author, one of two major
+disadvantages:
+\begin{enumerate}
+  \item Did not engage the users enough: Games such as Parallel Mafia, SCVNGR or
+  Please Stay Calm do not motivate the player to move around much. They also
+  offer a very dim user experience in areas with few or no players.
+  \item Engaged the users too much: Mobile users, even hardcore gamers, do not
+  spend too much time playing on the phone. Rather, they would play on consoles
+  or computers, for better immersion. No matter how good the game is, it is
+  still displayed on a small phone screen(tablets are not considered in this
+  paper). Games such as Ingress and Shadow Cities offer a better and more
+  immersive story, but are still demanding of the player and request the full
+  focus of the phone owner. This was considered to be a major downside, as
+  at least some people(the author included), when they get out of their home,
+  prefer to focus on what happens around them  nd only rarely have the time and
+  will to play such a demanding game while on the go.
+  \item Did not motivate the players to move enough - Only Tourality does not
+  possess this downside, as it its various game modes are specifically designed
+  for running.
+  \item Are location-dependent - All adventure / puzzle games such as those
+  developed with ARIS, most MMOs such as Parallel Mafia do require the player to
+  be in certain places in order to progress through the game. This means that
+  the player is put in one of two situations : he 1. has to get out of
+  one's way in order to make any progress within the game, or 2. has to travel
+  to remote locations in order to play the game in the first place. This might
+  be interesting for some, but will certainly fail to capture the attention of a
+  worker or student during weekdays.
+\end{enumerate}
+
+The engaging problem can also be linked to a time problem. Games that are too
+engaging also require a lot of time to be played. The personal take of the
+author on this is that the amount of time dedicated to the mobile game should be
+decided by the player and not by the game. \newline
+
+\subsubsection{The game concept}
+The app developed is temporarily called People With Guns. It is a GPS-based RTS
+/ Shooter hybrid concept protoype for Android. It can played by several people
+(The upper limit has not been established yet. Until now, the highest number of
+players in the game has been six) that choose to join one of two opposing teams.
+The purpose of the game is to use 'weapons' and 'powerups' to defeat the
+opposing team. By 'defeat', we mean to use the available tools provided by the
+game to reduce the virtual 'health' attribute of all the opponents to zero. 
+The current 'tools' are as follows :\newline
+
+The weapons : 
+\begin{enumerate}
+  \item Pistol
+  \item Rifle
+  \item Sniper Rifle
+  \item Knife   
+\end{enumerate}
+
+The 'powerups' :
+\begin{enumerate}
+  \item Invisiblity Cloak
+  \item Shield
+  \item Painkillers / Heal
+\end{enumerate}
+
+Each item used by a player has the following attributes : 
+\begin{enumerate}
+  \item Cooldown - The amount of time that has to pass until the weapon can be
+  used again.
+  \item Duration - The amount of time during which a powerup is in effect 
+  \item Damage - The amount of health points that are subtracted upon a hit (or
+  added, in the case of the Painkillers) from the target's total available
+  health points.
+  \item Range - The maximum distance within which a weapon can be fired.
+\end{enumerate}
+
+Based on these attributes, we can make a differentiation between weapons and
+powerups. Until this point of the game development, weapons have damage and no
+duration. The only powerup that also has damage are the Painkillers - they deal
+negative damage to the target. The other two powerups, Invisibility Cloak and
+Shield, have a greater than zero 'duration' attribute, but no 'damage'.\newline
+
+Some of the attributes of the weapons and powerups will be modified, during a
+phase of balancing. Therefore, their conceptual construction will be described: 
+
+The weapons : 
+\begin{enumerate}
+  \item Pistol - Weapon with low damage and medium fire rate. All the character
+  types have it. It is the basic and least effective weapon of them all. The
+  range is reduced.
+  \item Rifle - Weapon with low damage and high fire rate. The damage is higher
+  than that of the pistol and the cooldown takes half as long. The range is
+  reduced the same as that of the Pistol
+  \item Sniper Rifle - High damage weapon with very low fire rate. The range is
+  far greater than that of the Rifle and Pistol.
+  \item Knife - The weapon that deals the highest damage of all. The cooldown is
+  greater than that of the Sniper Rifle and the range is very small. 
+  \item Invisiblity Cloak - Powerup that makes the player disappear from the
+  map for a short while. While the player is invisible, he cannot be shot.
+  The effect duration is short, while the cooldown is lengthy.
+  \item Shield - Powerup that reduces the damage taken to half, while it is in
+  effect. The duration of this powerup is short and the cooldown is lenghty.
+  \item Painkillers / Heal - Powerup that functions like a weapon that deals
+  negative damage to the player or his/her friends. It's effective immediately
+  and requires a long cooldown time.
+\end{enumerate}
+
+For more complexity in the game, a number of so-called 'character types' have
+been created, from which players can choose. Thus far, there are four character
+types implemented in the game: Marine, Medic, Sniper, Scout. Each of these has a
+different number of health points and different weapons. Because the actual
+health amount will vary during a phase of character balancing, the conceptual
+construction of the characters will be mentioned :
+\begin{enumerate}
+  \item Marine - Has average health and two weapons: Pistol and Rifle.
+  Represents the basic attack unit.
+  \item Medic - Support unit with Shield and Painkillers/Heal abilities. Has
+  average health. 
+  \item Sniper - Attack/ defense unit. Has a Sniper Rilfe for shooting at large
+  distances. Has low health.
+  \item Scout - Attack unit specialized at sneaking up on the victim. Has the
+  'Invisibility Cloak' ability for disappearing from the map and the 'Knife'
+  weapon for dealing large amounts of damage within a very small range. Has
+  large health.
+\end{enumerate}
+
+Another character has been created for testing purposes. It has been called the
+'All Encompassing' and posesses all the weapons and skills presently existing in
+the game and very large health. This character has inadvertently opened a window
+for two more game types: 
+\begin{enumerate}
+  \item 'David versus Goliath' - This be a game of many players using regular
+  character types versus a much smaller number of 'All Encompassing' characters.
+  \item 'Duel' - During the many small tests made to this app beyond the public
+  ones, a new style of playing this game has emerged: in the absence of a large
+  enough number of players, two can play in the 'Duel' mode : both use the 'All
+  Encompassing' character type and, instead of running around, attempt to win
+  the game by optimizing combinations of weapons and powerups. This game is
+  generally played side by side, for at most a few minutes and has proved to be
+  entertaining for the ones who tried it out.
+\end{enumerate}
+
+
+
+\subsection{The first development phase}
+
+The first development phase was mainly one of searching for the right tools to
+get the job done and testing their functionality.\newline
+
+The initial idea was to use Websockets for communication, a NodeJS-based server
+and, after some evaluation, native Android. The messages exchanged between
+server and clients would be in the JSON or XML format. Based on some brief
+research and the need for this app, JSON was chosen - it is easier to use and it
+takes less bytes to transmit the same data as it would with XML. The plan was
+also to use simple data structures for the messages that were to be exchanged
+between server and clients. For JSON serializing and deserializing, the choices
+found viable have been Jackson and Google GSON. After determining their speed
+and ease of use Jackson has been chosen, as besides its speed, it offers an easy
+way of serializing and deserializing JSON directly into a hierarchy of HashMaps
+- a method which was personally preferred by the author for a testing phase.
+Mapping something yet unknown into POJOs would have been a much harder task on
+the long run of prototype development. \newline
+
+Exploring the use of Websockets has proven unfruitful, as there have been dead
+ends :
+\begin{enumerate}
+  \item The only freely available Websocket library for Android at the time of
+  research was Autobahn. The Websocket libraries available for NodeJS were
+  Socket.IO, Websocket-Node and ws. None of them worked with Autobahn for
+  Android. A forum post was eventually found, in which one of the developers of
+  Autobahn stated the reasons for the incompatibility between Socket.IO and
+  Autobahn for Android: First, the protocol implementations were based on
+  different draft versions. Second, Socket.IO used an HTTP handshake for the
+  connection - and that was not supported by Autobahn. The same issue applied to
+  Websocket-Node and ws. A Python implementation of Autobahn has been tried for
+  the server, but after a few unfruitful attempts, the decision came to use
+  Java. In the case of Java, Autobahn for Android does not work. One of the
+  reasons: Autobahn subclasses a Handler object that is part of the Android
+  SDK. The realization came that until Websockets receives its final version,
+  one cannot fully rely on the protocol. And for the purpose of a prototype
+  application where communication should not be overly complicated, TCP was
+  chosen.
+  
+  \item Because of the Websocket issue, but also the subjectively perceived slow
+  development pace with NodeJS (Libraries are not documented, autocomplete
+  mostly does not work and there is no javadoc equivalent), it has been decided
+  to switch to Java. The combination of Python  and Websockets was also
+  attempted in the meantime, but productivity was perceived as low for the same
+  reasons as for NodeJS.
+\end{enumerate}
+
+At the end of these attempts and searches, the tools that the author has decided
+upon were native Android clients, Java server and TCP communication in between
+with JSON messages.\newline
+
+Now the tools were readily available and the development of the app has started.
+The first phase development has been split in three sub-phases(sub-components) :
+\begin{enumerate}
+  \item A game UI that would add some mock players on the map and provide some
+  usability insight.
+  \item The server
+  \item The whole app, based on the initial UI experience.
+\end{enumerate}
+
+In developing the initial game UI, three buttons have been added(one for
+generating a number of markers ('Generate Markers') on the map, one for further
+use('Check Info') and one for shooting ('Shoot')) and a spinner, on top of a
+MapView. The spinner served as a weapon selector. Once a weapon was selected (on
+launch, the first one in the list was automatically pre-selected), its range
+would be drawn on the map. The three buttons have been placed in three corners
+of the screen- bottom-left, bottom-right, top-left. The spinner has been layed
+to the right of the 'Shoot' button. The functionalities added were as followed :
+
+\begin{enumerate}
+  \item 'Shoot' button - Mock method to display a Toast message stating if the
+  shot was performed or not and the selected weapon.
+  
+  \item 'Generate Markers' button - Mock method to randomly generate markers on
+  the map (for this game's purposes).
+  
+  \item 'Check Info' button - sporadic functionality to display a Toast message
+  with various info on data structures in the back end.
+  
+  \item Spinner - selecting weapons to 'shoot'. 
+\end{enumerate}
+
+
+\subsubsection{The structure of the server}
+ 
+\begin{enumerate}
+  
+  \item A 'communication' module for dealing with adding and managing
+  connections and messaging.
+  
+  \item A 'messages' module for managing the incoming and outgoing messages for
+  each connection.
+  
+  \item A 'game' module for handling in-game data, such as keeping track of
+  connected players, teams and game status. 
+  
+\end{enumerate}
+
+The structure of the 'communication' module:
+
+\begin{enumerate}
+  
+  \item The 'TcpServer' class that starts listening for incoming TCP connections
+  on a given port. 
+	
+  \item A 'ConnectionManager' class that provides static synchronized methods
+  for managing adding and removing connections, MessageSender, MessageReceiver
+  and connection keepalive heartbeats.
+  
+\end{enumerate}
+
+The structure of the 'messages' module:
+
+\begin{enumerate}
+  
+  \item A 'Messages' class that contains a number of inner classes for
+  categorizing the different types of messages.
+  
+  \item A 'MessageSender' class that deals with sending messages to a single
+  client, but can also access all other instances of this class to multicast
+  and/or broadcast messages to all the other clients, when needed.
+  
+  \item A 'MessageReceiver' class that deals with receiving messages from a
+  single client
+  
+  \item A 'HeartbeatListener' class that listens for heartbeats from the
+  connected clients and keeps the connections alive or closes them.
+  
+\end{enumerate}
+
+The structure of the 'game' module:
+
+\begin{enumerate}
+  
+  \item A 'Player' class that stores information about the players (eg. name,
+  'profession', health points and position).
+  
+  \item A 'GameManager' class that manages the addition, removal and management
+  of players.
+  
+\end{enumerate}
+
+\subsubsection{The Server}
+
+Once started, the server listens on a port. When a remote client connects, the
+server adds an InetAddress instance containing the IP address of the client.
+Then, a Player object with some default values is initialized and a random UUID
+is generated. The Player object is added in one of the HashMaps for the two
+teams - home team or away team - using the UUID as key. A MessageReceiver and a
+MessageSender are instantiated. The MessageReceiver, MessageSender, a Date
+object containing the moment of the connection and the newly generated UUID and
+added to HashMaps with the InetAddress of the client as key. The server sends a
+configuration json containing the already connected players, the available
+professions and their attributes(title, health, weapons, description), the
+available weapons and their attributes(name, range, cooldown, duration,
+description and usage policy). From now on, whether a player remains connected
+to the server depends on the so-called heartbeats : The client will send
+periodic heartbeat messages to the server. The server will update the Date
+object for the last moment when a heartbeat was received. If a delay beyond a
+threshold comes up, the client is removed from the server.\newline
+
+The server now acts only as a relay - game state is held on the client
+side.\newline
+
+Because TCP does not allow multicasts and broadcasts and UDP was purposely
+avoided, methods for sending multicasts and broadcasts were conceived as
+follows: When a client sends a message that requires multicast/broadcast, the
+server accesses all the MessageSender objects, iterates through all of them and
+sends the given message to all of them. This applies to location updates, shot
+alerts and in-game messages.\newline
+
+Once a number of players (1 or more) have connected to the server, they may send
+'Ready' messages to the server, stating that they are prepared to enter the
+game. The server will check on receipt on each 'Ready' message if all the
+players connected to the server are 'Ready'. If yes, a countdown timer will be
+started: A broadcast with the seconds left until the game starts will be sent to
+all the players. After the countdown, an 'Enter Game' message is broadcast to
+all the clients. Because the server holds the information on the positions of
+all the players, a condition and another message have been added: when the
+distance between the average positions of all the players in each team is at
+least some given distance(eg. 500m) and each team member is at most some other
+given distance(50m) from the average position of his/her team, 'Start Game'
+message is broadcast to all the clients. This will later be used to enable the
+weapons for all the players only when they satisfy these conditions.\newline
+
+There is no direct disconnect message between server and client. Disconnection
+is done exclusively based on the heartbeat interval.\newline
+
+\subsubsection{The Client}
+
+The client is an Android application that uses one Activity and multiple
+Fragments. It does not use any compatibility libraries(as the Google Maps V1 API
+requires a MapActivity and the support library requires a FragmentActivity for
+fragment use) - therefore, only Android versions equal or higher to
+3.0(Honeycomb) are supported. 
+
+The client uses seven fragments for the UI: 'Main Menu', 'Info and
+Tutorials', 'Settings', 'Lobby','Lobby Settings', 'Loading' and 'Game':
+
+\begin{enumerate}
+  \item 'Main Menu' : It is the entry point of the the application (it is the
+  fragment loaded by the Activity after it is created). It features three
+  buttons: 'Start Game', 'Settings' and 'Exit'. By pressing 'Start Game', the
+  player attempts to join the game. If the connection is successful, he is
+  brought into the 'Lobby'. Pressing 'Settings' leads to the homonymous
+  screen.
+  
+  \item 'Settings' contains two TextViews for changing the default IP
+  address and port of the server to which the client can connect.
+  
+  \item 'Loading' is an intermediary fragment that shows a loading widget for
+  the duration of time during which the connection to the server is established
+  and the client receives the config json from the server. Once this process is
+  done, it automatically switches to the 'Lobby' fragment.
+  
+  \item 'Lobby' is the main game preparation fragment. It shows the lists of
+  players in the two teams(nicknames, professions and 'Ready' status). The
+  fragment features four buttons: 'Back', 'Change Info', 'Change Team' and
+  'Ready'. If the 'Back' button, the connection to the server is closed and the
+  'Main Menu' fragment is brought to the front. The 'Change Info' button brings
+  upon the 'Lobby Settings' fragment. By pressing the 'Ready' button, the player
+  toggles his/her 'Ready' status and sends a message containing this status to
+  the server.
+  
+  \item 'Lobby Settings' is the fragment in which the player can change his/her
+  nickname and 'profession'. A textbox for the name, a spinner and a
+  description textbox for the profession and an 'Ok' button are provided. 
+  
+  \item 'Game' is the most important fragment in this app: it provides the UI
+  for gameplay. It features a fullscreen MapView that displays the map and, on
+  top of it, the 'Shoot' button and weapon selection Spinner. Two other buttons
+  are kept on the screen and given various functionalities, according to the
+  testing needs.
+   
+\end{enumerate}
+
+The app usage would go as follows: The player opens the app and is presented the
+'Main Menu' UI. If the GPS is not on, a dialog will appear informing him of
+this and offering two choices: `Turn GPS on` or 'Exit'. If 'Turn GPS on' is
+chosen, the GPS Settings page will be shown and the player can switch it on.
+Once this is done, the player clicks 'Start Game' and, after being shortly shown
+the 'Loading' fragment, is introduced to the 'Lobby' screen. Here, one can see
+that he has been added to one of the teams(Home Team or Away Team) and has been
+given a default nickname('Player') and profession('Marine'). This is where he
+chooses a team by clicking the 'Change Team' button or opts navigate to the
+'Lobby Settings' screen by clicking the 'Change Info' button and change the
+'nickname' or 'profession'. Once the player is ready to play, he will press the
+'Ready' button. If all the players that are connected to the server are marked
+as 'Ready', the server will send a countdown (which is seen on the client side
+through Toasts) followed by a 'Start Game' message - at which point the client
+app will automatically introduce the 'Game' UI. All the players are shown on the
+map by blue(current player), red(enemies) and green(friends) markers. Above each
+marker, one can see the nickname, 'profession' and health points of the player.
+The selection of players is done by clicking the markers. A selected player will
+have his marker drawn in yellow. Selecting a weapon from the provided Spinner
+deselects the currently selected player(if there is any) and draws the weapon's
+range around the position of the current player. For using the currently
+selected 'weapon' or 'powerup' on one of the players, the current player has to
+select the target on the screen and press the 'Shoot' button. If the selection
+attempt does not satisfy the 'selection policies' provided by the Weapon object,
+the map marker will simply not be selected. Otherwise, it will change color to
+yellow. If the target is not within the weapon's range when the 'Shoot' button
+is pressed, a Toast message will appear stating the current distance and that
+the shot was not performed. Otherwise, a Toast message stating the distance and
+damage will be shown and a cooldown countdown will start at the appropriate
+entry of the weapon selection Spinner object. Once a player has lost all health
+points, a dialog appears saying that the game is over for this player and gives
+him the sole option to exit the game in progress and return to the 'Main Menu'
+screen. Once a player exits the game in progress, his marker will disappear on
+the maps of the other players. There are no start and end conditions
+implemented.
+
+\subsubsection{The UI}
+
+The design of the UI has been done progressively, based on intuition, one-man
+tests, occasional random feedback from friends of the author and feedback from
+players during the test phases.\newline
+
+During the first phase of development two UI prototypes have been created: one
+for the game screen and the other for the menus. A rough idea on what the game
+will look like and what functionality has been created once the two UI
+prototypes have been brought to light.\newline
+
+We will first discuss the game screen prototype. The first challenge has been
+more to create the Overlay object, get markers of three color types (red: enemy,
+green: friend, blue: current player, yellow: selected player) on the map at
+random positions and create the first 'Shoot' action seem real. This meant
+adding a 'Shoot' button and a Spinner from which weapons could be chosen and
+adding player selection into account. It had to be realistic, so a list with
+Weapon objects had to be created. For this, attributes had to be conceived for
+these weapons. What attributes are needed in a Weapon object? The quick answer
+has been: \"damage and range\". Once this has been done, drawing the range of
+the selected weapon on the map became the focus. Once that was done, shooting a
+weapon had to feel like it actually happened somehow. That's when Toast
+notifications have been added. After this, the realization came that those
+weapons can be shot continuously. They weren't supposed to. The 'cooldown'
+attribute has been added and a countdown was added on the Spinner dialog items,
+once they were used. On each weapon selection if a player was selected, he would
+be deselected. The range would be redrawn and the player would have to select
+the target on the screen and shoot by pressing the 'Shoot' button. The UI
+prototype ended up looking like Figures \ref{fig:UIPrototype1},
+\ref{fig:UIPrototype2}, \ref{fig:UIPrototype3}, \ref{fig:UIPrototype4},
+\ref{fig:UIPrototype5}.\newline
+
+The following prototype would describe the basic functionality of the menus up
+until the point of entering the game.\newline
+
+
+\begin{figure}
+\includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/ui_prototype/UI_prototype_1.png}  
+\caption{\small \sl game screen prototype \label{fig:UIPrototype1}}
+\end{figure}
+
+\begin{figure}
+\includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/ui_prototype/UI_prototype_2.png}  
+\caption{\small \sl game screen prototype \label{fig:UIPrototype2}}
+\end{figure}
+
+\begin{figure}
+\includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/ui_prototype/UI_prototype_3.png}  
+\caption{\small \sl game screen prototype \label{fig:UIPrototype3}}
+\end{figure}
+
+\begin{figure}
+\includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/ui_prototype/UI_prototype_4.png}  
+\caption{\small \sl game screen prototype \label{fig:UIPrototype4}}
+\end{figure}
+
+\begin{figure}
+\includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/ui_prototype/UI_prototype_5.png}  
+\caption{\small \sl game screen prototype \label{fig:UIPrototype5}}
+\end{figure}
+
+
+The game screen prototype has been followed by the menu UI prototype. For
+starters, this one hasn't been made with easy user interaction in mind, but
+rather as a bridge for the author to think of all the necessary functionality
+that should be present in everything that comes before the gameplay. Also, it
+has been an exercise for the things to come. The items deemed vital have been
+the main menu and a lobby screen. The main menu screen has been initially seen
+as only a gate to the game, an easy intro rather than anything else. The lobby
+screen has been designed to functionally accomodate what was deemed necessary in
+terms of game and character preparation - and predicted the need for another
+screen - that of the character settings, marked by the presence of the button
+labeled 'Change my Info'. The result can be seen in Figures
+\ref{fig:menuPrototype1} and \ref{fig:menuPrototype2}.
+
+\begin{figure}
+\includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/menu_prototype/MENU_prototype_1.png}  
+\caption{\small \sl main menu screen prototype \label{fig:menuPrototype1}}
+\end{figure}
+
+\begin{figure}
+\includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/menu_prototype/MENU_prototype_2.png}  
+\caption{\small \sl lobby screen prototype \label{fig:menuPrototype2}}
+\end{figure}
+
+The two prototypes have been put together in one project that has served as the
+foundation of the application to come.\newline
+
+Very soon the necessity for a settings screen right out of the main menu came up
+(The server was initially run locally, on the author's laptop. Out of all the
+reasons to create a settings fragment, the first one has been that the internet
+connection in the student dorm is done via VPN and thus the IP address was
+changing with reconnection) and a button labeled 'Settings' was added to the
+main menu. The settings fragment came right after with just an 'OK' button and
+two textboxes for the IP and port inputs(as can be seen in Figure
+\ref{fig:main_menu_settings}).\newline
+
+\begin{figure}
+\includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/tutorial_main_settings.png}  
+\caption{\small \sl The settings screen, out of the main
+menu\label{fig:main_menu_settings}}
+\end{figure}
+
+At the beginning of the development, as functionality to connect to the server
+has just been implemented, there was no loading screen. Instead, the application
+UI would just freeze for a few thousand milliseconds. That has been considered
+unacceptable. The first idea was to add a loading widget on top the main menu
+screen - but that, based on the intuition of the author, was quite unpleasant to
+the eye. The loading screen had to be something separate, to mark the transition
+to entering the game. A loading screen was added, with a simple loading widget
+looping infinitely and a piece of 'Loading' text at the bottom of the
+screen(Figure \ref{fig:loading}). This screen has remained visually untouched
+until the last version of the application.\newline
+
+\begin{figure}
+\includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/tutorial_loading.png}
+\caption{\small \sl The loading screen\label{fig:loading}}
+\end{figure}
+
+Once the game client became capable of successfully connecting to the server and
+setting up everything for the lobby screen, the necessity for the lobby settings
+screen came up - and therefore the lobby settings fragment has been created -
+with a spinner for choosing between characters, a textbox for the nickname, a
+multiline textbox for loading the description of each character or 'profession'
+and an 'OK' button. This screen has also remained largely unchanged until the
+current point of development and can be observed in Figures
+\ref{fig:lobby_settings_1} and \ref{fig:lobby_settings_2}.
+
+\begin{figure}
+\includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/first_development/game_first_development_9.png}
+\caption{\small \sl The character editing screen (a.k.a. the lobby settings
+screen) menu\label{fig:lobby_settings_1}}
+\end{figure}
+
+\begin{figure}
+\includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/first_development/game_first_development_10.png}
+\caption{\small \sl The character editing screen (a.k.a. the lobby settings
+screen) with the character selection dialog opened
+menu\label{fig:lobby_settings_2}}
+\end{figure}
+
+
+\subsection{The first testing phase}
+
+Contrary to the original plans, the first testing phase took only half a day
+with another half day of preparations. Prior tests have been done by the
+author alone, with two phones.\newline
+
+A few friends(three male and two female) of the author were invited to play the
+game. Three of them had Android phones. The other two have used
+the two phones that the author had in posession at the time. Unfortunately, most
+of them had Android 2.2 and 2.3 installed. The preparations meant convincing
+them to volunteer their phones for an OS upgrade. Android 4.0 was
+installed.\newline
+
+The tests have been done mostly indoors, as they revealed various bugs in the
+server and client software that were not detected when using only two phones
+that were physically connected to the development computer via USB
+cables. Because six people had five phones, two of them have played
+alternatively. Because not all players had 3G connections available, the game
+has been played by connecting to the author's WiFi router. The first bug we
+noticed was that occasionally the game would disconnect for no apparent reason.
+Others have been related to GPS devices in one of the phones not retrieving the
+position and crashing the application or concurrency issues improperly treated.
+A few temporary quick fixes got the game on track and we managed to play the
+game, firstly indoors for a few times and then outside, after the author's WiFi
+router has been placed on the outside window sill. This has inadvertently been a
+test of the WiFi coverage of an average old 802.11 b/g router - around 50 - 70
+meters radius in an open space describing a half-circle around the router. The
+author was the first to accidentally run outside the WiFi coverage and get
+disconneted. After the playing was finished, the author(with help from one of
+the friends) took notes while everybody has expressed their criticism of the
+gameplay, UI and game satisfaction. Although the concept itself has been
+positively appreciated, the game UI has received a lot of criticism. Also the
+random disconnection of the game from the server has caused a lot of frustration
+among the test players. A proposal has been made to allow saving the last
+player status and position on the server and allow a timeout until the player
+would not be allowed to reconnect. A debate led to the conclusion that
+enabling such a feature could allow cheating, through the following scenario: A
+player would disconnect from the game, get close to other players, reconnect,
+shoot and repeat the sequence - thus avoiding damage and causing frustration to
+others. \newline
+
+Until the end of the first testing session done with a group of people, the UI
+has remained largely untouched. The two unused buttons on the game screen have
+been kept for getting the players' feedback on how pleasant the position of
+those buttons is for the reach of their fingers. The goal for the game UI has
+been to become similar to a game controller, but with the game screen in the
+middle. And the screen had to be layed out in a way in which the user would not
+feel cramped when playing the game. The only addition to the UI has been
+the 'Settings' button in the main menu, together with the settings
+screen.\newline
+
+The first people to test the game have criticized the following aspects:
+\begin{enumerate}
+  \item \textbf{The game UI}: The need to reselect the target every time the
+  weapon is switched has proven frustrating. The entire process of selecting the
+  weapon and only then firing it has been regarded as too slow: the players
+  wanted to be able to shoot the entire arsenal immediately, if
+  possible.\newline
+  
+  Another issue has been that the 'Shoot' button was disproportionally small
+  compared to the weapon selection spinner, in the testing phase. After showing
+  the players the original test UI, they still deemed the 'Shoot' button too
+  small.\newline
+  
+  The lack of control over what is happening has been criticized: The player
+  health was only displayed above the head of the player, along with the name
+  and 'profession'. It made it hard for players to notice changes. Notifications
+  on who 'shot' who were not yet implemented. The player's health was not
+  displayed anywhere. Messages could not be sent to the team. The first proposal
+  has been to enable writing and sending messages, SMS-style. After some
+  discussions, the conclusion came that predefined messages are much more
+  useful(like, say the ones used in the video game \"CounterStrike\"), while
+  'custom' messages can be communicated verbally, keeping the players more
+  focused on the dynamics, rather than on the technicalities of the game.
+  
+  \item \textbf{The menu UI}: The lobby UI has been criticized - but not for
+  it's layout, but for the comprehensibility - there was no mark for the
+  player's 'Ready' status, the 'Change my Info' label on the button that leads
+  to the 'profession' and nickname editing screen wasn't comprehensible. The
+  nickname and 'profession' were not remembered from one game session to the
+  other or from one app launch to the other. This frustrated the users - and
+  they simply refused entering their nicknames all the time. The game ended up
+  with no one knowing who's who, because they had the same nickname - the
+  default 'Player'. One tester complained that he wanted to click his own name
+  in the team lists and get to the settings screen.\newline
+  
+  A general complaint has been expressed towards the fact that there are no
+  tutorials on how to play the game.
+\end{enumerate}
+
+The first testing phase, though short, has left a lot of guidelines on what to
+do from that point on.\newline
+
+\subsection{The second develpment phase}
+
+The first testing phase has left a lot of 'todos', notes and guidelines for
+better adapting the UI and game mechanics to the player's needs. The second
+development phase has addressed these needs with a personal touch from the
+author and an influence of the switch to a newer version of Maps API.
+
+\subsubsection{The Server}
+
+The only change done on the server in the second development phase, beyond bug
+solving, has been the switch from InetAddress to InetSocketAddress as key in the
+server's management HashMaps. That's because multiple connections from behind a
+router with NAT were not possible. InetAddress only holds the remote IP of the
+connection. The InetSocketAddress now holds both the IP and port of the
+connection.
+
+\subsubsection{The Client}
+
+The client is an Android application that uses one Activity and multiple
+Fragments. 
+
+The client uses seven fragments for the UI: 'Main Menu', 'Info and
+Tutorials', 'Settings', 'Lobby','Lobby Settings', 'Loading' and 'Game':
+
+\begin{enumerate}
+  \item 'Main Menu' : It has been slightly modified: The 'Start Gane' text has
+  been changed into 'Connect to Server' - making its functionality more
+  obvious. The logo presented in Figure \ref{fig:game_logo} has been added for
+  user feedback. The 'Info and Tutorials' button has been added - it leads to
+  a new Fragment that presents the idea adn functionality of the game.
+  
+  \item 'Info and Tutorials' is a fragment with a number of buttons and a
+  ScrollView for displaying text and images. Here, the user will find
+  instructions for the purpose how use of the app and detailed descriptions of
+  the functionality of the 'Lobby' and 'Game' UIs.
+  
+  \item 'Settings' has not been modified.
+  
+  \item 'Loading' has not been modified.
+  
+  \item 'Lobby' : it has been slightly modified to remember the last used
+  nickname and 'profession'. Each player in the team lists now shows the ready
+  status of that player and a '\[ME\]' indicator has been added to the current
+  player so that he can identify himself in the list. Clicking on one's own
+  nickname in the list now navigates to the 'Lobby Settings' screen for
+  nickname and 'profession' change. Two background images have been tried out on
+  this fragment, for user feedback. They are shown in Figure
+  \ref{fig:game_background_black} and Figure \ref{fig:game_background_white} 
+  
+  \item 'Lobby Settings' has not been modified. A background image has been
+  tried out as background, for user feedback. See Figure
+  \ref{fig:game_background_lobby_settings}
+  
+  \item 'Game' has been completely modified. Due to changes in the use of the
+  Maps API and tester feedback, it has gone through the most changes. At this
+  point, the game screen looks as follows: for all the 'weapons' and 'powerups',
+  buttons are aligned starting from the bottom left corner of the screen and
+  extending them to the right. From the bottom right corner and going up, on the
+  vertical axis, three buttons and a TextView exist: the 'Previous Target',
+  friend/foe toggle, 'Next Target' buttons and a TextView that shows the
+  distance to the next selected player. If no player is selected, the presented
+  text will be '0(Self)'. Otherwise, just the distance measurement is shown,
+  with no text. In the top right corner, the default 'My Position' button is
+  shown - with its specific icon. In the top left corner of the screen, a
+  TextView with large text shows the remaining 'health points' of the player.
+  Underneath this TextView lays a spinner for sending predefined messages to the
+  team. The full functionality of the UI will be presented below.
+  
+\end{enumerate}
+
+The typical app use scenario goes as follows: The player enters the game and
+sees the 'Main Menu'. The app checks if Google Play Services are installed and
+if the GPS is turned on. If either of these conditions is not met, a dialog is
+presented: the player must choose to install Google Play Services and/or turn on
+the GPS or exit the game. Each dialog directs the user to the appropriate Google
+Play or Settings page - where the player only has to either click 'Install' or
+switch the 'Enable GPS' toggle to 'ON'.\newline
+
+Once there are no more requirements to be met in order to play the game, the
+player can click on 'Connect to Server', be briefly presented with the 'Loading'
+fragment and then enters the 'Lobby'. There, if the app was started for the
+first time, he can see the default nickname 'Player' and the default
+'profession' - Marine. If the app was previously used, the player will see the
+last nickname and 'profession' used in previous runs. The server distributes the
+players according to team sizes, so the player has an equal chance to see
+oneself in either the 'Home' or 'Away' team. Then, the player can opt to change
+the team by using the 'Change Team' button. Also, the nickname and 'profession'
+can be changed by navigating to the 'Lobby Settings' screen. Once the 'Ok'
+button is pressed in the 'Lobby Settings' screen, the changes are saved in the
+app and sent to the server for broadcasting, and the player is returned
+to the 'Lobby' screen.\newline
+
+At the point where all the players have done setting up, they can send the
+'Ready' signal. When all the players are ready (for testing purposes, one
+player present on the server is enough to start a game), the five second
+countdown is received from the server and the player is now facing the 'Game'
+screen.\newline
+
+In order to understand what can be done at this point, a detailed description of
+the 'Game' UI is necessary: \newline
+ 
+\begin{figure}
+\includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/tutorial_game.png}  
+\caption{\small \sl The in-game UI \label{fig:game_ui}}
+\end{figure}
+
+We can visualize the UI based on the screenshot presented in Figure
+\ref{fig:game_ui}. It presents the groups of UI elements on the screen.
+We shall now present all of them, separated into groups, by position
+(positioning also separates functionality groups, therefore we can also state
+that they are presented by related functionality). All the UI elements on the
+'Game' UI are programmatically generated - and not from an XML file  :
+\begin{enumerate}
+  \item\textbf{The bottom of the screen, starting from the bottom-left corner}:
+  The 'weapon'/'powerup' buttons are generated once the 'Game' fragment is loaded,
+  based on the list of weapons specific to the player's 'profession'. They
+  appear from left to right. If less or equal to three weapons are given, the
+  buttons will be made slightly larger than otherwise - up to a maximum of six
+  (the number of weapons featured in the test 'profession', 'All Encompassing').
+  Each button press shoots the 'weapon' or 'powerup', according to a so-called
+  'policy' provided in the Weapon object. The policies are as follows: 'self',
+  'friends', 'friends and self', 'enemies', 'friends and enemies', 'friends and
+  enemies and self'- stating on which kinds of players one given 'weapon' or
+  'powerup' can be used. A button long press will draw the range of the
+  'weapon'/'powerup' on the map, with the player's position in the center.
+  
+  \item\textbf{The bottom-right corner of the screen}: The player selection
+  buttons and the distance indicator are generated on the vertical axis, starting from the
+  bottom-right corner of the screen - in order, the 'previous target',
+  friends/enemies toggle, 'next target' buttons, and on top a TextView showing
+  the distance to the selected player or '0(Self)' if no player is selected(in
+  translation, the 'self' or 'current player' is selected). The friends/enemies
+  toggle is used for the obvious reason of quickly choosing between one of the
+  two types of players besides the 'self'. The 'next target' button's
+  functionality is to find the next closest player from the selected category.
+  Let's say that the closest player is already selected. Then, on a press of the
+  'next target' button, the second closest player will be selected and so on.
+  The reverse applies to the 'previous target' button - which selects the
+  previous farthest player if a player is selected and the closest one
+  otherwise. The distance indicator serves for the use of an experienced player
+  who knows the weapon's distances by heart and does not want to the lengthy
+  long click operation to get the weapon's distance shown on the map. The
+  players may also be selected by simply tapping their respective markers on the
+  map - but through testing it has been determined that in a more intense and
+  dynamic situation, selection by clicking on the marker can become difficult
+  and inaccurate. Both modes are supported now. One other aspect of player
+  selection is the now-vital click in a random unoccupied area on the map for
+  deselecting all players(and selecting oneself for, say, self-healing or
+  activating powerups on oneself).
+  
+  \item\textbf{The top-right corner of the screen}: The 'my position' button
+  that is provided as an option through the Maps API. Clicking it will cause an
+  animation to scroll through the map until the position of the player is
+  centered.
+  
+  \item\textbf{The top-left corner of the screen}: The health indicator is a
+  TextView that presents in large text the remaining health points of the
+  player. Underneath it lies a spinner with a list of messages that the player
+  can send to his/her team. One can do so by clicking on the UI element
+  representing the spinner, beneath the health indicator. After the first
+  click, the spinner dialog appears and shows the list of messages. The
+  player can send one of the messages in the list by clicking it. The dialog is
+  canceled by clicking outside it.
+  
+  \item\textbf{The area in between the two top corners of the screen}: This is
+  the area where the powerup duration is dynamically shown during its effect.
+  This can be seen when the player casts 'invisibility' or 'shield' on oneself
+  or when a friend casts 'shield' on the player
+  
+  \item\textbf{The area above the weapon buttons}: This is where the
+  notifications appear, in the form of Toasts. By default, a toast has a given
+  lifespan - but each time a new toast needs to be displayed, it first closes
+  the toast currently on display, if it is the case.  
+\end{enumerate}
+
+Although they are not yet discretized, thus far we can distinguish three types
+of game that can be played with the current setup: the \textbf{default
+game}(which requires multiple players, but excludes the 'All Encompassing' game
+type), \textbf{duel}(two players choose the 'All Encompassing' profession -
+receiving the entire arsenal provided by the game - and try to take each other
+out by using various strategies of combining 'weapons' and 'powerups'),
+\textbf{David vs. Goliath}(a small number of players choose the 'All
+Encompassing' profession and play against a significantly larger number of
+players that use all the professions except 'All Encompassing').\newline
+
+Until now, the default game and the duel have been tried out - and they are
+fit for different situations: The default game can take up to 20 minutes and is
+played across distances varying from small to very large, depending on the mood
+and disposition for running of the players. The duel is performed usually by two
+players sitting next to each other and takes two-three minutes.\newline
+
+Thus far, no game end condition has been introduced - players who lose all
+health points are notified that the game is over for them through a dialog that
+gives them two options: quit the game or spectate. The second option implies
+that they are marked as 'dead' on the map, cannot be selected and their weapon
+buttons are removed from the screen. Still, they can watch the evolution of the
+game on their mobile devices. When all players of one team are marked as 'dead'
+(they have lost all their 'health points') and at least one player of the other
+team still has more than zero health points, it can be considered a win for the
+other team. The ending condition has not been implemented, because for this
+stage of development of the app it would be just a dialog stating the obvious
+'You have won !' message. A more interesting feature may be added in the future,
+if imagination or user feedback provides it - or the game may be integrated in a
+larger context.\newline
+
+The main functional differences from the first development of the game are:
+
+\begin{enumerate}
+  \item A switch from Google Maps API V1 to V2 has been done. This implied
+  rewriting the whole UI and several methods in the helper libraries.
+  
+  \item Because of the switch mentioned above, the custom Overlay object (along
+  with the custom tap and marker drawing functionalities), the object
+  responsible with position retrieval have been discarded. Position retrieval is
+  done through an option provided by the GoogleMap object provided by the Google
+  Maps V2 API. The whole marker and weapon range drawing are also done through
+  the GoogleMap object - OverlayItem objects have been replaced by Marker
+  objects and GeoPoints have been replaced by LatLng instances.
+  
+  \item The whole UI has been rewritten, having as a result what was described
+  above.  
+  
+\end{enumerate}
+
+Passive disconnection detection functionality has been added in the loop that
+waits for incoming messages. The functionality of some weapons and powerups has
+been modified. The `Radar` has been removed. The 'Invisibility cloak' and
+'Knife' have been added. Powerup duration indicators have been added.\newline
+
+The final message structure in between the server and the client will be
+presented in one of the Annexes.\newline
+
+During the second development phase, a lot of decentralization and
+modularization of functionality has been done. Classes that only served the
+Game UI relying on Maps API V1 have been removed. Others, serving the Maps API
+V2 have been added. Various bugs that caused crashes have been corrected. The
+starting condition has been reintegrated in the game - it disabled the weapon
+buttons until the 'Start Game' message would be received.\newline
+
+\subsubsection{Logging, Testing and Data Usage}
+After the first testing phase, the need to log app crashes has come up - as
+sometimes it can prove quite difficult to recreate the crash conditions while
+solo testing. A logging system based on Logcat capture has been added. Uncaught
+exceptions are now caught and logged(they are always the ones crashing the app)
+before the app closes. One issue currently not dealt with and considered
+benign for the prototype is that the log files(created through classical Java
+functionality on the SD Card) can only be seen from the mobile device and not
+from a computer communicating with it via USB. This issue was not considered
+stringent, as the number of testers and testing devices is still quite low and
+manual extraction of crashes is still easier than implementing a solution(The
+problem is that these files are signed with a UID and thus cannot be seen by
+external devices).\newline
+
+A lot of testing has been done with the 'UI/Application Exerciser Monkey' to
+show up potential bugs and crashes. Some bugs have been found and patched - but
+one has persisted: Apparently, there are some humanly-impossible combinations of
+keyboard and touch inputs that lead to a Spinner dialog crashing the
+application. \newline
+
+Another bug that has persisted is that of the WiFi disconnection(3G connections
+stay alive). Apparently, this is an Android bug.\newline
+
+As for logging a Logger class has been created, its functionality has been
+extended to retrieve the data usage of the app. Because of various compatibility
+reasons, the data usage of the entire device during the usage of the app is
+retrieved, instead of the usage of the app itself. This means that the data
+usage of, say, social network or mail applications adds to the count - but as a
+general idea (and not very precise numbers) is needed, it has been considered a
+decent solution.
+
+\subsubsection{The UI}
+
+The second development session has come with the mindset to completely change
+the UI. And not only that was done: the whole underlying framework has been
+changed. A switch to the Google Maps V2 API has been made. A lot of
+functionality has been thrown away - such as the Overlay that served for drawing
+the players and for laying out the controls. A lot of new controls had to be
+added. A lot of underlying technicalities have been changed(such as the custom
+screen tap functionality and objects used for positioning).\newline
+
+Because of the switch to the new Maps API, the MapView object which served as
+the container for all controls has disappeared. It has been replaced by a
+GoogleMap object which is not intrinsically a View and cannot be treated thusly.
+Some improvisation was required to artificially create a container. This has
+been done by programmatically creating a RelativeLayout and adding the View that
+contained the map as a child. Then, the apparent choices have been to either add
+all the controls programmatically - which is very tedious - or embed a Fragment
+within another Fragment - which is downright wrong. All the controls have been
+generated and added programmatically. And the result has been previously
+described in the paper - having as a result the UI presented in Figure
+\ref{fig:game_ui2}: The UI has been properly partitioned in four functional
+areas that, although they provide much more control and functionality, don't
+cloister the map. The health of the current player is visible, a button has been
+added to center the image on the current position of the player, individual
+buttons are generated for the list of weapons provided for a 'profession', a
+group of buttons is added for help in target selection. Target selection by
+tapping on the screen has been preserved, but now is enhanced through the 'Next
+Target' and 'Previous Target' buttons. The latest addition - the Spinner object
+serving message sending was taking up too much space and hindered the view of
+the map. A good solution has been to make it semi-transparent - thus, making it
+non-intrusive, yet present. The ranges of the weapons are now drawn in green on
+demand, by long pressing the weapon buttons. The blue circle around the player's
+position is the default indication of the GPS accuracy. Thus far, it has not
+been removed. \newline
+
+
+\begin{figure}
+\includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/second_development/game_second_development_5.png}
+\caption{\small \sl The game UI \label{fig:game_ui2}}
+\end{figure}
+
+The menu UI has also been modified:
+\begin{enumerate}
+  \item \textbf{The main menu screen}: The welcome message has been removed and
+  place has been left for a potential logo. A logo has been tried, as seen in
+  Figure\ref{fig:logo_white}. Also, a button to navigate to the newly added info
+  and tutorials screen has been added.
+  
+  \begin{figure}
+  \includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/logo_white.png}
+  \caption{\small \sl A white game logo \label{fig:logo_white}}
+  \end{figure}
+  
+  \item \textbf{The info and tutorials screen}: A new Fragment has been added.
+  It contains four buttons that lead to information and tutorials on what the
+  game is and how to play it. It also features a 'Back' button. The initial plan
+  was to have a WebView as container and load the tutorial articles in HTML
+  format. Then, the author subjectively deemed HTML creation too complicated for
+  the task and the decision has been taken to have a ScrollView as container
+  instead and use a LayoutInflater object to generate the UI from XML files. The
+  results can be seen in Figures \ref{fig:tutorial_fragment1} and
+  \ref{fig:tutorial_fragment2}.
+  
+  \begin{figure}
+  \includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/tutorial_fragment_1.png}
+  \caption{\small \sl Tutorials screen: the About
+  page\label{fig:tutorial_fragment1}}
+  \end{figure}
+
+  \begin{figure}
+  \includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/tutorial_fragment_2.png}
+  \caption{\small \sl Tutorials screen: the Game Guide page
+  \label{fig:tutorial_fragment2}}
+  \end{figure}
+  
+  
+  \item \textbf{The lobby screen}: The lobby screen has also been modified: The
+  requested feature to map the click on one's name to the character settings
+  screen has been added. Also, the \"ME\" marker has been added to distinguish
+  the current player from the rest and the \"READY\" marker of one's 'Ready'
+  status. Two backgrounds have been tried on this screen, as seen in Figures
+  \ref{fig:lobby_background_black} and \ref{fig:lobby_background_white}.
+  
+  \begin{figure}
+  \includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/second_development/game_second_development_3.png}
+  \caption{\small \sl Lobby screen with black background
+  \label{fig:lobby_background_black}}
+  \end{figure}
+
+  \begin{figure}
+  \includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/lobby_background_white.png}
+  \caption{\small \sl Lobby screen with white background
+  \label{fig:lobby_background_white}}
+  \end{figure}  
+  
+  \item \textbf{The lobby settings screen}: The lobby settings screen has been
+  kept almost intact since its creation. The functionality to remember the last
+  used player's nickname and 'profession' has been added. Also, two backgrounds
+  in black and white have been tried out. They can be seen in Figures
+  \ref{fig:lobby_settings_background_black} and
+  \ref{fig:lobby_settings_background_white}.
+  
+  \begin{figure}
+  \includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/second_development/game_second_development_8.png}
+  \caption{\small \sl Lobby settings screen with black background
+  \label{fig:lobby_settings_background_black}}
+  \end{figure}
+
+  \begin{figure}
+  \includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/lobby_settings_background_white.png}
+  \caption{\small \sl Lobby settings screen with white background
+  \label{fig:lobby_settings_background_white}}
+  \end{figure}
+  
+\end{enumerate}
+
+\subsection{The second testing phase}
+
+As the first testing phase, the second one has taken much less time than
+initially planned - only one day was necessary. A larger number of friends of
+the author were invited. More phones have been brought and almost all had 3G
+connection. This time, the app supported Android versions starting with 2.3
+- which made it much easier.\newline
+
+A large part of the testing phase has been the preparation: installing the
+application on all devices, connecting everyone to the wireless network and VPN
+(At the moment of testing, the author lived in a student dorm - and Internet
+access was provided through a secure VPN connection. But because everyone's 3G
+plan included at most 500MB, Wifi was the first choice). This has proven to be
+very frustrating - therefore, everybody switched to 3G and started to play -
+firstly indoors and soon after, outdoor. The UI changes have been positively
+appreciated by everyone - yet one feature has proven to be quite useless: the
+long click on the weapon buttons. The long click draws the range of the weapon
+on the map. Our testing scenario, though, has not taken place over large
+distances(no one went out of Sniper Rifle range - 150 meters) - therefore the
+gameplay has been very fast paced (a game lasted on average between 10-15
+minutes) and no-one has actually used the functionality. The distance indicator
+has also not been noticed by most. The health indicator, target selection
+buttons and shooting functionality of the weapon buttons have been appreciated
+as 'right', 'appropriate', 'useful'. A request was made for a finishing
+condition and a 'You have won' screen for the winner team - and some sort of
+reward system. Another feature that has proven to be more of a liability in this
+situation was the starting condition. In the first few games(played indoors),
+the players 
+
+Unlike before the first testing phase, when few to no people interacted with
+the application, before the second testing phase a large number of the friends
+and acquaintances of the author have seen the application and have been giving
+constant input as to whether certain aspects of the game are worthwhile or not.
+Also this has been when discussions on future development of the game have
+started. A lot of conversations have been recorded to audio files and notes on
+paper. Among the discussions, the ones on the current development have been
+focused on visual aspects: The background images, the logo; a proposal to change
+all the markers with 'profession'-specific ones and to replace the text on the
+buttons with symbols. Besides all this, a discussion has started on the name of
+the application itself. Both very positive and very negative opinions have been
+expressed, but none of indifference. The first name chosen by the author for the
+game has been \"People with Guns\" - but after debate and player
+feedback it has been later changed to \"Gun Run\".\newline
+
+There were ten people who actively participated in the discussions and debates
+over the aforementioned aspects of the game: five male and five female.\newline
+
+The logo has been strongly rejected by everybody - it was deemed too colourful
+and unrelated to the significance of the game - a semi-casual game to promote
+enjoyment and social bonding.\newline
+
+The black background images used in the lobby and lobby settings screens have
+been positively appreciated by the males but received mixed opinions from the
+females: Three of them said that they inspire violence - which is unrelated
+to the game itself, while the other two have deemed them appropriate.\newline
+
+After being presented with the white background images for the lobby and lobby
+settings screens, everybody has rejected them, uninanimously stating that they
+break the atmosphere of the game and that it should promote a level of
+competition. Everybody concluded that they prefer darker colors in the menus and
+the contour of the map in the background is one good step towards something that
+defines the game.\newline
+
+The second testing phase took a bit longer than the first. More players tried it
+out, more games have been played and - most importantly - more games have been
+played outside.\newline
+
+The conclusion of the second test phase has been that the tutorials are too
+long, too descriptive. The menus haven't received any criticism - but the game
+UI has: The long click functionality to draw the ranges of the weapons has not
+been used at all. The distance indicator was not even seen by the players and
+was therefore not used in any way. The 'Invisibility Cloak' powerup is used only
+by the current player on self, but in the current implementation it requires
+selecting oneself(deselecting everyone else) - this was deemed frustrating. The
+entire concept of selecting oneself by deselecting all others(tapping an area
+on the map where no markers are present) was deemed frustrating. Everybody
+playing(just two of the people from the discussions before the second testing
+phase have been present) has expressed the necessity of symbols instead of text
+on the buttons and on the map. Another aspect of criticism has been the order of
+the 'weapon'/'powerup' buttons: they should be separated into two groups:
+'weapons' and 'powerups'.\newline

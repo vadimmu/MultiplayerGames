@@ -1,0 +1,56 @@
+\section{ANNEX E - Overlay tutorial}
+
+This tutorial is for use with Google Maps V1 API. Recently, the Maps V1 API has
+been deprecated and replaced with V2. Still, some who still have acquired keys
+before the change can still use them until they expire. Otherwise, it
+may be useful in other similar scenarios, where onTap functionality
+has to be custom made.\newline
+\begin{verbatim}
+
+private UUID getClosestPlayerUUIDWithinTapRadius(GeoPoint geoPoint,
+												 Double newTouchRadius){
+		
+		double touchRadius = 0.2; //expressed in inches
+		
+		if(newTouchRadius != null) touchRadius = newTouchRadius;		 
+				
+		double maximumAcceptedDistance = 
+								calculateMaximumAcceptedDistance(touchRadius);
+		
+		Point touchScreenPoint = 
+					MapUtils.convertGeoPointToScreenPoint(geoPoint, mapView);
+		
+		//get the closest point UUID and the closest distance
+		UUID closestPointUUID = null;
+		double closestPointDistance = Double.MAX_VALUE;
+			
+		
+		Iterator iter = drawnPoints.entrySet().iterator();
+		while(iter.hasNext()){			
+			Entry<UUID, Point> entry = (Entry<UUID, Point>) iter.next();
+			
+			UUID uuid = entry.getKey();
+			Point point = entry.getValue();
+			
+			double distance = 
+					MapUtils.getDistanceBetweenPoints(point, touchScreenPoint);
+			
+			if(distance < closestPointDistance){
+				closestPointDistance = distance;
+				closestPointUUID = uuid;		
+			}
+		}
+		
+		if(touchRadius == Double.MAX_VALUE) 
+			return closestPointUUID;
+		
+		else if(closestPointDistance <= maximumAcceptedDistance){
+			return closestPointUUID;
+		}
+		
+		
+		return null;
+		
+	}
+	
+\end{verbatim}
