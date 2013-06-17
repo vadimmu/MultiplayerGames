@@ -1,39 +1,34 @@
 \section{Development timeline}
 
-This section will follow the development of the application. The back end and
-mechanics of the game will be analyzed and presented in their evolution,
-also briefly describing aspects of the front end. \newline
+This section will follow the conceptualization and implementation of
+the game ''People With Guns''. The back end and mechanics of the game will be
+analyzed and presented in their evolution, also briefly describing aspects of
+the front end. \newline
 
-The evolution of the server and the client will be presented chronologically.
+In this chapter, we will see the steps taken until the idea for the game has
+been crystalized. Then, we will follow the steps of development and field
+testing of the server and client, chronologically.
+
 
 \subsection{The exploration phase}
 
-The development of the app has started on the 14th of January 2013. Everything
-described from now on is a process of creativity and learning, intertwined
-together. But before the development came the idea, which took three months to
-concoct.\newline
-
+The development of the app has started on the 14th of January 2013.
+The evolutionary steps and intermediary and final concepts are presented here.\newline
 
 \subsubsection{Creating the game concept}
 
-The project has started as a proposal to add a multiplayer feature to a tour
-app. It was hazy and unstructured. The main point was that the tour app was
-targeting individual users. But then, what happens when a larger group tours
-together? At the current stage of development, the tour app was offering an
-individual experience within the group. So the proposal of this paper's author
-was that the group experiences the tour together, somehow. \newline
+The project had started as a proposal to add a multiplayer feature to a tour
+app. Simply adding the functionality to see all the others within the group on
+the map was not sufficient - it would just help if someone got lost or went
+astray. Otherwise, it was concluded that the user experience would not be
+improved in any significant way. Then came the idea of adding small games,
+hidden caches or quests and so on. The best idea that still had the tour app as
+a main platform was to add detours from the main track as bonuses. On those
+detours, the people would have to solve various riddles and small puzzles to get
+points and find out about hidden historical spots or interesting facs about the
+places they are visiting. \newline
 
-Simply adding the functionality to see all the others within the group on the
-map was not sufficient - it would just help if someone got lost or went astray.
-Otherwise, it was concluded that the user experience would not be improved in
-any significant way. Then came the idea of adding small games, hidden caches or
-quests and so on. The best idea that still had the tour app as a main platform
-was to add detours from the main track as bonuses. On those detours, the people
-would have to solve various riddles and small puzzles to get points and find out
-about hidden historical spots or interesting facs about the places they are
-visiting. \newline
-
-At this point, contoured the following addon to the main app was contoured: the
+At this point, the following addon to the main app was contoured: the
 players would have a main tour path and, as they passed by certain waypoints,
 would be offered to go through a bonus/extra track within the area that they are
 visiting. If enough of them would agree to do this(by an in-app vote, for
@@ -41,36 +36,38 @@ example), they would be presented with a new set of waypoints. These waypoints
 would belong to a number of categories: normal waypoints, waypoints where they
 would have to split, waypoints where they would have to be together and
 waypoints where the whole group would have to wait within a virtual circle,
-while one delegate(through vote) would find an item or solve a riddle.\newline
+while one delegate(through vote) would find an item or solve a riddle -
+of course, with the help of the entire group.\newline
 
 Another scenario has been proposed, during the research: In the case of the
 group waiting and one member being delegated to solve a riddle or find an item,
 a means of cooperation can be brought up: When the team votes and chooses the
 delegate, his screen turns black(no map) and the rest of the team can see
-the goal on their phones. Through messages or VoIP, they would help the delegate
-navigate to the goal. Then, once the goal has been found or reached, the virtual
-circle would disappear and the whole team would be free to move. If anyone would
-exit the circle at some point, they would receive penalties and eventually get
-disconnected from the game.\newline
+the goal on their phones. Through messages or in-app voice communication,
+they would help the delegate navigate to the goal. Then, once the goal has been
+found or reached, the virtual circle would disappear and the whole team would be
+free to move. If anyone would exit the circle at some point, they would receive
+penalties and eventually get disconnected from the game.\newline
 
 Gradually, the ideas for multiplayer features went astray from the tour app,
-towards multiplayer GPS-based games. The author has explored the idea of
-GPS-based puzzle / adventure games and encountered ARIS, a platform for creating
-such games. Then Tourality was discovered, and WarFinger GPS, which have been
-the main sources of inspiration for the 'War Game' and a few other games that
-didn't make it in the main concept, but are to be developed within the game as
-future work.\newline
+towards multiplayer GPS-based games. The idea of GPS-based puzzle / adventure
+games was explored ARIS was encountered - a platform for creating such games.
+Then Tourality was discovered, and WarFinger GPS, which have been the main
+sources of inspiration for the 'War Game' and a few other games that didn't make
+it in the main concept, but are to be developed within the game as future
+work.\newline
 
 There has been a point when all the GPS-based mobile games that could be
-found were simply tried out and evaluated. At this point, the goals for this
-app were already in mind: It should move the players to an outdoor environment
-and have them walk and run as the main activity, while using the game itself for
-an improved experience. Hide and seek and Tag were considered as a model of
-entertaining game to be played by a group. The games found and already
-enumerated had,by the subjective opinion of the author, one of two major
-disadvantages:
+found were studied and where possible, played. Then they were evaluated for
+advantages, disadvantages and gameplay. At this point, the goals for the game to
+be developed were already in mind: It should move the players to an outdoor
+environment and have them walk and run as the main activity, while using the
+game itself for an improved experience. Hide and seek and Tag were considered as
+a model of entertaining game to be played by a group. The games found and
+already enumerated can be considered to have one of two major disadvantages:
+
 \begin{enumerate}
-  \item Did not engage the users enough: Games such as Parallel Mafia, SCVNGR or
+  \item Do not engage the users enough: Games such as Parallel Mafia, SCVNGR or
   Please Stay Calm do not motivate the player to move around much. They also
   offer a very dim user experience in areas with few or no players.
   \item Engaged the users too much: Mobile users, even hardcore gamers, do not
@@ -79,31 +76,32 @@ disadvantages:
   still displayed on a small phone screen(tablets are not considered in this
   paper). Games such as Ingress and Shadow Cities offer a better and more
   immersive story, but are still demanding of the player and request the full
-  focus of the phone owner. This was considered to be a major downside, as
-  at least some people(the author included), when they get out of their home,
-  prefer to focus on what happens around them  nd only rarely have the time and
-  will to play such a demanding game while on the go.
-  \item Did not motivate the players to move enough - Only Tourality does not
+  focus of the phone owner. This can be considered as a major downside, as at
+  least some people(the author included), do not want to be engaged for
+  prolonged amounts of time, nor to deviate from their usual trips through
+  the city for the sake of a game, nor will they spare the time and will to play
+  such a demanding game while on the go.  
+  \item Do not motivate the players to move enough - Only Tourality does not
   possess this downside, as it its various game modes are specifically designed
   for running.
   \item Are location-dependent - All adventure / puzzle games such as those
   developed with ARIS, most MMOs such as Parallel Mafia do require the player to
   be in certain places in order to progress through the game. This means that
   the player is put in one of two situations : he 1. has to get out of
-  one's way in order to make any progress within the game, or 2. has to travel
+  his way in order to make any progress within the game, or 2. has to travel
   to remote locations in order to play the game in the first place. This might
-  be interesting for some, but will certainly fail to capture the attention of a
-  worker or student during weekdays.
+  be interesting for some, but does not cover a broad spectrum of population. 
 \end{enumerate}
 
-The engaging problem can also be linked to a time problem. Games that are too
-engaging also require a lot of time to be played. The personal take of the
-author on this is that the amount of time dedicated to the mobile game should be
-decided by the player and not by the game. \newline
+The engagement problem can also be linked to a time problem. Games that are
+highly engaging also require a lot of time to be played. The arugment that the
+amount of time dedicated to the mobile game should be decided by the player and
+not by the game has been used in the construction of the concept of the game
+that was eventually developed. \newline
 
 \subsubsection{The game concept}
-The app developed is temporarily called People With Guns. It is a GPS-based RTS
-/ Shooter hybrid concept protoype for Android. It can played by several people
+The app developed is temporarily called ''People With Guns''. It is a GPS-based
+RTS / Shooter hybrid concept protoype for Android. It can played by several people
 (The upper limit has not been established yet. Until now, the highest number of
 players in the game has been six) that choose to join one of two opposing teams.
 The purpose of the game is to use 'weapons' and 'powerups' to defeat the

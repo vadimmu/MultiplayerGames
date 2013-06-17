@@ -5,56 +5,56 @@
 \contentsline {subsubsection}{\numberline {2.1.2}Real Time Strateg versus Turn Based Strategy}{5}{subsubsection.2.1.2}
 \contentsline {subsection}{\numberline {2.2}Location-Based Augmented Reality Games}{6}{subsection.2.2}
 \contentsline {subsubsection}{\numberline {2.2.1}Location-based games}{6}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Types of GPS-based games}{6}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2}Types of location-based games}{6}{subsubsection.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.3}Physical games}{8}{subsubsection.2.2.3}
 \contentsline {subsection}{\numberline {2.3}Multiplayer ideas for a tour app}{8}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Ideas for Real Time Tactics games}{9}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Documentation on the Games}{11}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.5}Documentation on the Games}{10}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}Purpose of the games}{11}{subsection.2.6}
 \contentsline {subsection}{\numberline {2.7}Implementation}{11}{subsection.2.7}
 \contentsline {subsubsection}{\numberline {2.7.1}Schedule}{11}{subsubsection.2.7.1}
 \contentsline {section}{\numberline {3}The game concept}{13}{section.3}
 \contentsline {subsection}{\numberline {3.1}Purpose}{13}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Gameplay}{13}{subsection.3.2}
-\contentsline {section}{\numberline {4}Architecture}{16}{section.4}
-\contentsline {subsection}{\numberline {4.1}Server}{16}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Managing connections}{16}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Relaying messages}{16}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}Client}{18}{subsection.4.2}
+\contentsline {section}{\numberline {4}Architecture}{15}{section.4}
+\contentsline {subsection}{\numberline {4.1}Server}{15}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Managing connections}{15}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Relaying messages}{17}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}Client}{17}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Communication}{19}{subsection.4.3}
-\contentsline {section}{\numberline {5}Development timeline}{23}{section.5}
-\contentsline {subsection}{\numberline {5.1}The exploration phase}{23}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Creating the game concept}{23}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}The game concept}{24}{subsubsection.5.1.2}
-\contentsline {subsection}{\numberline {5.2}The first development phase}{26}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}The structure of the server}{27}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}The Server}{28}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}The Client}{29}{subsubsection.5.2.3}
-\contentsline {subsubsection}{\numberline {5.2.4}The UI}{30}{subsubsection.5.2.4}
-\contentsline {subsection}{\numberline {5.3}The first testing phase}{36}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}The second develpment phase}{38}{subsection.5.4}
-\contentsline {subsubsection}{\numberline {5.4.1}The Server}{38}{subsubsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.2}The Client}{38}{subsubsection.5.4.2}
-\contentsline {subsubsection}{\numberline {5.4.3}Logging, Testing and Data Usage}{42}{subsubsection.5.4.3}
-\contentsline {subsubsection}{\numberline {5.4.4}The UI}{43}{subsubsection.5.4.4}
-\contentsline {subsection}{\numberline {5.5}The second testing phase}{46}{subsection.5.5}
-\contentsline {section}{\numberline {6}Agile planning}{50}{section.6}
-\contentsline {subsection}{\numberline {6.1}Kanban}{51}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Unit Testing}{53}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Choosing the technologies}{53}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Unified vs. Native Frameworks}{53}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Communication Protocols}{54}{subsubsection.6.3.2}
-\contentsline {subsubsection}{\numberline {6.3.3}Google Maps API V1}{55}{subsubsection.6.3.3}
-\contentsline {subsubsection}{\numberline {6.3.4}Map Overlays}{55}{subsubsection.6.3.4}
-\contentsline {subsubsection}{\numberline {6.3.5}Google Maps API V2}{56}{subsubsection.6.3.5}
-\contentsline {subsubsection}{\numberline {6.3.6}Google Maps API V1 vs. V2}{56}{subsubsection.6.3.6}
-\contentsline {subsubsection}{\numberline {6.3.7}Android development}{56}{subsubsection.6.3.7}
-\contentsline {section}{\numberline {7}Future work}{57}{section.7}
-\contentsline {section}{\numberline {8}Conclusion}{57}{section.8}
-\contentsline {section}{\numberline {9}ANNEX A - Game and game platform websites}{59}{section.9}
-\contentsline {section}{\numberline {10}ANNEX B - Game genre definitions}{62}{section.10}
-\contentsline {section}{\numberline {11}ANNEX C - Websockets vs. TCP speed}{64}{section.11}
-\contentsline {section}{\numberline {12}ANNEX D - Jackson vs. Gson}{66}{section.12}
-\contentsline {section}{\numberline {13}ANNEX E - Overlay tutorial}{69}{section.13}
-\contentsline {section}{\numberline {14}ANNEX F - Countdown buttons Tutorial}{71}{section.14}
-\contentsline {section}{\numberline {15}Bibliography}{74}{section.15}
+\contentsline {section}{\numberline {5}Development timeline}{22}{section.5}
+\contentsline {subsection}{\numberline {5.1}The exploration phase}{22}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Creating the game concept}{22}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}The game concept}{23}{subsubsection.5.1.2}
+\contentsline {subsection}{\numberline {5.2}The first development phase}{25}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}The structure of the server}{26}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}The Server}{27}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}The Client}{28}{subsubsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.4}The UI}{29}{subsubsection.5.2.4}
+\contentsline {subsection}{\numberline {5.3}The first testing phase}{35}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}The second develpment phase}{37}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}The Server}{37}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}The Client}{37}{subsubsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.3}Logging, Testing and Data Usage}{41}{subsubsection.5.4.3}
+\contentsline {subsubsection}{\numberline {5.4.4}The UI}{42}{subsubsection.5.4.4}
+\contentsline {subsection}{\numberline {5.5}The second testing phase}{45}{subsection.5.5}
+\contentsline {section}{\numberline {6}Agile planning}{49}{section.6}
+\contentsline {subsection}{\numberline {6.1}Kanban}{50}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Unit Testing}{52}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Choosing the technologies}{52}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Unified vs. Native Frameworks}{52}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Communication Protocols}{53}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}Google Maps API V1}{54}{subsubsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.4}Map Overlays}{54}{subsubsection.6.3.4}
+\contentsline {subsubsection}{\numberline {6.3.5}Google Maps API V2}{55}{subsubsection.6.3.5}
+\contentsline {subsubsection}{\numberline {6.3.6}Google Maps API V1 vs. V2}{55}{subsubsection.6.3.6}
+\contentsline {subsubsection}{\numberline {6.3.7}Android development}{55}{subsubsection.6.3.7}
+\contentsline {section}{\numberline {7}Future work}{56}{section.7}
+\contentsline {section}{\numberline {8}Conclusion}{56}{section.8}
+\contentsline {section}{\numberline {9}ANNEX A - Game and game platform websites}{58}{section.9}
+\contentsline {section}{\numberline {10}ANNEX B - Game genre definitions}{61}{section.10}
+\contentsline {section}{\numberline {11}ANNEX C - Websockets vs. TCP speed}{63}{section.11}
+\contentsline {section}{\numberline {12}ANNEX D - Jackson vs. Gson}{65}{section.12}
+\contentsline {section}{\numberline {13}ANNEX E - Overlay tutorial}{68}{section.13}
+\contentsline {section}{\numberline {14}ANNEX F - Countdown buttons Tutorial}{70}{section.14}
+\contentsline {section}{\numberline {15}Bibliography}{73}{section.15}

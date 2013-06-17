@@ -3,30 +3,30 @@
 In this chapter, we will follow the games and concepts that have lead to the
 assembly of the idea for the game developed on this project. We will define a
 number of computer game genres, classify some of the most popular location-aware
-games, game platforms and non-digital games that aided the concept and present
-the evolution of the idea for this game prototype. The game concept brought up
-here is part of a genre that has a long legacy among computer games, but is not
-yet known to the location-aware mobile context. The genre is that of `Real
-Time Strategy`(RTS)\cite{rts} games. Some other elements come from the genre of
-'Shooter' games\cite{shooter}. We will do that with a subgenre of RTS, called
-Real Time Tactics(RTT)\cite{rttvsrts}. For reasons that will be presented
-throughout this paper, the type of game can be considered an RTT / Shooter
-hybrid. \newline
+games, game platforms and non-digital games that aided the concept. Then we will
+present the evolution of the idea for this game prototype. The game concept
+brought up here is part of a genre that has a long legacy among computer games,
+but is not yet known to the location-aware games market. The genre is that of
+`Real Time Strategy`(RTS)\cite{rts} games. Some other elements come from the
+genre of 'Shooter' games\cite{shooter}. We will do that with a subgenre of RTS,
+called Real Time Tactics(RTT)\cite{rttvsrts}. The game ''People With Guns'' is a
+Real Time Tactics game with Shooter elements.\newline
 
 
 \subsection{Introduction: Real Time Strategy games}
 
-We will first make the introduction of Real Time Strategy and its subgenre, Turn
-Based Strategy
+We will now go through the definitions of Real Time Strategy(RTS), Real Time
+Tactics(RTT), Turn Based Strategy(TBS) and will highlight a comparizon between
+RTS and TBS.
 
 \subsubsection{What is Real Time Strategy?}
 
 RTS games are defined as real-time (continuous time) competitive games, in which
 several players fight against each other, either in a skirmish or team versus
 team. The purpose is to defeat the opponents by taking real-time decisions on
-managing resources and troops. The focus is, therefore, on three key elements:
-\textbf{managing resource gathering}, \textbf{building a base to provide troops}
-and \textbf{battle tactics}.\cite{rts}\newline
+managing resources and troops. The three main focus points of the RTS genre
+are : \textbf{managing resource gathering}, \textbf{building a base to provide
+troops} and \textbf{battle tactics}.\cite{rts}\newline
 
 This project will focus on a subgenre of RTS, Real Time Tactics(RTT) - which,
 instead of managing all three aspects of RTS, focuses on battle tactics.\newline
@@ -39,17 +39,19 @@ being less stressful than RTS.\newline
 
 \subsubsection{Real Time Strateg versus Turn Based Strategy}
 
-Turn Based Strategy games\cite{rtsvstbs}(such as chess and board games, for
-example) allow the player to take his time and plan every move. Implicitly, the
-duration of the game is greater. This type of game is not in the scope of this
-project, yet it deserves mentioning, as there are many such games for mobile
-devices. Some notable implementations are the ones of Scotland Yard(Ravensburger
-GMBH), Catan(Catan GMBH) and Monopoly(Hasbro, Inc.).\newline
+Turn Based Strategy(TBS) games\cite{rtsvstbs}(such as chess and board games, for
+example) allow the player to take his time and plan every move. As opposed to
+the games in this genre, in RTS games the player has to deal with a much greater
+deal of uncertainty and has to improvise on the go. The duration of a TBS game
+is greater than that of a RTS game. This type of game is not in the scope of
+this project, yet it deserves mentioning, as there are many such games for
+mobile devices. Some notable implementations are the ones of Scotland
+Yard(Ravensburger GMBH), Catan(Catan GMBH) and Monopoly(Hasbro, Inc.).\newline
 
 In particular, there are two implementations for Scotland Yard that have been
 conceptually interesting in the search. A comparison has been
 made\cite{rttvsrts2} on whether it is better to port a board game in a
-real-time(continuous-time) or turn-based mobile GPS-based game. These two
+real-time(continuous-time) or turn-based mobile location-based game. These two
 implementations are Mobilis XHunt(turn based) and MisterX Mobile(real-time). The
 comparison has been made on 10 aspects: Fun, Smooth Progression, Dynamic
 Gameplay, Ease of play, Stressless Gameplay, Communication, Strategy, Clear
@@ -65,34 +67,27 @@ this project will be to maximize the interactivity and dynamics of the RTS game.
 
 \subsection{Location-Based Augmented Reality Games}
 
-Ever since the first operating system for handheld devices, the spreading of
-smartphones has intensified every year.\newline
+Although the mobile games market has evolved along with that of hardware
+devices, the location-based game genre remains a largely untapped area. Many
+interesting games have been attempted, but very few have received mass
+adoption.\newline
 
-The rapid expansion of mobile computing presents new challenges and
-opportunities for both the user and the developer. The ease of use and the
-presence of touchscreens, GPS receivers, gyroscopes, accelerometers and, since
-recently, even barometers gives way to new approaches in developing
-games.\newline
+In this chapter, we will define location-based games, define a number of
+genres in which a number of location-based games that were studied fall
+into. Then we will make the classification of the games and briefly describe the
+evolution of ideas and their turn into the final concept of 'The War Game',
+which in turn ended up to become ''People With Guns''.
 
-Smartphones equipped with GPS receivers are becoming ubiquitous. This makes way
-to the propagation of GPS gaming. Although the concept is old, very few attempts
-have been made in this direction and this branch of game development may be
-considered to still be in one of its early stages of maturity.\newline
-
-This chapter is a proposal for extending the genre of mobile real-time
-multiplayer location-based games.
 
 \subsubsection{Location-based games}
 Location-based games take advantage of the mobile devices' built-in receivers
 for global positioning. They provide the user's location with an accuracy
-ranging from a few to several dozen meters. Because the most mobile devices in
-the world today rely on the Global Positioning System(only recently support for
-GLONASS has been added to smartphones), we can use the term GPS-based
-games.\newline
+ranging from a few to several dozen meters. \newline
 
-GPS-based games came up long before this feature has become ubiquitous in mobile
-phones and tablets. One of the first widespread GPS-based games is Geocaching.
-It is composed of two parts: 
+location-based games came up long before this feature has become ubiquitous in mobile
+phones and tablets. One of the first widespread location-based games is Geocaching.
+It is composed of two parts:
+
 \begin{enumerate}
   \item Placing physical caches at various locations that can be considered
   interesting or worth visiting and publishing their GPS positions (eg. on
@@ -101,14 +96,14 @@ It is composed of two parts:
 \end{enumerate}
 
 Along with the evolution of smartphones came that of the mobile games. GPS games
-come in a lot of flavors, from GPS-based tours, adventure and investigation
+come in a lot of flavors, from location-based tours, adventure and investigation
 games to various race games - single and multi player and massively multiplayer
 online games.
 
 
-\subsubsection{Types of GPS-based games}
+\subsubsection{Types of location-based games}
 
-There is a number of GPS-based games and game authoring tools that are
+There is a number of location-based games and game authoring tools that are
 available for iOS and Android devices. The ones studied for this paper are :
 ARIS, Tourality, Wherigo, conTAGion, Shadow Cities, SCVNGR, Please Stay Calm,
 Parallel Mafia, Parallel Kingdom, Tripventure, Warfinger, Totem, Portal Hunt,
@@ -220,7 +215,7 @@ conceptually:
   
   \item \textbf{Rogaine} is a cross-country navigation sport. As a difference
   from orienteering, where a path must be followed, in rogaining a larger number
-  of checkpoints is given and there is no time limit. A team of two to five
+  of checkpoints is given and there is a time limit. A team of two to five
   people has to navigate through the map and visit as many of these checkpoints
   as possible, in a given time interval(most often, 24 hours). This type of game
   has two branches: metrogaine(rogain through a city) and cyclogaine(rogain on
@@ -246,23 +241,22 @@ game features that have come through the phase that we can call the
 
 The whole project started with the intent of adding multiplayer functionality
 and features to a tour application. A tour application is essentially for use by
-a single person. The first feature that comes to mind when multiplayer is
-considered is having the positions of all the other persons using the
-application - so that one cannot go astray from the group without finding his
-way back to the group. Then, a search was done for features that could add
-dynamics to the multiuser approach. So came the idea of adding group quizzes and
-small games. This meant that the team had to split and find various clues on
-sidetracks of the main tour and solve short puzzles related to the landmarks
-along the way. Then, this turned into more complicated concepts - such as adding
-navigation: One of the members of the group would navigate to a goal in the same
-manner of the 'Hot and Cold' game - either with the help of members of the group
-of that of the mobile device.\newline
+a single person. The first necessity for such a concept is that people
+performing the tour together see each other's positions on the map. Then, a
+search was done for features that could add dynamics to the multiuser
+experience. So came the idea of adding group quizzes and small games. This meant
+that the team had to split and find various clues on sidetracks of the main tour
+and solve short puzzles related to the landmarks along the way. Thereafter, this
+turned into more complicated concepts - such as adding navigation: One of the
+members of the group would navigate to a goal in the same manner of the 'Hot and
+Cold' game - either with the help of members of the group of that of the mobile
+device.\newline
 
 At some point, though, it has been determined that even if these small added
 features to the game would be entertaining, they are not fit as research
-subjects - they are already there to be implemented. Focus has moved to rather
-full-on games that would implement something not thought of thus far. The idea
-of augmenting the reality of sports such as orienteering and rogaining was
+subjects - they are already there to be implemented. Focus has moved to full-on
+games that would implement something not thought of thus far. The idea of
+augmenting the reality of sports such as orienteering and rogaining has been
 worked on and the result is one of the games, the 'Territory Takeover'. Radio
 orienteering and racing have been combined in the 'Mine Game'. Features from
 sports and video games have been added to what was proposed as 'The War Game'.
@@ -271,11 +265,13 @@ that have been considered.
 
 \subsection{Ideas for Real Time Tactics games}
 
-This paper focuses on the research and development of GPS-enabled Real
-Time Tactics games. They are to be augmented reality games for single player or
-multiplayer competitive 'free for all'/'skirmish' and 'team versus team'
-games. This category of games offers opportunities to also enhance the
-experience for all the previously existing types of GPS-enabled mobile games.
+While sliding away from the idea of enhancing a tour mobile app, it was observed
+that there are no location-based Real Time Strategy games in existence, or at
+least not visible to the thorough search performed to find any.\newline
+
+Based on the previous ideas and some concepts provided into a few games or game
+ideas such as Warfinger GPS, MobileWar and racing and navigation games, three
+game ideas have been crystalized.\newline 
 
 The games proposed for this project have been :
 \begin{enumerate}	
@@ -286,21 +282,21 @@ The games proposed for this project have been :
 
 1. The \textbf{Territory Takeover} game is a multiplayer, team versus team
 competitive game. The players or game author define an area of play, which will
-be divided into multiple divisions. Each division will be marked by a 'flag' (a
-GPS marker). To capture the area division, a team must capture its flag. The
-game ends when all flags have been captured and the winner is the team with most
-captured flags. Each flag may be given a time that a player must spend next to
-it in order to capture it. Once a flag (and implicitly the territory) is
-captured, it remains so until the end of the game. The winner can be decided on
-flag counting or, alternatively, each flag may receive a number of points,
-according to the size of the territory marked by it and the difficulty of the
-terrain. \newline
+be automatically divided into multiple areas defined by a grid. Each division
+will be marked by a 'flag' (a GPS marker). To capture the area division, a team
+must capture its flag. The game ends when all flags have been captured and the
+winner is the team with most captured flags. Each flag may be given a time that
+a player must spend next to it in order to capture it. Once a flag (and
+implicitly the territory) is captured, it remains so until the end of the game.
+The winner can be decided on flag counting or, alternatively, each flag may
+receive a number of points, according to the size of the territory marked by it
+and the difficulty of the terrain. \newline
 
 This game can be enhanced with the use of virtual tools or weapons. For the
 purpose of this project, the following tools/weapons have been considered :
 \begin{enumerate}
 	
-	\item The \textbf{Immobilizer} is an ability that can be used by each player to
+	\item The \textbf{blocker} is an ability that can be used by each player to
 	block an opponent from moving. The 'attacker' 'activates' the ability and a
 	circle around him is drawn to show the range in which he can shoot. If an
 	opponent enters the range area, the 'attacker' will select him on the map and
@@ -311,15 +307,15 @@ purpose of this project, the following tools/weapons have been considered :
 	that the team loses points, for the case that this is the scoring methodology
 	implemented.
 	 
-	\item \textbf{Demobilizer} is an ability that an immobilized player can use.
+	\item \textbf{unblocker} is an ability that an immobilized player can use.
 	For this project, it will only work on the person that uses the ability. The
 	effect is that a person that is immobilized gets the waiting time halved.
 	
 \end{enumerate}
 Both the abilities have a common cooldown timer. That means that if a player
 immobilizes somebody and is immediately immoblized himself, he won't be able to
-use the demobilizer because of the cooldown following the usage of the
-immobilizer.\newline
+use the unblocker because of the cooldown following the usage of the
+blocker.\newline
 
 For time and effort reasons, this game will not be implemented now, but kept as
 future work: it can be added as an extra game type within the app in
@@ -369,38 +365,37 @@ a single player game that can be played by many for score ranking. It may be
 adapted in various ways directly into the 'War Game'. The purpose of the game is
 that the player uses his phone as a mine detector and defuser and navigates
 through a virtual mine field, racing against time to get from a start point to
-an end point. A variant of this game could be of a team helping a
-designated player navigate through the mine field without touching any
-mines.\newline
+an end point. A variant of this game could be of a team helping a designated
+player navigate through the mine field without touching any mines.\newline
 
-Some intuitive advantages and drawbacks have been delineated for the game in
-proposal:\newline
+Some advantages and drawbacks can be highlighted for these games:\newline
 
-\textbf{Advantages}: It does not require specialized gear and setting, nor does
-it need long amounts of time to be played. It can be enjoyed with a bunch of
-friends on a sunny weekend afternoon.\newline
-\textbf{Drawbacks}: It highly depends on GPS accuracy. This issue may affect
-gameplay. It also does not feel as 'real' as real-life games, nor PC
-games.\newline
+\textbf{Advantages}: They don't require specialized gear and setting, nor
+do they need long amounts of time to be played. They can be enjoyed with a
+bunch of friends on a sunny weekend afternoon.\newline
+\textbf{Drawbacks}: They highly depend on GPS accuracy. This issue may
+affect gameplay. This applies especially to the 'Mine Game', which would need
+pinpoint accuracy most of the time. \newline
 
 The similarity of the construction of the three above-mentioned games would
 allow us to use a common framework that will enable multiplayer interaction for
 both 'free for all'/'skirmish' and 'team versus team' approaches and permit the
 implementation of the 'Mine Game' along with the others. They would require a
-server to centralize player information such as GPS data and the virtual
-'health' attribute. Because the games proposed are fast-paced, they require
-quick response times from the server, client and and the communication protocol
-between them.
+server to centralize player information such as GPS data and various attributes.
+Because the games proposed are fast-paced, they require quick response times
+from the server, client and and the use of a fast and reliable protocol between
+them.
 
 \subsection{Documentation on the Games}
 Extensive documentation has been found from research done on education-oriented
-GPS-games.\cite{pbarg1}\cite{pbarg2}\cite{pbarg3}\cite{pbarg4}\cite{pbarg5}\cite{pbarg6},
-describing concepts and approaches in developing platforms and games to this
-end\cite{pbarg3}, porting them to different locations\cite{pbarg4}, comparing
-them and discussing their functionality\cite{pbarg6}\cite{pbarg1}\cite{pbarg2}
-or discussing their effect and usefulness\cite{pbarg1}. Unfortunately for the
-direction of this particular project, this documentation focuses exclusively on
-GPS-enabled Adventure Games.\newline
+GPS-games.\cite{pbarg1} \cite{pbarg2} \cite{pbarg3} \cite{pbarg4} \cite{pbarg5}
+\cite{pbarg6}, describing concepts and approaches in developing platforms and
+games to this end\cite{pbarg3}, porting them to different
+locations\cite{pbarg4}, comparing them and discussing their
+functionality\cite{pbarg6} \cite{pbarg1} \cite{pbarg2} or discussing their
+effect and usefulness\cite{pbarg1}. Unfortunately for the direction of this
+particular project, this documentation focuses exclusively on GPS-enabled
+Adventure Games.\newline
 
 The lack of documentation for the other games, except their websites has left
 trying them out one by one as the only option to understand their components and
@@ -413,8 +408,9 @@ location-aware mobile games have been found to fall in the genre of RTS.
 However, one has been found in the genre of `Shooter Games` - MobileWar
 - but, unfortunately, it did not work on Android, nor did it on iOS.\newline
 
-The names of the games themselves have been chosen only as descriptions of their
-nature and are prone to change during the steps of development and evaluation.
+The names of the three proposed games concepts have been chosen only as
+descriptions of their nature and are prone to change during the steps of
+development and evaluation.
 
 \subsection{Purpose of the games}
 The games are proposed with group teambuilding and recreation in mind. They
@@ -426,9 +422,9 @@ such as the act of shooting itself - it focuses on strategy and tactics. Quick
 reflexes might be required to shoot, but not to aim Where it lacks the realism
 of simulations or the immersion of classical computer Real Time Strategy games,
 it gains in the intensity of real-life experience and teamwork, without requiring
-specialized equipment(Airsoft) or highly developed skills(computer Real Time
-Strategy games). Therefore, the game that is about to be developed fills a niche
-between casual and immersive games, bringing focus to social interaction. 
+specialized equipment or highly developed skills. Therefore, the game that is
+about to be developed fills a niche between casual and immersive games, bringing
+focus to social interaction.
 
 
 \subsection{Implementation}
