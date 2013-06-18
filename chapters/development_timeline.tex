@@ -447,33 +447,33 @@ Tutorials', 'Settings', 'Lobby','Lobby Settings', 'Loading' and 'Game':
 
 \begin{enumerate}
   \item 'Main Menu' : It is the entry point of the the application (it is the
-  fragment loaded when the application is started. It features three buttons:
+  fragment loaded when the application is started). It features three buttons:
   'Start Game', 'Settings' and 'Exit'. By pressing 'Start Game', the player
-  attempts to join the game. If the connection is successful, he is brought into
-  the 'Lobby'. Pressing 'Settings' leads to the homonymous screen.
+  attempts to join the game. If the connection is successful, he is brought to
+  the 'Lobby' screen. Pressing 'Settings' leads to the homonymous screen.
   
   \item 'Settings' allows the player to change the IP addres and port
   number to which the client will attempt to connect.
   
-  \item 'Loading' is an intermediary fragment that shows a loading widget for
-  the duration of time during which the connection to the server is established
-  and the client receives the config json from the server. Once this process is
-  done, it automatically switches to the 'Lobby' fragment.
+  \item 'Loading' is an intermediary fragment that shows a loading widget
+  while, in the background, the connection to the server is established
+  and the client receives the configuration data from the server. Once
+  this process is done, it automatically switches to the 'Lobby' screen.
   
-  \item 'Lobby' is the main game preparation fragment. It shows the lists of
-  players in the two teams(nicknames, professions and 'Ready' status). The
-  fragment features four buttons: 'Back', 'Change Info', 'Change Team' and
-  'Ready'. If the 'Back' button, the connection to the server is closed and the
-  'Main Menu' fragment is brought to the front. The 'Change Info' button brings
-  upon the 'Lobby Settings' fragment. By pressing the 'Ready' button, the player
-  toggles his/her 'Ready' status and sends a message containing this status to
-  the server.
+  \item 'Lobby' is the game preparation screen. It shows the lists of players in
+  the two teams and their details(nicknames, professions and 'Ready' status).
+  This screen features four buttons: 'Back', 'Change Info', 'Change Team' and
+  'Ready'. Pressing the 'Back' button closes the connection and returns the
+  the 'Main Menu' screen. By pressing the 'Ready' button, the player toggles
+  his/her 'Ready' status and sends a message containing this status to the
+  server. The 'Change Info' button switches to the 'Lobby Settings' screen.  
   
-  \item 'Lobby Settings' is the fragment in which the player can change his/her
-  nickname and 'profession'. A textbox for the name, a spinner and a
-  description textbox for the profession and an 'Ok' button are provided. 
+  \item 'Lobby Settings' is the screen which allows the player to change his
+  nickname and 'profession'/'character type'. It also shows a short description
+  of the selected character type, followed by an enumeration of the available
+  weapons for that character.
   
-  \item 'Game' is the most important fragment in this app: it provides the UI
+  \item 'Game' is the most important screen in this app: it provides the UI
   for gameplay. It features a fullscreen MapView that displays the map and, on
   top of it, the 'Shoot' button and weapon selection Spinner. Two other buttons
   are kept on the screen and given various functionalities, according to the
@@ -481,73 +481,76 @@ Tutorials', 'Settings', 'Lobby','Lobby Settings', 'Loading' and 'Game':
    
 \end{enumerate}
 
-The app usage would go as follows: The player opens the app and is presented the
-'Main Menu' UI. If the GPS is not on, a dialog will appear informing him of
-this and offering two choices: `Turn GPS on` or 'Exit'. If 'Turn GPS on' is
-chosen, the GPS Settings page will be shown and the player can switch it on.
-Once this is done, the player clicks 'Start Game' and, after being shortly shown
-the 'Loading' fragment, is introduced to the 'Lobby' screen. Here, one can see
-that he has been added to one of the teams(Home Team or Away Team) and has been
-given a default nickname('Player') and profession('Marine'). This is where he
-chooses a team by clicking the 'Change Team' button or opts navigate to the
-'Lobby Settings' screen by clicking the 'Change Info' button and change the
-'nickname' or 'profession'. Once the player is ready to play, he will press the
-'Ready' button. If all the players that are connected to the server are marked
-as 'Ready', the server will send a countdown (which is seen on the client side
-through Toasts) followed by a 'Start Game' message - at which point the client
-app will automatically introduce the 'Game' UI. All the players are shown on the
-map by blue(current player), red(enemies) and green(friends) markers. Above each
-marker, one can see the nickname, 'profession' and health points of the player.
-The selection of players is done by clicking the markers. A selected player will
-have his marker drawn in yellow. Selecting a weapon from the provided Spinner
-deselects the currently selected player(if there is any) and draws the weapon's
-range around the position of the current player. For using the currently
-selected 'weapon' or 'powerup' on one of the players, the current player has to
-select the target on the screen and press the 'Shoot' button. If the selection
-attempt does not satisfy the 'selection policies' provided by the Weapon object,
-the map marker will simply not be selected. Otherwise, it will change color to
-yellow. If the target is not within the weapon's range when the 'Shoot' button
-is pressed, a Toast message will appear stating the current distance and that
-the shot was not performed. Otherwise, a Toast message stating the distance and
-damage will be shown and a cooldown countdown will start at the appropriate
-entry of the weapon selection Spinner object. Once a player has lost all health
-points, a dialog appears saying that the game is over for this player and gives
-him the sole option to exit the game in progress and return to the 'Main Menu'
-screen. Once a player exits the game in progress, his marker will disappear on
-the maps of the other players. There are no start and end conditions
-implemented.
+The typical game usage scenario would go as follows: The player opens the
+application and is presented the 'Main Menu' UI. If the GPS is not on, a dialog
+will appear informing him of this and offering two choices: `Turn GPS on` or
+'Exit' the game. If 'Turn GPS on' is chosen, the GPS Settings page will be shown
+and the player can switch it on. Once this is done, the player presses the 
+'Start Game' button and, after being briefly shown the 'Loading' screen, is
+introduced to the 'Lobby' screen.\newline
+
+Here, one can see that he has been added to one of the teams(Home Team or Away
+Team) and has been given a default nickname('Player') and profession('Marine').
+This is where he can choose to switch between teams by pressing the 'Change
+Team' button. Then, he navigates to the 'Lobby Settings' screen by clicking the
+'Change Info' button and change the 'nickname' and 'profession'. Once the player
+is ready to play, he will press the 'Ready' button. If all the players that are
+connected to the server are marked as 'Ready', the server will send a countdown
+(which is seen on the client side through Android-specific Toast messages)
+followed by a 'Start Game' message - at which point the client app will
+automatically introduce the 'Game' UI. \newline
+
+All the players are shown on the map by blue(current player), red(enemies) and
+green(friends) markers. Above each marker, one can see the nickname,
+'profession' and health points of the player. The selection of players is done
+by clicking the markers. A selected player will have his marker drawn in yellow.
+Selecting a weapon from the provided Spinner deselects the currently selected
+player(if there is any) and draws the weapon's range around the position of the
+current player. For using the currently selected 'weapon' or 'powerup' on one of
+the other players, the player has to select the target by tapping its marker on
+the screen and press the 'Shoot' button. If the selection attempt does not
+satisfy the 'selection policies' provided by the Weapon object, the map marker
+will simply not be selected. Otherwise, it will change color to yellow. If the
+target is not within the weapon's range when the 'Shoot' button is pressed, a
+Toast message will appear stating the distance between the player and his target
+and that the shot was not performed. Otherwise, a Toast message showing the
+distance and damage dealt will be shown and a cooldown countdown will start at
+the appropriate entry of the weapon selection Spinner object. Once a player has
+lost all health points, a dialog appears telling him that the game is over for
+him and gives him the sole option to exit the game and return to the 'Main
+Menu' screen. Once a player exits the game, his marker will disappear from the
+maps of the other players. There are no start and end conditions implemented.
 
 \subsubsection{The UI}
 
-The design of the UI has been done progressively, based on intuition, one-man
-tests, occasional random feedback from friends of the author and feedback from
-players during the test phases.\newline
+The design of the UI has been done progressively, using intuition at the
+beginning and player feedback for further improvements. We will now describe the
+first interation of UI design.\newline
 
 During the first phase of development two UI prototypes have been created: one
 for the game screen and the other for the menus. A rough idea on what the game
-will look like and what functionality has been created once the two UI
-prototypes have been brought to light.\newline
+will look like and what functionality the UI has to provide was made once the
+two UI prototypes were put together and tried out.\newline
 
 We will first discuss the game screen prototype. The first challenge has been
-more to create the Overlay object, get markers of three color types (red: enemy,
+more to create the Overlay object, get markers of four color types (red: enemy,
 green: friend, blue: current player, yellow: selected player) on the map at
 random positions and create the first 'Shoot' action seem real. This meant
 adding a 'Shoot' button and a Spinner from which weapons could be chosen and
 adding player selection into account. It had to be realistic, so a list with
 Weapon objects had to be created. For this, attributes had to be conceived for
-these weapons. What attributes are needed in a Weapon object? The quick answer
-has been: \"damage and range\". Once this has been done, drawing the range of
-the selected weapon on the map became the focus. Once that was done, shooting a
-weapon had to feel like it actually happened somehow. That's when Toast
-notifications have been added. After this, the realization came that those
-weapons can be shot continuously. They weren't supposed to. The 'cooldown'
-attribute has been added and a countdown was added on the Spinner dialog items,
-once they were used. On each weapon selection if a player was selected, he would
-be deselected. The range would be redrawn and the player would have to select
-the target on the screen and shoot by pressing the 'Shoot' button. The UI
-prototype ended up looking like Figures \ref{fig:UIPrototype1},
-\ref{fig:UIPrototype2}, \ref{fig:UIPrototype3}, \ref{fig:UIPrototype4},
-\ref{fig:UIPrototype5}.\newline
+these weapons. The first two attributes attributed to the weapons have
+been 'damage' and 'range'. Once this has been done, drawing the range of the
+selected weapon on the map became the focus. Once that was done, shooting a
+weapon had to give some feedback. That's when Toast notifications have been
+added. After this, it was noticed that the weapons can be shot continuously.
+They weren't supposed to. The 'cooldown' attribute has been added to the
+weapons and the functionality to run a countdown on the Spinner dialog items,
+once the respective weapons were used. On each weapon selection if a player was
+selected, he would be deselected. The range would be redrawn on each weapon
+selection and the player would have to select the target on the screen and shoot
+by pressing the 'Shoot' button. The UI prototype ended up looking like Figures
+\ref{fig:UIPrototype1}, \ref{fig:UIPrototype2}, \ref{fig:UIPrototype3}, \ref{fig:UIPrototype4}, \ref{fig:UIPrototype5}.\newline
 
 The following prototype would describe the basic functionality of the menus up
 until the point of entering the game.\newline
@@ -579,18 +582,17 @@ until the point of entering the game.\newline
 \end{figure}
 
 
-The game screen prototype has been followed by the menu UI prototype. For
-starters, this one hasn't been made with easy user interaction in mind, but
-rather as a bridge for the author to think of all the necessary functionality
-that should be present in everything that comes before the gameplay. Also, it
-has been an exercise for the things to come. The items deemed vital have been
-the main menu and a lobby screen. The main menu screen has been initially seen
-as only a gate to the game, an easy intro rather than anything else. The lobby
-screen has been designed to functionally accomodate what was deemed necessary in
-terms of game and character preparation - and predicted the need for another
-screen - that of the character settings, marked by the presence of the button
-labeled 'Change my Info'. The result can be seen in Figures
-\ref{fig:menuPrototype1} and \ref{fig:menuPrototype2}.
+The creation of the game screen prototype has been followed by that of the menu
+UI prototype. For starters, this one hasn't been made with easy user interaction
+in mind, but rather as a set of basic functions that need to be provided
+outside the game itself. Also, it has been an exercise of design. Two screens
+were thought of, initially: the main menu and a lobby screen. The main menu
+screen has been initially seen as only a gate to the game, an easy intro rather
+than anything else. The lobby screen has been designed to functionally
+accomodate what was necessary in terms of game and character preparation
+- and predicted the need for another screen - that of the character settings,
+marked by the presence of the button labeled 'Change my Info'. The result can be
+seen in Figures \ref{fig:menuPrototype1} and \ref{fig:menuPrototype2}.
 
 \begin{figure}
 \includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/menu_prototype/MENU_prototype_1.png}  
@@ -606,13 +608,13 @@ The two prototypes have been put together in one project that has served as the
 foundation of the application to come.\newline
 
 Very soon the necessity for a settings screen right out of the main menu came up
-(The server was initially run locally, on the author's laptop. Out of all the
-reasons to create a settings fragment, the first one has been that the internet
-connection in the student dorm is done via VPN and thus the IP address was
-changing with reconnection) and a button labeled 'Settings' was added to the
-main menu. The settings fragment came right after with just an 'OK' button and
-two textboxes for the IP and port inputs(as can be seen in Figure
-\ref{fig:main_menu_settings}).\newline
+(The server was initially run locally, on the author's laptop. The main reason
+to create the settings screen was that location of the server has been changed
+many times during the first stage of development - and therefore it was
+necessary to re-type the IP address and port number. A button labeled 'Settings'
+was added to the main menu. The settings screen came right after with just an
+'OK' button and two textboxes for the IP and port inputs (as can be seen in
+Figure \ref{fig:main_menu_settings}).\newline
 
 \begin{figure}
 \includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/tutorial_main_settings.png}  
@@ -623,13 +625,13 @@ menu\label{fig:main_menu_settings}}
 At the beginning of the development, as functionality to connect to the server
 has just been implemented, there was no loading screen. Instead, the application
 UI would just freeze for a few thousand milliseconds. That has been considered
-unacceptable. The first idea was to add a loading widget on top the main menu
-screen - but that, based on the intuition of the author, was quite unpleasant to
-the eye. The loading screen had to be something separate, to mark the transition
-to entering the game. A loading screen was added, with a simple loading widget
-looping infinitely and a piece of 'Loading' text at the bottom of the
-screen(Figure \ref{fig:loading}). This screen has remained visually untouched
-until the last version of the application.\newline
+unacceptable from a usability perspective. The first idea was to add a loading
+widget on top the main menu screen - but the separate loading screen has proven
+itself a more versatile concept that can be used for functionality to come. The
+loading screen had to mark the transition to entering the game. A loading screen
+was added, with a simple loading widget looping infinitely and a 'Loading' text
+at the bottom of the screen(Figure \ref{fig:loading}). This screen has remained
+visually untouched until the last version of the application.\newline
 
 \begin{figure}
 \includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/tutorial_loading.png}
@@ -637,7 +639,7 @@ until the last version of the application.\newline
 \end{figure}
 
 Once the game client became capable of successfully connecting to the server and
-setting up everything for the lobby screen, the necessity for the lobby settings
+setting up everything for the lobby screen, the need for the lobby settings
 screen came up - and therefore the lobby settings fragment has been created -
 with a spinner for choosing between characters, a textbox for the nickname, a
 multiline textbox for loading the description of each character or 'profession'

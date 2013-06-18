@@ -4,6 +4,18 @@
 J.~Yang, ``\textbf{Smartphones in Use Surpass 1 Billion, Will Double by
   2015},'' {\em Bloomberg.com}, October 2012.
 
+\bibitem{esa}
+E.~S. Association, ``\textbf{Facts about the computer and video game
+  industry},'' tech. rep., Entertainment Software Association, 2012.
+
+\bibitem{forbes}
+R.~Weber, ``\textbf{7 Predictions For The Mobile Gaming Market For 2013},''
+  {\em Forbes.com}, 12 2012.
+
+\bibitem{emarketer}
+Emarketer.com, ``\textbf{Half of US Mobile Users to Play Games in 2013},'' {\em
+  Emarketer.com}, May 2013.
+
 \bibitem{rts}
 C.~Janssen, ``\textbf{Real-Time Strategy (RTS)},'' {\em Techopdia.com}, 2010.
 
@@ -24,52 +36,6 @@ S.~Johnson, ``\textbf{Analysis: Turn-Based Versus Real-Time},'' {\em
   Can - On The Benefit of Rounds in Location-based Games},'' tech. rep.,
   {Institute of Computer Science III Universit\"at Bonn} and {Computer Networks
   Group Technische Universit\"at Dresden}, 2012.
-
-\bibitem{nativevscrossplatform}
-C.~Warren, ``\textbf{The Pros and Cons of Cross-Platform App Design},'' {\em
-  Mahsable.com}, February 2012.
-
-\bibitem{nativevscrossplatform2}
-D.~Hoang, ``\textbf{Native vs. Cross-Platform Development: Which is the way to
-  go?},'' {\em Awesomegiant.com}, April 2012.
-
-\bibitem{nativevscrossplatform3}
-D.~Wehmeier, ``\textbf{HTML5, Cross-Platform Compiled, Or Native: Choose Wisely
-  In App Development},'' {\em Mobiledevdesign.com}, October 2012.
-
-\bibitem{nodejs}
-D.~Software(dacris.com), ``\textbf{Node.js: Microsoft�s Web Empire is Coming
-  to an End}.''
-  \url{http://www.dacris.com/blog/2011/08/31/node-js-microsofts-web-empire-is-coming-to-an-end/},
-  August 2011.
-
-\bibitem{nodejsvsapache}
-M.~Zgadzaj, ``\textbf{Benchmarking Node.js - basic performance tests against
-  Apache + PHP}.''
-  \url{http://zgadzaj.com/benchmarking-nodejs-basic-performance-tests-against-apache-php},
-  2010.
-
-\bibitem{webrtc}
-{Adam Bergkvist}, {Daniel C. Burnett}, {Cullen Jennings}, and {Anant
-  Narayanan}, ``\textbf{WebRTC 1.0: Real-time Communication Between
-  Browsers},'' tech. rep., World Wide Web Consortium, august 2012.
-
-\bibitem{websockets}
-{I. Fette} and {A. Melnikov}, ``\textbf{The WebSocket Protocol (RFC 6455)},''
-  tech. rep., Internet Engineering Task Force (IETF), December 2011.
-
-\bibitem{tcp}
-I.~S. Institute, ``\textbf{Transmission Control Protocol (RFC 793)},'' tech.
-  rep., University of Southern California, September 1981.
-
-\bibitem{udp}
-I.~S. Institute, ``\textbf{User Datagram Protocol (RFC 768)},'' tech. rep.,
-  University of Southern California, September 1980.
-
-\bibitem{rtp}
-{H. Schulzrinne}, {S. Casner}, and {R. Frederick, V. Jacobson}, ``\textbf{Real
-  Time Transport Protocol (RFC 3550)},'' tech. rep., Network Working Group,
-  July 2003.
 
 \bibitem{pbarg1}
 {Kurt D. Squire}, {Mingfong Jan}, {James Matthews}, {Mark Wagler}, {John
@@ -104,6 +70,40 @@ D.~J. Gagnon, ``\textbf{ARIS - An open source platform for developing mobile
 J.~M. Mathews, ``\textbf{Using a studio-based pedagogy to engage students in
   the design of mobile-based media},'' tech. rep., University of Wisconsin,
   2010.
+
+\bibitem{nativevscrossplatform}
+C.~Warren, ``\textbf{The Pros and Cons of Cross-Platform App Design},'' {\em
+  Mahsable.com}, February 2012.
+
+\bibitem{nativevscrossplatform2}
+D.~Hoang, ``\textbf{Native vs. Cross-Platform Development: Which is the way to
+  go?},'' {\em Awesomegiant.com}, April 2012.
+
+\bibitem{nativevscrossplatform3}
+D.~Wehmeier, ``\textbf{HTML5, Cross-Platform Compiled, Or Native: Choose Wisely
+  In App Development},'' {\em Mobiledevdesign.com}, October 2012.
+
+\bibitem{webrtc}
+{Adam Bergkvist}, {Daniel C. Burnett}, {Cullen Jennings}, and {Anant
+  Narayanan}, ``\textbf{WebRTC 1.0: Real-time Communication Between
+  Browsers},'' tech. rep., World Wide Web Consortium, august 2012.
+
+\bibitem{websockets}
+{I. Fette} and {A. Melnikov}, ``\textbf{The WebSocket Protocol (RFC 6455)},''
+  tech. rep., Internet Engineering Task Force (IETF), December 2011.
+
+\bibitem{tcp}
+I.~S. Institute, ``\textbf{Transmission Control Protocol (RFC 793)},'' tech.
+  rep., University of Southern California, September 1981.
+
+\bibitem{udp}
+I.~S. Institute, ``\textbf{User Datagram Protocol (RFC 768)},'' tech. rep.,
+  University of Southern California, September 1980.
+
+\bibitem{rtp}
+{H. Schulzrinne}, {S. Casner}, and {R. Frederick, V. Jacobson}, ``\textbf{Real
+  Time Transport Protocol (RFC 3550)},'' tech. rep., Network Working Group,
+  July 2003.
 
 \bibitem{teamtags}
 {Andreas Ritzberger} and {Stephan A. Drab}, ``\textbf{TeamTags: Domination �
