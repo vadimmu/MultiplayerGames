@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  18 JUN 2013 15:10
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  18 JUN 2013 15:31
 entering extended mode
 **document.tex
 (C:\Users\Vadim\workspace\MultiplayerGames\document.tex
@@ -893,4 +893,115 @@ Overfull \hbox (23.44432pt too wide) in paragraph at lines 575--576
 File: ./images/android_screenshots/ui_prototype/UI_prototype_5.png Graphic file
  (type png)
 
-<use ./image
+<use ./images/android_screenshots/ui_prototype/UI_prototype_5.png>
+Package pdftex.def Info: ./images/android_screenshots/ui_prototype/UI_prototype
+_5.png used on input line 580.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
+
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 580--581
+[][][] 
+ []
+
+
+<./images/android_screenshots/menu_prototype/MENU_prototype_1.png, id=640, 1284
+.8pt x 770.88pt>
+File: ./images/android_screenshots/menu_prototype/MENU_prototype_1.png Graphic 
+file (type png)
+
+<use ./images/android_screenshots/menu_prototype/MENU_prototype_1.png>
+Package pdftex.def Info: ./images/android_screenshots/menu_prototype/MENU_proto
+type_1.png used on input line 598.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
+
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 598--599
+[][][] 
+ []
+
+
+<./images/android_screenshots/menu_prototype/MENU_prototype_2.png, id=641, 1284
+.8pt x 770.88pt>
+File: ./images/android_screenshots/menu_prototype/MENU_prototype_2.png Graphic 
+file (type png)
+
+<use ./images/android_screenshots/menu_prototype/MENU_prototype_2.png>
+Package pdftex.def Info: ./images/android_screenshots/menu_prototype/MENU_proto
+type_2.png used on input line 603.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
+
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 603--604
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 607--609
+
+ []
+
+[30 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/ui_pr
+ototype/UI_prototype_1.png>] [31 <C:/Users/Vadim/workspace/MultiplayerGames/ima
+ges/android_screenshots/ui_prototype/UI_prototype_2.png> <C:/Users/Vadim/worksp
+ace/MultiplayerGames/images/android_screenshots/ui_prototype/UI_prototype_3.png
+>] [32 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/ui
+_prototype/UI_prototype_4.png> <C:/Users/Vadim/workspace/MultiplayerGames/image
+s/android_screenshots/ui_prototype/UI_prototype_5.png>] [33 <C:/Users/Vadim/wor
+kspace/MultiplayerGames/images/android_screenshots/menu_prototype/MENU_prototyp
+e_1.png> <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/
+menu_prototype/MENU_prototype_2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 610--618
+
+ []
+
+
+<./images/android_screenshots/tutorial_main_settings.png, id=667, 289.08pt x 17
+3.89969pt>
+File: ./images/android_screenshots/tutorial_main_settings.png Graphic file (typ
+e png)
+ <use ./images/android_screenshots/tutorial_main_settings.png>
+Package pdftex.def Info: ./images/android_screenshots/tutorial_main_settings.pn
+g used on input line 620.
+(pdftex.def)             Requested size: 450.26604pt x 252.95738pt.
+
+Overfull \hbox (23.47469pt too wide) in paragraph at lines 620--622
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 625--635
+
+ []
+
+
+<./images/android_screenshots/tutorial_loading.png, id=669, 1284.8pt x 770.88pt
+>
+File: ./images/android_screenshots/tutorial_loading.png Graphic file (type png)
+
+ <use ./images/android_screenshots/tutorial_loading.png>
+Package pdftex.def Info: ./images/android_screenshots/tutorial_loading.png used
+ on input line 637.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
+
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 637--638
+[][][] 
+ []
+
+
+<./images/android_screenshots/first_development/game_first_development_9.png, i
+d=672, 1284.8pt x 770.88pt>
+File: ./images/android_screenshots/first_development/game_first_development_9.p
+ng Graphic file (type png)
+
+<use ./images/android_screenshots/first_development/game_first_development_9.pn
+g>
+Package pdftex.def Info: ./images/android_screenshots/first_development/game_fi
+rst_development_9.png used on input line 651.
+(pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
+
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 651--653
+[][][] 
+ []
+
+
+<./images/android_screenshots/first_development/game_first_development_10.png, 
+id=673, 1284.8pt x 770.88pt>
+File: ./images/android_screenshots/first_development/game_first_development_10.
+png Graphic file

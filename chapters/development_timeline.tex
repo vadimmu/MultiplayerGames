@@ -664,88 +664,82 @@ menu\label{fig:lobby_settings_2}}
 \subsection{The first testing phase}
 
 Contrary to the original plans, the first testing phase took only half a day
-with another half day of preparations. Prior tests have been done by the
+with another half day of preparations. Prior live tests have been done by the
 author alone, with two phones.\newline
 
-A few friends(three male and two female) of the author were invited to play the
-game. Three of them had Android phones. The other two have used
-the two phones that the author had in posession at the time. Unfortunately, most
-of them had Android 2.2 and 2.3 installed. The preparations meant convincing
-them to volunteer their phones for an OS upgrade. Android 4.0 was
-installed.\newline
+Five people (three male and two female) were invited to play the game. Three of
+them had Android phones. The other two have used the two phones that the author
+had in posession at the time. Unfortunately, most of them had Android 2.2 and
+2.3 installed. The preparations meant convincing them to volunteer their phones
+for an OS upgrade. Android 4.0 was installed.\newline
 
 The tests have been done mostly indoors, as they revealed various bugs in the
-server and client software that were not detected when using only two phones
-that were physically connected to the development computer via USB
-cables. Because six people had five phones, two of them have played
-alternatively. Because not all players had 3G connections available, the game
-has been played by connecting to the author's WiFi router. The first bug we
-noticed was that occasionally the game would disconnect for no apparent reason.
-Others have been related to GPS devices in one of the phones not retrieving the
-position and crashing the application or concurrency issues improperly treated.
-A few temporary quick fixes got the game on track and we managed to play the
-game, firstly indoors for a few times and then outside, after the author's WiFi
-router has been placed on the outside window sill. This has inadvertently been a
-test of the WiFi coverage of an average old 802.11 b/g router - around 50 - 70
-meters radius in an open space describing a half-circle around the router. The
-author was the first to accidentally run outside the WiFi coverage and get
-disconneted. After the playing was finished, the author(with help from one of
-the friends) took notes while everybody has expressed their criticism of the
-gameplay, UI and game satisfaction. Although the concept itself has been
-positively appreciated, the game UI has received a lot of criticism. Also the
-random disconnection of the game from the server has caused a lot of frustration
-among the test players. A proposal has been made to allow saving the last
-player status and position on the server and allow a timeout until the player
-would not be allowed to reconnect. A debate led to the conclusion that
-enabling such a feature could allow cheating, through the following scenario: A
-player would disconnect from the game, get close to other players, reconnect,
-shoot and repeat the sequence - thus avoiding damage and causing frustration to
-others. \newline
+server and client code that were not detected when testing discrete features.
+Because six people had five phones, two of them have played
+alternatively.\newline
+
+Because not all players had 3G connections available, the game has been played
+by connecting to a WiFi router. The first bug we noticed was that occasionally
+the game would disconnect for no apparent reason. Others have been related to
+GPS devices in one of the phones not retrieving the position and crashing the
+application or concurrency issues improperly treated.\newline
+
+A few temporary quick fixes got the game working and the testers managed to play
+the game, firstly indoors for a few times and then outside, while still
+connected to the WiFi router. This has inadvertently been a test of the WiFi
+coverage of an average old 802.11 b/g router - around 50 - 70 meters radius in
+an open space describing a half-circle around the router. The author was the
+first to accidentally run outside the WiFi coverage and get disconneted.\newline
+
+After the playing was finished, the testers and the author sat down for a
+focus group discussion, during which criticism of the gameplay, UI and game
+satisfaction were expressed. Although the concept itself has been positively
+appreciated, the game UI has received a lot of criticism. Also the random
+disconnection of the game from the server has caused a lot of frustration among
+the test players. A proposal has been made to allow saving the last player
+status and position on the server and allow a timeout until the player would not
+be allowed to reconnect. A debate led to the conclusion that enabling such a
+feature could allow cheating: A player would disconnect from the game, get close
+to other players, reconnect, shoot and repeat the sequence - thus avoiding
+damage and causing frustration to others. \newline
 
 Until the end of the first testing session done with a group of people, the UI
 has remained largely untouched. The two unused buttons on the game screen have
-been kept for getting the players' feedback on how pleasant the position of
-those buttons is for the reach of their fingers. The goal for the game UI has
-been to become similar to a game controller, but with the game screen in the
-middle. And the screen had to be layed out in a way in which the user would not
-feel cramped when playing the game. The only addition to the UI has been
-the 'Settings' button in the main menu, together with the settings
-screen.\newline
+been kept for tester feedback on how pleasant the position of those buttons is
+for the reach of their fingers. The goal for the game UI has been to become
+similar to a game controller, while having the game screen in the middle. And
+the screen had to be layed out in a way in which the user would not feel cramped
+when playing the game. The only addition to the UI has been the 'Settings'
+button in the main menu, together with the settings screen.\newline
 
 The first people to test the game have criticized the following aspects:
 \begin{enumerate}
-  \item \textbf{The game UI}: The need to reselect the target every time the
-  weapon is switched has proven frustrating. The entire process of selecting the
-  weapon and only then firing it has been regarded as too slow: the players
-  wanted to be able to shoot the entire arsenal immediately, if
-  possible.\newline
-  
-  Another issue has been that the 'Shoot' button was disproportionally small
-  compared to the weapon selection spinner, in the testing phase. After showing
-  the players the original test UI, they still deemed the 'Shoot' button too
-  small.\newline
-  
+  \item \textbf {The game UI}: The need to reselect the target every time the
+  weapon is switched has proven frustrating. The entire process of selecting
+  a weapon before firing it has been regarded as too slow: the players wanted to
+  be able to shoot the entire arsenal immediately, if possible.\newline
+     
   The lack of control over what is happening has been criticized: The player
   health was only displayed above the head of the player, along with the name
   and 'profession'. It made it hard for players to notice changes. Notifications
   on who 'shot' who were not yet implemented. The player's health was not
   displayed anywhere. Messages could not be sent to the team. The first proposal
-  has been to enable writing and sending messages, SMS-style. After some
+  has been to enable writing and sending messages, messenger style. After some
   discussions, the conclusion came that predefined messages are much more
-  useful(like, say the ones used in the video game \"CounterStrike\"), while
-  'custom' messages can be communicated verbally, keeping the players more
+  useful(like the ones used in the video game ''CounterStrike''), while more
+  complex messages can be communicated verbally, keeping the players more
   focused on the dynamics, rather than on the technicalities of the game.
   
   \item \textbf{The menu UI}: The lobby UI has been criticized - but not for
   it's layout, but for the comprehensibility - there was no mark for the
-  player's 'Ready' status, the 'Change my Info' label on the button that leads
-  to the 'profession' and nickname editing screen wasn't comprehensible. The
+  player's 'Ready' status, the 'Change my Info' label wasn't comprehensible. The
   nickname and 'profession' were not remembered from one game session to the
   other or from one app launch to the other. This frustrated the users - and
-  they simply refused entering their nicknames all the time. The game ended up
-  with no one knowing who's who, because they had the same nickname - the
+  they simply refused entering their nicknames after a few games. The game ended
+  up with no one knowing who's who, because they had the same nickname - the
   default 'Player'. One tester complained that he wanted to click his own name
-  in the team lists and get to the settings screen.\newline
+  in the team lists and get to the settings screen - but functionality
+  to do that was not implemented.\newline
   
   A general complaint has been expressed towards the fact that there are no
   tutorials on how to play the game.
