@@ -31,13 +31,13 @@
 \contentsline {subsubsection}{\numberline {5.2.2}The Server}{27}{subsubsection.5.2.2}
 \contentsline {subsubsection}{\numberline {5.2.3}The Client}{28}{subsubsection.5.2.3}
 \contentsline {subsubsection}{\numberline {5.2.4}The UI}{29}{subsubsection.5.2.4}
-\contentsline {subsection}{\numberline {5.3}The first testing phase}{35}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.3}The first testing phase}{34}{subsection.5.3}
 \contentsline {subsection}{\numberline {5.4}The second develpment phase}{37}{subsection.5.4}
-\contentsline {subsubsection}{\numberline {5.4.1}The Server}{37}{subsubsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.2}The Client}{37}{subsubsection.5.4.2}
-\contentsline {subsubsection}{\numberline {5.4.3}Logging, Testing and Data Usage}{41}{subsubsection.5.4.3}
+\contentsline {subsubsection}{\numberline {5.4.1}The Server}{38}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}The Client}{38}{subsubsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.3}Logging, Testing and Data Usage}{42}{subsubsection.5.4.3}
 \contentsline {subsubsection}{\numberline {5.4.4}The UI}{42}{subsubsection.5.4.4}
-\contentsline {subsection}{\numberline {5.5}The second testing phase}{45}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.5}The second testing phase}{47}{subsection.5.5}
 \contentsline {section}{\numberline {6}Agile planning}{49}{section.6}
 \contentsline {subsection}{\numberline {6.1}Kanban}{50}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Unit Testing}{52}{subsection.6.2}
