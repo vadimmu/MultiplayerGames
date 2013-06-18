@@ -753,7 +753,9 @@ do from that point on.\newline
 The first testing phase has left a lot of 'todos', notes and guidelines for
 better adapting the UI and game mechanics to the player's needs. The second
 development phase has addressed these needs with a personal touch from the
-author and an influence of the switch to a newer version of Maps API.
+author and an influence of the switch to a newer version of Maps API (V2). The
+newer version of Maps API also came with the requirement that Google Play
+Services be installed on each device that runs the game.
 
 \subsubsection{The Server}
 
@@ -761,15 +763,18 @@ The only change done on the server in the second development phase, beyond bug
 solving, has been the switch from InetAddress to InetSocketAddress as key in the
 server's management HashMaps. That's because multiple connections from behind a
 router with NAT were not possible. InetAddress only holds the remote IP of the
-connection. The InetSocketAddress now holds both the IP and port of the
-connection.
+connection. The InetSocketAddress now holds both the IP address and port number
+of the connection.
 
 \subsubsection{The Client}
 
-The client is an Android application that uses one Activity and multiple
-Fragments. 
+We will describe the changes made to the client, after the first testing phase.
+The most important set of changes has occured on the UI: The Google Maps V1 API
+has been discarded in favor of the V2 API, the appearance of the UI has been
+radically changed and most of the back end functionality that served the game
+screen has been discarded and rewritten.
 
-The client uses seven fragments for the UI: 'Main Menu', 'Info and
+The client now uses seven fragments for the UI: 'Main Menu', 'Info and
 Tutorials', 'Settings', 'Lobby','Lobby Settings', 'Loading' and 'Game':
 
 \begin{enumerate}
@@ -777,10 +782,10 @@ Tutorials', 'Settings', 'Lobby','Lobby Settings', 'Loading' and 'Game':
   been changed into 'Connect to Server' - making its functionality more
   obvious. The logo presented in Figure \ref{fig:game_logo} has been added for
   user feedback. The 'Info and Tutorials' button has been added - it leads to
-  a new Fragment that presents the idea adn functionality of the game.
+  a new Fragment that presents the idea and functionality of the game.
   
-  \item 'Info and Tutorials' is a fragment with a number of buttons and a
-  ScrollView for displaying text and images. Here, the user will find
+  \item 'Info and Tutorials' is a screen with a number of buttons and a
+  scrollable view for displaying text and images. Here, the user will find
   instructions for the purpose how use of the app and detailed descriptions of
   the functionality of the 'Lobby' and 'Game' UIs.
   
@@ -801,27 +806,28 @@ Tutorials', 'Settings', 'Lobby','Lobby Settings', 'Loading' and 'Game':
   tried out as background, for user feedback. See Figure
   \ref{fig:game_background_lobby_settings}
   
-  \item 'Game' has been completely modified. Due to changes in the use of the
-  Maps API and tester feedback, it has gone through the most changes. At this
+  \item 'Game' has been completely modified. Due to tester feedback and
+  the change of the Maps API, it has gone through radical changes. At this
   point, the game screen looks as follows: for all the 'weapons' and 'powerups',
-  buttons are aligned starting from the bottom left corner of the screen and
-  extending them to the right. From the bottom right corner and going up, on the
-  vertical axis, three buttons and a TextView exist: the 'Previous Target',
-  friend/foe toggle, 'Next Target' buttons and a TextView that shows the
-  distance to the next selected player. If no player is selected, the presented
-  text will be '0(Self)'. Otherwise, just the distance measurement is shown,
-  with no text. In the top right corner, the default 'My Position' button is
-  shown - with its specific icon. In the top left corner of the screen, a
-  TextView with large text shows the remaining 'health points' of the player.
-  Underneath this TextView lays a spinner for sending predefined messages to the
-  team. The full functionality of the UI will be presented below.
+  buttons are aligned starting from the bottom left corner of the screen until
+  close to the bottom right corner. From the bottom right corner upwards, on
+  the vertical axis, three buttons and a TextView have been placed: the
+  'Previous Target', friend/foe toggle, 'Next Target' buttons and a TextView
+  that shows the distance from the current player to the selected friend or
+  foe. If no player is selected, the presented text will be '0(Self)'.
+  Otherwise, just the distance measurement is shown, with no text. In the top
+  right corner, the default 'My Position' button is shown - with its specific
+  icon. In the top left corner of the screen, a TextView with large text
+  indicates the 'health points' of the player. Underneath the health indicator
+  lays a Spinner for sending predefined messages to the team. The full
+  functionality of the UI will be presented below.
   
 \end{enumerate}
 
 The typical app use scenario goes as follows: The player enters the game and
-sees the 'Main Menu'. The app checks if Google Play Services are installed and
-if the GPS is turned on. If either of these conditions is not met, a dialog is
-presented: the player must choose to install Google Play Services and/or turn on
+sees the 'Main Menu'. The application checks if Google Play Services are
+installed and if the GPS is turned on. If either of these conditions is not met,
+a dialog is presented: the player must choose to install Google Play Services and/or turn on
 the GPS or exit the game. Each dialog directs the user to the appropriate Google
 Play or Settings page - where the player only has to either click 'Install' or
 switch the 'Enable GPS' toggle to 'ON'.\newline
@@ -836,8 +842,8 @@ players according to team sizes, so the player has an equal chance to see
 oneself in either the 'Home' or 'Away' team. Then, the player can opt to change
 the team by using the 'Change Team' button. Also, the nickname and 'profession'
 can be changed by navigating to the 'Lobby Settings' screen. Once the 'Ok'
-button is pressed in the 'Lobby Settings' screen, the changes are saved in the
-app and sent to the server for broadcasting, and the player is returned
+button is pressed in the 'Lobby Settings' screen, the changes are saved by the
+application and sent to the server for broadcasting, and the player is returned
 to the 'Lobby' screen.\newline
 
 At the point where all the players have done setting up, they can send the
@@ -880,42 +886,37 @@ that they are presented by related functionality). All the UI elements on the
   friends/enemies toggle, 'next target' buttons, and on top a TextView showing
   the distance to the selected player or '0(Self)' if no player is selected(in
   translation, the 'self' or 'current player' is selected). The friends/enemies
-  toggle is used for the obvious reason of quickly choosing between one of the
-  two types of players besides the 'self'. The 'next target' button's
-  functionality is to find the next closest player from the selected category.
-  Let's say that the closest player is already selected. Then, on a press of the
-  'next target' button, the second closest player will be selected and so on.
-  The reverse applies to the 'previous target' button - which selects the
-  previous farthest player if a player is selected and the closest one
-  otherwise. The distance indicator serves for the use of an experienced player
-  who knows the weapon's distances by heart and does not want to the lengthy
-  long click operation to get the weapon's distance shown on the map. The
-  players may also be selected by simply tapping their respective markers on the
-  map - but through testing it has been determined that in a more intense and
-  dynamic situation, selection by clicking on the marker can become difficult
-  and inaccurate. Both modes are supported now. One other aspect of player
-  selection is the now-vital click in a random unoccupied area on the map for
-  deselecting all players(and selecting oneself for, say, self-healing or
-  activating powerups on oneself).
+  toggle is used for switching choosing between the two groups of players:
+  friends or enemies. On each press on the 'next target' button,
+  the next closest player from the chosen category is selected. The reverse
+  applies to the 'previous target' button - which selects the previous farthest
+  player if a player is selected and the closest one otherwise. The distance
+  indicator serves for the use of an experienced player who knows the weapon's
+  distances by heart and does not need to draw the weapon range circle on the
+  map. The players may also be selected by simply tapping their respective
+  markers on the map - but through testing it has been determined that in a more
+  intense and dynamic situation, selection by clicking on the marker can become
+  difficult and inaccurate. Both modes are supported now. At this stage of
+  development, deselection of players (and implicit selection of the current
+  player) is done by touching a random unoccupied area on the map.
   
-  \item\textbf{The top-right corner of the screen}: The 'my position' button
-  that is provided as an option through the Maps API. Clicking it will cause an
-  animation to scroll through the map until the position of the player is
-  centered.
+  \item\textbf{The top-right corner of the screen}: The 'my position' button - 
+  Clicking it will cause the map to be automatically scrolled until the position
+  of the current player is centered.
   
   \item\textbf{The top-left corner of the screen}: The health indicator is a
-  TextView that presents in large text the remaining health points of the
-  player. Underneath it lies a spinner with a list of messages that the player
-  can send to his/her team. One can do so by clicking on the UI element
-  representing the spinner, beneath the health indicator. After the first
-  click, the spinner dialog appears and shows the list of messages. The
+  TextView that presents in large text the available health points of the
+  current player. Underneath it lies a spinner that provides a list of messages
+  that the player can send to his/her team. One can do so by clicking on the UI
+  element representing the spinner, beneath the health indicator. After the
+  first click, the spinner dialog appears and shows the list of messages. The
   player can send one of the messages in the list by clicking it. The dialog is
-  canceled by clicking outside it.
+  canceled by selecting a message or clicking outside it.
   
   \item\textbf{The area in between the two top corners of the screen}: This is
   the area where the powerup duration is dynamically shown during its effect.
   This can be seen when the player casts 'invisibility' or 'shield' on oneself
-  or when a friend casts 'shield' on the player
+  or when a friend casts 'shield' on the player.
   
   \item\textbf{The area above the weapon buttons}: This is where the
   notifications appear, in the form of Toasts. By default, a toast has a given
@@ -924,19 +925,19 @@ that they are presented by related functionality). All the UI elements on the
 \end{enumerate}
 
 Although they are not yet discretized, thus far we can distinguish three types
-of game that can be played with the current setup: the \textbf{default
+of game that can be played with the current setup: the \textbf{Default
 game}(which requires multiple players, but excludes the 'All Encompassing' game
-type), \textbf{duel}(two players choose the 'All Encompassing' profession -
-receiving the entire arsenal provided by the game - and try to take each other
-out by using various strategies of combining 'weapons' and 'powerups'),
-\textbf{David vs. Goliath}(a small number of players choose the 'All
-Encompassing' profession and play against a significantly larger number of
+type); \textbf{Duel}(two players choose the 'All Encompassing' profession -
+receiving the entire arsenal provided by the game - and try to eliminate
+each other from the game by using various strategies of combining 'weapons' and
+'powerups'); \textbf{David vs. Goliath}(a small number of players choose the
+'All Encompassing' profession and play against a significantly larger number of
 players that use all the professions except 'All Encompassing').\newline
 
 Until now, the default game and the duel have been tried out - and they are
 fit for different situations: The default game can take up to 20 minutes and is
-played across distances varying from small to very large, depending on the mood
-and disposition for running of the players. The duel is performed usually by two
+played on a large area (there is no limit for now), depending on the mood and
+disposition for running of the players. The duel is performed usually by two
 players sitting next to each other and takes two-three minutes.\newline
 
 Thus far, no game end condition has been introduced - players who lose all
@@ -945,13 +946,11 @@ gives them two options: quit the game or spectate. The second option implies
 that they are marked as 'dead' on the map, cannot be selected and their weapon
 buttons are removed from the screen. Still, they can watch the evolution of the
 game on their mobile devices. When all players of one team are marked as 'dead'
-(they have lost all their 'health points') and at least one player of the other
-team still has more than zero health points, it can be considered a win for the
-other team. The ending condition has not been implemented, because for this
-stage of development of the app it would be just a dialog stating the obvious
-'You have won !' message. A more interesting feature may be added in the future,
-if imagination or user feedback provides it - or the game may be integrated in a
-larger context.\newline
+(they have lost all their 'health points') and at least one member of the
+opposing team still has more than zero health points, it can be considered a win
+for the opposing team. The ending condition has not been implemented, because
+for this stage of development of the application there is no reward system
+implemented. \newline
 
 The main functional differences from the first development of the game are:
 
@@ -960,7 +959,7 @@ The main functional differences from the first development of the game are:
   rewriting the whole UI and several methods in the helper libraries.
   
   \item Because of the switch mentioned above, the custom Overlay object (along
-  with the custom tap and marker drawing functionalities), the object
+  with the custom tap and marker drawing functionalities) and the object
   responsible with position retrieval have been discarded. Position retrieval is
   done through an option provided by the GoogleMap object provided by the Google
   Maps V2 API. The whole marker and weapon range drawing are also done through
@@ -974,47 +973,41 @@ The main functional differences from the first development of the game are:
 
 Passive disconnection detection functionality has been added in the loop that
 waits for incoming messages. The functionality of some weapons and powerups has
-been modified. The `Radar` has been removed. The 'Invisibility cloak' and
-'Knife' have been added. Powerup duration indicators have been added.\newline
+been modified. A powerup called `Radar` that was present in the first
+development iteration, but did nothing has been removed. The 'Invisibility
+cloak' and 'Knife' have been added. Powerup duration indicators have been
+added.\newline
 
 The final message structure in between the server and the client will be
 presented in one of the Annexes.\newline
 
 During the second development phase, a lot of decentralization and
-modularization of functionality has been done. Classes that only served the
+modularization of functionality has been done. Some classes that only served the
 Game UI relying on Maps API V1 have been removed. Others, serving the Maps API
 V2 have been added. Various bugs that caused crashes have been corrected. The
-starting condition has been reintegrated in the game - it disabled the weapon
-buttons until the 'Start Game' message would be received.\newline
+starting condition has been reintegrated in the game - the weapon buttons
+are disabled until a 'Start Game' signal is received from the server.\newline
 
 \subsubsection{Logging, Testing and Data Usage}
-After the first testing phase, the need to log app crashes has come up - as
-sometimes it can prove quite difficult to recreate the crash conditions while
-solo testing. A logging system based on Logcat capture has been added. Uncaught
-exceptions are now caught and logged(they are always the ones crashing the app)
-before the app closes. One issue currently not dealt with and considered
-benign for the prototype is that the log files(created through classical Java
-functionality on the SD Card) can only be seen from the mobile device and not
-from a computer communicating with it via USB. This issue was not considered
-stringent, as the number of testers and testing devices is still quite low and
-manual extraction of crashes is still easier than implementing a solution(The
-problem is that these files are signed with a UID and thus cannot be seen by
-external devices).\newline
+After the first testing phase, a the need of a logging system was felt. A
+logging system based on Logcat capture has been added. Uncaught exceptions are
+now caught and logged before the app closes. \newline
 
 A lot of testing has been done with the 'UI/Application Exerciser Monkey' to
 show up potential bugs and crashes. Some bugs have been found and patched - but
 one has persisted: Apparently, there are some humanly-impossible combinations of
 keyboard and touch inputs that lead to a Spinner dialog crashing the
-application. \newline
+application. This is an Android-related issue and cannot be solved by
+the author.\newline
 
 Another bug that has persisted is that of the WiFi disconnection(3G connections
 stay alive). Apparently, this is an Android bug.\newline
 
-As for logging a Logger class has been created, its functionality has been
+As for logging, a Logger class has been created, its functionality has been
 extended to retrieve the data usage of the app. Because of various compatibility
 reasons, the data usage of the entire device during the usage of the app is
-retrieved, instead of the usage of the app itself. This means that the data
-usage of, say, social network or mail applications adds to the count - but as a
+retrieved, instead of the usage of the application itself. This means that the
+data usage of, say, social network or mail applications adds to the count - but as a
 general idea (and not very precise numbers) is needed, it has been considered a
 decent solution.
 
@@ -1022,37 +1015,36 @@ decent solution.
 
 The second development session has come with the mindset to completely change
 the UI. And not only that was done: the whole underlying framework has been
-changed. A switch to the Google Maps V2 API has been made. A lot of
-functionality has been thrown away - such as the Overlay that served for drawing
-the players and for laying out the controls. A lot of new controls had to be
-added. A lot of underlying technicalities have been changed(such as the custom
-screen tap functionality and objects used for positioning).\newline
+changed. A switch to the Google Maps V2 API was made. A lot of functionality has
+been thrown away - such as the Overlay that served for drawing the players and
+for laying out the controls. A lot of new controls had to be added. A lot of
+underlying technicalities have been changed(such as the custom screen tap
+functionality and data objects used for positioning).\newline
 
 Because of the switch to the new Maps API, the MapView object which served as
 the container for all controls has disappeared. It has been replaced by a
 GoogleMap object which is not intrinsically a View and cannot be treated thusly.
-Some improvisation was required to artificially create a container. This has
-been done by programmatically creating a RelativeLayout and adding the View that
-contained the map as a child. Then, the apparent choices have been to either add
-all the controls programmatically - which is very tedious - or embed a Fragment
-within another Fragment - which is downright wrong. All the controls have been
-generated and added programmatically. And the result has been previously
-described in the paper - having as a result the UI presented in Figure
-\ref{fig:game_ui2}: The UI has been properly partitioned in four functional
-areas that, although they provide much more control and functionality, don't
-cloister the map. The health of the current player is visible, a button has been
-added to center the image on the current position of the player, individual
-buttons are generated for the list of weapons provided for a 'profession', a
-group of buttons is added for help in target selection. Target selection by
-tapping on the screen has been preserved, but now is enhanced through the 'Next
-Target' and 'Previous Target' buttons. The latest addition - the Spinner object
-serving message sending was taking up too much space and hindered the view of
-the map. A good solution has been to make it semi-transparent - thus, making it
-non-intrusive, yet present. The ranges of the weapons are now drawn in green on
-demand, by long pressing the weapon buttons. The blue circle around the player's
-position is the default indication of the GPS accuracy. Thus far, it has not
-been removed. \newline
-
+Some improvisation was required to artificially create a container for the map.
+This has been done by programmatically creating a RelativeLayout and adding the
+View that contained the map as a child. Then, the apparent choices have been to
+either add all the controls programmatically - which is very tedious - or embed
+a Fragment within another Fragment - which is bad for performance. All the
+controls have been generated and added programmatically. And the result has been
+previously described in the paper - having as a result the UI presented in
+Figure \ref{fig:game_ui2}: The UI has been properly partitioned in four
+functional areas that, although they provide much more control and
+functionality, they don't cloister the map. The health of the current player is
+visible, a button has been added to center the image on the current position of
+the player, individual buttons are generated for the list of weapons provided
+for a 'profession', a group of buttons is added for help in target selection.
+Target selection by tapping on the screen has been preserved as an alternative
+to the selection buttons. The latest addition - the Spinner serving message
+sending was taking up too much space and hindered the view of the map. A good
+solution has been to make it semi-transparent - thus, making it non-intrusive,
+yet present. The ranges of the weapons are now drawn in green on demand, by long
+pressing the weapon buttons. The blue circle around the player's position is the
+default indication of the GPS accuracy. Thus far, it has not been removed - as
+it can be useful in various gameplay situations.\newline
 
 \begin{figure}
 \includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/second_development/game_second_development_5.png}
@@ -1062,24 +1054,23 @@ been removed. \newline
 The menu UI has also been modified:
 \begin{enumerate}
   \item \textbf{The main menu screen}: The welcome message has been removed and
-  place has been left for a potential logo. A logo has been tried, as seen in
-  Figure\ref{fig:logo_white}. Also, a button to navigate to the newly added info
-  and tutorials screen has been added.
+  place has been left for a potential logo. The addition of a logo has been
+  attempted, as seen in Figure\ref{fig:logo_white}. Also, a button to navigate
+  to the newly added info and tutorials screen has been added.
   
   \begin{figure}
   \includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/logo_white.png}
   \caption{\small \sl A white game logo \label{fig:logo_white}}
   \end{figure}
   
-  \item \textbf{The info and tutorials screen}: A new Fragment has been added.
+  \item \textbf{The info and tutorials screen}: A new screen has been added.
   It contains four buttons that lead to information and tutorials on what the
-  game is and how to play it. It also features a 'Back' button. The initial plan
-  was to have a WebView as container and load the tutorial articles in HTML
-  format. Then, the author subjectively deemed HTML creation too complicated for
-  the task and the decision has been taken to have a ScrollView as container
-  instead and use a LayoutInflater object to generate the UI from XML files. The
-  results can be seen in Figures \ref{fig:tutorial_fragment1} and
-  \ref{fig:tutorial_fragment2}.
+  game is and how to play it. The initial plan was to have a WebView as
+  container and load the tutorial articles in HTML format. Then a simpler
+  solution was devised and instead of the WebView, a ScrollView was added as
+  container and a LayoutInflater object is now used to generate the
+  tutoarial articles from XML files. The results can be seen in Figures
+  \ref{fig:tutorial_fragment1} and \ref{fig:tutorial_fragment2}.
   
   \begin{figure}
   \includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/tutorial_fragment_1.png}
@@ -1094,10 +1085,10 @@ The menu UI has also been modified:
   \end{figure}
   
   
-  \item \textbf{The lobby screen}: The lobby screen has also been modified: The
+  \item \textbf{The lobby screen}: The lobby screen was also modified: The
   requested feature to map the click on one's name to the character settings
-  screen has been added. Also, the \"ME\" marker has been added to distinguish
-  the current player from the rest and the \"READY\" marker of one's 'Ready'
+  screen was implemented. Also, the ''ME'' marker has been added to distinguish
+  the current player from the rest and the ''READY'' marker of one's 'Ready'
   status. Two backgrounds have been tried on this screen, as seen in Figures
   \ref{fig:lobby_background_black} and \ref{fig:lobby_background_white}.
   
@@ -1115,10 +1106,9 @@ The menu UI has also been modified:
   
   \item \textbf{The lobby settings screen}: The lobby settings screen has been
   kept almost intact since its creation. The functionality to remember the last
-  used player's nickname and 'profession' has been added. Also, two backgrounds
-  in black and white have been tried out. They can be seen in Figures
-  \ref{fig:lobby_settings_background_black} and
-  \ref{fig:lobby_settings_background_white}.
+  used player's nickname and 'profession' was added. Also, two backgrounds in
+  black and white have been tried out. They can be seen in Figures
+  \ref{fig:lobby_settings_background_black} and \ref{fig:lobby_settings_background_white}.
   
   \begin{figure}
   \includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/second_development/game_second_development_8.png}
@@ -1137,65 +1127,59 @@ The menu UI has also been modified:
 \subsection{The second testing phase}
 
 As the first testing phase, the second one has taken much less time than
-initially planned - only one day was necessary. A larger number of friends of
-the author were invited. More phones have been brought and almost all had 3G
-connection. This time, the app supported Android versions starting with 2.3
-- which made it much easier.\newline
+initially planned - only one day. A larger number testers were invited. More
+phones have been brought and almost all had 3G connections. This time, the app
+supported Android versions starting with 2.3 - which made testing accessible to
+all.\newline
 
-A large part of the testing phase has been the preparation: installing the
-application on all devices, connecting everyone to the wireless network and VPN
-(At the moment of testing, the author lived in a student dorm - and Internet
-access was provided through a secure VPN connection. But because everyone's 3G
-plan included at most 500MB, Wifi was the first choice). This has proven to be
-very frustrating - therefore, everybody switched to 3G and started to play -
-firstly indoors and soon after, outdoor. The UI changes have been positively
-appreciated by everyone - yet one feature has proven to be quite useless: the
-long click on the weapon buttons. The long click draws the range of the weapon
-on the map. Our testing scenario, though, has not taken place over large
-distances(no one went out of Sniper Rifle range - 150 meters) - therefore the
-gameplay has been very fast paced (a game lasted on average between 10-15
-minutes) and no-one has actually used the functionality. The distance indicator
-has also not been noticed by most. The health indicator, target selection
-buttons and shooting functionality of the weapon buttons have been appreciated
-as 'right', 'appropriate', 'useful'. A request was made for a finishing
-condition and a 'You have won' screen for the winner team - and some sort of
-reward system. Another feature that has proven to be more of a liability in this
-situation was the starting condition. In the first few games(played indoors),
-the players 
+A large part of the testing phase has consisted in the preparations: installing
+the application on all devices, connecting everyone to the wireless network.
+This has proven to be frustrating - therefore, everybody switched to 3G and
+started to play - firstly indoors and soon after, outdoor. The UI changes have
+been positively appreciated by everyone - yet a few features have proven to be
+quite useless: One of them was the long click on the weapon buttons, which was
+never used - because of close range gameplay, nobody attempted to draw the
+weapon range. The gameplay has been very fast paced (a game lasted on average
+between 10-15 minutes) and no one has actually used the functionality. The
+distance indicator was not noticed at all by most testers. The health indicator,
+target selection buttons and shooting functionality of the weapon buttons have
+been appreciated as 'right', 'appropriate', 'useful'. A request was made for a
+finishing condition and a 'You have won' screen for the winning team - and a
+reward system. Because of the close-quarter gameplay, the starting condition
+could not be tested - actually, a short workaround to disable it had to be
+done.\newline
 
 Unlike before the first testing phase, when few to no people interacted with
 the application, before the second testing phase a large number of the friends
 and acquaintances of the author have seen the application and have been giving
 constant input as to whether certain aspects of the game are worthwhile or not.
-Also this has been when discussions on future development of the game have
-started. A lot of conversations have been recorded to audio files and notes on
-paper. Among the discussions, the ones on the current development have been
-focused on visual aspects: The background images, the logo; a proposal to change
-all the markers with 'profession'-specific ones and to replace the text on the
-buttons with symbols. Besides all this, a discussion has started on the name of
-the application itself. Both very positive and very negative opinions have been
+Also at this point discussions on future development of the game have started. A
+lot of conversations have been recorded as audio files and notes on paper. Among
+the discussions, the ones on the current development have been focused on visual
+aspects: The background images, the logo; a proposal to change all the markers
+with 'profession'-specific ones and to replace the text on the buttons with
+symbols. Besides all this, a discussion has started on the name of the
+application itself. Both very positive and very negative opinions have been
 expressed, but none of indifference. The first name chosen by the author for the
-game has been \"People with Guns\" - but after debate and player
-feedback it has been later changed to \"Gun Run\".\newline
+game has been ''People With Guns'' - but after debate and player feedback it has
+been later changed to ''Gun Run''.\newline
 
 There were ten people who actively participated in the discussions and debates
 over the aforementioned aspects of the game: five male and five female.\newline
 
 The logo has been strongly rejected by everybody - it was deemed too colourful
-and unrelated to the significance of the game - a semi-casual game to promote
-enjoyment and social bonding.\newline
+and unrelated to the significance of the game.\newline
 
 The black background images used in the lobby and lobby settings screens have
 been positively appreciated by the males but received mixed opinions from the
-females: Three of them said that they inspire violence - which is unrelated
-to the game itself, while the other two have deemed them appropriate.\newline
+females: Three(more than half) of them said that the black backgrounds with
+red weapons on top inspire violence - which should not represent the game, while
+the other two have deemed them appropriate.\newline
 
 After being presented with the white background images for the lobby and lobby
-settings screens, everybody has rejected them, uninanimously stating that they
-break the atmosphere of the game and that it should promote a level of
-competition. Everybody concluded that they prefer darker colors in the menus and
-the contour of the map in the background is one good step towards something that
-defines the game.\newline
+settings screens, everybody has rejected them, unanimously stating that they
+break the atmosphere of the game. Everybody concluded that they prefer darker
+colors in the menus.\newline
 
 The second testing phase took a bit longer than the first. More players tried it
 out, more games have been played and - most importantly - more games have been
@@ -1203,15 +1187,14 @@ played outside.\newline
 
 The conclusion of the second test phase has been that the tutorials are too
 long, too descriptive. The menus haven't received any criticism - but the game
-UI has: The long click functionality to draw the ranges of the weapons has not
-been used at all. The distance indicator was not even seen by the players and
-was therefore not used in any way. The 'Invisibility Cloak' powerup is used only
-by the current player on self, but in the current implementation it requires
-selecting oneself(deselecting everyone else) - this was deemed frustrating. The
-entire concept of selecting oneself by deselecting all others(tapping an area
-on the map where no markers are present) was deemed frustrating. Everybody
-playing(just two of the people from the discussions before the second testing
-phase have been present) has expressed the necessity of symbols instead of text
-on the buttons and on the map. Another aspect of criticism has been the order of
-the 'weapon'/'powerup' buttons: they should be separated into two groups:
-'weapons' and 'powerups'.\newline
+UI has, in a passive manner: The long click functionality to draw the ranges of
+the weapons has not been used at all. The distance indicator was not even seen
+by the players and was therefore not used in any way by anyone. The
+'Invisibility Cloak' powerup was used only by the current player on self, but in
+the second stage of implementation it required selecting oneself(deselecting
+everyone else) - this was deemed frustrating. The entire concept of selecting
+oneself by deselecting all others(tapping an area on the map where no markers
+are present) was deemed frustrating. Everybody playing has expressed the
+necessity of symbols instead of text on the buttons and on the map. Another
+aspect of criticism has been the order of the 'weapon'/'powerup' buttons: they
+should be separated into two groups: 'weapons' and 'powerups'.\newline
