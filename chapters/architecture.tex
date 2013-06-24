@@ -8,12 +8,14 @@ of the client and thereafter present the communication in between.\newline
 \subsection{Server}
 
 
-The server exists for relaying the information in between clients. It does not
-store state, nor does it validate anything - with one exception: it verifies the
-game start condition and only sends the signal to start the game when it
-is.\newline
+The server was designed for relaying the information in between clients,
+centralizing and managing game information - such as keeping track of the teams
+and connected players. It is responsible for signalling the clients when to
+enter the game and when to start playing. The first signal tells the clients
+when to show the game screen and the second one tells them when to enable the
+game controls.\newline
 
-Its main role is to manage connections and resend messages - this means
+Among its roles are managing connections and resending messages - this means
 receiving updates from a single client and then unicasting, multicasting or
 broadcasting them. All this is done via TCP.\newline
 
@@ -74,13 +76,13 @@ two subtypes: From Server and To Server. The server replies to or relays what
 comes to other clients, according to the specifics of the messages. To this
 end, the MessageReceiver checks which type the message is and if it is the case, extracts
 data or sends it to the MessageSender. The MessageSender will then construct a
-new message or add further fields to the existing one - for example, the UUID of
-the sender. Then, according to the type of message, it will be sent as unicast,
-multicast or broadcast. The unicast is sent via the designated MessageSender.
-Multicasts and broadcasts are sent as unicasts through many or all the
-MessageSenders available. Multicasts are, for now, useful just for in-game
-messages - teams communicate within. Broadcasts are used for most types
-of messages - such as position updates.\newline
+new message or add further fields to the existing one - for example, the
+Universally Unique Identifier(UUID) of the sender. Then, according to the type
+of message, it will be sent as unicast, multicast or broadcast. The unicast is
+sent via the designated MessageSender. Multicasts and broadcasts are sent as
+unicasts through many or all the MessageSenders available. Multicasts are, for
+now, useful just for in-game messages - teams communicate within. Broadcasts are
+used for most types of messages - such as position updates.\newline
 
 \subsection{Client}
 
