@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  24 JUN 2013 12:23
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  25 JUN 2013 18:41
 entering extended mode
 **document.tex
 (C:\Users\Vadim\workspace\MultiplayerGames\document.tex
@@ -204,14 +204,16 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip45
 )
 (C:\Users\Vadim\workspace\MultiplayerGames\document.aux
-(C:\Users\Vadim\workspace\MultiplayerGames\chapters\abstract.aux)
-(C:\Users\Vadim\workspace\MultiplayerGames\chapters\related_work.aux)
-(C:\Users\Vadim\workspace\MultiplayerGames\chapters\game_concept.aux)
-(C:\Users\Vadim\workspace\MultiplayerGames\chapters\architecture.aux)
-(C:\Users\Vadim\workspace\MultiplayerGames\chapters\development_timeline.aux)
-(C:\Users\Vadim\workspace\MultiplayerGames\chapters\agile_planning.aux)
-(C:\Users\Vadim\workspace\MultiplayerGames\chapters\conclusion_and_future_work.
-aux) (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_A.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\1_abstract.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\2_introduction.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\3_related_work.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\4_game_concept.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\5_architecture.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\6_development_timeline.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\7_agile_planning.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\8_future_work.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\9_conclusion.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_A.aux)
 (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_B.aux)
 (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_C.aux)
 (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_D.aux)
@@ -227,7 +229,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64 ...mand\NAT@force@numbers{}\NAT@force@numbers
+l.66 ...mand\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -330,84 +332,87 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}])
 \tf@toc=\write4
  [2]
-(C:\Users\Vadim\workspace\MultiplayerGames\chapters\abstract.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--12
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\1_abstract.tex
+Underfull \hbox (badness 10000) in paragraph at lines 7--11
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--18
+Underfull \hbox (badness 10000) in paragraph at lines 12--17
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--24
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--49
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--64
+)
+Underfull \hbox (badness 10000) in paragraph at lines 18--64
 
  []
 
 [3
 
+] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\2_introduction.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--63
+
+ []
+
+[4
+
+
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 65--70
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--77
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--81
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--85
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--89
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--92
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-
- []
-
-) [4] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\related_work.tex
+) [5] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\3_related_work.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--15
 
  []
@@ -437,7 +442,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--64
 
  []
 
-[5
+[6
 
 
 ]
@@ -455,7 +460,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--113
 
  []
 
-[6] [7]
+[7] [8]
 Underfull \hbox (badness 10000) in paragraph at lines 243--255
 
  []
@@ -466,120 +471,140 @@ Overfull \hbox (0.55667pt too wide) in paragraph at lines 268--279
 e on education-oriented GPS-games.([])
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 281--283
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--279
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 280--284
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--288
+Underfull \hbox (badness 10000) in paragraph at lines 285--290
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 289--294
-
- []
-
-) [9] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\game_concept.tex
+) [10] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\4_game_concept.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--12
+Underfull \hbox (badness 10000) in paragraph at lines 7--11
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--16
+Underfull \hbox (badness 10000) in paragraph at lines 12--17
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--35
+Underfull \hbox (badness 10000) in paragraph at lines 18--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--60
+Underfull \hbox (badness 10000) in paragraph at lines 24--28
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--64
+Underfull \hbox (badness 10000) in paragraph at lines 29--32
 
  []
 
-[10
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--66
+
+ []
+
+[11
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 103--111
+Underfull \hbox (badness 10000) in paragraph at lines 67--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 72--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--120
+Underfull \hbox (badness 10000) in paragraph at lines 76--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--129
+Underfull \hbox (badness 10000) in paragraph at lines 87--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--142
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 185--192
+Underfull \hbox (badness 10000) in paragraph at lines 119--123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--197
+Underfull \hbox (badness 10000) in paragraph at lines 124--127
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 198--201
+Underfull \hbox (badness 10000) in paragraph at lines 166--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--216
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--223
+Underfull \hbox (badness 10000) in paragraph at lines 177--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--228
+Underfull \hbox (badness 10000) in paragraph at lines 184--192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--266
+Underfull \hbox (badness 10000) in paragraph at lines 193--205
 
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 267--271
+[13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 278--284
 
  []
 
-) [14] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\architecture.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--289
+
+ []
+
+) [15] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\5_architecture.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
  []
@@ -609,7 +634,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--60
 
  []
 
-<./images/diagrams/connection_lifecycle.png, id=459, 469.755pt x 847.165pt>
+<./images/diagrams/connection_lifecycle.png, id=428, 469.755pt x 847.165pt>
 File: ./images/diagrams/connection_lifecycle.png Graphic file (type png)
 
 <use ./images/diagrams/connection_lifecycle.png>
@@ -620,7 +645,7 @@ ut line 64.
 
 LaTeX Warning: Float too large for page by 56.97725pt on input line 66.
 
-[15
+[16
 
 
 ]
@@ -635,7 +660,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--86
 
  []
 
-<./images/diagrams/client_modules.png, id=466, 727.71875pt x 476.78125pt>
+<./images/diagrams/client_modules.png, id=435, 727.71875pt x 476.78125pt>
 File: ./images/diagrams/client_modules.png Graphic file (type png)
 
 <use ./images/diagrams/client_modules.png>
@@ -652,15 +677,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--156
 
  []
 
-[16] [17 <C:/Users/Vadim/workspace/MultiplayerGames/images/diagrams/connection_
-lifecycle.png>] [18 <C:/Users/Vadim/workspace/MultiplayerGames/images/diagrams/
+[17] [18 <C:/Users/Vadim/workspace/MultiplayerGames/images/diagrams/connection_
+lifecycle.png>] [19 <C:/Users/Vadim/workspace/MultiplayerGames/images/diagrams/
 client_modules.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 208--212
+<./images/android_screenshots/tutorial_game.png, id=462, 963.6pt x 578.16pt>
+File: ./images/android_screenshots/tutorial_game.png Graphic file (type png)
 
+<use ./images/android_screenshots/tutorial_game.png>
+Package pdftex.def Info: ./images/android_screenshots/tutorial_game.png used on
+ input line 159.
+(pdftex.def)             Requested size: 450.23076pt x 252.94437pt.
+
+Overfull \hbox (23.4394pt too wide) in paragraph at lines 159--160
+[][][] 
  []
 
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 213--219
+[20 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/tutor
+ial_game.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 215--219
 
  []
 
@@ -670,30 +704,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 220--226
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--231
+Underfull \hbox (badness 10000) in paragraph at lines 227--233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--240
+Underfull \hbox (badness 10000) in paragraph at lines 234--238
 
  []
 
-[20] <./images/diagrams/Client-Server.png, id=520, 723.70375pt x 766.865pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--247
+
+ []
+
+[21] <./images/diagrams/Client-Server.png, id=481, 723.70375pt x 766.865pt>
 File: ./images/diagrams/Client-Server.png Graphic file (type png)
 
 <use ./images/diagrams/Client-Server.png>
 Package pdftex.def Info: ./images/diagrams/Client-Server.png used on input line
- 344.
+ 351.
 (pdftex.def)             Requested size: 450.24872pt x 553.9795pt.
 
-Overfull \hbox (23.45737pt too wide) in paragraph at lines 344--346
+Overfull \hbox (23.45737pt too wide) in paragraph at lines 351--353
 [][][] 
  []
 
-) [21] [22 <C:/Users/Vadim/workspace/MultiplayerGames/images/diagrams/Client-Se
+) [22] [23 <C:/Users/Vadim/workspace/MultiplayerGames/images/diagrams/Client-Se
 rver.png>]
-(C:\Users\Vadim\workspace\MultiplayerGames\chapters\development_timeline.tex
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\6_development_timeline.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
  []
@@ -723,7 +762,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--59
 
  []
 
-[23
+[24
 
 
 ]
@@ -741,7 +780,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
-[24]
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 140--144
 
  []
@@ -751,7 +790,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--151
 
  []
 
-[25]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 232--238
 
  []
@@ -761,12 +800,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 239--251
 
  []
 
-[26]
+[27]
 Underfull \hbox (badness 10000) in paragraph at lines 277--280
 
  []
 
-[27]
+[28]
 Underfull \hbox (badness 10000) in paragraph at lines 383--387
 
  []
@@ -796,7 +835,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 411--417
 
  []
 
-[28]
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 418--431
 
  []
@@ -806,7 +845,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 432--435
 
  []
 
-[29]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 484--491
 
  []
@@ -831,13 +870,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 535--554
 
  []
 
-[30]
+[31]
 Underfull \hbox (badness 10000) in paragraph at lines 555--557
 
  []
 
 
-<./images/android_screenshots/ui_prototype/UI_prototype_1.png, id=637, 1284.8pt
+<./images/android_screenshots/ui_prototype/UI_prototype_1.png, id=611, 1284.8pt
  x 770.88pt>
 File: ./images/android_screenshots/ui_prototype/UI_prototype_1.png Graphic file
  (type png)
@@ -852,7 +891,7 @@ Overfull \hbox (23.44432pt too wide) in paragraph at lines 560--561
  []
 
 
-<./images/android_screenshots/ui_prototype/UI_prototype_2.png, id=638, 1284.8pt
+<./images/android_screenshots/ui_prototype/UI_prototype_2.png, id=612, 1284.8pt
  x 770.88pt>
 File: ./images/android_screenshots/ui_prototype/UI_prototype_2.png Graphic file
  (type png)
@@ -867,7 +906,7 @@ Overfull \hbox (23.44432pt too wide) in paragraph at lines 565--566
  []
 
 
-<./images/android_screenshots/ui_prototype/UI_prototype_3.png, id=639, 1284.8pt
+<./images/android_screenshots/ui_prototype/UI_prototype_3.png, id=613, 1284.8pt
  x 770.88pt>
 File: ./images/android_screenshots/ui_prototype/UI_prototype_3.png Graphic file
  (type png)
@@ -882,7 +921,7 @@ Overfull \hbox (23.44432pt too wide) in paragraph at lines 570--571
  []
 
 
-<./images/android_screenshots/ui_prototype/UI_prototype_4.png, id=640, 1284.8pt
+<./images/android_screenshots/ui_prototype/UI_prototype_4.png, id=614, 1284.8pt
  x 770.88pt>
 File: ./images/android_screenshots/ui_prototype/UI_prototype_4.png Graphic file
  (type png)
@@ -897,7 +936,7 @@ Overfull \hbox (23.44432pt too wide) in paragraph at lines 575--576
  []
 
 
-<./images/android_screenshots/ui_prototype/UI_prototype_5.png, id=641, 1284.8pt
+<./images/android_screenshots/ui_prototype/UI_prototype_5.png, id=615, 1284.8pt
  x 770.88pt>
 File: ./images/android_screenshots/ui_prototype/UI_prototype_5.png Graphic file
  (type png)
@@ -912,7 +951,7 @@ Overfull \hbox (23.44432pt too wide) in paragraph at lines 580--581
  []
 
 
-<./images/android_screenshots/menu_prototype/MENU_prototype_1.png, id=644, 1284
+<./images/android_screenshots/menu_prototype/MENU_prototype_1.png, id=618, 1284
 .8pt x 770.88pt>
 File: ./images/android_screenshots/menu_prototype/MENU_prototype_1.png Graphic 
 file (type png)
@@ -927,7 +966,7 @@ Overfull \hbox (23.44432pt too wide) in paragraph at lines 598--599
  []
 
 
-<./images/android_screenshots/menu_prototype/MENU_prototype_2.png, id=645, 1284
+<./images/android_screenshots/menu_prototype/MENU_prototype_2.png, id=619, 1284
 .8pt x 770.88pt>
 File: ./images/android_screenshots/menu_prototype/MENU_prototype_2.png Graphic 
 file (type png)
@@ -946,13 +985,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 607--609
 
  []
 
-[31 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/ui_pr
-ototype/UI_prototype_1.png>] [32 <C:/Users/Vadim/workspace/MultiplayerGames/ima
+[32 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/ui_pr
+ototype/UI_prototype_1.png>] [33 <C:/Users/Vadim/workspace/MultiplayerGames/ima
 ges/android_screenshots/ui_prototype/UI_prototype_2.png> <C:/Users/Vadim/worksp
 ace/MultiplayerGames/images/android_screenshots/ui_prototype/UI_prototype_3.png
->] [33 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/ui
+>] [34 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/ui
 _prototype/UI_prototype_4.png> <C:/Users/Vadim/workspace/MultiplayerGames/image
-s/android_screenshots/ui_prototype/UI_prototype_5.png>] [34 <C:/Users/Vadim/wor
+s/android_screenshots/ui_prototype/UI_prototype_5.png>] [35 <C:/Users/Vadim/wor
 kspace/MultiplayerGames/images/android_screenshots/menu_prototype/MENU_prototyp
 e_1.png> <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/
 menu_prototype/MENU_prototype_2.png>]
@@ -961,7 +1000,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 610--618
  []
 
 
-<./images/android_screenshots/tutorial_main_settings.png, id=671, 289.08pt x 17
+<./images/android_screenshots/tutorial_main_settings.png, id=644, 289.08pt x 17
 3.89969pt>
 File: ./images/android_screenshots/tutorial_main_settings.png Graphic file (typ
 e png)
@@ -980,7 +1019,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 625--635
  []
 
 
-<./images/android_screenshots/tutorial_loading.png, id=673, 1284.8pt x 770.88pt
+<./images/android_screenshots/tutorial_loading.png, id=646, 1284.8pt x 770.88pt
 >
 File: ./images/android_screenshots/tutorial_loading.png Graphic file (type png)
 
@@ -995,7 +1034,7 @@ Overfull \hbox (23.44432pt too wide) in paragraph at lines 637--638
 
 
 <./images/android_screenshots/first_development/game_first_development_9.png, i
-d=676, 1284.8pt x 770.88pt>
+d=649, 1284.8pt x 770.88pt>
 File: ./images/android_screenshots/first_development/game_first_development_9.p
 ng Graphic file (type png)
 
@@ -1011,7 +1050,7 @@ Overfull \hbox (23.44432pt too wide) in paragraph at lines 651--653
 
 
 <./images/android_screenshots/first_development/game_first_development_10.png, 
-id=677, 1284.8pt x 770.88pt>
+id=650, 1284.8pt x 770.88pt>
 File: ./images/android_screenshots/first_development/game_first_development_10.
 png Graphic file (type png)
 
@@ -1030,8 +1069,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 666--669
 
  []
 
-[35 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/tutor
-ial_main_settings.png>] [36 <C:/Users/Vadim/workspace/MultiplayerGames/images/a
+[36 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/tutor
+ial_main_settings.png>] [37 <C:/Users/Vadim/workspace/MultiplayerGames/images/a
 ndroid_screenshots/tutorial_loading.png> <C:/Users/Vadim/workspace/MultiplayerG
 ames/images/android_screenshots/first_development/game_first_development_9.png>
 ]
@@ -1059,7 +1098,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 694--705
 
  []
 
-[37 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/first
+[38 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/first
 _development/game_first_development_10.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 706--714
 
@@ -1080,24 +1119,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 748--750
 
  []
 
-[38]
+[39]
 
-LaTeX Warning: Reference `fig:game_logo' on page 39 undefined on input line 783
+LaTeX Warning: Reference `fig:game_logo' on page 40 undefined on input line 783
 .
 
 
-LaTeX Warning: Reference `fig:game_background_black' on page 39 undefined on in
+LaTeX Warning: Reference `fig:game_background_black' on page 40 undefined on in
 put line 803.
 
 
-LaTeX Warning: Reference `fig:game_background_white' on page 39 undefined on in
+LaTeX Warning: Reference `fig:game_background_white' on page 40 undefined on in
 put line 803.
 
 
-LaTeX Warning: Reference `fig:game_background_lobby_settings' on page 39 undefi
+LaTeX Warning: Reference `fig:game_background_lobby_settings' on page 40 undefi
 ned on input line 807.
 
-[39]
+[40]
 Underfull \hbox (badness 10000) in paragraph at lines 827--834
 
  []
@@ -1117,254 +1156,241 @@ Underfull \hbox (badness 10000) in paragraph at lines 855--857
 
  []
 
-<./images/android_screenshots/tutorial_game.png, id=714, 963.6pt x 578.16pt>
-File: ./images/android_screenshots/tutorial_game.png Graphic file (type png)
 
-<use ./images/android_screenshots/tutorial_game.png>
-Package pdftex.def Info: ./images/android_screenshots/tutorial_game.png used on
- input line 859.
-(pdftex.def)             Requested size: 450.23076pt x 252.94437pt.
-
-Overfull \hbox (23.4394pt too wide) in paragraph at lines 859--860
-[][][] 
- []
-
-
-Overfull \hbox (17.60454pt too wide) in paragraph at lines 870--882
+Overfull \hbox (17.60454pt too wide) in paragraph at lines 866--878
 [][]\OT1/cmr/bx/n/10 The bot-tom of the screen, start-ing from the bottom-left 
 cor-ner\OT1/cmr/m/n/10 : The 'weapon'/'powerup'
  []
 
-[40] [41 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/
-tutorial_game.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 927--936
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 923--932
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 937--942
+Underfull \hbox (badness 10000) in paragraph at lines 933--938
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 943--954
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 974--980
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 981--983
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 984--990
+Underfull \hbox (badness 10000) in paragraph at lines 939--950
 
  []
 
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 992--995
+Underfull \hbox (badness 10000) in paragraph at lines 970--976
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 996--1002
+Underfull \hbox (badness 10000) in paragraph at lines 977--979
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1005
+Underfull \hbox (badness 10000) in paragraph at lines 980--986
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1016--1023
+Underfull \hbox (badness 10000) in paragraph at lines 988--991
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1024--1048
+Underfull \hbox (badness 10000) in paragraph at lines 992--998
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 999--1001
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1012--1019
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 1020--1044
 
  []
 
 
 <./images/android_screenshots/second_development/game_second_development_5.png,
- id=740, 1284.8pt x 770.88pt>
+ id=713, 1284.8pt x 770.88pt>
 File: ./images/android_screenshots/second_development/game_second_development_5
 .png Graphic file (type png)
 
 <use ./images/android_screenshots/second_development/game_second_development_5.
 png>
 Package pdftex.def Info: ./images/android_screenshots/second_development/game_s
-econd_development_5.png used on input line 1050.
+econd_development_5.png used on input line 1046.
 (pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (23.44432pt too wide) in paragraph at lines 1050--1051
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1046--1047
 [][][] 
  []
 
-[43]
-<./images/android_screenshots/logo_white.png, id=748, 1284.8pt x 770.88pt>
+<./images/android_screenshots/logo_white.png, id=715, 1284.8pt x 770.88pt>
 File: ./images/android_screenshots/logo_white.png Graphic file (type png)
 
 <use ./images/android_screenshots/logo_white.png>
 Package pdftex.def Info: ./images/android_screenshots/logo_white.png used on in
-put line 1062.
+put line 1058.
 (pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (23.44432pt too wide) in paragraph at lines 1062--1063
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1058--1059
 [][][] 
  []
 
 
-<./images/android_screenshots/tutorial_fragment_1.png, id=751, 1284.8pt x 770.8
+<./images/android_screenshots/tutorial_fragment_1.png, id=718, 1284.8pt x 770.8
 8pt>
 File: ./images/android_screenshots/tutorial_fragment_1.png Graphic file (type p
 ng)
  <use ./images/android_screenshots/tutorial_fragment_1.png>
 Package pdftex.def Info: ./images/android_screenshots/tutorial_fragment_1.png u
-sed on input line 1076.
+sed on input line 1072.
 (pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (23.44432pt too wide) in paragraph at lines 1076--1078
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1072--1074
 [][][] 
  []
 
 
-<./images/android_screenshots/tutorial_fragment_2.png, id=752, 1284.8pt x 770.8
+<./images/android_screenshots/tutorial_fragment_2.png, id=719, 1284.8pt x 770.8
 8pt>
 File: ./images/android_screenshots/tutorial_fragment_2.png Graphic file (type p
 ng)
  <use ./images/android_screenshots/tutorial_fragment_2.png>
 Package pdftex.def Info: ./images/android_screenshots/tutorial_fragment_2.png u
-sed on input line 1082.
+sed on input line 1078.
 (pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (23.44432pt too wide) in paragraph at lines 1082--1084
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1078--1080
 [][][] 
  []
 
 
 <./images/android_screenshots/second_development/game_second_development_3.png,
- id=755, 1284.8pt x 770.88pt>
+ id=722, 1284.8pt x 770.88pt>
 File: ./images/android_screenshots/second_development/game_second_development_3
 .png Graphic file (type png)
 
 <use ./images/android_screenshots/second_development/game_second_development_3.
 png>
 Package pdftex.def Info: ./images/android_screenshots/second_development/game_s
-econd_development_3.png used on input line 1096.
+econd_development_3.png used on input line 1092.
 (pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (23.44432pt too wide) in paragraph at lines 1096--1098
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1092--1094
 [][][] 
  []
 
 
-<./images/android_screenshots/lobby_background_white.png, id=756, 1284.8pt x 77
+<./images/android_screenshots/lobby_background_white.png, id=723, 1284.8pt x 77
 0.88pt>
 File: ./images/android_screenshots/lobby_background_white.png Graphic file (typ
 e png)
  <use ./images/android_screenshots/lobby_background_white.png>
 Package pdftex.def Info: ./images/android_screenshots/lobby_background_white.pn
-g used on input line 1102.
+g used on input line 1098.
 (pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (23.44432pt too wide) in paragraph at lines 1102--1104
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1098--1100
 [][][] 
  []
 
 
 <./images/android_screenshots/second_development/game_second_development_8.png,
- id=759, 1284.8pt x 770.88pt>
+ id=726, 1284.8pt x 770.88pt>
 File: ./images/android_screenshots/second_development/game_second_development_8
 .png Graphic file (type png)
 
 <use ./images/android_screenshots/second_development/game_second_development_8.
 png>
 Package pdftex.def Info: ./images/android_screenshots/second_development/game_s
-econd_development_8.png used on input line 1114.
+econd_development_8.png used on input line 1110.
 (pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (23.44432pt too wide) in paragraph at lines 1114--1116
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1110--1112
 [][][] 
  []
 
 
-<./images/android_screenshots/lobby_settings_background_white.png, id=760, 1284
+<./images/android_screenshots/lobby_settings_background_white.png, id=727, 1284
 .8pt x 770.88pt>
 File: ./images/android_screenshots/lobby_settings_background_white.png Graphic 
 file (type png)
 
 <use ./images/android_screenshots/lobby_settings_background_white.png>
 Package pdftex.def Info: ./images/android_screenshots/lobby_settings_background
-_white.png used on input line 1120.
+_white.png used on input line 1116.
 (pdftex.def)             Requested size: 450.23567pt x 252.94438pt.
 
-Overfull \hbox (23.44432pt too wide) in paragraph at lines 1120--1122
+Overfull \hbox (23.44432pt too wide) in paragraph at lines 1116--1118
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1129--1134
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1130
 
  []
 
-[44 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/secon
-d_development/game_second_development_5.png>] [45 <C:/Users/Vadim/workspace/Mul
-tiplayerGames/images/android_screenshots/logo_white.png> <C:/Users/Vadim/worksp
-ace/MultiplayerGames/images/android_screenshots/tutorial_fragment_1.png>]
-[46 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/tutor
-ial_fragment_2.png> <C:/Users/Vadim/workspace/MultiplayerGames/images/android_s
-creenshots/second_development/game_second_development_3.png>] [47 <C:/Users/Vad
-im/workspace/MultiplayerGames/images/android_screenshots/lobby_background_white
-.png> <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/sec
-ond_development/game_second_development_8.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1135--1151
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1152--1166
-
- []
-
-[48 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/lobby
-_settings_background_white.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1167--1169
+[44] [45 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/
+second_development/game_second_development_5.png> <C:/Users/Vadim/workspace/Mul
+tiplayerGames/images/android_screenshots/logo_white.png>] [46 <C:/Users/Vadim/w
+orkspace/MultiplayerGames/images/android_screenshots/tutorial_fragment_1.png> <
+C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/tutorial_f
+ragment_2.png>] [47 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_s
+creenshots/second_development/game_second_development_3.png> <C:/Users/Vadim/wo
+rkspace/MultiplayerGames/images/android_screenshots/lobby_background_white.png>
+] [48 <C:/Users/Vadim/workspace/MultiplayerGames/images/android_screenshots/sec
+ond_development/game_second_development_8.png> <C:/Users/Vadim/workspace/Multip
+layerGames/images/android_screenshots/lobby_settings_background_white.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1131--1147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1170--1172
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1173--1178
+Underfull \hbox (badness 10000) in paragraph at lines 1163--1165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1179--1183
+Underfull \hbox (badness 10000) in paragraph at lines 1166--1168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1184--1187
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1174
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1175--1179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1183
 
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 1188--68
+Underfull \hbox (badness 10000) in paragraph at lines 1184--69
 
  []
 
-[49] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\agile_planning.tex
+[49] [50]
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\7_agile_planning.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--12
 
  []
@@ -1379,7 +1405,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--25
 
  []
 
-[50
+[51
 
 
 ]
@@ -1392,7 +1418,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--128
 
  []
 
-<./images/kanban/kanban_board.jpg, id=809, 3276.24pt x 2457.18pt>
+<./images/kanban/kanban_board.jpg, id=780, 3276.24pt x 2457.18pt>
 File: ./images/kanban/kanban_board.jpg Graphic file (type jpg)
 
 <use ./images/kanban/kanban_board.jpg>
@@ -1404,7 +1430,7 @@ Overfull \hbox (23.43059pt too wide) in paragraph at lines 130--131
 [][][] 
  []
 
-<./images/kanban/kanban_board_extension.jpg, id=810, 3276.24pt x 2457.18pt>
+<./images/kanban/kanban_board_extension.jpg, id=781, 3276.24pt x 2457.18pt>
 File: ./images/kanban/kanban_board_extension.jpg Graphic file (type jpg)
 
 <use ./images/kanban/kanban_board_extension.jpg>
@@ -1421,7 +1447,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--148
 
  []
 
-[51] [52 <C:/Users/Vadim/workspace/MultiplayerGames/images/kanban/kanban_board.
+[52] [53 <C:/Users/Vadim/workspace/MultiplayerGames/images/kanban/kanban_board.
 jpg> <C:/Users/Vadim/workspace/MultiplayerGames/images/kanban/kanban_board_exte
 nsion.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 149--167
@@ -1438,12 +1464,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--208
 
  []
 
-[53] [54]
+[54] [55]
 Underfull \hbox (badness 10000) in paragraph at lines 308--313
 
  []
 
-[55]
+[56]
 Underfull \hbox (badness 10000) in paragraph at lines 330--334
 
  []
@@ -1453,9 +1479,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 335--347
 
  []
 
-) [56]
-(C:\Users\Vadim\workspace\MultiplayerGames\chapters\conclusion_and_future_work.
-tex
+) [57] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\8_future_work.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--8
 
  []
@@ -1465,25 +1489,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--12
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--71
-
- []
-
-[57
+) [58
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 72--78
+] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\9_conclusion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--10
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--82
+Underfull \hbox (badness 10000) in paragraph at lines 11--19
 
  []
 
-) [58] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_A.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--42
+
+ []
+
+) [59
+
+
+] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_A.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
@@ -1573,7 +1615,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--69
 
  []
 
-[59
+[60
 
 
 ]
@@ -1626,15 +1668,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--130
 
  []
 
-[60])
-Underfull \hbox (badness 10000) in paragraph at lines 131--71
+[61])
+Underfull \hbox (badness 10000) in paragraph at lines 131--73
 
  []
 
-[61] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_B.tex
+[62] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_B.tex
 Overfull \hbox (13.50723pt too wide) in paragraph at lines 5--7
-[]\OT1/cmr/bx/n/10 Real Time Strat-egy Game \OT1/cmr/m/n/10 http://encyclopedia
-2.thefreedictionary.com/Real-time+strategy+game 
+[][]\OT1/cmr/bx/n/10 Real Time Strat-egy Game \OT1/cmr/m/n/10 http://encycloped
+ia2.thefreedictionary.com/Real-time+strategy+game 
  []
 
 
@@ -1643,7 +1685,7 @@ Overfull \hbox (79.2459pt too wide) in paragraph at lines 25--27
 //encyclopedia.thefreedictionary.com/Massively+Multiplayer+Online 
  []
 
-[62
+[63
 
 
 ]
@@ -1652,7 +1694,7 @@ Overfull \hbox (94.32045pt too wide) in paragraph at lines 87--89
  http://encyclopedia.thefreedictionary.com/location+based+game 
  []
 
-) [63] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_C.tex
+) [64] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_C.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--10
 
  []
@@ -1667,7 +1709,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--21
 
  []
 
-<./images/websockets/WebSocketFrame.png, id=911, 722.7pt x 111.2958pt>
+<./images/websockets/WebSocketFrame.png, id=882, 722.7pt x 111.2958pt>
 File: ./images/websockets/WebSocketFrame.png Graphic file (type png)
 
 <use ./images/websockets/WebSocketFrame.png>
@@ -1679,7 +1721,7 @@ Overfull \hbox (87.77383pt too wide) in paragraph at lines 23--24
 [][][] 
  []
 
-<./images/websockets/poll-ws-compare.png, id=912, 378.66469pt x 271.0125pt>
+<./images/websockets/poll-ws-compare.png, id=883, 378.66469pt x 271.0125pt>
 File: ./images/websockets/poll-ws-compare.png Graphic file (type png)
 
 <use ./images/websockets/poll-ws-compare.png>
@@ -1696,7 +1738,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--36
 
  []
 
-[64
+[65
 
 
  <C:/Users/Vadim/workspace/MultiplayerGames/images/websockets/WebSocketFrame.pn
@@ -1717,11 +1759,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--61
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 62--73
+Underfull \hbox (badness 10000) in paragraph at lines 62--75
 
  []
 
-[65] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_D.tex
+[66] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_D.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
@@ -1736,7 +1778,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
-<./images/benchmarks/testcase0.jpg, id=934, 752.8125pt x 552.0625pt>
+<./images/benchmarks/testcase0.jpg, id=905, 752.8125pt x 552.0625pt>
 File: ./images/benchmarks/testcase0.jpg Graphic file (type jpg)
 
 <use ./images/benchmarks/testcase0.jpg>
@@ -1769,7 +1811,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--41
 
  []
 
-[66
+[67
 
 
  <C:/Users/Vadim/workspace/MultiplayerGames/images/benchmarks/testcase0.jpg>]
@@ -1785,7 +1827,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--72
 
  []
 
-<./images/benchmarks/oimg.png, id=955, 923.45pt x 583.17876pt>
+<./images/benchmarks/oimg.png, id=927, 923.45pt x 583.17876pt>
 File: ./images/benchmarks/oimg.png Graphic file (type png)
 
 <use ./images/benchmarks/oimg.png>
@@ -1796,16 +1838,16 @@ Overfull \hbox (23.4486pt too wide) in paragraph at lines 74--76
 [][][] 
  []
 
-) [67] [68 <C:/Users/Vadim/workspace/MultiplayerGames/images/benchmarks/oimg.pn
+) [68] [69 <C:/Users/Vadim/workspace/MultiplayerGames/images/benchmarks/oimg.pn
 g (PNG copy)>] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_E.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
-[69
+[70
 
 
-]) [70] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_F.tex
+]) [71] (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_F.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
@@ -1816,16 +1858,16 @@ Overfull \hbox (7.70511pt too wide) in paragraph at lines 124--124
 , Integer, Integer> {[] 
  []
 
-[71
+[72
 
 
-] [72]) [73] (C:\Users\Vadim\workspace\MultiplayerGames\document.bbl
+] [73]) [74] (C:\Users\Vadim\workspace\MultiplayerGames\document.bbl
 Underfull \hbox (badness 1466) in paragraph at lines 4--6
 [][]\OT1/cmr/m/n/10 J. Yang, ``\OT1/cmr/bx/n/10 Smartphones in Use Sur-pass 1 B
 il-lion, Will Dou-ble by 2015\OT1/cmr/m/n/10 ,''
  []
 
-[74
+[75
 
 ]
 Missing character: There is no ï in font cmbx10!
@@ -1848,27 +1890,29 @@ Underfull \hbox (badness 2828) in paragraph at lines 131--134
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
- [75]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
+ [76]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
  (C:\Users\Vadim\workspace\MultiplayerGames\document.aux
-(C:\Users\Vadim\workspace\MultiplayerGames\chapters\abstract.aux)
-(C:\Users\Vadim\workspace\MultiplayerGames\chapters\related_work.aux)
-(C:\Users\Vadim\workspace\MultiplayerGames\chapters\game_concept.aux)
-(C:\Users\Vadim\workspace\MultiplayerGames\chapters\architecture.aux)
-(C:\Users\Vadim\workspace\MultiplayerGames\chapters\development_timeline.aux)
-(C:\Users\Vadim\workspace\MultiplayerGames\chapters\agile_planning.aux)
-(C:\Users\Vadim\workspace\MultiplayerGames\chapters\conclusion_and_future_work.
-aux) (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_A.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\1_abstract.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\2_introduction.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\3_related_work.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\4_game_concept.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\5_architecture.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\6_development_timeline.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\7_agile_planning.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\8_future_work.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\9_conclusion.aux)
+(C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_A.aux)
 (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_B.aux)
 (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_C.aux)
 (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_D.aux)
 (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_E.aux)
 (C:\Users\Vadim\workspace\MultiplayerGames\chapters\ANNEX_F.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 1D71AFF7C36D590DD71C46FD4206577B;4255.
+(rerunfilecheck)             Checksum: 82E988B207DC1BC22F76DC11B97CFEEB;3774.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1876,16 +1920,16 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 105.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 6496 strings out of 494045
- 103539 string characters out of 3145969
- 187232 words of memory out of 3000000
- 9227 multiletter control sequences out of 15000+200000
+ 6500 strings out of 494045
+ 104280 string characters out of 3145969
+ 186876 words of memory out of 3000000
+ 9222 multiletter control sequences out of 15000+200000
  10558 words of font info for 37 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 30i,6n,31p,749b,517s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,6n,31p,749b,515s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C
@@ -1898,9 +1942,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
 (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on document.pdf (75 pages, 10124766 bytes).
+Output written on document.pdf (76 pages, 10124996 bytes).
 PDF statistics:
- 1138 PDF objects out of 1200 (max. 8388607)
- 396 named destinations out of 1000 (max. 500000)
- 626 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1108 PDF objects out of 1200 (max. 8388607)
+ 390 named destinations out of 1000 (max. 500000)
+ 570 words of extra memory for PDF output out of 10000 (max. 10000000)
 

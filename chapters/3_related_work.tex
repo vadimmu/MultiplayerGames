@@ -1,0 +1,290 @@
+
+\section{Related work}
+
+In this chapter, we will follow the games and concepts that have lead to the
+assembly of the idea for the game developed on this project. We will define a
+number of computer game genres, classify some of the most popular location-aware
+games, game platforms and non-digital games that aided the concept. Then we will
+present the evolution of the idea for this game prototype. The game concept
+brought up here is part of a genre that has a long legacy among computer games,
+but is not yet known to the location-aware games market. The genre is that of
+`Real Time Strategy`(RTS)\cite{rts} games. Some other elements come from the
+genre of 'Shooter' games\cite{shooter}. We will do that with a subgenre of RTS,
+called Real Time Tactics(RTT)\cite{rttvsrts}. The game ''People With Guns'' is a
+Real Time Tactics game with Shooter elements.\newline
+
+
+\subsection{Introduction: Real Time Strategy games}
+
+We will now go through the definitions of Real Time Strategy(RTS), Real Time
+Tactics(RTT), Turn Based Strategy(TBS) and will highlight a comparizon between
+RTS and TBS.
+
+\subsubsection{What is Real Time Strategy?}
+
+RTS games are defined as real-time (continuous time) competitive games, in which
+several players fight against each other, either in a skirmish or team versus
+team. The purpose is to defeat the opponents by taking real-time decisions on
+managing resources and troops. The three main focus points of the RTS genre
+are : \textbf{managing resource gathering}, \textbf{building a base to provide
+troops} and \textbf{battle tactics}.\cite{rts}\newline
+
+This project will focus on a subgenre of RTS, Real Time Tactics(RTT) - which,
+instead of managing all three aspects of RTS, focuses on battle tactics.\newline
+
+Because it is essentially a simplified approach to RTS\cite{rttvsrts}, RTT can
+provide a good proof of concept and at the same time simple and enjoyable
+playability. The advantage of having a RTT GPS-enabled game versus RTS is that
+it greatly reduces the play time, requires less skills and has the potential of
+being less stressful than RTS.\newline
+
+\subsubsection{Real Time Strateg versus Turn Based Strategy}
+
+Turn Based Strategy(TBS) games\cite{rtsvstbs}(such as chess and board games, for
+example) allow the player to take his time and plan every move. As opposed to
+the games in this genre, in RTS games the player has to deal with a much greater
+deal of uncertainty and has to improvise on the go. The duration of a TBS game
+is greater than that of a RTS game. This type of game is not in the scope of
+this project, yet it deserves mentioning, as there are many such games for
+mobile devices. Some notable implementations are the ones of Scotland
+Yard(Ravensburger GMBH), Catan(Catan GMBH) and Monopoly(Hasbro, Inc.).\newline
+
+In particular, there are two implementations for Scotland Yard that have been
+conceptually interesting in the search. A comparison has been
+made\cite{rttvsrts2} on whether it is better to port a board game in a
+real-time(continuous-time) or turn-based mobile location-based game. These two
+implementations are Mobilis XHunt(turn based) and MisterX Mobile(real-time). The
+comparison has been made on 10 aspects: Fun, Smooth Progression, Dynamic
+Gameplay, Ease of play, Stressless Gameplay, Communication, Strategy, Clear
+Rules, Low Risk, Education. The conclusion was that there was no favorite
+between the two, but it has been concluded that these 10 aspects have different
+weights for the player and that Fun, Smooth Progression and Dynamic Gameplay
+have a higher individual weight to players than the rest.\cite[p.5]{rttvsrts2}
+\newline
+
+Based on the knowledge gathered from the above-mentioned comparison, the aim of
+this project will be to maximize the interactivity and dynamics of the RTS game.
+
+
+\subsection{Location-Based Augmented Reality Games}
+
+Although the mobile games market has evolved along with that of hardware
+devices, the location-based game genre remains a largely untapped area. Many
+interesting games have been attempted, but very few have received mass
+adoption.\newline
+
+In this chapter, we will define location-based games, define a number of
+genres in which a number of location-based games that were studied fall
+into. Then we will make the classification of the games and briefly describe the
+evolution of ideas and their turn into the final concept of 'The War Game',
+which in turn ended up to become ''People With Guns''.
+
+
+\subsubsection{Location-based games}
+Location-based games take advantage of the mobile devices' built-in receivers
+for global positioning. They provide the user's location with an accuracy
+ranging from a few to several dozen meters. \newline
+
+location-based games came up long before this feature has become ubiquitous in mobile
+phones and tablets. One of the first widespread location-based games is Geocaching.
+It is composed of two parts:
+
+\begin{enumerate}
+  \item Placing physical caches at various locations that can be considered
+  interesting or worth visiting and publishing their GPS positions (eg. on
+  websites).
+  \item Searching for various caches by using a GPS device.
+\end{enumerate}
+
+Along with the evolution of smartphones came that of the mobile games. GPS games
+come in a lot of flavors, from location-based tours, adventure and investigation
+games to various race games - single and multi player and massively multiplayer
+online games.
+
+
+\subsubsection{Types of location-based games}
+
+There is a number of location-based games and game authoring tools that are
+available for iOS and Android devices. The ones studied for this paper are :
+ARIS, Tourality, Wherigo, conTAGion, Shadow Cities, SCVNGR, Please Stay Calm,
+Parallel Mafia, Parallel Kingdom, Tripventure, Warfinger, Totem, Portal Hunt,
+aMazing, Ingress, MobileWar, Mister X Mobile, Mobilis XHunt, Own This World,
+MapAttack.\newline
+
+For better understanding the classification done below, we will first define
+each type of game:
+
+\begin{enumerate}
+  \item \textbf{Adventure/Investigation Game} - Game in which the player plays
+  the role of a character in a story. The primordial characteristics of this
+  genre is that it is focused on immersion in the story, puzzle solving and
+  investigation, rather than on physical skills. Also, the tendency of this
+  genre is towards single player experience, though occasionally multiplayer is
+  also implemented (eg. the ARIS-based game 'Mentira').
+  
+  \item \textbf{Massively Multiplayer Online Game} - This type of game is
+  designed to support large numbers of players (even in the number of millions
+  in some cases) that play and interact in a persistent virtual world. This type
+  of game allows both cooperative and competitive gameplay and is exclusively
+  based on multiplayer. Subgenres include MMO Role Playing Games and
+  MMO Shooters.
+  
+  \item \textbf{Casual Game} - Analogous to the MMO, the Casual Game is targeted
+  at mass at a mass audience and can incorporate any type of game type. The
+  particularity of this genre is that it aims at having simple rules, simple
+  gameplay and requiring no specialized skills. 
+  
+  \item \textbf{Racing Game} - It's a genre defining a broad range of games. In
+  the case of computer games, it describes mostly motorized vehicle racing. In
+  the mobile context, it mostly describes racing on foot against time or through
+  a number of checkpoints.
+  
+  \item \textbf{Shooter Game} - This one's a subgenre of action games. It
+  focuses on first or third person experience, speed, aiming and reaction time.
+  Usually the weapon is ranged, although close-combat weapons are included in
+  most games.
+  
+\end{enumerate}
+
+We will now classify the games/platforms based on the genres they best fall in:
+
+\begin{enumerate}
+  \item \textbf{Adventure/Investigation Games}
+  		\begin{enumerate}
+  	  		\item ARIS
+  	  		\item Wherigo
+  	  		\item Tripventure
+  	  		\item Tidy City	  
+  		\end{enumerate}
+  		
+  \item \textbf{Massively Multiplayer Online Games}
+  		\begin{enumerate}
+  	  		\item Shadow Cities
+  	  		\item Please Stay Calm
+  	  		\item conTAGion
+  	  		\item Parallel Mafia
+  	  		\item Parallel Kingdom
+  	  		\item Portal Hunt
+  	  		\item Ingress
+  		\end{enumerate}
+  		
+  \item \textbf{Casual Games}
+  		\begin{enumerate}
+  	  		\item SCVNGR
+  	  		\item Warfinger  	  		
+  	  		\item aMazing 	
+  	  		\item Own This World
+  	  		\item MapAttack	  	  		
+  		\end{enumerate}
+  		  		  		
+  \item \textbf{Racing Games}
+  		\begin{enumerate}
+  	  		\item Tourality  	  		 	  		  	  		
+  		\end{enumerate}
+  		
+  \item \textbf{Shooter Games}
+  		\begin{enumerate}
+  	  		\item MobileWar	  		  	  		
+  		\end{enumerate}  
+\end{enumerate}
+
+A special category is represented by Mister X Mobile and Mobilis XHunt, which
+both bring a board game (Scotland Yard) to the mobile environment. While the
+former adapts the board game to real-time gameplay(placing it closer to the
+'Multiplayer Racing Games', with elements from 'Real Time Strategy Games'), the
+latter falls in the definition of 'Turn Based Strategy' games.
+
+\subsubsection{Physical games}
+
+A number of games have played a significant role in the construction of the
+ideas that led to the eventual assembly of the one that was decided for
+implementation. These games originate in the years before the digital age or the
+widespread of computers and GPS-enabled mobile devices. Some of these games have
+already been implemented in mobile games: tag and racing games and geocaching.
+We will mention all of them and briefly describe them and where they came in
+conceptually:
+\begin{enumerate}
+  \item \textbf{Orienteering} is a sport in which a map and a compass are used
+  to navigate through checkpoints, across unfamiliar terrain. Checkpoints
+  colored in white and orange are placed at various features along the way. This
+  sport has started as a training discipline for the military and later on
+  expanded as a civilian sport.
+  
+  \item \textbf{Radio Orienteering} is worth mentioning separately, as it was in
+  itself an important source of inspiration for the games proposed along the
+  way. It features a radio for direction finding, besides the map and compass. 
+  
+  \item \textbf{Rogaine} is a cross-country navigation sport. As a difference
+  from orienteering, where a path must be followed, in rogaining a larger number
+  of checkpoints is given and there is a time limit. A team of two to five
+  people has to navigate through the map and visit as many of these checkpoints
+  as possible, in a given time interval(most often, 24 hours). This type of game
+  has two branches: metrogaine(rogain through a city) and cyclogaine(rogain on
+  bicycles).
+  
+  \item \textbf{'Tag' and 'Hot and Cold'} are classical children's games. Tag is
+  a game in which one person is considered 'tagged'. That person passes the tag
+  on by touching somebody else. The game is open ended. 'Hot and Cold' is a game
+  in which one player has to find an item hidden by the others. During one's
+  search for the item, the others help him by saying 'hot' when he is close and
+  'cold' when he is getting away from the item. In a variation of the game the
+  players can use degrees of hot and cold to further help the searcher find the
+  item quicker.
+    
+\end{enumerate}
+
+All these games will be found in the intermediary and final ideas for games or
+game features that have come through the phase that we can call the
+'Exploration Phase'.
+
+
+\subsection{Multiplayer ideas for a tour app}
+
+The whole project started with the intent of adding multiplayer functionality
+and features to a tour application. A tour application is essentially for use by
+a single person. The first necessity for such a concept is that people
+performing the tour together see each other's positions on the map. Then, a
+search was done for features that could add dynamics to the multiuser
+experience. So came the idea of adding group quizzes and small games. This meant
+that the team had to split and find various clues on sidetracks of the main tour
+and solve short puzzles related to the landmarks along the way. Thereafter, this
+turned into more complicated concepts - such as adding navigation: One of the
+members of the group would navigate to a goal in the same manner of the 'Hot and
+Cold' game - either with the help of members of the group of that of the mobile
+device.\newline
+
+At some point, though, it has been determined that even if these small added
+features to the game would be entertaining, they are not fit as research
+subjects - they are already there to be implemented. Focus has moved to full-on
+games that would implement something not thought of thus far. The idea of
+augmenting the reality of sports such as orienteering and rogaining has been
+worked on and the result is one of the games, the 'Territory Takeover'. Radio
+orienteering and racing have been combined in the 'Mine Game'. Features from
+sports and video games have been added to what was proposed as 'The War Game'.
+They will all be described below, along with some rough technical requirements
+that have been considered.
+
+\subsection{Documentation on the Games}
+Extensive documentation has been found from research done on education-oriented
+GPS-games.\cite{pbarg1} \cite{pbarg2} \cite{pbarg3} \cite{pbarg4} \cite{pbarg5}
+\cite{pbarg6}, describing concepts and approaches in developing platforms and
+games to this end\cite{pbarg3}, porting them to different
+locations\cite{pbarg4}, comparing them and discussing their
+functionality\cite{pbarg6} \cite{pbarg1} \cite{pbarg2} or discussing their
+effect and usefulness\cite{pbarg1}. Although the genre of Adventure
+Games has very little connection with that of RTS Games, it has directly
+influenced the creation of ''People With Guns''. It has provided critical
+information on how multiplayer features have been implemented for this genre and
+how social interaction is provided through cooperative puzzle solving.\newline
+
+The lack of documentation for the other games, except their websites has left
+trying them out one by one as the only option to understand their components and
+functionality. Additional information was retrieved from video descriptions,
+examples and reviews of the games.\newline
+
+During the preparation of this paper no games or documentation have been found
+on GPS-enabled Real Time Strategy games. From the searches performed, no
+location-aware mobile games have been found to fall in the genre of RTS.
+However, one has been found in the genre of `Shooter Games` - MobileWar
+- but, unfortunately, it did not work on Android, nor did it on iOS.\newline
+
