@@ -90,8 +90,10 @@ The client is the mobile application. It now works with Android versions from
 2.3 up. It is structured in six modules, as seen in Figure \ref{fig:clientModules}:
 
 \begin{figure}
-\includegraphics[height=4.08in,width=6.23in]{./images/diagrams/client_modules.png}  
-\caption{\small \sl Client modules \label{fig:clientModules}}
+\includegraphics[height=7.25in,width=6.23in]{./images/diagrams/gunrun_module_relationships_3.png}
+\caption{\small \sl The Client modules and the
+relationships between them 
+\label{fig:clientModules}}
 \end{figure}
 
 \begin{enumerate}
@@ -234,7 +236,20 @@ been tried out.\newline
 As previously presented, all messages have the following JSON structure:
 \{messageType: messageNumber, data: \{\}\}. We are now interested in the data
 structure. The messageType is a number that both client and server recognize(as
-the Messages class is present in both client and server).\newline
+the Messages class is present in both client and server). Both Server
+and Client, when they receive a message, peel the structure layer by
+layer and extract information. In the case of the Server, it sometimes
+only extracts the messageType, adds a parameter such as the ID of the
+sender and relays it. The structures of two messages are presented in
+contrast in Figure\ref{fig:message_structures}: The Configuration message,
+which is the most complex one, and the Shoot message, which is much lighter.\newline
+
+\begin{figure}
+\includegraphics[height=6in,width=5.44in]{./images/diagrams/message_structures.png}
+\caption{\small \sl The structure of two messages exchanged by the Client and
+Server
+\label{fig:message_structures}}
+\end{figure}
 
 The Server is active in the message exchange only for the basic administration
 purposes: Once a player connects, he receives a configuration json containing
@@ -344,11 +359,19 @@ specific JSON structures within:
   
 \end{enumerate}
 
-The communication and action flow on the server, newly joined client and
-existing clients is presented in Figure\ref{fig:client_server_flow}
+The flow that is triggered by a new client connecting to the server is
+presented in Figure\ref{fig:client_server_flow}. The flow triggered bt an existing client leaving the
+server is presented in Figure\ref{fig:player_disconnected}.
 
 \begin{figure}
 \includegraphics[height=7.665in,width=6.23in]{./images/diagrams/Client-Server.png}
 \caption{\small \sl A new client joining the game
 \label{fig:client_server_flow}}
 \end{figure}
+
+\begin{figure}
+\includegraphics[height=7.665in,width=6.23in]{./images/diagrams/player_disconnected.png}
+\caption{\small \sl A client leaving the game
+\label{fig:player_disconnected}}
+\end{figure}
+

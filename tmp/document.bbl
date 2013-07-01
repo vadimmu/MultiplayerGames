@@ -26,14 +26,24 @@ C.~Janssen, ``\textbf{First Person Shooter (FPS)},'' {\em Techopdia.com}, 2010.
 J.~Eldridge, ``\textbf{What are Real-time tactics games? RTT games, definition
   and meaning},'' {\em Examiner.com}, March 2012.
 
+\bibitem{rts2}
+{Andrew Trusty}, {Santiago Onta\˜n\'on}, and {Ashwin Ram},
+  ``\textbf{Stochastic Plan Optimization in Real-Time Strategy Games},'' tech.
+  rep., College of Computing, Georgia Institute of Technology, 2008.
+
+\bibitem{rts3}
+{Michael Chung}, {Michael Buro}, and {Jonathan Schaeffer}, ``\textbf{Monte
+  Carlo Planning in RTS Games},'' tech. rep., Department of Computing Science,
+  University of Alberta, 2004.
+
 \bibitem{rtsvstbs}
 S.~Johnson, ``\textbf{Analysis: Turn-Based Versus Real-Time},'' {\em
   Gamasutra.com}, November 2009.
 
 \bibitem{rttvsrts2}
-{Pascal Bihler}, {Holger M\"ugge}, {Daniel Schuster}, {Danny Kiefner}, {Robert
-  L\"ubke}, and {Thomas Springer}, ``\textbf{Step by Step vs. Catch Me If You
-  Can - On The Benefit of Rounds in Location-based Games},'' tech. rep.,
+{Daniel Schuster}, {Danny Kiefner}, {Robert L\"ubke}, {Thomas Springer},
+  {Pascal Bihler}, and {Holger M\"ugge}, ``\textbf{Step by Step vs. Catch Me If
+  You Can - On The Benefit of Rounds in Location-based Games},'' tech. rep.,
   {Institute of Computer Science III Universit\"at Bonn} and {Computer Networks
   Group Technische Universit\"at Dresden}, 2012.
 
@@ -115,6 +125,10 @@ I.~S. Institute, ``\textbf{User Datagram Protocol (RFC 768)},'' tech. rep.,
 3rd WORKSHOP ON POSITIONING, NAVIGATION AND COMMUNICATION (WPNC�06), {\em
   \textbf{Field trial on GPS Accuracy in a medium size city: The influence of
   builtup}}, 2006.
+
+\bibitem{thefreedictionary}
+``\textbf{encyclopedia.thefreedictionary.com}.''
+  \url{http://encyclopedia.thefreedictionary.com/}.
 
 \bibitem{websockets3}
 T.~Oberstein, ``\textbf{WebSockets, UDP, and benchmarks}.''
