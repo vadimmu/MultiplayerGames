@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  8 JUL 2013 09:44
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.3)  8 JUL 2013 09:49
 entering extended mode
 **document.tex
 (C:\Users\Vadim\workspace\MultiplayerGames\document.tex
@@ -339,6 +339,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
  [2]
 (C:\Users\Vadim\workspace\MultiplayerGames\chapters\1_abstract.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 7--11
 
  []
@@ -1978,7 +1983,7 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
 (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on document.pdf (81 pages, 10269381 bytes).
+Output written on document.pdf (81 pages, 10269341 bytes).
 PDF statistics:
  1205 PDF objects out of 1440 (max. 8388607)
  412 named destinations out of 1000 (max. 500000)
