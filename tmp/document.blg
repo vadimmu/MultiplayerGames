@@ -1,20 +1,5 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: document.aux
-A level-1 auxiliary file: ./chapters/1_abstract.aux
-A level-1 auxiliary file: ./chapters/2_introduction.aux
-A level-1 auxiliary file: ./chapters/3_related_work.aux
-A level-1 auxiliary file: ./chapters/4_game_concept.aux
-A level-1 auxiliary file: ./chapters/5_architecture.aux
-A level-1 auxiliary file: ./chapters/6_development_timeline.aux
-A level-1 auxiliary file: ./chapters/7_agile_planning.aux
-A level-1 auxiliary file: ./chapters/8_future_work.aux
-A level-1 auxiliary file: ./chapters/9_conclusion.aux
-A level-1 auxiliary file: ./chapters/ANNEX_A.aux
-A level-1 auxiliary file: ./chapters/ANNEX_B.aux
-A level-1 auxiliary file: ./chapters/ANNEX_C.aux
-A level-1 auxiliary file: ./chapters/ANNEX_D.aux
-A level-1 auxiliary file: ./chapters/ANNEX_E.aux
-A level-1 auxiliary file: ./chapters/ANNEX_F.aux
-The style file: ieeetr.bst
-Database file #1: bibcontent.bib
-Warning--empty year in pbarg4
-(There was 1 warning)
+I found no \citation commands---while reading file document.aux
+I found no \bibdata command---while reading file document.aux
+I found no \bibstyle command---while reading file document.aux
+(There were 3 error messages)
