@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {3}Related work}{6}{section.3}
 \contentsline {subsection}{\numberline {3.1}Introduction: Real Time Strategy games}{6}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}What is Real Time Strategy?}{6}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Real Time Strateg versus Turn Based Strategy}{6}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2}Real Time Strategy versus Turn Based Strategy}{6}{subsubsection.3.1.2}
 \contentsline {subsection}{\numberline {3.2}Location-Based Augmented Reality Games}{7}{subsection.3.2}
 \contentsline {subsubsection}{\numberline {3.2.1}Location-based games}{7}{subsubsection.3.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2}Types of location-based games}{7}{subsubsection.3.2.2}
@@ -31,7 +31,7 @@
 \contentsline {subsubsection}{\numberline {6.2.3}The Client}{34}{subsubsection.6.2.3}
 \contentsline {subsubsection}{\numberline {6.2.4}The UI}{35}{subsubsection.6.2.4}
 \contentsline {subsection}{\numberline {6.3}The first testing phase}{42}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}The second develpment phase}{43}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.4}The second development phase}{43}{subsection.6.4}
 \contentsline {subsubsection}{\numberline {6.4.1}The Server}{44}{subsubsection.6.4.1}
 \contentsline {subsubsection}{\numberline {6.4.2}The Client}{44}{subsubsection.6.4.2}
 \contentsline {subsubsection}{\numberline {6.4.3}Logging, Testing and Data Usage}{47}{subsubsection.6.4.3}
@@ -50,4 +50,11 @@
 \contentsline {subsubsection}{\numberline {7.3.7}Android development}{61}{subsubsection.7.3.7}
 \contentsline {section}{\numberline {8}Future work}{62}{section.8}
 \contentsline {section}{\numberline {9}Conclusion}{63}{section.9}
-\contentsline {section}{\numberline {A}Bibliography}{79}{appendix.A}
+\contentsline {section}{Appendices}{64}{section*.2}
+\contentsline {section}{\numberline {A}Game and game platform websites}{65}{Appendix.1.A}
+\contentsline {section}{\numberline {B}Game genre definitions}{68}{Appendix.1.B}
+\contentsline {section}{\numberline {C}Websockets vs. TCP speed}{70}{Appendix.1.C}
+\contentsline {section}{\numberline {D}Jackson vs. Gson}{72}{Appendix.1.D}
+\contentsline {section}{\numberline {E}Overlay tutorial}{75}{Appendix.1.E}
+\contentsline {section}{\numberline {F}Countdown buttons Tutorial}{76}{Appendix.1.F}
+\contentsline {section}{\numberline {10}Bibliography}{79}{section.10}

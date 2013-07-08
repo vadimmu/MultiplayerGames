@@ -28,7 +28,7 @@ detours, the people would have to solve various riddles and small puzzles to get
 points and find out about hidden historical spots or interesting facs about the
 places they are visiting. \newline
 
-At this point, the following addon to the main app was contoured: the
+At this point, the following add-on to the main app was contoured: the
 players would have a main tour path and, as they passed by certain waypoints,
 would be offered to go through a bonus/extra track within the area that they are
 visiting. If enough of them would agree to do this(by an in-app vote, for
@@ -94,7 +94,7 @@ already enumerated can be considered to have one of two major disadvantages:
 \end{enumerate}
 
 The engagement problem can also be linked to a time problem. Games that are
-highly engaging also require a lot of time to be played. The arugment that the
+highly engaging also require a lot of time to be played. The argument that the
 amount of time dedicated to the mobile game should be decided by the player and
 not by the game has been used in the construction of the concept of the game
 that was eventually developed. \newline
@@ -105,7 +105,7 @@ Real Time Tactics game with Shooter elements, developed for Android. It can be
 played by several people (The upper limit has not been established yet. Until
 now, the highest number of players in the game has been six) that choose to join
 one of the two opposing teams. The purpose of the game is to use 'weapons' and
-'powerups' to defeat the opposing team. By 'defeat', we mean to use the
+'power-ups' to defeat the opposing team. By 'defeat', we mean to use the
 available tools provided by the game to reduce the virtual 'health' attribute of
 all the opponents to zero.\newline
 
@@ -119,7 +119,7 @@ The weapons :
   \item Knife   
 \end{enumerate}
 
-The 'powerups' :
+The 'power-ups' :
 \begin{enumerate}
   \item Invisiblity Cloak
   \item Shield
@@ -130,26 +130,26 @@ Each item used by a player has the following attributes :
 \begin{enumerate}
   \item Cooldown - The amount of time that has to pass until the weapon can be
   used again.
-  \item Duration - The amount of time during which a powerup is in effect 
+  \item Duration - The amount of time during which a power-up is in effect 
   \item Damage - The amount of health points that are subtracted upon a hit (or
   added, in the case of the Painkillers / Heal ability) from the target's total
   available health points.
   \item Range - The maximum distance within which a weapon can be fired.
 \end{enumerate}
 
-The difference between weapons and powerups is that the weapons are the
-principal means of winning the battle, while the powerups are helpers to either
+The difference between weapons and power-ups is that the weapons are the
+principal means of winning the battle, while the power-ups are helpers to either
 keep the players present in the game for a longer time. Weapons are offensive,
-while powerups are defensive.\newline
+while power-ups are defensive.\newline
 
-Another differentiation between weapons and powerups can be made based on their
+Another differentiation between weapons and power-ups can be made based on their
 attributes. Until this point of the game development, weapons have damage and no
-duration. The only powerup that also has damage are the Painkillers, which
-'heal' the target (they deal negative damage to it). The other two powerups,
+duration. The only power-up that also has damage are the Painkillers, which
+'heal' the target (they deal negative damage to it). The other two power-ups,
 Invisibility Cloak and Shield, have a greater than zero 'duration' attribute,
 but no 'damage'.\newline
 
-Some of the attributes of the weapons and powerups will be modified, during
+Some of the attributes of the weapons and power-ups will be modified, during
 several phases of balancing. Therefore, only their conceptual construction will
 be described, without numbers:
 
@@ -168,14 +168,14 @@ The weapons :
   \item Knife - The weapon that deals the highest damage of all. The cooldown is
   greater than that of the Sniper Rifle and the range is very small.
    
-  \item Invisiblity Cloak - Powerup that makes the player disappear from the
+  \item Invisiblity Cloak - Power-up that makes the player disappear from the
   map for a short while. While the player is invisible, he cannot be shot.
   The effect duration is short, while the cooldown is lengthy.
   
-  \item Shield - Powerup that, while it's in effect, reduces the damage taken to
-  half. The duration of this powerup is short and the cooldown is lenghty.
+  \item Shield - Power-up that, while it's in effect, reduces the damage taken
+  to half. The duration of this power-up is short and the cooldown is lengthy.
   
-  \item Painkillers / Heal - Powerup that restores a large number of
+  \item Painkillers / Heal - Power-up that restores a large number of
   health points to the player or his friends. It has no duration - just like
   a weapon, it's effect is applied immediately. It requires a lengthy cooldown
   time.
@@ -196,7 +196,7 @@ the characters will be mentioned, without numbers :
   \item Medic - Support unit with Shield and Painkillers/Heal abilities. Has
   high health.
    
-  \item Sniper - Attack/ defense unit. Has a Sniper Rilfe for shooting at large
+  \item Sniper - Attack/ defense unit. Has a Sniper Rifle for shooting at large
   distances. Has average health.
   
   \item Scout - Attack unit specialized at sneaking up on the victim. Has the
@@ -207,8 +207,8 @@ the characters will be mentioned, without numbers :
 \end{enumerate}
 
 Another character has been created for testing purposes. It has been called the
-'All Encompassing' and posesses all the weapons and skills presently existing in
-the game and very large health. This character has inadvertently opened a window
+'All Encompassing' and possesses all the weapons and skills presently existing
+in the game and very large health. This character has inadvertently opened a window
 for two more game types:
 
 \begin{enumerate}
@@ -220,7 +220,7 @@ for two more game types:
   this game has emerged: in the absence of a large enough number of players, two
   can play in the 'Duel' mode : both use the 'All Encompassing' character type
   and, instead of moving around, attempt to win the game by optimizing  
-  combinations of weapons and powerups. This game is generally played side by
+  combinations of weapons and power-ups. This game is generally played side by
   side, for at most a few minutes and has proved to be entertaining for the ones
   who tried it out.
 \end{enumerate}
@@ -249,7 +249,7 @@ deserializing JSON directly into a hierarchy of HashMaps - peeling down layers
 of the JSON - which better serves the relaying of messages of the server side.
 \newline
 
-Exploring the use of Websockets has proven unfruitful, as there have been dead
+Exploring the use of Websockets has been unfruitful, as there have been dead
 ends :
 
 \begin{enumerate}
@@ -300,7 +300,7 @@ purposes('Check Info') and one for shooting ('Shoot')) and a Spinner were added
 on top of a MapView (a map screen). The spinner served as a weapon selector.
 Once a weapon was selected its range would be drawn on the map. The three
 buttons have been placed in three corners of the screen- bottom-left,
-bottom-right, top-left. The spinner has been layed to the right of the 'Shoot'
+bottom-right, top-left. The spinner has been laid to the right of the 'Shoot'
 button. The functionalities added were as followed :
 
 \begin{enumerate}
@@ -409,7 +409,7 @@ The server now acts only as a relay - game state is held on the client
 side.\newline
 
 Because TCP does not allow multicasts and broadcasts, a workaround for sending
-multicasts and broadcasts has been devized: When a client sends a message that
+multicasts and broadcasts has been devised: When a client sends a message that
 requires to be multicast/broadcast, the server accesses all the MessageSender
 objects(each one is responsible for sending messages from the server to a
 specific client), iterates through all of them and sends the given message to
@@ -437,8 +437,8 @@ exclusively based on the heartbeat interval.\newline
 
 The client is a native Android application. It uses Fragments for showing
 various UI screens. It does not use any compatibility libraries. The Google Map
-API V1 is used (as the Google Maps V1 API has some incompatility issues with the
-Android Support Libraries that would allow the game to be played on earlier
+API V1 is used (as the Google Maps V1 API has some incompatibility issues with
+the Android Support Libraries that would allow the game to be played on earlier
 versions of Android) and therefore, only Android versions equal or higher to
 3.0(Honeycomb) are supported.
 
@@ -452,7 +452,7 @@ Tutorials', 'Settings', 'Lobby','Lobby Settings', 'Loading' and 'Game':
   attempts to join the game. If the connection is successful, he is brought to
   the 'Lobby' screen. Pressing 'Settings' leads to the homonymous screen.
   
-  \item 'Settings' allows the player to change the IP addres and port
+  \item 'Settings' allows the player to change the IP address and port
   number to which the client will attempt to connect.
   
   \item 'Loading' is an intermediary fragment that shows a loading widget
@@ -506,8 +506,8 @@ green(friends) markers. Above each marker, one can see the nickname,
 by clicking the markers. A selected player will have his marker drawn in yellow.
 Selecting a weapon from the provided Spinner deselects the currently selected
 player(if there is any) and draws the weapon's range around the position of the
-current player. For using the currently selected 'weapon' or 'powerup' on one of
-the other players, the player has to select the target by tapping its marker on
+current player. For using the currently selected 'weapon' or 'power-up' on one
+of the other players, the player has to select the target by tapping its marker on
 the screen and press the 'Shoot' button. If the selection attempt does not
 satisfy the 'selection policies' provided by the Weapon object, the map marker
 will simply not be selected. Otherwise, it will change color to yellow. If the
@@ -525,7 +525,7 @@ maps of the other players. There are no start and end conditions implemented.
 
 The design of the UI has been done progressively, using intuition at the
 beginning and player feedback for further improvements. We will now describe the
-first interation of UI design.\newline
+first interaction of UI design.\newline
 
 During the first phase of development two UI prototypes have been created: one
 for the game screen and the other for the menus. A rough idea on what the game
@@ -589,7 +589,7 @@ outside the game itself. Also, it has been an exercise of design. Two screens
 were thought of, initially: the main menu and a lobby screen. The main menu
 screen has been initially seen as only a gate to the game, an easy intro rather
 than anything else. The lobby screen has been designed to functionally
-accomodate what was necessary in terms of game and character preparation
+accommodate what was necessary in terms of game and character preparation
 - and predicted the need for another screen - that of the character settings,
 marked by the presence of the button labeled 'Change my Info'. The result can be
 seen in Figures \ref{fig:menuPrototype1} and \ref{fig:menuPrototype2}.
@@ -613,7 +613,7 @@ to create the settings screen was that location of the server has been changed
 many times during the first stage of development - and therefore it was
 necessary to re-type the IP address and port number. A button labeled 'Settings'
 was added to the main menu. The settings screen came right after with just an
-'OK' button and two textboxes for the IP and port inputs (as can be seen in
+'OK' button and two text boxes for the IP and port inputs (as can be seen in
 Figure \ref{fig:main_menu_settings}).\newline
 
 \begin{figure}
@@ -641,23 +641,22 @@ visually untouched until the last version of the application.\newline
 Once the game client became capable of successfully connecting to the server and
 setting up everything for the lobby screen, the need for the lobby settings
 screen came up - and therefore the lobby settings fragment has been created -
-with a spinner for choosing between characters, a textbox for the nickname, a
-multiline textbox for loading the description of each character or 'profession'
-and an 'OK' button. This screen has also remained largely unchanged until the
+with a spinner for choosing between characters, a text box for the nickname, a
+multiline text box for loading the description of each character or
+'profession' and an 'OK' button. This screen has also remained largely unchanged until the
 current point of development and can be observed in Figures
 \ref{fig:lobby_settings_1} and \ref{fig:lobby_settings_2}.
 
 \begin{figure}
 \includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/first_development/game_first_development_9.png}
-\caption{\small \sl The character editing screen (a.k.a. the lobby settings
-screen) menu\label{fig:lobby_settings_1}}
+\caption{\small \sl The character editing screen (the lobby settings screen)
+menu\label{fig:lobby_settings_1}}
 \end{figure}
 
 \begin{figure}
 \includegraphics[height=3.5in,width=6.23in]{./images/android_screenshots/first_development/game_first_development_10.png}
-\caption{\small \sl The character editing screen (a.k.a. the lobby settings
-screen) with the character selection dialog opened
-menu\label{fig:lobby_settings_2}}
+\caption{\small \sl The character editing screen (the lobby settings screen)
+with the character selection dialog opened menu\label{fig:lobby_settings_2}}
 \end{figure}
 
 
@@ -669,7 +668,7 @@ author alone, with two phones.\newline
 
 Five people (three male and two female) were invited to play the game. Three of
 them had Android phones. The other two have used the two phones that the author
-had in posession at the time. Unfortunately, most of them had Android 2.2 and
+had in possession at the time. Unfortunately, most of them had Android 2.2 and
 2.3 installed. The preparations meant convincing them to volunteer their phones
 for an OS upgrade. Android 4.0 was installed.\newline
 
@@ -689,7 +688,8 @@ the game, firstly indoors for a few times and then outside, while still
 connected to the WiFi router. This has inadvertently been a test of the WiFi
 coverage of an average old 802.11 b/g router - around 50 - 70 meters radius in
 an open space describing a half-circle around the router. The author was the
-first to accidentally run outside the WiFi coverage and get disconneted.\newline
+first to accidentally run outside the WiFi coverage and get
+disconnected.\newline
 
 After the playing was finished, the testers and the author sat down for a
 focus group discussion, during which criticism of the gameplay, UI and game
@@ -708,7 +708,7 @@ has remained largely untouched. The two unused buttons on the game screen have
 been kept for tester feedback on how pleasant the position of those buttons is
 for the reach of their fingers. The goal for the game UI has been to become
 similar to a game controller, while having the game screen in the middle. And
-the screen had to be layed out in a way in which the user would not feel cramped
+the screen had to be laid out in a way in which the user would not feel cramped
 when playing the game. The only addition to the UI has been the 'Settings'
 button in the main menu, together with the settings screen.\newline
 
@@ -748,9 +748,9 @@ The first people to test the game have criticized the following aspects:
 The first testing phase, though short, has left a lot of guidelines on what to
 do from that point on.\newline
 
-\subsection{The second develpment phase}
+\subsection{The second development phase}
 
-The first testing phase has left a lot of 'todos', notes and guidelines for
+The first testing phase has left a lot of 'to-dos', notes and guidelines for
 better adapting the UI and game mechanics to the player's needs. The second
 development phase has addressed these needs with a personal touch from the
 author and an influence of the switch to a newer version of Maps API (V2). The
@@ -769,7 +769,7 @@ of the connection.
 \subsubsection{The Client}
 
 We will describe the changes made to the client, after the first testing phase.
-The most important set of changes has occured on the UI: The Google Maps V1 API
+The most important set of changes has occurred on the UI: The Google Maps V1 API
 has been discarded in favor of the V2 API, the appearance of the UI has been
 radically changed and most of the back end functionality that served the game
 screen has been discarded and rewritten.
@@ -778,7 +778,7 @@ The client now uses seven fragments for the UI: 'Main Menu', 'Info and
 Tutorials', 'Settings', 'Lobby','Lobby Settings', 'Loading' and 'Game':
 
 \begin{enumerate}
-  \item 'Main Menu' : It has been slightly modified: The 'Start Gane' text has
+  \item 'Main Menu' : It has been slightly modified: The 'Start Game' text has
   been changed into 'Connect to Server' - making its functionality more
   obvious. The logo presented in Figure \ref{fig:game_logo} has been added for
   user feedback. The 'Info and Tutorials' button has been added - it leads to
@@ -808,8 +808,8 @@ Tutorials', 'Settings', 'Lobby','Lobby Settings', 'Loading' and 'Game':
   
   \item 'Game' has been completely modified. Due to tester feedback and
   the change of the Maps API, it has gone through radical changes. At this
-  point, the game screen looks as follows: for all the 'weapons' and 'powerups',
-  buttons are aligned starting from the bottom left corner of the screen until
+  point, the game screen looks as follows: for all the 'weapons' and
+  'power-ups', buttons are aligned starting from the bottom left corner of the screen until
   close to the bottom right corner. From the bottom right corner upwards, on
   the vertical axis, three buttons and a TextView have been placed: the
   'Previous Target', friend/foe toggle, 'Next Target' buttons and a TextView
@@ -864,12 +864,12 @@ that they are presented by related functionality). All the UI elements on the
 'Game' UI are programmatically generated - and not from an XML file  :
 \begin{enumerate}
   \item\textbf{The bottom of the screen, starting from the bottom-left corner}:
-  The 'weapon'/'powerup' buttons are generated once the 'Game' fragment is loaded,
-  based on the list of weapons specific to the player's 'profession'. They
+  The 'weapon'/'power-up' buttons are generated once the 'Game' fragment is
+  loaded, based on the list of weapons specific to the player's 'profession'. They
   appear from left to right. If less or equal to three weapons are given, the
   buttons will be made slightly larger than otherwise - up to a maximum of six
   (the number of weapons featured in the test 'profession', 'All Encompassing').
-  Each button press shoots the 'weapon' or 'powerup', according to a so-called
+  Each button press shoots the 'weapon' or 'power-up', according to a so-called
   'policy' provided in the Weapon object. The policies are as follows: 'self',
   'friends', 'friends and self', 'enemies', 'friends and enemies', 'friends and
   enemies and self'- stating on which kinds of players one given 'weapon' or
@@ -910,7 +910,7 @@ that they are presented by related functionality). All the UI elements on the
   canceled by selecting a message or clicking outside it.
   
   \item\textbf{The area in between the two top corners of the screen}: This is
-  the area where the powerup duration is dynamically shown during its effect.
+  the area where the power-up duration is dynamically shown during its effect.
   This can be seen when the player casts 'invisibility' or 'shield' on oneself
   or when a friend casts 'shield' on the player.
   
@@ -926,7 +926,7 @@ game}(which requires multiple players, but excludes the 'All Encompassing' game
 type); \textbf{Duel}(two players choose the 'All Encompassing' profession -
 receiving the entire arsenal provided by the game - and try to eliminate
 each other from the game by using various strategies of combining 'weapons' and
-'powerups'); \textbf{David vs. Goliath}(a small number of players choose the
+'power-ups'); \textbf{David vs. Goliath}(a small number of players choose the
 'All Encompassing' profession and play against a significantly larger number of
 players that use all the professions except 'All Encompassing').\newline
 
@@ -968,10 +968,10 @@ The main functional differences from the first development of the game are:
 \end{enumerate}
 
 Passive disconnection detection functionality has been added in the loop that
-waits for incoming messages. The functionality of some weapons and powerups has
-been modified. A powerup called `Radar` that was present in the first
+waits for incoming messages. The functionality of some weapons and power-ups has
+been modified. A power-up called `Radar` that was present in the first
 development iteration, but did nothing has been removed. The 'Invisibility
-cloak' and 'Knife' have been added. Powerup duration indicators have been
+cloak' and 'Knife' have been added. Power-up duration indicators have been
 added.\newline
 
 The final message structure in between the server and the client will be
@@ -1065,7 +1065,7 @@ The menu UI has also been modified:
   container and load the tutorial articles in HTML format. Then a simpler
   solution was devised and instead of the WebView, a ScrollView was added as
   container and a LayoutInflater object is now used to generate the
-  tutoarial articles from XML files. The results can be seen in Figures
+  tutorial articles from XML files. The results can be seen in Figures
   \ref{fig:tutorial_fragment1} and \ref{fig:tutorial_fragment2}.
   
   \begin{figure}
@@ -1186,11 +1186,11 @@ long, too descriptive. The menus haven't received any criticism - but the game
 UI has, in a passive manner: The long click functionality to draw the ranges of
 the weapons has not been used at all. The distance indicator was not even seen
 by the players and was therefore not used in any way by anyone. The
-'Invisibility Cloak' powerup was used only by the current player on self, but in
-the second stage of implementation it required selecting oneself(deselecting
+'Invisibility Cloak' power-up was used only by the current player on self, but
+in the second stage of implementation it required selecting oneself(deselecting
 everyone else) - this was deemed frustrating. The entire concept of selecting
 oneself by deselecting all others(tapping an area on the map where no markers
 are present) was deemed frustrating. Everybody playing has expressed the
 necessity of symbols instead of text on the buttons and on the map. Another
-aspect of criticism has been the order of the 'weapon'/'powerup' buttons: they
-should be separated into two groups: 'weapons' and 'powerups'.\newline
+aspect of criticism has been the order of the 'weapon'/'power-up' buttons: they
+should be separated into two groups: 'weapons' and 'power-ups'.\newline

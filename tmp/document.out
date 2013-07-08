@@ -3,7 +3,7 @@
 \BOOKMARK [1][-]{section.3}{Related work}{}% 3
 \BOOKMARK [2][-]{subsection.3.1}{Introduction: Real Time Strategy games}{section.3}% 4
 \BOOKMARK [3][-]{subsubsection.3.1.1}{What is Real Time Strategy?}{subsection.3.1}% 5
-\BOOKMARK [3][-]{subsubsection.3.1.2}{Real Time Strateg versus Turn Based Strategy}{subsection.3.1}% 6
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Real Time Strategy versus Turn Based Strategy}{subsection.3.1}% 6
 \BOOKMARK [2][-]{subsection.3.2}{Location-Based Augmented Reality Games}{section.3}% 7
 \BOOKMARK [3][-]{subsubsection.3.2.1}{Location-based games}{subsection.3.2}% 8
 \BOOKMARK [3][-]{subsubsection.3.2.2}{Types of location-based games}{subsection.3.2}% 9
@@ -31,7 +31,7 @@
 \BOOKMARK [3][-]{subsubsection.6.2.3}{The Client}{subsection.6.2}% 31
 \BOOKMARK [3][-]{subsubsection.6.2.4}{The UI}{subsection.6.2}% 32
 \BOOKMARK [2][-]{subsection.6.3}{The first testing phase}{section.6}% 33
-\BOOKMARK [2][-]{subsection.6.4}{The second develpment phase}{section.6}% 34
+\BOOKMARK [2][-]{subsection.6.4}{The second development phase}{section.6}% 34
 \BOOKMARK [3][-]{subsubsection.6.4.1}{The Server}{subsection.6.4}% 35
 \BOOKMARK [3][-]{subsubsection.6.4.2}{The Client}{subsection.6.4}% 36
 \BOOKMARK [3][-]{subsubsection.6.4.3}{Logging, Testing and Data Usage}{subsection.6.4}% 37
@@ -50,4 +50,11 @@
 \BOOKMARK [3][-]{subsubsection.7.3.7}{Android development}{subsection.7.3}% 50
 \BOOKMARK [1][-]{section.8}{Future work}{}% 51
 \BOOKMARK [1][-]{section.9}{Conclusion}{}% 52
-\BOOKMARK [1][-]{appendix.A}{Bibliography}{}% 53
+\BOOKMARK [1][-]{section*.2}{Appendices}{}% 53
+\BOOKMARK [1][-]{Appendix.1.A}{Game and game platform websites}{}% 54
+\BOOKMARK [1][-]{Appendix.1.B}{Game genre definitions}{}% 55
+\BOOKMARK [1][-]{Appendix.1.C}{Websockets vs. TCP speed}{}% 56
+\BOOKMARK [1][-]{Appendix.1.D}{Jackson vs. Gson}{}% 57
+\BOOKMARK [1][-]{Appendix.1.E}{Overlay tutorial}{}% 58
+\BOOKMARK [1][-]{Appendix.1.F}{Countdown buttons Tutorial}{}% 59
+\BOOKMARK [1][-]{section.10}{Bibliography}{}% 60

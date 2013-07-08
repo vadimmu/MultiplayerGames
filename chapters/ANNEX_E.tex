@@ -1,4 +1,5 @@
-\appendix{Overlay tutorial}
+
+\section{Overlay tutorial}
 
 This tutorial is for use with Google Maps V1 API. Recently, the Maps V1 API has
 been deprecated and replaced with V2. Still, some who still have acquired keys
@@ -6,7 +7,6 @@ before the change can still use them until they expire. Otherwise, it
 may be useful in other similar scenarios, where onTap functionality
 has to be custom made.\newline
 \begin{verbatim}
-
 private UUID getClosestPlayerUUIDWithinTapRadius(GeoPoint geoPoint,
 												 Double newTouchRadius){
 		
@@ -46,11 +46,9 @@ private UUID getClosestPlayerUUIDWithinTapRadius(GeoPoint geoPoint,
 		
 		else if(closestPointDistance <= maximumAcceptedDistance){
 			return closestPointUUID;
-		}
+		}		
 		
-		
-		return null;
-		
+		return null;		
 	}
 	
 \end{verbatim}

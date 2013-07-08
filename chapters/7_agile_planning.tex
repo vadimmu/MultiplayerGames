@@ -174,7 +174,7 @@ Having a hold of all the stories also greatly helped write this paper. \newline
 
 Unit testing has been considered for this project, but was soon given up. This
 application is a conceptual prototype. A lot of trial and error was done during
-development, changes to some pieces of functionality occured as often as a few
+development, changes to some pieces of functionality occurred as often as a few
 times a day. It is hard not to acknowledge the usefulness of unit testing in a
 full blown, large scale project. But in this case, it has proven to be a
 liability. At the beginning, writing unit tests has been attempted, only to be
@@ -187,7 +187,7 @@ development.
 
 The original plan was to develop and Android and iOS app, using a development
 framework such as PhoneGap. This would assume Javascript / JQuery programming
-for the UI and application backend. The communication was planned to be
+for the UI and application back-end. The communication was planned to be
 established through Websockets. Therefore, for optimum performance, NodeJS was
 to be used on the server side. For the location presentation, the Google Maps
 API was to be used. 
@@ -198,7 +198,7 @@ Once an idea of how the game should look like was crystalized, a search was
 made for unified frameworks for cross-platform mobile development. The first
 choice was PhoneGap, which has been previously used by the author. The other
 frameworks considered have been Titanium SDK, Sencha and Corona. The
-multiplatform APIs offer the benefit of the 'code once, deploy everywhere'
+multi-platform APIs offer the benefit of the 'code once, deploy everywhere'
 philosophy, at the cost of performance \cite{nativevscrossplatform}
 \cite{nativevscrossplatform2} \cite{nativevscrossplatform3}.
 In this case, the approach of using a platform-agnostic framework is
@@ -208,8 +208,8 @@ game.\newline
 
 And here are the reasons : 
 \begin{enumerate}
-  \item The game is fast-paced and will require a fast backend as well as a
-  frontend that is as fast as possible. The cross-platform frameworks
+  \item The game is fast-paced and will require a fast back-end as well as a
+  front-end that is as fast as possible. The cross-platform frameworks
   essentially interface only some of the native functionality and display the
   app through a webview - requiring Javascript or a Javascript-based framework
   for creating the interfaces. These frameworks have been previously tested by
@@ -230,9 +230,7 @@ And here are the reasons :
 \end{enumerate}
 
 From this point on, the unified frameworks have been given up and a decision had
-to be made between iOS and Android development. This was an easy choice: Android
-develpment is free, while iOS development requires a paid developer account and
-XCode runing on MacOS exclusively. Android was chosen.
+to be made between iOS and Android development. Android was chosen.
 
 
 \subsubsection{Communication Protocols}
@@ -248,11 +246,11 @@ A list of protocols have been proposed before beginning of this project:
 	implementations for it. Implementing the protocol itself is outside the scope
 	of this project.
 	\item WebSockets - A protocol that is part of the HTML 5 standard. It is a low
-	latency TCP-based protocol that promisses to replace http in several types of
+	latency TCP-based protocol that promises to replace Http in several types of
 	web applications.\cite{websockets}
-	\item TCP - One of the most intensely used two internet transport protocols in
+	\item TCP - One of the most intensely used two Internet transport protocols in
 	digital communication today. It is designed for transmission reliability.\cite{tcp}
-	\item UDP - The other one of the most intensely used two internet
+	\item UDP - The other one of the most intensely used two Internet
 	transport-level protocols in digital communication today.\cite{udp}
 	\item RTP - The protocol on which VoIP and WebRTC are based. It is based on UDP
 	and it is designed for real-time streaming of data.\cite{rtp}
@@ -306,7 +304,7 @@ higher than 3.0.
 \subsubsection{Map Overlays}
 
 The Google Maps V1 API supports the use of Overlay objects to draw on top
-of the map. Most tutotials found online make use of the so-called
+of the map. Most tutorials found online make use of the so-called
 ItemizedOverlay, which enables easy integration of multiple location markers.
 Using this Overlay subclass was attempted, but given up. Here are the
 conclusions: \newline

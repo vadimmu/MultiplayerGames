@@ -16,6 +16,11 @@ R.~Weber, ``\textbf{7 Predictions For The Mobile Gaming Market For 2013},''
 Emarketer.com, ``\textbf{Half of US Mobile Users to Play Games in 2013},'' {\em
   Emarketer.com}, May 2013.
 
+\bibitem{ericsson}
+T.~L.~M. Ericsson, ``\textbf{Traffic And Market Report On The Pulse Of The
+  Networked Society},'' tech. rep., Telefonaktiebolaget L. M. Ericsson, June
+  2012.
+
 \bibitem{rts}
 C.~Janssen, ``\textbf{Real-Time Strategy (RTS)},'' {\em Techopdia.com}, 2010.
 
@@ -36,9 +41,26 @@ J.~Eldridge, ``\textbf{What are Real-time tactics games? RTT games, definition
   Carlo Planning in RTS Games},'' tech. rep., Department of Computing Science,
   University of Alberta, 2004.
 
+\bibitem{rts4}
+{Radha-Krishna Balla} and {Alan Fern}, ``\textbf{UCT for Tactical Assault
+  Planning in Real-Time Strategy Games},'' tech. rep., School of EECS, Oregon
+  State University, 2009.
+
+\bibitem{rtt}
+{Gustavo Henrique Soares de Oliveira Lyrio} and {Roberto de Beauclair Seixas},
+  ``\textbf{Real-Time Warfare Simulation Goes Web 2.0},'' tech. rep.,
+  {Institute of Pure and Applied Mathematics} and {Computer Graphics Technology
+  Group}, Rio de Janeiro, Brasil, 2009.
+
 \bibitem{rtsvstbs}
 S.~Johnson, ``\textbf{Analysis: Turn-Based Versus Real-Time},'' {\em
   Gamasutra.com}, November 2009.
+
+\bibitem{rttvsrts3}
+{Ben G. Weber}, {Michael Mateas}, and {Arnav Jhala}, ``\textbf{Building
+  Human-Level AI for Real-Time Strategy Games},'' tech. rep., {Expressive
+  Intelligence Studio} and {Computational Cinematics Studio}, UC Santa Cruz,
+  2011.
 
 \bibitem{rttvsrts2}
 {Daniel Schuster}, {Danny Kiefner}, {Robert L\"ubke}, {Thomas Springer},
@@ -122,7 +144,7 @@ I.~S. Institute, ``\textbf{User Datagram Protocol (RFC 768)},'' tech. rep.,
   of Applied Sciences Hagenberg - Mobile Computing}, 2004.
 
 \bibitem{gps1}
-3rd WORKSHOP ON POSITIONING, NAVIGATION AND COMMUNICATION (WPNC�06), {\em
+3rd Workshop On Positioning, Navigation And Communication (WPNC�06), {\em
   \textbf{Field trial on GPS Accuracy in a medium size city: The influence of
   builtup}}, 2006.
 
